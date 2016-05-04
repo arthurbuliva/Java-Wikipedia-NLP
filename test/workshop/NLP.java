@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package nlp;
+package workshop;
 
+import nlp.*;
 import java.io.IOException;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
+import java.util.Arrays;
+import java.util.HashMap;
 import wikipedia.DataFetcher;
 
 /**
@@ -24,20 +23,42 @@ public class NLP
      */
     public static void main(String[] args) throws IOException
     {
-        
+
         /**
          * Algorithm:
-         * 
+         *
          * 1. After the dump process has been completed, we get list of articles
          * which have been paired by language, for example:
-         * 
+         *
          * Central Bank of Kenya ||| Benki Kuu ya Kenya
-         * 
-         * 2. What we need is to fetch each of the articles, grouped into EN and SW
-         * 
+         *
+         * 2. What we need is to fetch each of the articles, grouped into EN and
+         * SW
+         *
          * 3. Then add each into the MongoDB instance
          */
+        final String SEPARATOR = "\\|\\|\\|";
         
+        String[] languagePairs =
+        {
+            "en", "sw"
+        };
+
+        String titles = "Central Bank of Kenya ||| Benki Kuu ya Kenya";
+
+        String[] titlesArray = titles.split(SEPARATOR);
+
+        HashMap<String, String> hash = new HashMap<>();
+
+        for (int i = 0; i < titlesArray.length; i++)
+        {
+            hash.put(languagePairs[i], titlesArray[i].trim());
+        }
+        
+        System.out.println(hash);
+
+        System.exit(0);
+
         DataFetcher wiki = new DataFetcher();
         String data = wiki.fetchData("en", "Central Bank of Kenya");
 
