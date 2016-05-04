@@ -25,7 +25,16 @@ public class NLP
     public static void main(String[] args) throws IOException
     {
         DataFetcher wiki = new DataFetcher();
-        System.out.println(wiki.fetchData("en", "Central Bank of Kenya"));
+        String data = wiki.fetchData("en", "Central Bank of Kenya");
+
+        // Run the model against the data
+        String[] sentences = new SentenceDetector().detectSentences(data);
+
+        for (String sentence : sentences)
+        {
+            System.out.println(sentence);
+            // TODO: Load these sentences as parallel texts onto a database
+        }
     }
 
 }

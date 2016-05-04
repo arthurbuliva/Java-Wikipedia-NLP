@@ -3,12 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package opennlp;
+package nlp;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Arrays;
 import opennlp.tools.sentdetect.SentenceDetectorME;
 import opennlp.tools.sentdetect.SentenceModel;
 import wikipedia.DataFetcher;
@@ -20,32 +19,30 @@ import wikipedia.DataFetcher;
 public class SentenceDetector
 {
 
-    public static void main(String[] args) throws Exception
-    {
-        // Load the model that we want to use
-        InputStream modelIn = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-sent.bin");
+    private String[] sentences;
+    private InputStream modelIn;
 
+    public String[] detectSentences(String paragraph)
+    {
         try
         {
+            // Load the model that we want to use
+            modelIn = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-sent.bin");
+
             SentenceModel model = new SentenceModel(modelIn);
             SentenceDetectorME sentenceDetector = new SentenceDetectorME(model);
 
-            // Fetch the data from Wikipedia
-            DataFetcher wiki = new DataFetcher();
-            String data = wiki.fetchData("en", "Central Bank of Kenya");
-
             // Run the model against the data
-            String sentences[] = sentenceDetector.sentDetect(data);
+            sentences = sentenceDetector.sentDetect(paragraph);
 
-            for (String sentence : sentences)
-            {
-                System.out.println(sentence);
-                // TODO: Load these sentences as parallel texts onto a database
-            }
+            return sentences;
         }
-        catch (IOException e)
+        catch (IOException ex)
         {
-            e.printStackTrace();
+            return new String[]
+            {
+                ex.getMessage()
+            };
         }
         finally
         {
