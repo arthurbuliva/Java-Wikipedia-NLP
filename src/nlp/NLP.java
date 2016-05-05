@@ -27,7 +27,7 @@ public class NLP
          * 1. After the dump process has been completed, we get list of articles
          * which have been paired by language, for example:
          * 
-         * Central Bank of Kenya ||| Benki Kuu ya Kenya
+         * Paper ||| Karatasi
          * 
          * 2. What we need is to fetch each of the articles, grouped into EN and SW
          * 
@@ -35,18 +35,21 @@ public class NLP
          */
         
         DataFetcher wiki = new DataFetcher();
-        String dataEnglish = wiki.fetchData("en", "Navy");
-        String dataSwahili = wiki.fetchData("sw", "Jeshi la wanamaji");
+        String dataEnglish = wiki.fetchData("en", "Paper");
+        String dataSwahili = wiki.fetchData("sw", "Karatasi");
 
         // Run the model against the data
         String[] englishSentences = new SentenceDetector().detectSentences(dataEnglish);
         String[] swahiliSentences = new SentenceDetector().detectSentences(dataSwahili);
-
+      
         for (String english : englishSentences)
         {
             System.out.println(english);
             // TODO: Load these sentences as parallel texts onto a database
         }
+        
+        System.out.println("==================================================");
+        
         for (String swahili : swahiliSentences)
         {
             System.out.println(swahili);
