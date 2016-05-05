@@ -35,14 +35,21 @@ public class NLP
          */
         
         DataFetcher wiki = new DataFetcher();
-        String data = wiki.fetchData("en", "Central Bank of Kenya");
+        String dataEnglish = wiki.fetchData("en", "Navy");
+        String dataSwahili = wiki.fetchData("sw", "Jeshi la wanamaji");
 
         // Run the model against the data
-        String[] sentences = new SentenceDetector().detectSentences(data);
+        String[] englishSentences = new SentenceDetector().detectSentences(dataEnglish);
+        String[] swahiliSentences = new SentenceDetector().detectSentences(dataSwahili);
 
-        for (String sentence : sentences)
+        for (String english : englishSentences)
         {
-            System.out.println(sentence);
+            System.out.println(english);
+            // TODO: Load these sentences as parallel texts onto a database
+        }
+        for (String swahili : swahiliSentences)
+        {
+            System.out.println(swahili);
             // TODO: Load these sentences as parallel texts onto a database
         }
     }
