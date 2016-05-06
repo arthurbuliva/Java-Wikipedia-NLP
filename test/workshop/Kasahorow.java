@@ -8,6 +8,7 @@ package workshop;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.ArrayList;
 
 /**
  *
@@ -19,20 +20,28 @@ public class Kasahorow
     public static void main(String[] args) throws Exception
     {
         File file = new File("lib/kasahorow/english_swahili_woaka.tsv.txt");
+        
+        ArrayList<String> sentences = new ArrayList<>();
 
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
-        StringBuffer stringBuffer = new StringBuffer();
 
         String line;
+        
         while ((line = bufferedReader.readLine()) != null)
         {
-            if(line.contains(" cat "))
+            if(line.contains(" dog "))
             {
-                System.out.println(line);
+                sentences.add(line.split("\t\t\t")[1]);
             }
         }
 
         fileReader.close();
+        
+        
+        for(String sentence : sentences)
+        {
+            System.out.println(sentence);
+        }
     }
 }
