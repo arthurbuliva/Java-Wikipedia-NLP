@@ -7,8 +7,17 @@ package workshop;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileReader;
+import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.StringTokenizer;
+import opennlp.tools.tokenize.Tokenizer;
+import opennlp.tools.tokenize.TokenizerME;
+import opennlp.tools.tokenize.TokenizerModel;
 
 /**
  *
@@ -20,28 +29,62 @@ public class Kasahorow
     public static void main(String[] args) throws Exception
     {
         File file = new File("lib/kasahorow/english_swahili_woaka.tsv.txt");
-        
+
         ArrayList<String> sentences = new ArrayList<>();
+
+        ArrayList<String> translationSentences = new ArrayList<>();
 
         FileReader fileReader = new FileReader(file);
         BufferedReader bufferedReader = new BufferedReader(fileReader);
 
         String line;
-        
+
         while ((line = bufferedReader.readLine()) != null)
         {
-            if(line.contains(" dog "))
+            if (line.contains(" snake "))
             {
                 sentences.add(line.split("\t\t\t")[1]);
             }
         }
 
         fileReader.close();
-        
-        
-        for(String sentence : sentences)
+
+        for (String sentence : sentences)
         {
             System.out.println(sentence);
+
+            translationSentences.add(sentence.split("\t")[0].trim());
         }
+
+        System.out.println(translationSentences);
+
+        Map<String, Integer> freqs = new HashMap<>();
+        List<String> haystack = translationSentences;
+
+        // Load the model that we want to use
+        InputStream modelIn = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-token.bin");
+        TokenizerModel model = new TokenizerModel(modelIn);
+        Tokenizer tokenizer = new TokenizerME(model);
+
+        for (String sentence : haystack)
+        {
+            String[] tokens = tokenizer.tokenize(sentence);
+
+            for (String token : tokens)
+            {
+                if (freqs.containsKey(token))
+                {
+                    freqs.put(token, freqs.get(token) + 1);
+                }
+                else
+                {
+                    freqs.put(token, 1);
+                }
+            }
+        }
+// freqs now has all your word frequencies
+
+        System.out.println(freqs);
+
     }
 }
