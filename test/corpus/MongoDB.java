@@ -35,6 +35,27 @@ public class MongoDB
                 System.out.println(document);
             }
         });
+        
+        
+        
+//> db.test.drop()
+//> db.test.insert({ "t" : "I'm on time, not late or delayed" })
+//> db.test.insert({ "t" : "I'm either late or delayed" })
+//> db.test.insert({ "t" : "Time flies like a banana" })
+//> db.test.ensureIndex({ "t" : "text" })
+//
+//> db.test.find({ "$text" : { "$search" : "time late delay" } }, { "_id" : 0 })
+//{ "t" : "I'm on time, not late or delayed" }
+//{ "t" : "Time flies like a banana" }
+//{ "t" : "I'm either late or delayed" }
+//
+//> db.test.find({ "$text" : { "$search" : "late delay" } }, { "_id" : 0 })
+//{ "t" : "I'm on time, not late or delayed" }
+//{ "t" : "I'm either late or delayed" }
+//
+//> db.test.find({ "$text" : { "$search" : "late delay \"on time\"" } }, { "_id" : 0 })
+//{ "t" : "I'm on time, not late or delayed" }
+
 
     }
 

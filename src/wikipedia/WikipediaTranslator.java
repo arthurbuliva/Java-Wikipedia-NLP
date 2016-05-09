@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package workshop;
+package wikipedia;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.StringTokenizer;
 import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
@@ -23,12 +22,12 @@ import opennlp.tools.tokenize.TokenizerModel;
  *
  * @author arthur
  */
-public class Kasahorow
+public class WikipediaTranslator
 {
 
     public static void main(String[] args) throws Exception
     {
-        File file = new File("lib/kasahorow/english_swahili_woaka.tsv.txt");
+        File file = new File("lib/wikipedia-parallel-titles-master/Titles.txt");
 
         ArrayList<String> sentences = new ArrayList<>();
 
@@ -57,7 +56,6 @@ public class Kasahorow
         }
 
 //        System.out.println(translationSentences);
-
         Map<String, Integer> freqs = new HashMap<>();
         List<String> haystack = translationSentences;
 

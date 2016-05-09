@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package workshop;
+package kasahorow;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -23,7 +23,7 @@ import opennlp.tools.tokenize.TokenizerModel;
  *
  * @author arthur
  */
-public class Kasahorow
+public class KasahorowTranslator
 {
 
     public static void main(String[] args) throws Exception
@@ -57,7 +57,6 @@ public class Kasahorow
         }
 
 //        System.out.println(translationSentences);
-
         Map<String, Integer> freqs = new HashMap<>();
         List<String> haystack = translationSentences;
 

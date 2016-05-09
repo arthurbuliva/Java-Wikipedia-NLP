@@ -29,8 +29,6 @@ public class DataFetcher
 
             String link = String.format("http://%s.wikipedia.org/wiki/%s", parameters);
             
-            System.out.println(link);
-
             Document doc = Jsoup.connect(link).timeout(5000).get();
 
             Elements paragraphs = doc.select(".mw-content-ltr p, .mw-content-ltr li");
