@@ -39,7 +39,7 @@ public class MongoDB
         // db.wikipedia.createIndex({ "en" : "text", "sw" : "text" })
 
         FindIterable<Document> iterable = db.getCollection("wikipedia").find(
-                new Document("$text", new Document("$search", "ethiopia"))        
+                new Document("$text", new Document("$search", "ukimwi"))        
         );
         
         iterable.forEach(new Block<Document>()
