@@ -10,8 +10,15 @@ import com.mongodb.client.MongoDatabase;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
 import nlp.SentenceDetector;
 import org.bson.Document;
 
@@ -47,7 +54,7 @@ public class WikipediaParseTitles
 
         File file = new File("lib/wikipedia-parallel-titles-master/Titles.txt");
 
-        Map<String, String> titlesMap = new HashMap<>();
+        Map<String, String> titlesMap = new LinkedHashMap<>();
 
         FileReader fileReader = new FileReader(file);
 
@@ -67,7 +74,13 @@ public class WikipediaParseTitles
         titlesMap.forEach((englishTitle, swahiliTitle)
                 -> 
                 {
-                    System.out.println(englishTitle + " -> " + swahiliTitle);
+                    System.out.println(
+                            String.format("%s -> %s",
+                                    new Object[]
+                                    {
+                                        englishTitle, swahiliTitle
+                                    }
+                            ));
 
                     wikiTextEnglish = wikiFetcher.fetchData("en", englishTitle);
                     wikiTextSwahili = wikiFetcher.fetchData("sw", swahiliTitle);
@@ -76,11 +89,8 @@ public class WikipediaParseTitles
                             new Document()
                             .append("en", wikiTextEnglish)
                             .append("sw", wikiTextSwahili));
-
-                    System.out.println(englishTitle + " -> " + swahiliTitle);
-
         });
-        
+
         mongoClient.close();
     }
 
