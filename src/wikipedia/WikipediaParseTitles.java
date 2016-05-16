@@ -85,8 +85,6 @@ public class WikipediaParseTitles
         });
 
         mongoClient.close();
-        
-        BAKITA
     }
 
     public static void main(String[] args) throws Exception
