@@ -48,12 +48,12 @@ public class KasahorowTranslator
 
         fileReader.close();
 
-        for (String sentence : sentences)
+        sentences.stream().forEach((sentence) ->
         {
-//            System.out.println(sentence);
+            //            System.out.println(sentence);
 
             translationSentences.add(sentence.split("\t")[0].trim());
-        }
+        });
 
 //        System.out.println(translationSentences);
         Map<String, Integer> freqs = new HashMap<>();

@@ -31,7 +31,7 @@ public class POSDetector
 
         // Fetch the data from Wikipedia
         DataFetcher wiki = new DataFetcher();
-        String data = wiki.fetchData("sw", "Karatasi");
+        String data = "What HAVE you been up to lately?";//wiki.fetchData("sw", "Karatasi");
 
         // Run the model against the data
         String tokens[] = WhitespaceTokenizer.INSTANCE.tokenize(data);

@@ -32,6 +32,8 @@ public class Translator
 
     public void translate(String word)
     {
+        
+        // We need to fing the root of the word first
 
         FindIterable<Document> iterable = db.getCollection("wikipedia").find(
                 new Document("$text", new Document("$search", word))
@@ -74,6 +76,6 @@ public class Translator
     public static void main(String[] args)
     {
         Translator translator = new Translator();
-        translator.translate("vagina");
+        translator.translate("substitute");
     }
 }
