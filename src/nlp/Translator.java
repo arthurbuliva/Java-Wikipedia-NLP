@@ -76,6 +76,6 @@ public class Translator
     public static void main(String[] args)
     {
         Translator translator = new Translator();
-        translator.translate("substitute");
+        translator.translate("elegance");
     }
 }

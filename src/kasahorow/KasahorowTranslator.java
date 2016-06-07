@@ -11,6 +11,7 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -40,7 +41,7 @@ public class KasahorowTranslator
 
         while ((line = bufferedReader.readLine()) != null)
         {
-            if (line.contains(" dog "))
+            if (line.trim().contains("noon"))
             {
                 sentences.add(line.split("\t\t\t")[1]);
             }
@@ -48,11 +49,10 @@ public class KasahorowTranslator
 
         fileReader.close();
 
-        sentences.stream().forEach((sentence) ->
-        {
-            //            System.out.println(sentence);
-
-            translationSentences.add(sentence.split("\t")[0].trim());
+        sentences.stream().forEach((sentence)
+                -> 
+                {
+                    translationSentences.add(sentence.split("\t")[0].trim());
         });
 
 //        System.out.println(translationSentences);
@@ -82,7 +82,23 @@ public class KasahorowTranslator
         }
 // freqs now has all your word frequencies
 
-        System.out.println(freqs);
+
+//        System.out.println(freqs);
+
+        int mostOccuringWordCount = Collections.max(freqs.values());
+        int leastOccuringWordCount = Collections.min(freqs.values());
+
+        for (Map.Entry<String, Integer> entry : freqs.entrySet())
+        {
+            String key = entry.getKey();
+            Object value = entry.getValue();
+            
+            
+            if((int)value == mostOccuringWordCount)
+            {
+                System.out.println(key);
+            }
+        }
 
     }
 }
