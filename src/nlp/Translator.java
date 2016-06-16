@@ -34,7 +34,6 @@ public class Translator
     {
         
         // We need to fing the root of the word first
-
         FindIterable<Document> iterable = db.getCollection("wikipedia").find(
                 new Document("$text", new Document("$search", word))
         );
