@@ -35,7 +35,13 @@ public class MongoDB
         //                + "Ni mipango ya kupanua maduka yake mpaka nchini Uganda, Rwanda na nchi nyingine za Afrika Mashariki.\n"
         //                + "Nakumatt ni kampuni ya Kenya inayomilikiwa na familia na Atul Shah Hotnet Ltd.[2] [3]"));
         // This is how we created an index for the text:
+        //
         // db.wikipedia.createIndex({ "en" : "text", "sw" : "text" })
+        //
+        // This is how we restore from the dump:
+        //
+        // mongorestore --db corpus --noIndexRestore --drop __db/dump/corpus/
+        //
         FindIterable<Document> iterable = db.getCollection("wikipedia").find(
                 new Document("$text", new Document("$search", "ukimwi"))
         );
