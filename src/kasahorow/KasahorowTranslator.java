@@ -41,7 +41,7 @@ public class KasahorowTranslator
 
         while ((line = bufferedReader.readLine()) != null)
         {
-            if (line.trim().contains("noon"))
+            if (line.trim().contains("shoulder"))
             {
                 sentences.add(line.split("\t\t\t")[1]);
             }
