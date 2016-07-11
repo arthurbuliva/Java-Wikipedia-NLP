@@ -9,8 +9,11 @@ import com.mongodb.Block;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import nlp.SentenceDetector;
+import opennlp.Chunker;
 
 import org.bson.Document;
 
@@ -25,6 +28,7 @@ public class MongoDB
     {
         MongoClient mongoClient = new MongoClient();
         MongoDatabase db = mongoClient.getDatabase("corpus");
+        HashMap<String, String> relationship = new HashMap<>();
 
         // This is how we insert a record into the db:
         //db.getCollection("test").insertOne(
@@ -42,8 +46,12 @@ public class MongoDB
         //
         // mongorestore --db corpus --noIndexRestore --drop __db/dump/corpus/
         //
+        // db.wikipedia.find({$text: {$search: "Msimu wa mvua"}}).pretty();
+        //
+        // db.wikipedia.find({$text: {$search: "\"Jamhuri ya Kenya\""}}).pretty();
+        //
         FindIterable<Document> iterable = db.getCollection("wikipedia").find(
-                new Document("$text", new Document("$search", "Reading a book"))
+                new Document("$text", new Document("$search", "\"Sehemu kubwa ni eneo la Malawi, robo ya kusini-mashariki ni eneo la Msumbiji\""))
         );
 
         StringBuilder englishWords = new StringBuilder();
@@ -57,17 +65,53 @@ public class MongoDB
 //                System.out.println(document.getString("en"));
 //                System.out.println(document.getString("sw"));
 
-                englishWords.append(document.getString("en"));
-                
-                
-                
-                
-                swahiliWords.append(document.getString("sw"));
+                String english = document.getString("en");
+                String swahili = document.getString("sw");
+
+                englishWords.append(english);
+                swahiliWords.append(swahiliWords);
+
+                relationship.put(english, swahili);
+
+                try
+                {
+                    ArrayList englishChunks = Chunker.chunk(english);
+                    ArrayList swahiliChunks = Chunker.chunk(swahili);
+
+                    System.out.print(englishChunks.size());
+                    System.out.print(" => ");
+                    System.out.println(englishChunks);
+                    System.out.println("++++++++++++++++++++++++++++++++++++++++++++++");
+                    System.out.print(swahiliChunks.size());
+                    System.out.print(" => ");
+                    System.out.println(swahiliChunks);
+                    
+                    
+                    System.out.println(Chunker.getSpanTypesFromChunks(english));
+                    System.out.println(Chunker.getSpanTypesFromChunks(swahili));
+                }
+                catch (Exception ex)
+                {
+                    ex.printStackTrace();
+                }
 
             }
         });
 
         mongoClient.close();
+
+        System.exit(0);
+
+        for (Map.Entry<String, String> entry : relationship.entrySet())
+        {
+            String key = entry.getKey();
+            Object value = entry.getValue();
+
+            System.out.println(key);
+            System.out.println("++++++++++++++++++++++++++++++++++++++++++++++");
+            System.out.println(value);
+            System.out.println("-----------------------------------------------");
+        }
 
         SentenceDetector sentence = new SentenceDetector();
 
