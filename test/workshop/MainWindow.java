@@ -12,13 +12,11 @@ import javax.swing.UIManager;
  *
  * @author Arthur Buliva
  */
-public class RetroWindow extends JFrame
+public class MainWindow extends JFrame
 {
-    public RetroWindow()
+    public MainWindow()
     {
         super("Retro Old School Window");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(500, 300);
     }
     
     public static void main(String[] args) throws Exception
@@ -27,7 +25,9 @@ public class RetroWindow extends JFrame
         
         JFrame.setDefaultLookAndFeelDecorated(true);
         
-        RetroWindow window = new RetroWindow();
+        MainWindow window = new MainWindow();
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setSize(500, 300);
         window.setVisible(true);
     }
 }
