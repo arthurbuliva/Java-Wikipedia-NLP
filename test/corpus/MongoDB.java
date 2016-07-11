@@ -43,7 +43,7 @@ public class MongoDB
         // mongorestore --db corpus --noIndexRestore --drop __db/dump/corpus/
         //
         FindIterable<Document> iterable = db.getCollection("wikipedia").find(
-                new Document("$text", new Document("$search", "ukimwi"))
+                new Document("$text", new Document("$search", "Reading a book"))
         );
 
         StringBuilder englishWords = new StringBuilder();
@@ -58,6 +58,10 @@ public class MongoDB
 //                System.out.println(document.getString("sw"));
 
                 englishWords.append(document.getString("en"));
+                
+                
+                
+                
                 swahiliWords.append(document.getString("sw"));
 
             }
