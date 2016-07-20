@@ -9,7 +9,6 @@ import com.mongodb.Block;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
-import nlp.SentenceDetector;
 
 import org.bson.Document;
 
@@ -30,17 +29,17 @@ public class Translator
         db = mongoClient.getDatabase(DATABASE);
     }
 
-    public void translate(String word)
+    public void translate(String word, boolean exactMatch)
     {
-        
+
         // We need to fing the root of the word first
         FindIterable<Document> iterable = db.getCollection("wikipedia").find(
-                new Document("$text", new Document("$search", word))
+                new Document("$text", new Document("$search", exactMatch ? String.format("\"%s\"", word) : word))
         );
 
         StringBuilder englishWords;
         StringBuilder swahiliWords;
-        
+
         englishWords = new StringBuilder();
         swahiliWords = new StringBuilder();
 
@@ -56,25 +55,25 @@ public class Translator
 
         mongoClient.close();
 
-        SentenceDetector sentence = new SentenceDetector();
+        SentenceDetector sentenceDetector = new SentenceDetector();
 
-        String[] paragraph = sentence.detectSentences(englishWords.toString());
-        String[] aya = sentence.detectSentences(swahiliWords.toString());
+        String[] paragraph = sentenceDetector.detectSentences(englishWords.toString());
+        String[] aya = sentenceDetector.detectSentences(swahiliWords.toString());
 
-        for (String sent : paragraph)
+        for (String sentences : paragraph)
         {
-            System.out.println(sent);
+            System.out.println(sentences);
         }
-        for (String sente : aya)
+        for (String sentensi : aya)
         {
-            System.out.println(sente);
+            System.out.println(sentensi);
         }
 
     }
-    
+
     public static void main(String[] args)
     {
         Translator translator = new Translator();
-        translator.translate("elegance");
+        translator.translate("red blood cells", true);
     }
 }

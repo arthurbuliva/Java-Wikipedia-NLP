@@ -18,10 +18,10 @@ import opennlp.tools.sentdetect.SentenceModel;
 public class SentenceDetector
 {
 
-    private String[] sentences;
-    private InputStream modelIn;
+    private static String[] sentences;
+    private static InputStream modelIn;
 
-    public String[] detectSentences(String paragraph)
+    public static String[] detectSentences(String paragraph)
     {
         try
         {

@@ -15,9 +15,10 @@ public class Levenshtein
 {
     public static void main(String[] args)
     {
-        CharSequence s = "Hello World";
-        CharSequence t = "Hillo World";
+          String original = "Nini wewe wamekuwa hadi siku za hivi karibuni?";
+
+        String target = "Umekuwa ukishugulika na nini hivi karibuni?";
         
-        System.out.println(StringUtils.getLevenshteinDistance(s, t));
+        System.out.println(StringUtils.getLevenshteinDistance(original, target));
     }
 }

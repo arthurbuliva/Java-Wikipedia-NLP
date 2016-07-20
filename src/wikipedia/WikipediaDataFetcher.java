@@ -15,7 +15,7 @@ import org.jsoup.select.Elements;
  *
  * @author arthu
  */
-public class DataFetcher
+public class WikipediaDataFetcher
 {
 
     public final String fetchData(String locale, String title)

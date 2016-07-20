@@ -52,6 +52,7 @@ public class Chunker
         return spanTypes;
 
     }
+    
     public static ArrayList<String> chunk(String sentence) throws FileNotFoundException, IOException 
     {
         ArrayList<String> chunks = new ArrayList<>();

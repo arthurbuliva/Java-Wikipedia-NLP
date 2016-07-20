@@ -22,7 +22,7 @@ import opennlp.tools.tokenize.TokenizerModel;
  *
  * @author arthur
  */
-public class WikipediaTranslator
+public class WikipediaTitlesTranslator
 {
 
     public static void main(String[] args) throws Exception

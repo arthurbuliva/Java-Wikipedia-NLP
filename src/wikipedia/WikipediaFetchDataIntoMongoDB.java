@@ -23,13 +23,13 @@ import org.bson.Document;
  *
  * @author arthur
  */
-public class WikipediaParseTitles
+public class WikipediaFetchDataIntoMongoDB
 {
 
     private String wikiTextEnglish;
     private String wikiTextSwahili;
     private String[] wikiSentences;
-    private DataFetcher wikiFetcher;
+    private WikipediaDataFetcher wikiFetcher;
     private SentenceDetector sentenceDetector;
 
     /**
@@ -39,7 +39,7 @@ public class WikipediaParseTitles
      */
     public void fetchWikis() throws Exception
     {
-        wikiFetcher = new DataFetcher();
+        wikiFetcher = new WikipediaDataFetcher();
         sentenceDetector = new SentenceDetector();
 
         MongoClient mongoClient = new MongoClient();
@@ -89,7 +89,7 @@ public class WikipediaParseTitles
 
     public static void main(String[] args) throws Exception
     {
-        WikipediaParseTitles wpt = new WikipediaParseTitles();
+        WikipediaFetchDataIntoMongoDB wpt = new WikipediaFetchDataIntoMongoDB();
         wpt.fetchWikis();
     }
 }

@@ -9,7 +9,7 @@ import nlp.*;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
-import wikipedia.DataFetcher;
+import wikipedia.WikipediaDataFetcher;
 
 /**
  *
@@ -59,7 +59,7 @@ public class NLP
 
         System.exit(0);
 
-        DataFetcher wiki = new DataFetcher();
+        WikipediaDataFetcher wiki = new WikipediaDataFetcher();
         String data = wiki.fetchData("en", "Central Bank of Kenya");
 
         // Run the model against the data

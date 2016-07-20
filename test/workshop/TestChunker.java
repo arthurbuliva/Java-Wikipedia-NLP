@@ -17,8 +17,10 @@ public class TestChunker
 {
     public static void main(String[] args) throws IOException
     {
-        String sentence = "I am a professor who works at the United States International University - Africa.";
-        sentence += " My name is Rogers and I am an old man";
+        String sentence = "Upinzani hutokea kupitia mabadiliko kwenye mfumo kinga "
+                + "ambao huongeza kinga ya maambukizi haya na pia mabadiliko katika "
+                + "seli nyekundu za damu ambayo hukinga uwezo wa vimelea vya "
+                + "malaria kuvamia na kujizalisha ndani ya seli hizo.";
         
         ArrayList<String> chunks = Chunker.chunk(sentence);
         ArrayList<String> spanTypes = Chunker.getSpanTypesFromChunks(sentence);

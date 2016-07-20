@@ -6,7 +6,7 @@
 package nlp;
 
 import java.io.IOException;
-import wikipedia.DataFetcher;
+import wikipedia.WikipediaDataFetcher;
 
 /**
  *
@@ -35,7 +35,7 @@ public class NLP
          * 3. Then add each into the MongoDB instance
          */
         
-        DataFetcher wiki = new DataFetcher();
+        WikipediaDataFetcher wiki = new WikipediaDataFetcher();
         String dataEnglish = wiki.fetchData("en", "Paper");
         String dataSwahili = wiki.fetchData("sw", "Karatasi");
 

@@ -85,7 +85,7 @@ public class TitleMatcher
 
     public static void main(String[] args)
     {
-        String word = "paper";
+        String word = "candle";
         
         TitleMatcher translator = new TitleMatcher();
         System.out.println(translator.translate(word));

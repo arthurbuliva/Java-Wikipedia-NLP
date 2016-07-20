@@ -21,7 +21,7 @@ public class DataComparator
     @Test
     public void testFetchData()
     {
-        DataFetcher wiki = new DataFetcher();
+        WikipediaDataFetcher wiki = new WikipediaDataFetcher();
         
         String expectedResult = "The Central Bank of Kenya (Swahili: Benki Kuu ya Kenya) "
                 + "is Kenya's central bank. The bank is located in Nairobi. "
@@ -41,7 +41,7 @@ public class DataComparator
     @Test
     public void testRandomData()
     {
-       DataFetcher wiki = new DataFetcher();
+       WikipediaDataFetcher wiki = new WikipediaDataFetcher();
        
        String expectedResult = "Domestic cat";
        
