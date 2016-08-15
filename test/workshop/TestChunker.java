@@ -7,7 +7,7 @@ package workshop;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import opennlp.Chunker;
+import nlp.Chunker;
 
 /**
  *
@@ -17,10 +17,7 @@ public class TestChunker
 {
     public static void main(String[] args) throws IOException
     {
-        String sentence = "Upinzani hutokea kupitia mabadiliko kwenye mfumo kinga "
-                + "ambao huongeza kinga ya maambukizi haya na pia mabadiliko katika "
-                + "seli nyekundu za damu ambayo hukinga uwezo wa vimelea vya "
-                + "malaria kuvamia na kujizalisha ndani ya seli hizo.";
+        String sentence = "My name is Rogers and I am an old man. My light is shining. My load is light.";
         
         ArrayList<String> chunks = Chunker.chunk(sentence);
         ArrayList<String> spanTypes = Chunker.getSpanTypesFromChunks(sentence);

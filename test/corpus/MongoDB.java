@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import nlp.SentenceDetector;
-import opennlp.Chunker;
+import nlp.Chunker;
 
 import org.bson.Document;
 
@@ -51,7 +51,7 @@ public class MongoDB
         // db.wikipedia.find({$text: {$search: "\"Jamhuri ya Kenya\""}}).pretty();
         //
         FindIterable<Document> iterable = db.getCollection("wikipedia").find(
-                new Document("$text", new Document("$search", "\"Sehemu kubwa ni eneo la Malawi, robo ya kusini-mashariki ni eneo la Msumbiji\""))
+                new Document("$text", new Document("$search", "\"Malawi\""))
         );
 
         StringBuilder englishWords = new StringBuilder();

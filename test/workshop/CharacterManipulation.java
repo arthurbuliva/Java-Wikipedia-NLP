@@ -5,16 +5,16 @@
  */
 package workshop;
 
-import nlp.POSDetector;
-
 /**
  *
  * @author arthur
  */
-public class TestPOSDetector
+public class CharacterManipulation
 {
     public static void main(String[] args)
     {
-        System.out.println(POSDetector.detectPOS("My name is Rogers and I am an old man"));
+        char a = 'A';
+        
+        System.out.println((int)a);
     }
 }
