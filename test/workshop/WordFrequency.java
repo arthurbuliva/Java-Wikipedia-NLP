@@ -5,17 +5,14 @@
  */
 package workshop;
 
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
+import java.util.Comparator;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import nlp.SentenceDetector;
-import opennlp.tools.tokenize.Tokenizer;
-import opennlp.tools.tokenize.TokenizerME;
-import opennlp.tools.tokenize.TokenizerModel;
+import nlp.Chunker;
 import org.apache.commons.collections4.map.CaseInsensitiveMap;
 
 /**
@@ -28,39 +25,82 @@ public class WordFrequency
     // Determines the frequency of words in a sentence
     public static void main(String[] args) throws Exception
     {
-        String paragraph = "In the case of malaria, an infection of the erythrocytes "
-                + "(red blood cells), the genetic change is an alteration of the "
-                + "hemoglobin molecule or cellular proteins or enzymes of erythrocytes "
-                + "that inhibits invasion by or replication of Plasmodia, the "
-                + "microorganisms that cause the disease or replication. Red red red RED blood cells are.";
+        String paragraph = "The Republic of Malawi, is a landlocked country in "
+                + "southeast Africa that was formerly known as Nyasaland. "
+                + "It is bordered by Zambia to the northwest, Tanzania to the "
+                + "northeast, and Mozambique on the east, south and west. "
+                + "The country is also nicknamed \"The Warm Heart of Africa\".";
 
-//        Map<String, Integer> freqs = new HashMap<>();
+        ArrayList<String> chunks = Chunker.chunk(paragraph);
+
         Map<String, Integer> freqs = new CaseInsensitiveMap<>();
-        String[] haystack = SentenceDetector.detectSentences(paragraph);
 
-        InputStream modelIn = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-token.bin");
-        TokenizerModel model = new TokenizerModel(modelIn);
-        Tokenizer tokenizer = new TokenizerME(model);
-
-        for (String sentence : haystack)
+        for (String sentence : chunks)
         {
-            String[] tokens = tokenizer.tokenize(sentence);
 
-            for (String token : tokens)
+            if (freqs.containsKey(sentence.trim()))
             {
-                
-                if (freqs.containsKey(token))
-                {
-                    freqs.put(token, freqs.get(token) + 1);
-                }
-                else
-                {
-                    freqs.put(token, 1);
-                }
+                freqs.put(sentence.trim(), freqs.get(sentence.trim()) + 1);
             }
-        }
-        
-        System.out.println(freqs);
+            else
+            {
+                freqs.put(sentence.trim(), 1);
+            }
 
+        }
+
+//        for (Map.Entry<String, Integer> entry : freqs.entrySet())
+//        {
+//            String key = entry.getKey();
+//            Object value = entry.getValue();
+//
+//            System.out.println(String.format("%s -> %d", new Object[]
+//            {
+//                key, value
+//            }));
+//        }
+
+        Map<String, Integer> sortedMap = sortByValue(freqs);
+
+        for (Map.Entry<String, Integer> entry : sortedMap.entrySet())
+        {
+            String key = entry.getKey();
+            Object value = entry.getValue();
+
+            System.out.println(String.format("%s -> %d", new Object[]
+            {
+                key, value
+            }));
+        }
     }
+
+    private static Map<String, Integer> sortByValue(Map<String, Integer> unsortMap)
+    {
+
+        // 1. Convert Map to List of Map
+        List<Map.Entry<String, Integer>> list
+                = new LinkedList<>(unsortMap.entrySet());
+
+        // 2. Sort list with Collections.sort(), provide a custom Comparator
+        //    Try switch the o1 o2 position for a different order
+        Collections.sort(list, new Comparator<Map.Entry<String, Integer>>()
+        {
+            @Override
+            public int compare(Map.Entry<String, Integer> o1,
+                    Map.Entry<String, Integer> o2)
+            {
+                return (o2.getValue()).compareTo(o1.getValue());
+            }
+        });
+
+        // 3. Loop the sorted list and put it into a new insertion order Map LinkedHashMap
+        Map<String, Integer> sortedMap = new LinkedHashMap<String, Integer>();
+        for (Map.Entry<String, Integer> entry : list)
+        {
+            sortedMap.put(entry.getKey(), entry.getValue());
+        }
+
+        return sortedMap;
+    }
+
 }
