@@ -51,7 +51,7 @@ public class MongoDB
         // db.wikipedia.find({$text: {$search: "\"Jamhuri ya Kenya\""}}).pretty();
         //
         FindIterable<Document> iterable = db.getCollection("wikipedia").find(
-                new Document("$text", new Document("$search", "\"Malawi\""))
+                new Document("$text", new Document("$search", "\"Kusini mashariki\""))
         );
 
         StringBuilder englishWords = new StringBuilder();
