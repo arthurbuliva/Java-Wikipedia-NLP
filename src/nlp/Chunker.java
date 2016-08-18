@@ -24,10 +24,10 @@ import opennlp.tools.util.Span;
 public class Chunker
 {
 
-    public static ArrayList<String> getSpanTypesFromChunks(String sentence) throws FileNotFoundException, IOException 
+    public static ArrayList<String> getSpanTypesFromChunks(String sentence) throws FileNotFoundException, IOException
     {
         ArrayList<String> spanTypes = new ArrayList<>();
-        
+
         // Load the model that we want to use
         InputStream posModelStream = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-pos-maxent.bin");
         InputStream chunkerStream = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-chunker.bin");
@@ -43,65 +43,77 @@ public class Chunker
         ChunkerME chunkerME = new ChunkerME(chunkerModel);
 
         Span[] spans = chunkerME.chunkAsSpans(sentenceTokens, tags);
-        
+
         for (Span span : spans)
         {
             spanTypes.add(span.getType());
         }
-        
+
         return spanTypes;
 
     }
-    
-    public static ArrayList<String> chunk(String sentence) throws FileNotFoundException, IOException 
+
+    /**
+     * Break a given sentence into chunks
+     *
+     * @param sentence
+     * @return
+     */
+    public static ArrayList<String> chunk(String sentence)
     {
         ArrayList<String> chunks = new ArrayList<>();
-        
-        // Load the model that we want to use
-        InputStream posModelStream = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-pos-maxent.bin");
-        InputStream chunkerStream = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-chunker.bin");
 
-        // Run the model against the data
-        POSModel model = new POSModel(posModelStream);
-        POSTaggerME tagger = new POSTaggerME(model);
+        try
+        {
+            // Load the model that we want to use
+            InputStream posModelStream = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-pos-maxent.bin");
+            InputStream chunkerStream = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-chunker.bin");
 
-        String sentenceTokens[] = WhitespaceTokenizer.INSTANCE.tokenize(sentence);
-        String[] tags = tagger.tag(sentenceTokens);
+            // Run the model against the data
+            POSModel model = new POSModel(posModelStream);
+            POSTaggerME tagger = new POSTaggerME(model);
 
-        ChunkerModel chunkerModel = new ChunkerModel(chunkerStream);
-        ChunkerME chunkerME = new ChunkerME(chunkerModel);
+            String sentenceTokens[] = WhitespaceTokenizer.INSTANCE.tokenize(sentence);
+            String[] tags = tagger.tag(sentenceTokens);
+
+            ChunkerModel chunkerModel = new ChunkerModel(chunkerStream);
+            ChunkerME chunkerME = new ChunkerME(chunkerModel);
 
 //        String result[] = chunkerME.chunk(sentenceTokens, tags);
-
 //        for (int i = 0; i < result.length; i++)
 //        {
 //            System.out.println("[" + sentenceTokens[i] + "] " + result[i]);
 //        }
+            Span[] spans = chunkerME.chunkAsSpans(sentenceTokens, tags);
 
-        Span[] spans = chunkerME.chunkAsSpans(sentenceTokens, tags);
-        
-        for (Span span : spans)
-        {
-            String subChunk = "";
-            
+            for (Span span : spans)
+            {
+                String subChunk = "";
+
 //            System.out.print("Type: " + span.getType() + " - "
 //                    + " Begin: " + span.getStart()
 //                    + " End:" + span.getEnd()
 //                    + " Length: " + span.length() + "  [");
-            
-            for (int j = span.getStart(); j < span.getEnd(); j++)
-            {
+                for (int j = span.getStart(); j < span.getEnd(); j++)
+                {
 //                System.out.print((sentenceTokens[j] + " "));
-                
-                subChunk += (sentenceTokens[j] + " ");
-            }
-            
-            chunks.add(subChunk);
-            
+
+                    subChunk += (sentenceTokens[j] + " ");
+                }
+
+                chunks.add(subChunk);
+
 //            System.out.println("]");
+            }
         }
-        
-        return chunks;
+        catch (FileNotFoundException ex)
+        {
+            ex.printStackTrace();
+        }
+        finally
+        {
+            return chunks;
+        }
 
     }
 }

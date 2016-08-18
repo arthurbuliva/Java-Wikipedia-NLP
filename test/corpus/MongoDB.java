@@ -12,6 +12,7 @@ import com.mongodb.client.MongoDatabase;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import nlp.ChunkFrequency;
 import nlp.SentenceDetector;
 import nlp.Chunker;
 
@@ -51,7 +52,7 @@ public class MongoDB
         // db.wikipedia.find({$text: {$search: "\"Jamhuri ya Kenya\""}}).pretty();
         //
         FindIterable<Document> iterable = db.getCollection("wikipedia").find(
-                new Document("$text", new Document("$search", "\"Kusini mashariki\""))
+                new Document("$text", new Document("$search", "\"chekechea\""))
         );
 
         StringBuilder englishWords = new StringBuilder();
@@ -62,70 +63,31 @@ public class MongoDB
             @Override
             public void apply(final Document document)
             {
-//                System.out.println(document.getString("en"));
-//                System.out.println(document.getString("sw"));
 
                 String english = document.getString("en");
                 String swahili = document.getString("sw");
 
                 englishWords.append(english);
-                swahiliWords.append(swahiliWords);
+                swahiliWords.append(swahili);
 
                 relationship.put(english, swahili);
-
-                try
-                {
-                    ArrayList englishChunks = Chunker.chunk(english);
-                    ArrayList swahiliChunks = Chunker.chunk(swahili);
-
-                    System.out.print(englishChunks.size());
-                    System.out.print(" => ");
-                    System.out.println(englishChunks);
-                    System.out.println("++++++++++++++++++++++++++++++++++++++++++++++");
-                    System.out.print(swahiliChunks.size());
-                    System.out.print(" => ");
-                    System.out.println(swahiliChunks);
-                    
-                    
-                    System.out.println(Chunker.getSpanTypesFromChunks(english));
-                    System.out.println(Chunker.getSpanTypesFromChunks(swahili));
-                }
-                catch (Exception ex)
-                {
-                    ex.printStackTrace();
-                }
-
             }
         });
 
         mongoClient.close();
 
-        System.exit(0);
-
-        for (Map.Entry<String, String> entry : relationship.entrySet())
+        try
         {
-            String key = entry.getKey();
-            Object value = entry.getValue();
+            System.out.println(ChunkFrequency.getFrequencies(englishWords.toString()));
+            System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            System.out.println(ChunkFrequency.getFrequencies(swahiliWords.toString()));
+            
+            
 
-            System.out.println(key);
-            System.out.println("++++++++++++++++++++++++++++++++++++++++++++++");
-            System.out.println(value);
-            System.out.println("-----------------------------------------------");
         }
-
-        SentenceDetector sentence = new SentenceDetector();
-
-        String[] paragraph = sentence.detectSentences(englishWords.toString());
-        String[] aya = sentence.detectSentences(swahiliWords.toString());
-
-        for (String sent : paragraph)
+        catch (Exception ex)
         {
-            System.out.println(sent);
+            ex.printStackTrace();
         }
-        for (String sente : aya)
-        {
-            System.out.println(sente);
-        }
-
     }
 }

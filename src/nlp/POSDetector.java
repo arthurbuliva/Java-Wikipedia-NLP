@@ -34,11 +34,11 @@ public class POSDetector
 
         for (int i = 0; i < tokens.length; i++)
         {
-//            System.out.println(String.format("%s [%s]",
-//                    new Object[]
-//                    {
-//                        tokens[i], tags[i]
-//                    }));
+            System.out.println(String.format("%s [%s]",
+                    new Object[]
+                    {
+                        tokens[i], tags[i]
+                    }));
 
             pos.add(tags[i]);
 

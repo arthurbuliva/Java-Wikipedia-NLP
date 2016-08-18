@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package workshop;
+package nlp;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,18 +19,16 @@ import org.apache.commons.collections4.map.CaseInsensitiveMap;
  *
  * @author arthur
  */
-public class WordFrequency
+public class ChunkFrequency
 {
 
-    // Determines the frequency of words in a sentence
-    public static void main(String[] args) throws Exception
+    /**
+     * Determines the frequency of chunks in a sentence
+     * @param paragraph
+     * @return 
+     */
+    public static Map<String, Integer> getFrequencies(String paragraph)
     {
-        String paragraph = "The Republic of Malawi, is a landlocked country in "
-                + "southeast Africa that was formerly known as Nyasaland. "
-                + "It is bordered by Zambia to the northwest, Tanzania to the "
-                + "northeast, and Mozambique on the east, south and west. "
-                + "The country is also nicknamed \"The Warm Heart of Africa\".";
-
         ArrayList<String> chunks = Chunker.chunk(paragraph);
 
         Map<String, Integer> freqs = new CaseInsensitiveMap<>();
@@ -61,19 +59,20 @@ public class WordFrequency
 //        }
 
         Map<String, Integer> sortedMap = sortByValue(freqs);
-
-        for (Map.Entry<String, Integer> entry : sortedMap.entrySet())
-        {
-            String key = entry.getKey();
-            Object value = entry.getValue();
-
-            System.out.println(String.format("%s -> %d", new Object[]
-            {
-                key, value
-            }));
-        }
+        
+        return sortedMap;
     }
-
+    
+    public static Map<String, Integer> getFrequencies(Map<String, Integer> unsortedMap)
+    {
+        return sortByValue(unsortedMap);
+    }
+    
+    /**
+     * Sort a Map by the values
+     * @param unsortMap
+     * @return 
+     */
     private static Map<String, Integer> sortByValue(Map<String, Integer> unsortMap)
     {
 
