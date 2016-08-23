@@ -9,12 +9,9 @@ import com.mongodb.Block;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import nlp.ChunkFrequency;
-import nlp.SentenceDetector;
-import nlp.Chunker;
 
 import org.bson.Document;
 
@@ -24,6 +21,61 @@ import org.bson.Document;
  */
 public class MongoDB
 {
+
+    public static final String[] PREPOSITIONS =
+    {
+        "above", "across", "after", "at",
+        "around", "before", "behind", "below", "beside", "between", "by", "down",
+        "during", "for", "from", "in", "inside", "onto", "of", "off", "on",
+        "out", "through", "to", "under", "up", "with", "is", "as", "which",
+        "it", "that"
+    };
+
+    public static final String[] VIHUSISHI =
+    {
+        "juu", "across", "baada", "katika",
+        "around", "kabla", "nyuma", "chini", "kando", "katikati", "by", "chini",
+        "mnamo", "kwa ajili", "kutoka", "ndani", "inside", "onto", "ya", "off",
+        "nje", "through", "hadi", "under", "na", "kama", "wa", "ni"
+    };
+
+    Map<String, String> test = new HashMap<String, String>()
+    {
+        {
+            for (int i = 0; i < PREPOSITIONS.length; i++)
+            {
+                //put("kabla ya", "before");
+
+            }
+
+            put("baada ya", "after");
+            put("nje ya", "outside of");
+            put("ndani ya", "inside");
+            put("juu ya", "on top of");
+            put("chini ya", "under");
+            put("baina ya", "between");
+            put("kati ya", "between");
+            put("mbele ya", "in front of");
+            put("nyuma ya", "behind");
+            put("karibu na", "near");
+            put("mbali na", "far from");
+            put("kando ya", "beside");
+            put("mpaka", "until");
+            put("kisha", "then");
+            put("tangu", "from");
+            put("katika", "in");
+            put("miongoni mwa", "among");
+            put("toka", "from");
+            put("katikati ya", "in between");
+            put("usoni pa", "in the face of");
+            put("ukingoni mwa", "at the edge / bank of");
+            put("mvunguni mwa", "under");
+            put("pembeni mwa", "in the corner of");
+            put("ubavuni pa", "at the side of");
+            put("machoni pa", "in front of/ near");
+            put("kisogoni pa", "behind, at the back");
+        }
+    };
 
     public static void main(String[] args) throws Exception
     {
@@ -52,7 +104,7 @@ public class MongoDB
         // db.wikipedia.find({$text: {$search: "\"Jamhuri ya Kenya\""}}).pretty();
         //
         FindIterable<Document> iterable = db.getCollection("wikipedia").find(
-                new Document("$text", new Document("$search", "\"chekechea\""))
+                new Document("$text", new Document("$search", "\"Kamusi Project\""))
         );
 
         StringBuilder englishWords = new StringBuilder();
@@ -70,7 +122,7 @@ public class MongoDB
                 englishWords.append(english);
                 swahiliWords.append(swahili);
 
-                relationship.put(english, swahili);
+                relationship.put(swahili, english);
             }
         });
 
@@ -78,12 +130,22 @@ public class MongoDB
 
         try
         {
-            System.out.println(ChunkFrequency.getFrequencies(englishWords.toString()));
-            System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++");
-            System.out.println(ChunkFrequency.getFrequencies(swahiliWords.toString()));
-            
-            
+            Map enFreq = ChunkFrequency.getFrequencies(englishWords.toString());
+            Map swFreq = ChunkFrequency.getFrequencies(swahiliWords.toString());
 
+            for (String preposition : PREPOSITIONS)
+            {
+                enFreq.remove(preposition);
+            }
+
+            for (String kihusishi : VIHUSISHI)
+            {
+                swFreq.remove(kihusishi);
+            }
+
+            System.out.println(enFreq);
+            System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            System.out.println(swFreq);
         }
         catch (Exception ex)
         {
