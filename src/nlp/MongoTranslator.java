@@ -189,7 +189,7 @@ public class MongoTranslator
                 {
                     System.out.println("Translating chunk => " + (String) chunk);
 
-//                    System.out.println(translate(((String) chunk).trim()));
+                    System.out.println(translate(((String) chunk).trim()));
                 }
 
             }
