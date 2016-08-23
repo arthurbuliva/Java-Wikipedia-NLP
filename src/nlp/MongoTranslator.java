@@ -3,15 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package corpus;
+package nlp;
 
 import com.mongodb.Block;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import nlp.ChunkFrequency;
+import nlp.Chunker;
 
 import org.bson.Document;
 
@@ -19,8 +21,19 @@ import org.bson.Document;
  *
  * @author arthur
  */
-public class MongoDB
+public class MongoTranslator
 {
+
+    private final MongoClient mongoClient;
+    private final MongoDatabase db;
+    private final HashMap<String, String> relationship;
+
+    public MongoTranslator()
+    {
+        mongoClient = new MongoClient();
+        db = mongoClient.getDatabase("corpus");
+        relationship = new HashMap<>();
+    }
 
     public static final String[] PREPOSITIONS =
     {
@@ -77,11 +90,24 @@ public class MongoDB
         }
     };
 
-    public static void main(String[] args) throws Exception
+    public String translate(String original)
     {
-        MongoClient mongoClient = new MongoClient();
-        MongoDatabase db = mongoClient.getDatabase("corpus");
-        HashMap<String, String> relationship = new HashMap<>();
+        return translate(original, true);
+    }
+
+    private String translate(String original, boolean exactMatch)
+    {
+
+        String translation = "";
+
+        TitleMatcher translator = new TitleMatcher();
+        
+        if (!(translator.translate(original.trim()).length() == 0))
+        {
+            //TODO: There is a bug here
+//            return (translator.translate(original.trim()));
+            System.out.println(translator.translate(original.trim()));
+        }
 
         // This is how we insert a record into the db:
         //db.getCollection("test").insertOne(
@@ -104,7 +130,7 @@ public class MongoDB
         // db.wikipedia.find({$text: {$search: "\"Jamhuri ya Kenya\""}}).pretty();
         //
         FindIterable<Document> iterable = db.getCollection("wikipedia").find(
-                new Document("$text", new Document("$search", "\"Gazeti\""))
+                new Document("$text", new Document("$search", exactMatch ? String.format("\"%s\"", original) : original))
         );
 
         StringBuilder englishWords = new StringBuilder();
@@ -126,30 +152,59 @@ public class MongoDB
             }
         });
 
-        mongoClient.close();
-
         try
         {
             Map enFreq = ChunkFrequency.getFrequencies(englishWords.toString());
             Map swFreq = ChunkFrequency.getFrequencies(swahiliWords.toString());
 
-            for (String preposition : PREPOSITIONS)
+            if (!enFreq.isEmpty() || !swFreq.isEmpty())
             {
-                enFreq.remove(preposition);
-            }
+                for (String preposition : PREPOSITIONS)
+                {
+                    enFreq.remove(preposition);
+                }
 
-            for (String kihusishi : VIHUSISHI)
+                for (String kihusishi : VIHUSISHI)
+                {
+                    swFreq.remove(kihusishi);
+                }
+
+                translation += enFreq + "\n";
+                translation += "+++++++++++++++++++++++++++++++++++++++++++++++++++\n";
+                translation += swFreq + "\n";
+
+//                System.out.println(enFreq + "\n"
+//                        + "+++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
+//                System.out.println(swFreq);
+            }
+            else
             {
-                swFreq.remove(kihusishi);
-            }
+                System.out.println("Translation of \"" + original + "\" is empty. Chunk it sir!");
 
-            System.out.println(enFreq);
-            System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++");
-            System.out.println(swFreq);
+                ArrayList chunks = Chunker.chunk(original);
+
+                System.out.println(chunks);
+
+                for (Object chunk : chunks)
+                {
+                    System.out.println("Translating chunk => " + (String) chunk);
+
+//                    System.out.println(translate(((String) chunk).trim()));
+                }
+
+            }
         }
         catch (Exception ex)
         {
             ex.printStackTrace();
         }
+        finally
+        {
+            // TODO: Close the connections
+//            mongoClient.close();
+        }
+
+        return translation;
     }
+
 }

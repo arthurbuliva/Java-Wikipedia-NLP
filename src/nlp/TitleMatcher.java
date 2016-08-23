@@ -38,7 +38,7 @@ public class TitleMatcher
 
             while ((line = bufferedReader.readLine()) != null)
             {
-                if (line.trim().toLowerCase().contains(word.trim()))
+                if (line.trim().toLowerCase().contains(word.trim().toLowerCase()))
                 {
                     translations.add(line);
                 }

@@ -1,20 +1,22 @@
+package corpus;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package workshop;
+
+
+import nlp.POSDetector;
 
 /**
  *
  * @author arthur
  */
-public class CharacterManipulation
+public class TestPOSDetector
 {
     public static void main(String[] args)
     {
-        char a = 'A';
-        
-        System.out.println((int)a);
+        System.out.println(POSDetector.detectPOS("My name is Rogers and I am an old man"));
     }
 }

@@ -12,7 +12,7 @@ import static org.junit.Assert.*;
  *
  * @author arthu
  */
-public class DataComparator
+public class TestDataComparator
 {
     
     /**
