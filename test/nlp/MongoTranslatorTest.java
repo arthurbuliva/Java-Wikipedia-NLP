@@ -23,11 +23,7 @@ public class MongoTranslatorTest
     {
         MongoTranslator mongo = new MongoTranslator();
 //        System.out.println(mongo.translate("Candle"));
-        System.out.println(mongo.translate("The strongest rain ever recorded in "
-                + "India shut down the financial hub of Mumbai, snapped "
-                + "communication lines, closed airports and forced thousands of "
-                + "people to sleep in their offices or walk home during the night, "
-                + "officials said today."));
+        System.out.println(mongo.translate("Huu ni mwaka wa mwisho"));
 //        System.out.println(mongo.translate("cattle"));
     }
 

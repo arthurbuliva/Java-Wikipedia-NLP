@@ -10,6 +10,7 @@ import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import nlp.ChunkFrequency;
@@ -27,12 +28,15 @@ public class MongoTranslator
     private final MongoClient mongoClient;
     private final MongoDatabase db;
     private final HashMap<String, String> relationship;
+    private boolean exactMatch;
+    int counter  = 1;
 
     public MongoTranslator()
     {
         mongoClient = new MongoClient();
         db = mongoClient.getDatabase("corpus");
         relationship = new HashMap<>();
+        exactMatch = true;
     }
 
     public static final String[] PREPOSITIONS =
@@ -41,7 +45,7 @@ public class MongoTranslator
         "around", "before", "behind", "below", "beside", "between", "by", "down",
         "during", "for", "from", "in", "inside", "onto", "of", "off", "on",
         "out", "through", "to", "under", "up", "with", "is", "as", "which",
-        "it", "that"
+        "it", "that", "he", "she", "was"
     };
 
     public static final String[] VIHUSISHI =
@@ -92,17 +96,18 @@ public class MongoTranslator
 
     public String translate(String original)
     {
-        return translate(original, true);
-    }
 
-    private String translate(String original, boolean exactMatch)
-    {
-
+        if(Arrays.asList(PREPOSITIONS).contains(original) ||
+        Arrays.asList(PREPOSITIONS).contains(original))
+        {
+            return original;
+        }
+        
         String translation = "";
 
         TitleMatcher translator = new TitleMatcher();
         
-        if (!(translator.translate(original.trim()).length() == 0))
+        if ((translator.translate(original.trim()).length() > 0))
         {
             //TODO: There is a bug here
 //            return (translator.translate(original.trim()));
@@ -129,13 +134,15 @@ public class MongoTranslator
         //
         // db.wikipedia.find({$text: {$search: "\"Jamhuri ya Kenya\""}}).pretty();
         //
-        FindIterable<Document> iterable = db.getCollection("wikipedia").find(
-                new Document("$text", new Document("$search", exactMatch ? String.format("\"%s\"", original) : original))
-        );
+        FindIterable<Document> iterable = db.getCollection("wikipedia")
+                .find(
+                new Document("$text", new Document("$search", exactMatch ? String.format("\"%s\"", original) : original)
+                )
+        ).limit(10);
 
         StringBuilder englishWords = new StringBuilder();
         StringBuilder swahiliWords = new StringBuilder();
-
+        
         iterable.forEach(new Block<Document>()
         {
             @Override
@@ -169,7 +176,7 @@ public class MongoTranslator
                     swFreq.remove(kihusishi);
                 }
 
-                translation += enFreq + "\n";
+                translation += enFreq + "\n\n";
                 translation += "+++++++++++++++++++++++++++++++++++++++++++++++++++\n";
                 translation += swFreq + "\n";
 
@@ -180,6 +187,8 @@ public class MongoTranslator
             else
             {
                 System.out.println("Translation of \"" + original + "\" is empty. Chunk it sir!");
+                
+                exactMatch = false;
 
                 ArrayList chunks = Chunker.chunk(original);
 
