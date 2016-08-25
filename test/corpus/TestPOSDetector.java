@@ -17,6 +17,6 @@ public class TestPOSDetector
 {
     public static void main(String[] args)
     {
-        System.out.println(POSDetector.detectPOS("My name is Rogers and I am an old man"));
+        System.out.println(POSDetector.detectPOS("William is a thug"));
     }
 }

@@ -5,9 +5,15 @@
  */
 package nlp;
 
+import com.mongodb.BasicDBObject;
 import com.mongodb.Block;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.DBCursor;
+import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,7 +35,7 @@ public class MongoTranslator
     private final MongoDatabase db;
     private final HashMap<String, String> relationship;
     private boolean exactMatch;
-    int counter  = 1;
+    int counter = 1;
 
     public MongoTranslator()
     {
@@ -97,17 +103,17 @@ public class MongoTranslator
     public String translate(String original)
     {
 
-        if(Arrays.asList(PREPOSITIONS).contains(original) ||
-        Arrays.asList(PREPOSITIONS).contains(original))
+        if (Arrays.asList(PREPOSITIONS).contains(original)
+                || Arrays.asList(PREPOSITIONS).contains(original))
         {
             return original;
         }
-        
+
         String translation = "";
 
         TitleMatcher translator = new TitleMatcher();
-        
-        if ((translator.translate(original.trim()).length() > 0))
+
+        if ((translator.translate(original.trim()).replaceAll("\\[", "").replaceAll("\\]", "").length() > 0))
         {
             //TODO: There is a bug here
 //            return (translator.translate(original.trim()));
@@ -136,13 +142,13 @@ public class MongoTranslator
         //
         FindIterable<Document> iterable = db.getCollection("wikipedia")
                 .find(
-                new Document("$text", new Document("$search", exactMatch ? String.format("\"%s\"", original) : original)
-                )
-        ).limit(10);
+                        new Document("$text", new Document("$search", exactMatch ? String.format("\"%s\"", original) : original)
+                        )
+                );//.limit(10);
 
         StringBuilder englishWords = new StringBuilder();
         StringBuilder swahiliWords = new StringBuilder();
-        
+
         iterable.forEach(new Block<Document>()
         {
             @Override
@@ -187,18 +193,15 @@ public class MongoTranslator
             else
             {
                 System.out.println("Translation of \"" + original + "\" is empty. Chunk it sir!");
-                
-                exactMatch = false;
 
                 ArrayList chunks = Chunker.chunk(original);
-
-                System.out.println(chunks);
 
                 for (Object chunk : chunks)
                 {
                     System.out.println("Translating chunk => " + (String) chunk);
-
+                    exactMatch = false;
                     System.out.println(translate(((String) chunk).trim()));
+                    exactMatch = true;
                 }
 
             }

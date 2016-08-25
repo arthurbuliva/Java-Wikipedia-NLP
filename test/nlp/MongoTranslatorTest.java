@@ -5,13 +5,6 @@
  */
 package nlp;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
-
 /**
  *
  * @author arthur
@@ -23,7 +16,7 @@ public class MongoTranslatorTest
     {
         MongoTranslator mongo = new MongoTranslator();
 //        System.out.println(mongo.translate("Candle"));
-        System.out.println(mongo.translate("Huu ni mwaka wa mwisho"));
+        System.out.println(mongo.translate("William is a thug"));
 //        System.out.println(mongo.translate("cattle"));
     }
 

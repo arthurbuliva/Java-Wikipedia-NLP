@@ -5,6 +5,10 @@
  */
 package workshop;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  *
  * @author arthur
@@ -14,14 +18,10 @@ public class Adder
 
     public static void main(String[] args)
     {
-        int age = 35;
-
-        age += 1;
-
-        System.out.println(age);
-
-        age++;
-
-        System.out.println(age);
+        Map<String, ArrayList> hashMap = new HashMap<>();
+       
+        hashMap.put("name", new ArrayList<>());
+        
+        System.out.println(hashMap);
     }
 }
