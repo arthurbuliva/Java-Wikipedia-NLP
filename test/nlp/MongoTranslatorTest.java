@@ -14,9 +14,13 @@ public class MongoTranslatorTest
 
     public static void main(String[] args) throws Exception
     {
+        String sentence = "William is a thug. He was the last person to see Fred. "
+                + "He saw him in Boston at McKenzie's pub at 3:00 where he paid $2.45 for an ale, "
+                + "after which they proceeded to the UN building.";
+        
         MongoTranslator mongo = new MongoTranslator();
 //        System.out.println(mongo.translate("Candle"));
-        System.out.println(mongo.translate("William is a thug"));
+        System.out.println(mongo.translate(sentence));
 //        System.out.println(mongo.translate("cattle"));
     }
 

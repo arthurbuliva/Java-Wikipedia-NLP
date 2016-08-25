@@ -7,12 +7,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Map;
 import opennlp.tools.namefind.NameFinderME;
 import opennlp.tools.namefind.TokenNameFinderModel;
-import opennlp.tools.tokenize.SimpleTokenizer;
 import opennlp.tools.tokenize.Tokenizer;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
@@ -25,8 +22,10 @@ import opennlp.tools.util.Span;
 public class EntityFinder
 {
 
-    public HashMap<String, ArrayList> getEntities(String sentence) throws Exception
+    public static HashMap<String, ArrayList> getEntities(String sentence)
     {
+        HashMap<String, ArrayList> entityMap = new HashMap<>();
+
         try
         {
             InputStream tokenStream = new FileInputStream(
@@ -45,8 +44,6 @@ public class EntityFinder
                 "lib/apache-opennlp-1.6.0/models/en-ner-time.bin",
             };
 
-            HashMap<String, ArrayList> entityMap = new HashMap<>();
-
             for (String name : modelNames)
             {
                 TokenNameFinderModel entityModel = new TokenNameFinderModel(
@@ -54,12 +51,11 @@ public class EntityFinder
 
                 NameFinderME nameFinder = new NameFinderME(entityModel);
 
-                ArrayList elements = new ArrayList();
+                ArrayList<String> elements = new ArrayList<>();
 
-                String tokens[] = tokenizer.tokenize(sentence);
+                String[] tokens = tokenizer.tokenize(sentence);
 
-//                System.out.println(Arrays.toString(tokens));
-                Span nameSpans[] = nameFinder.find(tokens);
+                Span[] nameSpans = nameFinder.find(tokens);
 
 //                When the en-ner-money.bin model is used, the index in the
 //                tokens array in the earlier code sequence has to be increased by
@@ -73,7 +69,7 @@ public class EntityFinder
                         elements.add(((name.contains("money.bin"))
                                 ? (tokens[span.getStart()] + tokens[span.getStart() + 1])
                                 : tokens[span.getStart()]));
-                        
+
                         entityMap.put(span.getType(), elements);
                     }
                     else
@@ -86,13 +82,13 @@ public class EntityFinder
                 }
             }
 
-            return entityMap;
         }
         catch (Exception ex)
         {
 // Handle exceptions
             ex.printStackTrace();
-            return null;
         }
+
+        return entityMap;
     }
 }

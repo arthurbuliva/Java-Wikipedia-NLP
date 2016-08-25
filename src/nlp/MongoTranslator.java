@@ -18,6 +18,7 @@ import com.mongodb.client.MongoDatabase;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import nlp.ChunkFrequency;
 import nlp.Chunker;
@@ -109,6 +110,27 @@ public class MongoTranslator
             return original;
         }
 
+        // If this item is a proper noun, obtained from EntityFinder, return it as is
+        HashMap entities = EntityFinder.getEntities(original);
+
+        Iterator it = entities.entrySet().iterator();
+        
+        while (it.hasNext())
+        {
+            Map.Entry pair = (Map.Entry) it.next();
+            
+//            System.out.println(pair.getKey() + " = " + pair.getValue());
+            
+            ArrayList value = (ArrayList) pair.getValue();
+            
+            if(value.contains(original))
+            {
+                return original;
+            }
+            
+            it.remove(); // avoids a ConcurrentModificationException
+        }
+
         String translation = "";
 
         TitleMatcher translator = new TitleMatcher();
@@ -192,16 +214,19 @@ public class MongoTranslator
             }
             else
             {
-                System.out.println("Translation of \"" + original + "\" is empty. Chunk it sir!");
+                System.out.println("Translating  \"" + original + "\" in chunks: ");
 
                 ArrayList chunks = Chunker.chunk(original);
+                
+                
 
                 for (Object chunk : chunks)
                 {
-                    System.out.println("Translating chunk => " + (String) chunk);
+                    System.out.println(chunk);
                     exactMatch = false;
                     System.out.println(translate(((String) chunk).trim()));
                     exactMatch = true;
+                    System.out.println("_______________________________________________");
                 }
 
             }
