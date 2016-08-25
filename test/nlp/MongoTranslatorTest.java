@@ -14,7 +14,7 @@ public class MongoTranslatorTest
 
     public static void main(String[] args) throws Exception
     {
-        String sentence = "William is a thug. He was the last person to see Fred. "
+        String sentence = "My name is Arthur Buliva. William is a thug. He was the last person to see Fred. "
                 + "He saw him in Boston at McKenzie's pub at 3:00 where he paid $2.45 for an ale, "
                 + "after which they proceeded to the UN building.";
         
