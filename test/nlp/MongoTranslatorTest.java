@@ -14,9 +14,7 @@ public class MongoTranslatorTest
 
     public static void main(String[] args) throws Exception
     {
-        String sentence = "My name is Arthur Buliva. William is a thug. He was the last person to see Fred. "
-                + "He saw him in Boston at McKenzie's pub at 3:00 where he paid $2.45 for an ale, "
-                + "after which they proceeded to the UN building.";
+        String sentence = "State Leaders";
         
         MongoTranslator mongo = new MongoTranslator();
 //        System.out.println(mongo.translate("Candle"));

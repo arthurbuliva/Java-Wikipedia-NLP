@@ -5,23 +5,15 @@
  */
 package nlp;
 
-import com.mongodb.BasicDBObject;
 import com.mongodb.Block;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.DBCursor;
-import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
-import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import nlp.ChunkFrequency;
-import nlp.Chunker;
 
 import org.bson.Document;
 
@@ -111,7 +103,8 @@ public class MongoTranslator
         }
 
         // If this item is a proper noun, obtained from EntityFinder, return it as is
-        HashMap entities = EntityFinder.getEntities(original);
+        EntityFinder entityFinder = new EntityFinder();
+        HashMap entities = entityFinder.getEntities(original);
 
         Iterator it = entities.entrySet().iterator();
         
@@ -123,8 +116,11 @@ public class MongoTranslator
             
             ArrayList value = (ArrayList) pair.getValue();
             
+            System.out.println(value);
+            
             if(value.contains(original))
             {
+                
                 return original;
             }
             
@@ -162,11 +158,13 @@ public class MongoTranslator
         //
         // db.wikipedia.find({$text: {$search: "\"Jamhuri ya Kenya\""}}).pretty();
         //
+        // db.wikipedia.find({}, {sw: "\"Neno la kumi laweza kurejea mambo tofauti\""}).pretty();
+        //
         FindIterable<Document> iterable = db.getCollection("wikipedia")
                 .find(
                         new Document("$text", new Document("$search", exactMatch ? String.format("\"%s\"", original) : original)
                         )
-                );//.limit(10);
+                ).limit(10);
 
         StringBuilder englishWords = new StringBuilder();
         StringBuilder swahiliWords = new StringBuilder();

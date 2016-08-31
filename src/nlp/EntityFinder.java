@@ -22,7 +22,7 @@ import opennlp.tools.util.Span;
 public class EntityFinder
 {
 
-    public static HashMap<String, ArrayList> getEntities(String sentence)
+    public HashMap<String, ArrayList> getEntities(String sentence)
     {
         HashMap<String, ArrayList> entityMap = new HashMap<>();
 

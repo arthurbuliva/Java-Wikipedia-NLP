@@ -19,7 +19,9 @@ public class TestEntityFinder
     public static void main(String[] args) throws Exception
     {
         EntityFinder name = new EntityFinder();
-        HashMap entities = name.getEntities("William is a thug. He was the last person to see Fred. "
+        
+        HashMap entities = name.getEntities("My name is Arthur. I would like to tell the world that "
+                + "William is a thug. He was the last person to see Fred. "
                 + "He saw him in Boston at McKenzie's pub at 3:00 where he paid $2.45 for an ale, "
                 + "after which they proceeded to the UN building.");
         

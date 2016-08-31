@@ -1421,16 +1421,67 @@
 2022 ||| 2022
 2023 ||| 2023
 2024 ||| 2024
+2025 ||| 2025
+2026 ||| 2026
+2027 ||| 2027
+2028 ||| 2028
+2029 ||| 2029
 203 KK ||| 203 BC
 203 ||| 203
+2030 ||| 2030
+2031 ||| 2031
+2032 ||| 2032
+2033 ||| 2033
+2034 ||| 2034
+2035 ||| 2035
+2036 ||| 2036
+2037 ||| 2037
+2038 ||| 2038
+2039 ||| 2039
 204 KK ||| 204 BC
 204 ||| 204
+2040 ||| 2040
+2041 ||| 2041
+2042 ||| 2042
+2043 ||| 2043
+2044 ||| 2044
+2045 ||| 2045
+2046 ||| 2046
+2047 ||| 2047
+2048 ||| 2048
+2049 ||| 2049
 205 KK ||| 205 BC
 205 ||| 205
+2050 ||| 2050
+2051 ||| 2051
+2052 ||| 2052
+2053 ||| 2053
+2054 ||| 2054
+2055 ||| 2055
+2056 ||| 2056
+2057 ||| 2057
+2058 ||| 2058
+2059 ||| 2059
 206 KK ||| 206 BC
 206 ||| 206
+2060 ||| 2060
+2061 ||| 2061
+2062 ||| 2062
+2063 ||| 2063
+2064 ||| 2064
+2065 ||| 2065
+2066 ||| 2066
+2067 ||| 2067
+2068 ||| 2068
+2069 ||| 2069
 207 KK ||| 207 BC
 207 ||| 207
+2071 ||| 2071
+2074 ||| 2074
+2075 ||| 2075
+2076 ||| 2076
+2077 ||| 2077
+2078 ||| 2078
 208 KK ||| 208 BC
 208 ||| 208
 209 KK ||| 209 BC
@@ -2392,6 +2443,7 @@
 563 ||| 563
 564 KK ||| 564 BC
 564 ||| 564
+565 KK ||| 565 BC
 565 ||| 565
 566 KK ||| 566 BC
 566 ||| 566
@@ -3187,7 +3239,7 @@ AS ||| AS
 AT ||| AT
 ATF ||| Bureau of Alcohol, Tobacco, Firearms and Explosives
 AV ||| AV
-AVG 9.0 ||| AVG 
+AVG 9.0 ||| AVG AntiVirus
 AW ||| AW
 AX ||| AX
 AZ ||| AZ 
@@ -3206,6 +3258,7 @@ Aaron Mokoena ||| Aaron Mokoena
 Aaron Pierce ||| Aaron Pierce 
 Aaron Ringera ||| Aaron Ringera
 Ababu Namwamba ||| Ababu Namwamba
+Abakan ||| Abakan
 Abakuria ||| Kuria 
 Abana, Kastamonu ||| Abana, Kastamonu
 Abasia ||| Abbey
@@ -3228,7 +3281,7 @@ Abebe Bikila ||| Abebe Bikila
 Abedi Amani Karume ||| Abeid Karume
 Aberdeen Township, New Jersey ||| Aberdeen Township, New Jersey
 Abesi ||| Abbess
-Abia ||| Abia 
+Abia ||| Abia State
 Abidani ||| Abidan
 Abidjan ||| Abidjan
 Abigaili ||| Abigail
@@ -3272,6 +3325,7 @@ Ad Dhahirah ||| Ad Dhahirah Governorate
 Ad Gentes ||| Ad gentes
 Ada Yonath ||| Ada Yonath
 Adaklı ||| Adaklı
+Adalar ||| Prince Islands
 Adalbert wa Magdeburg ||| Adalbert of Magdeburg
 Adalbert wa Prague ||| Adalbert of Prague
 Adam Carolla ||| Adam Carolla
@@ -3280,7 +3334,7 @@ Adam Monroe ||| Adam Monroe
 Adam Riess ||| Adam Riess
 Adam Sandler ||| Adam Sandler
 Adam Smith ||| Adam Smith
-Adamawa ||| Adamawa 
+Adamawa ||| Adamawa State
 Adamu ||| Adam
 Adana ||| Adana
 Adapazarı ||| Adapazarı
@@ -3311,6 +3365,7 @@ Adowa ||| Adwa
 Adria ||| Adriatic Sea
 Adygea ||| Adygea
 Adıyaman ||| Adıyaman
+Afeli ||| Perihelion and aphelion
 Afghanistan ||| Afghanistan
 AfriNIC ||| AFRINIC
 Africa Independent Television ||| Africa Independent Television
@@ -3381,6 +3436,7 @@ Ahlat ||| Ahlat
 Ahmad Tejan Kabbah ||| Ahmad Tejan Kabbah
 Ahmadu Bello ||| Ahmadu Bello
 Ahmed Ally Salum ||| Ahmed Salum
+Ahmed Sékou Touré ||| Ahmed Sékou Touré
 Ahmed Zewail ||| Ahmed Zewail
 Ahmetli ||| Ahmetli
 Ahrensburg ||| Ahrensburg
@@ -3408,7 +3464,7 @@ Airbus ||| Airbus
 Airkenya ||| Airkenya Express
 Aisha Omar Kigoda ||| Aisha Omar Kigoda
 Aisha ||| Aisha
-Aishwarya Rai ||| Aishwarya Rai Bachchan
+Aishwarya Rai ||| Aishwarya Rai
 Aisne ||| Aisne
 Aix-en-Provence ||| Aix-en-Provence
 Aix-les-Bains ||| Aix-les-Bains
@@ -3430,6 +3486,7 @@ Akili ||| Intelligence
 Akina Grimm ||| Brothers Grimm
 Akiolojia ||| Archaeology
 Akira Kurosawa ||| Akira Kurosawa
+Akira Suzuki ||| Akira Suzuki 
 Akita ||| Akita
 Akita, Akita ||| Akita, Akita
 Akkuş ||| Akkuş
@@ -3443,7 +3500,7 @@ Akseki ||| Akseki
 Aksu, Antalya ||| Aksu, Antalya
 Aksu, Isparta ||| Aksu, Isparta
 Aktiki ||| Arctic
-Akwa Ibom ||| Akwa Ibom
+Akwa Ibom ||| Akwa Ibom State
 Akyaka , Kars ||| Akyaka, Kars
 Akyazı ||| Akyazı
 Akyurt, Ankara ||| Akyurt
@@ -3505,6 +3562,7 @@ Albert Claude ||| Albert Claude
 Albert Einstein ||| Albert Einstein
 Albert Fert ||| Albert Fert
 Albert Küchler ||| Albert Küchler
+Albert Lutuli ||| Albert Lutuli
 Albert Schweitzer ||| Albert Schweitzer
 Albert Szent-Györgyi ||| Albert Szent-Györgyi
 Alberta ||| Alberta
@@ -3514,7 +3572,6 @@ Alberto Mkuu ||| Albertus Magnus
 Alberto wa Pisa ||| Albert of Pisa
 Albertson, New York ||| Albertson, New York
 Albi ||| Albi
-Albino ||| Albinism
 Albrecht Dürer ||| Albrecht Dürer
 Albrecht Kossel ||| Albrecht Kossel
 Albstadt ||| Albstadt
@@ -3563,9 +3620,10 @@ Alfajiri ||| Dawn
 Alfayo ||| Alphaeus
 Alfonso Maria wa Liguori ||| Alphonsus Maria de' Liguori
 Alfortville ||| Alfortville
-Alfred Bertram Guthrie ||| A. B. Guthrie, Jr.
+Alfred Bertram Guthrie ||| A. B. Guthrie Jr.
 Alfred Deakin ||| Alfred Deakin
 Alfred Fried ||| Alfred Hermann Fried
+Alfred Gilman ||| Alfred G. Gilman
 Alfred Hershey ||| Alfred Hershey
 Alfred Hitchcock ||| Alfred Hitchcock
 Alfred Kastler ||| Alfred Kastler
@@ -3669,7 +3727,6 @@ Alpu ||| Alpu
 Alsace ||| Alsace
 Alsfeld ||| Alsfeld
 Alta ||| Alta, Norway
-Altai Jamhuri ||| Altai Republic
 Altai Krai ||| Altai Krai
 Altare ||| Altar
 Alter ego ||| Alter ego
@@ -3717,6 +3774,7 @@ Amazonas, Brazil ||| Amazonas
 Ambai ||| Ambai Islands
 Ambari ||| Ambergris
 Ambelau ||| Ambelau
+Ambohimanga ||| Ambohimanga
 Ambon ||| Ambon Island
 Ambovombe ||| Ambovombe-Androy
 Ambrosi ||| Ambrose
@@ -3772,6 +3830,7 @@ Ana Lucia Cortez ||| Ana Lucia Cortez
 Ana ||| Anna the Prophetess
 Ana ||| Saint Anne
 Anaa ||| Anaa
+Anadyr ||| Anadyr 
 Anafora ||| Anaphora 
 Anaheim, California ||| Anaheim, California
 Analamanga ||| Analamanga
@@ -3795,6 +3854,7 @@ Andre Geim ||| Andre Geim
 Andrea Dung-Lac ||| Andrew Dũng-Lạc
 Andrea Kaggwa ||| Andrew Kaggwa
 Andrei Rublev ||| Andrei Rublev
+Andrew Fire ||| Andrew Fire
 Andrew Garfield ||| Andrew Garfield
 Andrew Huxley ||| Andrew Huxley
 Andrew Jackson ||| Andrew Jackson
@@ -3815,10 +3875,12 @@ André-Marie Ampère ||| André-Marie Ampère
 Andy Richter ||| Andy Richter
 Andy Warhol ||| Andy Warhol
 Andırın ||| Andırın
+Aneityum ||| Aneityum
 Anelidi ||| Annelid
 Anga la nje ||| Outer space
 Anga ||| Sky
 Angahewa ||| Atmosphere of Earth
+Angarsk ||| Angarsk
 Angela Bassett ||| Angela Bassett
 Angela Merichi ||| Angela Merici
 Angela Merkel ||| Angela Merkel
@@ -3839,6 +3901,7 @@ Aniceti Kitereza ||| Aniceti Kitereza
 Anime ||| Anime
 Anjang wa Goguryeo ||| Anjang of Goguryeo
 Anjela wa Foligno ||| Angela of Foligno
+Anjela wa Msalaba ||| Angela of the Cross
 Anjouan ||| Anjouan
 Ankara ||| Ankara
 Ankeny, Iowa ||| Ames, Iowa
@@ -3879,6 +3942,7 @@ Anthony Anderson ||| Anthony Anderson
 Anthony Leggett ||| Anthony James Leggett
 Anthony Martial ||| Anthony Martial
 Anthony Mwandu Diallo ||| Anthony Diallo
+Anthropolojia ya Kimarekani ||| American anthropology
 Antibaotiki ||| Antibiotics
 Antibes ||| Antibes
 Antigua na Barbuda ||| Antigua and Barbuda
@@ -3929,13 +3993,14 @@ Anytime You Need a Friend ||| Anytime You Need a Friend
 Aníbal Ibarra ||| Aníbal Ibarra
 Aomori ||| Aomori
 Aomori, Aomori ||| Aomori, Aomori
+Aosta ||| Aosta
 Apac ||| Apac
 Apache Junction, Arizona ||| Apache Junction, Arizona
 Aparan ||| Aparan
 Apartheid ||| Apartheid
 Apataki ||| Apataki
 Apeldoorn ||| Apeldoorn
-Apia ||| Apia
+Apia, Samoa ||| Apia
 Apizaco, Tlaxcala ||| Apizaco
 Apokrifa ||| Biblical apocrypha
 Apolinari wa Ravenna ||| Apollinaris of Ravenna
@@ -3973,6 +4038,7 @@ Ardahan ||| Ardahan
 Ardanuç ||| Ardanuç
 Ardennes ||| Ardennes 
 Ardeşen ||| Ardeşen
+Ardhi ||| Earth 
 Ardèche ||| Ardèche
 Ares ||| Ares
 Aretha Franklin ||| Aretha Franklin
@@ -3983,8 +4049,10 @@ Arhangelsk Oblast ||| Arkhangelsk Oblast
 Arhangelsk ||| Arkhangelsk
 Arhavi ||| Arhavi
 Arica ||| Arica
+Arieh Warshel ||| Arieh Warshel
 Arigoni ||| Argon
 Ario ||| Arius
+Aristarko wa Thesalonike ||| Aristarchus of Thessalonica
 Aristide Briand ||| Aristide Briand
 Aristoteli ||| Aristotle
 Arithropodi ||| Arthropod
@@ -4058,6 +4126,7 @@ Arusha ||| Arusha
 Arutua ||| Arutua
 Aruwimi ||| Aruwimi River
 Arvada, Colorado ||| Arvada, Colorado
+Arvid Carlsson ||| Arvid Carlsson
 Arvika ||| Arvika
 Arıcak ||| Arıcak
 Asahi, Chiba ||| Asahi, Chiba
@@ -4081,6 +4150,7 @@ Ashley Scott ||| Ashley Scott
 Ashoka ||| Ashoka
 Ashtarak ||| Ashtarak
 Ashton Kutcher ||| Ashton Kutcher
+Ashuru ||| Ashur
 Asia ya Kaskazini ||| North Asia
 Asia ya Kati ||| Central Asia
 Asia ya Kusini ||| South Asia
@@ -4100,6 +4170,7 @@ Askofu ||| Bishop
 Aslanapa ||| Aslanapa
 Asmara ||| Asmara
 Asnières-sur-Seine ||| Asnières-sur-Seine
+Aspreno wa Napoli ||| Aspren
 Assam ||| Assam
 Assen ||| Assen
 Assia Djebar ||| Assia Djebar
@@ -4168,6 +4239,7 @@ Augusto ||| Augustus
 Aulakogenia ||| Aulacogen
 Aulnay-sous-Bois ||| Aulnay-sous-Bois
 Aung San Suu Kyi ||| Aung San Suu Kyi
+Aureliano wa Arles ||| Aurelianus of Arles
 Aurillac ||| Aurillac
 Aurora ||| Aurora 
 Aurora, Colorado ||| Aurora, Colorado
@@ -4234,6 +4306,7 @@ Azimio la Arusha ||| Arusha Declaration
 Azimio la ulimwengu juu ya haki za binadamu ||| Universal Declaration of Human Rights
 Azimio ||| Azimio
 Aziz Ali ||| Aziz Ali 
+Aziz Sancar ||| Aziz Sancar
 Aziza Sleyum Ally ||| Aziza Sleyum Ally
 Azori ||| Azores
 Azteki ||| Aztec
@@ -4287,6 +4360,7 @@ Babayu ||| Babayu
 Babeldaob ||| Babeldaob
 Babeli ||| Babylon
 Babenhausen ||| Babenhausen
+Babi ||| Babi Island 
 Babsk ||| Babsk
 Babu wa Kanisa ||| Church Fathers
 Baby Don't Cry ||| Baby Don't Cry 
@@ -4324,23 +4398,33 @@ Bagneux, Hauts-de-Seine ||| Bagneux, Hauts-de-Seine
 Bagnolet ||| Bagnolet
 Baha'i ||| Bahá'í Faith
 Bahamas ||| The Bahamas
+Bahari Nyeupe ||| White Sea
 Bahari Nyeusi ||| Black Sea
 Bahari kuu ||| Ocean
 Bahari ya Aegean ||| Aegean Sea
 Bahari ya Aktiki ||| Arctic Ocean
+Bahari ya Azov ||| Sea of Azov
 Bahari ya Baltiki ||| Baltic Sea
+Bahari ya Barents ||| Barents Sea
+Bahari ya Bering ||| Bering Sea
+Bahari ya Chukchi ||| Chukchi Sea
 Bahari ya Chumvi ||| Dead Sea
 Bahari ya Eritrea ||| Gulf of Aden
 Bahari ya Hindi ||| Indian Ocean
 Bahari ya Japani ||| Sea of Japan
+Bahari ya Kara ||| Kara Sea
 Bahari ya Karibi ||| Caribbean Sea
 Bahari ya Kaskazini ||| North Sea
 Bahari ya Kaspi ||| Caspian Sea
 Bahari ya Kusini ya China ||| South China Sea
 Bahari ya Kusini ||| Southern Ocean
+Bahari ya Laptev ||| Laptev Sea
 Bahari ya Marmara ||| Sea of Marmara
+Bahari ya Mashariki ya Siberia ||| East Siberian Sea
 Bahari ya Mediteranea ||| Mediterranean Sea
+Bahari ya Ohotsk ||| Sea of Okhotsk
 Bahari ya Shamu ||| Red Sea
+Bahari ya Shamu ||| Red Sea 
 Bahari ya Shamu, Sudan ||| Red Sea 
 Bahari ya Uchina ya Mashariki ||| East China Sea
 Bahari ya pembeni ||| Marginal sea
@@ -4374,6 +4458,7 @@ Baku ||| Baku
 Bakırköy ||| Bakırköy
 Bala, Ankara ||| Balâ, Ankara
 Balama ||| Balama
+Balashiha ||| Balashikha
 Balbinus ||| Balbinus
 Balbu ||| Incandescent light bulb
 Balch Springs, Texas ||| Balch Springs, Texas
@@ -4466,6 +4551,7 @@ Barnstable, Massachusetts ||| Barnstable, Massachusetts
 Barnum Island, New York ||| Barnum Island, New York
 Barreiro ||| Barreiro, Portugal
 Barrie ||| Barrie
+Barry Marshall ||| Barry Marshall
 Barry Sharpless ||| Karl Barry Sharpless
 Bartholomeus van der Helst ||| Bartholomeus van der Helst
 Bartimayo ||| Healing the blind near Jericho
@@ -4488,6 +4574,7 @@ Bashkortostan ||| Bashkortostan
 Bashnet ||| Bashnet
 Basil wa Caesarea ||| Basil of Caesarea
 Basilicata ||| Basilicata
+Basilika kuu la Bikira Maria ||| Basilica di Santa Maria Maggiore
 Basilika la Mt. Fransisko ||| Basilica of Saint Francis of Assisi
 Basilika la Mt. Petro ||| St. Peter's Basilica
 Basilika ||| Basilica
@@ -4690,10 +4777,12 @@ Benki ya Zenith ||| Zenith Bank
 Benki ||| Bank
 Benknoti ||| Banknote
 Benny Goodman ||| Benny Goodman
+Beno wa Meissen ||| Benno
 Benoni ||| Benoni, Gauteng
 Bensheim ||| Bensheim
 Bentonville, Arkansas ||| Bentonville, Arkansas
-Benue ||| Benué River
+Benue ||| Benue
+Benue ||| Benue River
 Benvenuto Scotivoli ||| Benvenutus Scotivoli
 Benyamini ||| Benjamin
 Berardo mfiadini ||| Berard of Carbio
@@ -4736,6 +4825,7 @@ Bertrand Russell ||| Bertrand Russell
 Bertrange ||| Bertrange
 Berwyn, Illinois ||| Berwyn, Illinois
 Besançon ||| Besançon
+Beseni ||| Bazin
 Besi ||| Base 
 Besi ||| Bass
 Besni ||| Besni
@@ -4805,7 +4895,8 @@ Bihar ||| Bihar
 Biharamulo ||| Biharamulo
 Bijapur ||| Bijapur District
 Bikini ||| Bikini Atoll
-Bikira Maria ||| Mary 
+Bikira Maria Malkia ||| Queen of Heaven
+Bikira Maria ||| Mary, mother of Jesus
 Bikira ||| Virginity
 Biladi, Biladi, Biladi ||| Bilady, Bilady, Bilady
 Bilecik ||| Bilecik
@@ -4830,6 +4921,7 @@ Binadamu ||| Human
 Binche ||| Binche
 Bingen am Rhein ||| Bingen am Rhein
 Binghamton, New York ||| Binghamton, New York
+Bingwa ||| Expert
 Bingöl ||| Bingöl
 Binilith Satano Mahenge ||| Binilith Mahenge
 Binti Yairo ||| Raising of Jairus' daughter
@@ -4847,6 +4939,7 @@ Birmingham Post ||| Birmingham Post
 Birmingham ||| Birmingham
 Birmingham, Alabama ||| Birmingham, Alabama
 Birmingham, Michigan ||| Birmingham, Michigan
+Birobijan ||| Birobidzhan
 Biržai ||| Biržai
 Bisau ||| Bissau
 Bishkek ||| Bishkek
@@ -4868,6 +4961,7 @@ Black or White ||| Black or White
 Blackburn ||| Blackburn
 Blackpool ||| Blackpool
 Blagnac ||| Blagnac
+Blagoveshchensk ||| Blagoveshchensk
 Blainville, Québec ||| Blainville, Quebec
 Blaise Compaoré ||| Blaise Compaoré
 Blaise Matuidi ||| Blaise Matuidi
@@ -4903,7 +4997,7 @@ Boca Raton, Florida ||| Boca Raton, Florida
 Bocholt ||| Bocholt, Germany
 Bochotnica ||| Bochotnica
 Bochum ||| Bochum
-Boda boda ||| Boda-boda
+Boda boda ||| Boda boda
 Boden, Uswidi ||| Boden, Sweden
 Bodi ya sakiti iliyochapishwa ||| Printed circuit board
 Bodibeng ||| Bodibeng
@@ -4993,6 +5087,7 @@ Bouches-du-Rhône ||| Bouches-du-Rhône
 Boulder, Colorado ||| Boulder, Colorado
 Boulogne-Billancourt ||| Boulogne-Billancourt
 Boulogne-sur-Mer ||| Boulogne-sur-Mer
+Bouna ||| Bouna
 Bourg-en-Bresse ||| Bourg-en-Bresse
 Bourges ||| Bourges
 Bourgogne ||| Burgundy
@@ -5038,6 +5133,7 @@ Branislav Ivanović ||| Branislav Ivanović
 Brantford ||| Brantford
 Brasilia ||| Brasília
 Bratislava ||| Bratislava
+Bratsk ||| Bratsk
 Braunschweig ||| Braunschweig
 Bray ||| Bray, Botswana
 Brazil ||| Brazil
@@ -5100,6 +5196,7 @@ Brookville, New York ||| Brookville, New York
 Brossard, Quebec ||| Brossard
 Brownsville, Texas ||| Brownsville, Texas
 Bruay-la-Buissière ||| Bruay-la-Buissière
+Bruce Beutler ||| Bruce Beutler
 Bruce Joel Rubin ||| Bruce Joel Rubin
 Bruce Lee ||| Bruce Lee
 Bruce Springsteen ||| Bruce Springsteen
@@ -5174,7 +5271,7 @@ Bundi ||| Owl
 Bundi ||| True owl
 Bundi-panga ||| Ninox
 Bundibugyo ||| Bundibugyo
-Bunduki ||| Firearm
+Bunduki ||| Gun
 Bunge la Umoja wa Afrika ||| Pan-African Parliament
 Bunge la jimbo la Illinois ||| Illinois General Assembly
 Bunge ya 10 la Kenya ||| 10th Kenyan Parliament
@@ -5213,6 +5310,7 @@ Bururi ||| Bururi
 Buryatia ||| Buryatia
 Busan ||| Busan
 Busara ||| Prudence
+Busega ||| Busega District
 Bushenyi ||| Bushenyi
 Busi ||| Busi 
 Busia, Kenya ||| Busia, Kenya
@@ -5236,6 +5334,7 @@ Buy U a Drank ||| Buy U a Drank
 Bwabwaja ||| Pratincole
 Bwana wa Mapete ||| The Lord of the Rings
 Bwana ||| Lord
+Bwawa la Malebo ||| Pool Malebo
 Bwawani ||| Bwawani
 Bweha Dhahabu ||| Golden jackal
 Bweha ||| Jackal
@@ -5337,6 +5436,7 @@ Campbell, California ||| Campbell, California
 Campeche ||| Campeche
 Camping ||| Camping
 Campo Grande ||| Campo Grande
+Campobasso ||| Campobasso
 Campora San Giovanni ||| Campora San Giovanni
 Can Tho ||| Cần Thơ
 Can We Chill ||| Can We Chill
@@ -5404,6 +5504,7 @@ Carlow ||| Carlow
 Carlsbad ||| Carlsbad
 Carlsbad, California ||| Carlsbad, California
 Carlstadt, New Jersey ||| Carlstadt, New Jersey
+Carol Greider ||| Carol W. Greider
 Carola Kinasha ||| Carola Kinasha
 Carolina Kusini Gamecocks ||| South Carolina Gamecocks
 Caroline Mutoko ||| Caroline Mutoko
@@ -5437,6 +5538,7 @@ Castries ||| Castries
 Castrop-Rauxel ||| Castrop-Rauxel
 Catandica ||| Catandica
 Catania ||| Catania
+Catanzaro ||| Catanzaro
 Caterina Murino ||| Caterina Murino
 Cathay Pacific ||| Cathay Pacific
 Cathedral City, California ||| Cathedral City, California
@@ -5462,8 +5564,8 @@ Celle ||| Celle
 Cenon ||| Cenon
 Centerpartiet ||| Centre Party 
 Centre Island, New York ||| Centre Island, New York
-Centro Federal de Educação Tecnológica Celso Suckow da Fonseca ||| Centro Federal de Educação Tecnológica Celso Suckow da Fonseca
-Centro Federal de Educação Tecnológica de Minas Gerais ||| Centro Federal de Educação Tecnológica de Minas Gerais
+Centro Federal de Educação Tecnológica Celso Suckow da Fonseca ||| Federal Center for Technological Education of Rio de Janeiro
+Centro Federal de Educação Tecnológica de Minas Gerais ||| Federal Center for Technological Education of Minas Gerais
 Ceres ||| Ceres 
 Cergy ||| Cergy
 Cerritos, California ||| Cerritos, California
@@ -5498,6 +5600,7 @@ Chama cha kikomunisti ||| Communist party
 Chama cha kisiasa ||| Political party
 Chamazi ||| Chamazi
 Chambarak ||| Chambarak
+Chambeshi ||| Chambeshi River
 Chambéry ||| Chambéry
 Chamchanga ||| Tringa
 Chameleone ||| Chameleone
@@ -5525,6 +5628,7 @@ Changes ||| Changes
 Changsha ||| Changsha
 Changwon ||| Changwon
 Chanika ||| Emmie Chanika
+Chanjo ya kipindupindu ||| Cholera vaccine
 Chanjo ya ukambi ||| Measles vaccine
 Channel O ||| Channel O
 Chansella ||| Chancellor
@@ -5535,7 +5639,7 @@ Chapati ||| Chapati
 Chapel Hill, North Carolina ||| Chapel Hill, North Carolina
 Chapeli ||| Chapel
 Charambe ||| Charambe
-Charbel Makhlouf ||| Charbel Makhluf
+Charbel Makhlouf ||| Charbel Makhlouf
 Charente ||| Charente
 Charente-Maritime ||| Charente-Maritime
 Charenton-le-Pont ||| Charenton-le-Pont
@@ -5629,6 +5733,7 @@ Cherehani ||| Sewing machine
 Cherepovets ||| Cherepovets
 Cherero ||| Lovebird
 Cherish ||| Cherish 
+Cherkessk ||| Cherkessk
 Cherry Jones ||| Cherry Jones
 Cheruku ||| Courser
 Chesapeake, Virginia ||| Chesapeake, Virginia
@@ -5714,6 +5819,7 @@ Christian Anfinsen ||| Christian B. Anfinsen
 Christian Finnegan ||| Christian Finnegan
 Christian Lous Lange ||| Christian Lous Lange
 Christian de Duve ||| Christian de Duve
+Christiane Nüsslein-Volhard ||| Christiane Nüsslein-Volhard
 Christina Aguilera ||| Christina Aguilera
 Christina Milian ||| Christina Milian
 Christina Milian ||| Christina Milian 
@@ -5742,6 +5848,7 @@ Chumvi ||| Salt
 Chungcheongbuk-do ||| North Chungcheong Province
 Chungcheongnam-do ||| South Chungcheong Province
 Chungwa ||| Orange 
+Chunusi ||| Acne vulgaris
 Chunya ||| Chunya District
 Chunyu ||| Chunyu 
 Chuo Kikuu Huria cha Tanzania ||| Open University of Tanzania
@@ -5966,6 +6073,7 @@ Cove Neck, New York ||| Cove Neck, New York
 Covina, California ||| Covina, California
 Cradle to the Grave ||| Cradle to the Grave
 Cradock ||| Cradock, Eastern Cape
+Craig Mello ||| Craig Mello
 Cranbury Township, New Jersey ||| Cranbury, New Jersey
 Cranford, New Jersey ||| Cranford, New Jersey
 Cranston, Rhode Island ||| Cranston, Rhode Island
@@ -6055,12 +6163,13 @@ DY ||| Dy
 DZ ||| DZ
 Da Joint ||| Da Joint
 Da Lat ||| Da Lat
-Da Nang ||| Da Nang
+Da Nang ||| Danang
 Daa ||| Daa 
 Dabalo ||| Dabalo
 Dabil ||| Dabil
 Dadaab ||| Dadaab
 Daday ||| Daday
+Dadra na Nagar Haveli ||| Dadra and Nagar Haveli
 Dadu ||| Dice
 Daegu ||| Daegu
 Daejeon ||| Daejeon
@@ -6084,6 +6193,7 @@ Dalmatia ||| Dalmatia
 Dalmatika ||| Dalmatic
 Daly City ||| Daly City, California
 Damal ||| Damal
+Daman na Diu ||| Daman and Diu
 Daman, Uhindi ||| Daman, Daman and Diu
 Damar ||| Damer Island
 Dame ||| Dame 
@@ -6098,6 +6208,7 @@ Damu ||| Blood
 Dan Chupong ||| Dan Chupong
 Dan Jacobson ||| Dan Jacobson
 Dan Mintz ||| Dan Mintz
+Dan Shechtman ||| Dan Shechtman
 Dan ||| Dan 
 Dana Point ||| Dana Point, California
 Dana Snyder ||| Dana Snyder
@@ -6121,7 +6232,6 @@ Daniel Rudisha ||| Daniel Rudisha
 Daniel Tsui ||| Daniel C. Tsui
 Danna Garcia ||| Danna García
 Dannebrog ||| Flag of Denmark
-Danny Jacobs ||| Danny Jacobs 
 Danny McBride ||| Danny McBride
 Danny Teeson ||| Danny Teeson
 Dansi ||| Dance
@@ -6214,6 +6324,7 @@ Dazkırı ||| Dazkırı
 De Beers ||| De Beers
 De La Soul ||| De La Soul
 De Standaard ||| De Standaard
+Dead Can Dance ||| Dead Can Dance
 Deadache ||| Deadache
 Deal, New Jersey ||| Deal, New Jersey
 Dear Mama ||| Dear Mama
@@ -6318,7 +6429,6 @@ Dhambi ya asili ||| Original sin
 Dhambi ||| Sin
 Dhamiri ||| Conscience
 Dhofar ||| Dhofar Governorate
-Dhothar ||| Dhothar
 Dhul Hijjah ||| Dhu al-Hijjah
 Dhuluma ||| Persecution
 Diablada ||| Diablada
@@ -6373,6 +6483,7 @@ Dina ||| Dinah
 Dinar, Afyonkarahisar ||| Dinar , Afyonkarahisar
 Dini asilia za Kiafrika ||| Traditional African religion
 Dini nchini Benin ||| Religion in Benin
+Dini nchini Eritrea ||| Religion in Eritrea
 Dini nchini Kenya ||| Religion in Kenya
 Dini nchini Tanzania ||| Religion in Tanzania
 Dini rasmi ||| State religion
@@ -6396,7 +6507,6 @@ Dira ||| Compass
 Dire Dawa ||| Dire Dawa
 Dirty Diana ||| Dirty Diana
 Discografia ya 50 Cent ||| 50 Cent discography
-Diseli ||| Diesel fuel
 Diskografia ya Tupac Shakur ||| Tupac Shakur discography
 Diskografia ya single na albamu za Spice Girls ||| Spice Girls discography
 Diskografia ya single za Michael Jackson ||| Michael Jackson singles discography
@@ -6407,9 +6517,11 @@ Dispur ||| Dispur
 Distractions ||| Distractions 
 Ditshegwane ||| Ditshegwane
 Divai ||| Wine
+Divo ||| Divo
 Divriği ||| Divriği
 Diyadin ||| Diyadin
 Diyarbakır ||| Diyarbakır
+Dizeli ||| Diesel fuel
 Dizzy Gillespie ||| Dizzy Gillespie
 Djemila ||| Djémila
 Djimon Hounsou ||| Djimon Hounsou
@@ -6454,6 +6566,7 @@ Dominica ||| Dominica
 Dominiko Ibáñez de Erquicia ||| Domingo Ibáñez de Erquicia
 Dominiko Savio ||| Dominic Savio
 Dominiko wa Guzman ||| Saint Dominic
+Dominique Pire ||| Dominique Pire
 Domitian ||| Domitian
 Domobuluu ||| Bluebill
 Domofupi ||| Tit 
@@ -6507,6 +6620,7 @@ Dovedale ||| Dovedale, Botswana
 Dover ||| Dover 
 Dover, Delaware ||| Dover, Delaware
 Dover, Massachusetts ||| Dover, Massachusetts
+Down Low ||| Down Low 
 Downey, California ||| Downey, California
 Doğanhisar ||| Doğanhisar
 Doğankent ||| Doğankent
@@ -6551,6 +6665,7 @@ Dubu barafu ||| Polar bear
 Dubu ||| Bear
 Dubwana-Gila ||| Gila monster
 Dudelange ||| Dudelange
+Dudinka ||| Dudinka
 Dudley Herschbach ||| Dudley R. Herschbach
 Dudley ||| Dudley
 Dudumizi ||| Coucal
@@ -6589,6 +6704,7 @@ Duxbury, Massachusetts ||| Duxbury, Massachusetts
 Dwight D. Eisenhower ||| Dwight D. Eisenhower
 Dynamite Warrior ||| Dynamite Warrior
 Dzaoudzi ||| Dzaoudzi
+Dzerzhinsk ||| Dzerzhinsk, Russia
 Dzeta ||| Zeta
 Décines-Charpieu ||| Décines-Charpieu
 Dörtdivan ||| Dörtdivan
@@ -6691,6 +6807,7 @@ Edison, New Jersey ||| Edison, New Jersey
 Edith Masai ||| Edith Masai
 Edith Stein ||| Edith Stein
 Edmond Debeaumarché ||| Edmond Debeaumarché
+Edmond Fischer ||| Edmond H. Fischer
 Edmonton ||| Edmonton
 Edmund Barton ||| Edmund Barton
 Edmund Hillary ||| Edmund Hillary
@@ -6700,6 +6817,7 @@ Edremit , Van ||| Edremit, Van
 Eduard Buchner ||| Eduard Buchner
 Eduardo Duhalde ||| Eduardo Duhalde
 Edvard Grieg ||| Edvard Grieg
+Edvard Moser ||| Edvard Moser
 Edvard Munch ||| Edvard Munch
 Edward Albee ||| Edward Albee
 Edward Appleton ||| Edward Victor Appleton
@@ -6708,14 +6826,16 @@ Edward Cummings ||| E. E. Cummings
 Edward Doisy ||| Edward Adelbert Doisy
 Edward Elgar ||| Edward Elgar
 Edward Kendall ||| Edward Calvin Kendall
+Edward Lewis ||| Edward B. Lewis
 Edward Moss ||| Edward Moss 
 Edward Muungamaji ||| Edward the Confessor
 Edward Ngoyai Lowassa ||| Edward Lowassa
 Edward Norton ||| Edward Norton
 Edward Purcell ||| Edward Mills Purcell
 Edward Sokoine ||| Edward Sokoine
-Edward Tatum ||| Edward Lawrie Tatum
+Edward Tatum ||| Edward Tatum
 Edward Tingatinga ||| Edward Tingatinga
+Edwin Krebs ||| Edwin G. Krebs
 Edwin McMillan ||| Edwin McMillan
 Ee Mungu Nguvu Yetu ||| Ee Mungu Nguvu Yetu
 Eenhana ||| Eenhana
@@ -6727,8 +6847,10 @@ Efrem wa Syria ||| Ephrem the Syrian
 Eger ||| Eger
 Egida ||| Aegis
 Egidi Maria wa Mt. Yosefu ||| Egidio Maria of Saint Joseph
+Egidi mkaapweke ||| Saint Giles
 Egidi wa Asizi ||| Giles of Assisi
 Egwale Seyon ||| Egwale Seyon
+Ei-ichi Negishi ||| Ei-ichi Negishi
 Einar Gerhardsen ||| Einar Gerhardsen
 Eindhoven ||| Eindhoven
 Einigkeit und Recht und Freiheit ||| Deutschlandlied
@@ -6741,6 +6863,7 @@ Ekinokokasi ||| Echinococcosis
 Ekinözü ||| Ekinözü
 Eklampsia ||| Eclampsia
 Ekolojia ||| Ecology
+Ekseli ||| Axle
 Ekuador ||| Ecuador
 Ekumeni ||| Ecumenism
 Ekurhuleni ||| Ekurhuleni Metropolitan Municipality
@@ -6759,6 +6882,7 @@ Elazığ ||| Elazığ
 Elbe ||| Elbe
 Elbeyli ||| Elbeyli
 Elbistan ||| Elbistan
+Elbrus ||| Mount Elbrus
 Eldama Ravine ||| Eldama Ravine
 Eldivan ||| Eldivan
 Eldoret ||| Eldoret
@@ -6791,19 +6915,23 @@ Elimu nchini Kenya ||| Education in Kenya
 Elimu ya Ghana ||| Education in Ghana
 Elimu ya visasili ||| Mythology
 Elimu ||| Education
-Elimumitindo ||| Stylistics 
+Elimumitindo ||| Stylistics
 Elimunafsia ||| Psychology
 Elisabeth Eybers ||| Elisabeth Eybers
 Elisha Cuthbert ||| Elisha Cuthbert
 Elisha ||| Elisha
+Elista ||| Elista
 Eliye Springs ||| Eliye Springs
 Eliza Dushku ||| Eliza Dushku
 Elizabeth Ann Seton ||| Elizabeth Ann Seton
+Elizabeth Blackburn ||| Elizabeth Blackburn
 Elizabeth I wa Uingereza ||| Elizabeth I of England
 Elizabeth II wa Uingereza ||| Elizabeth II
+Elizabeth Michael ||| Elizabeth Michael
 Elizabeth Nkunda Batenga ||| Elizabeth Nkunda Batenga
 Elizabeth, New Jersey ||| Elizabeth, New Jersey
 Elizabeti wa Hungaria ||| Elizabeth of Hungary
+Elizabeti wa Schonau ||| Elisabeth of Schönau
 Elizabeti wa Ureno ||| Elizabeth of Aragon
 Elizabeti ||| Elizabeth
 Elizabeti ||| Elizabeth 
@@ -6844,7 +6972,6 @@ Emil Theodor Kocher ||| Emil Theodor Kocher
 Emil von Behring ||| Emil von Behring
 Emilia wa Vialar ||| Emily de Vialar
 Emilia-Romagna ||| Emilia-Romagna
-Emilio Polli ||| Emilio Polli
 Emilio Segre ||| Emilio Segrè
 Emily Balch ||| Emily Greene Balch
 Emin Pasha ||| Emin Pasha
@@ -6861,6 +6988,7 @@ Emmanuel Adebayor ||| Emmanuel Adebayor
 Emmanuel Ake ||| Emmanuel Ake
 Emmanuel John Nchimbi ||| Emmanuel Nchimbi
 Emmen, Drenthe ||| Emmen, Netherlands
+Emmett Till ||| Emmett Till
 Emmy ||| Emmy Award
 Emotions ||| Emotions 
 Enameli ya jino ||| Tooth enamel
@@ -6900,7 +7028,7 @@ Eneo la Kusini, Eritrea ||| Southern Region
 Eneo la Uingereza katika Bahari Hindi ||| British Indian Ocean Territory
 Eneo la kudhaminiwa ||| United Nations Trust Territories
 Eneo la ng'ambo la Marekani ||| Insular area
-Eneo la ng'ambo la Ufaransa ||| Overseas departments and territories of France
+Eneo la ng'ambo la Ufaransa ||| French overseas departments and territories
 Eneo la ng'ambo la Uingereza ||| British Overseas Territories
 Eneo la uchaguzi la Bonchari ||| Bonchari Constituency
 Eneo ya Kati, Eritrea ||| Central Region 
@@ -6947,9 +7075,12 @@ Erfelek ||| Erfelek
 Erfurt ||| Erfurt
 Ergani ||| Ergani
 Eric Balfour ||| Eric Balfour
+Eric Betzig ||| Eric Betzig
 Eric Cornell ||| Eric Allin Cornell
 Eric Freeman ||| Eric Freeman 
+Eric Kandel ||| Eric Kandel
 Eric Wainaina ||| Eric Wainaina 
+Eric Wieschaus ||| Eric F. Wieschaus
 Erick Keter ||| Erick Keter
 Erie ||| Erie 
 Erie ||| Lake Erie
@@ -7127,12 +7258,14 @@ Falme Tatu za Korea ||| Three Kingdoms of Korea
 Falme za Kiarabu ||| United Arab Emirates
 Falmouth ||| Falmouth
 Falmouth, Massachusetts ||| Falmouth, Massachusetts
+Falsafa ya dini ||| Philosophy of religion
 Falsafa ||| Philosophy
 Falun ||| Falun
 Familia ||| Family
 Familia ||| Family 
 Fangatau ||| Fangatau
 Fangataufa ||| Fangataufa
+Fani ||| Elements of art
 Fanwood, New Jersey ||| Fanwood, New Jersey
 Farah Khan ||| Farah Khan
 Farakano la Donato ||| Donatism
@@ -7192,6 +7325,7 @@ Ferdinand Braun ||| Karl Ferdinand Braun
 Ferdinand Magellan ||| Ferdinand Magellan
 Ferdinand-Edouard Buisson ||| Ferdinand Buisson
 Feri ||| Ferry
+Ferid Murad ||| Ferid Murad
 Ferizli ||| Ferizli
 Fernando Alonso ||| Fernando Alonso
 Fernando Sancho ||| Fernando Sancho
@@ -7218,6 +7352,7 @@ Filemoni ||| Philemon
 Filimbi ||| Flute
 Filioque ||| Filioque
 Filipi ||| Philippi
+Filipo II wa Hispania ||| Philip II of Spain
 Filipo Neri ||| Philip Neri
 Filipo mwinjilisti ||| Philip the Evangelist
 Filipo wa Yesu ||| Philip of Jesus
@@ -7306,6 +7441,7 @@ Fountain Valley, California ||| Fountain Valley, California
 Four Months Ago... ||| Four Months Ago...
 Four Months Later... ||| Four Months Later...
 Foxborough, Massachusetts ||| Foxborough, Massachusetts
+Foxy Brown ||| Foxy Brown 
 Foça ||| Foça
 Framingham, Massachusetts ||| Framingham, Massachusetts
 France 24 ||| France 24
@@ -7347,6 +7483,7 @@ Fransi ||| Francium
 Fransis Bacon ||| Francis Bacon
 Fransiska wa Roma ||| Frances of Rome
 Fransisko Antoni Fasani ||| Francis Fasani
+Fransisko Caracciolo ||| Francis Caracciolo
 Fransisko Maria wa Camporosso ||| Francis Mary of Camporosso
 Fransisko Saveri ||| Francis Xavier
 Fransisko Solano ||| Francis Solanus
@@ -7361,7 +7498,9 @@ Franz Kafka ||| Franz Kafka
 Franz Lambert ||| Franz Lambert
 Franz Liszt ||| Franz Liszt
 Franz Schubert ||| Franz Schubert
+François Asselineau ||| François Asselineau
 François Mauriac ||| François Mauriac
+Françoise Barré-Sinoussi ||| Françoise Barré-Sinoussi
 Frati ||| Euphrates
 Fred Tatasciore ||| Fred Tatasciore
 Freddie Mercury ||| Freddie Mercury
@@ -7442,7 +7581,9 @@ Fungo-miti wa Afrika ||| African palm civet
 Fungu ||| Celosia argentea
 Fungunyota ||| Star cluster
 Funguvisiwa ya Britania ||| British Isles
+Funguvisiwa ya Franz Josef ||| Franz Josef Land
 Funguvisiwa ||| Archipelago
+Fur Elise ||| Für Elise
 Furukombe wa Afrika ||| African fish eagle
 Furukombe ||| Sea eagle
 Futa Djalon ||| Fouta Djallon
@@ -7458,7 +7599,7 @@ G ||| G
 G-Unit ||| G-Unit
 G.O.A.T. ||| G.O.A.T.
 G7 ||| Group of Seven 
-G8 ||| Group of Eight 
+G8 ||| Group of Eight
 GA ||| GA
 GB ||| GB
 GC ||| GC
@@ -7562,11 +7703,14 @@ Gargždai ||| Gargždai
 Gari la Nyayo ||| Nyayo Car
 Garissa ||| Garissa
 Garland, Texas ||| Garland, Texas
+Garry Marshall ||| Garry Marshall
 Garwood, New Jersey ||| Garwood, New Jersey
 Gary Oldman ||| Gary Oldman
 Gary, Indiana ||| Gary, Indiana
 Gaspard Musabyimana ||| Gaspard Musabyimana
+Gaspare Bertoni ||| Gaspare Bertoni
 Gastroenteritis ||| Gastroenteritis
+Gatchina ||| Gatchina
 Gatineau, Québec ||| Gatineau
 Gatundu ||| Gatundu
 Gatuyaini ||| Gatuyaini
@@ -7623,7 +7767,7 @@ Georg Wilhelm Friedrich Hegel ||| Georg Wilhelm Friedrich Hegel
 Georg Wittig ||| Georg Wittig
 Georg von Bekesy ||| Georg von Békésy
 Georg von Hevesy ||| George de Hevesy
-George Beadle ||| George Wells Beadle
+George Beadle ||| George Beadle
 George Berkeley ||| George Berkeley
 George Bernard Shaw ||| George Bernard Shaw
 George Boniface Simbachawene ||| George Simbachawene
@@ -7733,7 +7877,7 @@ Gideoni ||| Gideon
 Gießen ||| Giessen
 Gif-sur-Yvette ||| Gif-sur-Yvette
 Gifu ||| Gifu
-Gifu, Gifu ||| Gifu City
+Gifu, Gifu ||| Gifu
 Gikambura ||| Gikambura
 Gilbert Gottfried ||| Gilbert Gottfried
 Gilbert ||| Gilbert
@@ -7848,6 +7992,7 @@ Gordy ||| Gordy
 Goregore ||| Phoeniculus
 Gorilla Zoe ||| Gorilla Zoe
 Goris ||| Goris
+Gorno-Altaysk ||| Gorno-Altaysk
 Gorée ||| Gorée
 Gosbert Begumisa Blandes ||| Gosbert Blandes
 Goshwe ||| Goshwe
@@ -7883,7 +8028,7 @@ Grand Prairie, Texas ||| Grand Prairie, Texas
 Grande-Synthe ||| Grande-Synthe
 Grandmaster Flash and the Furious Five ||| Grandmaster Flash and the Furious Five
 Grasse ||| Grasse
-Graubünden ||| Graubünden
+Graubünden ||| Grisons
 Graveson ||| Graveson
 Gravissimum Educationis ||| Gravissimum educationis
 Graviti ||| Gravity
@@ -7936,6 +8081,7 @@ Grosse Pointe ||| Grosse Pointe
 Grosse Pointe, Michigan ||| Grosse Pointe, Michigan
 Groton, Massachusetts ||| Groton, Massachusetts
 Grover Cleveland ||| Grover Cleveland
+Grozniy ||| Grozny
 Groß-Gerau ||| Groß-Gerau
 Groß-Umstadt ||| Groß-Umstadt
 Guadalajara, Jalisco ||| Guadalajara
@@ -8043,6 +8189,7 @@ Güney ||| Güney
 Güneysu ||| Güneysu
 Güneysınır ||| Güneysınır
 Güngören ||| Güngören
+Günter Blobel ||| Günter Blobel
 Günter Grass ||| Günter Grass
 Günyüzü ||| Günyüzü
 Gürgentepe ||| Gürgentepe
@@ -8072,6 +8219,7 @@ HK ||| HK
 HL ||| HL
 HM ||| HM
 HMS Antelope ||| HMS Antelope 
+HMS Birkenhead ||| HMS Birkenhead 
 HN ||| HN
 HO ||| Ho
 HP ||| HP
@@ -8125,11 +8273,11 @@ Haji Juma Sereweji ||| Haji Sereweji
 Haji Mwita Haji ||| Haji Mwita Haji
 Hajivale ||| Polyboroides
 Hajj ||| Hajj
-Hakasia ||| Khakassia
 Haki za binadamu nchini Uganda ||| Human rights in Uganda
 Haki za binadamu ||| Human rights
 Haki za kibinadamu nchini Kenya ||| Human rights in Kenya
 Haki ||| Justice
+Hakimu ||| Judge
 Hakkâri ||| Hakkâri
 Hakuna Starehe Tena ||| No Longer at Ease
 Hal Holbrook ||| Hal Holbrook
@@ -8186,6 +8334,7 @@ Hananasif ||| Hananasif
 Hanau ||| Hanau
 Handali ||| Handali
 Hande Yener ||| Hande Yener
+Handeni ||| Handeni
 Haneti ||| Haneti
 Hangul ||| Hangul
 Hani, Turkey ||| Hani, Turkey
@@ -8207,12 +8356,14 @@ Hans Spemann ||| Hans Spemann
 Hans von Euler-Chelpin ||| Hans von Euler-Chelpin
 Hanse ||| Hanseatic League
 Hanson, Massachusetts ||| Hanson, Massachusetts
+Hanty-Mansiysk ||| Khanty-Mansiysk
 Hanönü ||| Hanönü
 Hao ||| Hao 
 Happy ||| Happy 
 Har Khorana ||| Har Gobind Khorana
 Haraiki ||| Haraiki
 Harald V wa Norwei ||| Harald V of Norway
+Harald zur Hausen ||| Harald zur Hausen
 Haramia ||| Piracy
 Harar ||| Harar
 Harare ||| Harare
@@ -8259,10 +8410,13 @@ Hassan Chande Kigwalilo ||| Hassan Chande Kigwalilo
 Hassan Rajab Khatib ||| Hassan Rajab Khatib
 Hasselt ||| Hasselt
 Hate That I Love You ||| Hate That I Love You
+Hati ya Milano ||| Edict of Milan
+Hati ya Thesalonike ||| Edict of Thessalonica
 Hatsalatladi ||| Hatsalatladi
 Hattersheim am Main ||| Hattersheim am Main
 Hattiesburg, Mississippi ||| Hattiesburg, Mississippi
 Haubi ||| Haubi
+Haumea ||| Haumea
 Haut-Rhin ||| Haut-Rhin
 Haute Matsiatra ||| Haute Matsiatra
 Haute-Corse ||| Haute-Corse
@@ -8327,6 +8481,7 @@ Hekaya ya Genji ||| The Tale of Genji
 Hekaya ||| Short story
 Hekima ||| Wisdom
 Hekimhan ||| Hekimhan
+Hekla ||| Hekla
 Hektari ||| Hectare
 Hela ||| Heller 
 Helen Keller ||| Helen Keller
@@ -8453,6 +8608,7 @@ Hideki Shirakawa ||| Hideki Shirakawa
 Hideki Yukawa ||| Hideki Yukawa
 Hidetoshi Nakata ||| Hidetoshi Nakata
 Hidrati kabonia ||| Carbohydrate
+Hidrografia ||| Hydrography
 Hidrojeni ||| Hydrogen
 Hidrokaboni ||| Hydrocarbon
 Hierapoli ||| Hierapolis
@@ -8462,6 +8618,7 @@ Hifadhi ya Kitulo ||| Kitulo National Park
 Hifadhi ya Mikumi ||| Mikumi National Park
 Hifadhi ya Mkomazi ||| Mkomazi National Park
 Hifadhi ya Mlima Kilimanjaro ||| Kilimanjaro National Park
+Hifadhi ya Ngorongoro ||| Ngorongoro Conservation Area
 Hifadhi ya Ruaha ||| Ruaha National Park
 Hifadhi ya Serengeti ||| Serengeti National Park
 Hifadhi ya Taifa ya Hell's Gate ||| Hell's Gate National Park
@@ -8518,12 +8675,16 @@ Hisia ||| Emotion
 Hispania Mpya ||| New Spain
 Hispania ||| Spain
 Hispaniola ||| Hispaniola
+Historia Kuu ya Afrika ||| General History of Africa
 Historia andishi ||| Recorded history
 Historia ya Afrika Kusini ||| History of South Africa
 Historia ya Afrika ||| History of Africa
 Historia ya Algeria ||| History of Algeria
 Historia ya Angola ||| History of Angola
+Historia ya Austria ||| History of Austria
+Historia ya Belarus ||| History of Belarus
 Historia ya Benin ||| History of Benin
+Historia ya Bosnia na Herzegovina ||| History of Bosnia and Herzegovina
 Historia ya Botswana ||| History of Botswana
 Historia ya Burkina Faso ||| History of Burkina Faso
 Historia ya Burundi ||| History of Burundi
@@ -8532,6 +8693,7 @@ Historia ya Chad ||| History of Chad
 Historia ya Cote d'Ivoire ||| History of Ivory Coast
 Historia ya Denmark ||| History of Denmark
 Historia ya Eritrea ||| History of Eritrea
+Historia ya Estonia ||| History of Estonia
 Historia ya Ethiopia ||| History of Ethiopia
 Historia ya Gabon ||| History of Gabon
 Historia ya Gambia ||| History of the Gambia
@@ -8539,6 +8701,7 @@ Historia ya Ghana ||| History of Ghana
 Historia ya Guinea ya Ikweta ||| History of Equatorial Guinea
 Historia ya Guinea ||| History of Guinea
 Historia ya Guinea-Bissau ||| History of Guinea-Bissau
+Historia ya Hispania ||| History of Spain
 Historia ya Intaneti ||| History of the Internet
 Historia ya Jamhuri ya Afrika ya Kati ||| History of the Central African Republic
 Historia ya Jamhuri ya Kidemokrasia ya Kongo ||| History of the Democratic Republic of the Congo
@@ -8549,9 +8712,11 @@ Historia ya Kanisa Katoliki ||| History of the Catholic Church
 Historia ya Kanisa ||| History of Christianity
 Historia ya Kenya ||| History of Kenya
 Historia ya Komori ||| History of the Comoros
+Historia ya Latvia ||| History of Latvia
 Historia ya Lesotho ||| History of Lesotho
 Historia ya Liberia ||| History of Liberia
 Historia ya Libya ||| History of Libya
+Historia ya Lithuania ||| History of Lithuania
 Historia ya Madagaska ||| History of Madagascar
 Historia ya Malawi ||| History of Malawi
 Historia ya Mali ||| History of Mali
@@ -8560,6 +8725,7 @@ Historia ya Misri ||| History of Egypt
 Historia ya Morisi ||| History of Mauritius
 Historia ya Moroko ||| History of Morocco
 Historia ya Msumbiji ||| History of Mozambique
+Historia ya Nairobi ||| History of Nairobi
 Historia ya Namibia ||| History of Namibia
 Historia ya Niger ||| History of Niger
 Historia ya Nigeria ||| History of Nigeria
@@ -8576,6 +8742,7 @@ Historia ya Togo ||| History of Togo
 Historia ya Tunisia ||| History of Tunisia
 Historia ya Uganda ||| History of Uganda
 Historia ya Uislamu ||| Timeline of Islamic history
+Historia ya Urusi ||| History of Russia
 Historia ya Uswazi ||| History of Swaziland
 Historia ya Utawa ||| History of Christianity
 Historia ya Wokovu ||| Salvation History
@@ -8623,7 +8790,7 @@ Homa ||| Fever
 Homanyongo C ||| Hepatitis C
 Homanyongo ||| Hepatitis
 Hombolo ||| Hombolo
-Homburg ||| Homburg, Saarland
+Homburg ||| Homburg 
 Home for Christmas ||| Home for Christmas 
 Home on the Range ||| Home on the Range 
 Homecoming ||| Homecoming 
@@ -8658,7 +8825,7 @@ Hosea ||| Hosea
 Hosjoe, Falun ||| Hosjö, Falun
 Hosni Mubarak ||| Hosni Mubarak
 Hospitali ya Mafunzo na Marejereo ya Moi ||| Moi Teaching and Referral Hospital
-Hospitali ya Nairobi ||| Nairobi Hospital
+Hospitali ya Nairobi ||| The Nairobi Hospital
 Hospitali ya Taifa ya Kenyatta ||| Kenyatta National Hospital
 Hospitali ||| Hospital
 Hot R&B/Hip-Hop Songs ||| Hot R&B/Hip-Hop Songs
@@ -8867,6 +9034,7 @@ Igandu ||| Igandu
 Iganga ||| Iganga
 Iganjo ||| Iganjo
 Iganzo ||| Iganzo
+Igarka ||| Igarka
 Igawilo ||| Igawilo
 Ignas wa Antiokia ||| Ignatius of Antioch
 Ignas wa Laconi ||| Ignatius of Laconi
@@ -8898,7 +9066,7 @@ Ikongwe ||| Ikongwe
 Ikowa ||| Ikowa
 Ikuka ||| Ikuna
 Ikukwa ||| Ikukwa
-Ikulu ya Tanzania ||| State House
+Ikulu ya Tanzania ||| Ikulu
 Ikungi ||| Ikungi
 Ikuti ||| Ikuti
 Ikweta ||| Equator
@@ -8957,7 +9125,7 @@ Indre ||| Indre
 Indre-et-Loire ||| Indre-et-Loire
 Indus ||| Indus River
 Industry ||| Industry 
-Industry, California ||| Industry, California
+Industry, California ||| City of Industry, California
 Infraredi ||| Infrared
 Ingeborg Schwenzer ||| Ingeborg Schwenzer
 Ingelheim am Rhein ||| Ingelheim am Rhein
@@ -9029,6 +9197,7 @@ Irisya ||| Irisya
 Irkutsk Oblast ||| Irkutsk Oblast
 Irkutsk ||| Irkutsk
 Iron Flag ||| Iron Flag
+Irtysh ||| Irtysh River
 Irvine, California ||| Irvine, California
 Irving Langmuir ||| Irving Langmuir
 Irving ||| Irving
@@ -9080,6 +9249,7 @@ Isotopi ||| Isotope
 Isparta ||| Isparta
 Israel ||| Israel
 Israeli ya Kale ||| History of ancient Israel and Judah
+Israeli ||| Israel 
 Issa G. Shivji ||| Issa G. Shivji
 Issa Kassim Issa ||| Issa Kassim Issa
 Isseke ||| Isseke
@@ -9187,6 +9357,7 @@ Jack Elam ||| Jack Elam
 Jack Kilby ||| Jack Kilby
 Jack Nicholson ||| Jack Nicholson
 Jack Steinberger ||| Jack Steinberger
+Jack Szostak ||| Jack W. Szostak
 Jack Wilshere ||| Jack Wilshere
 Jackie Aygemang ||| Jackie Appiah
 Jackie Gleason ||| Jackie Gleason
@@ -9229,7 +9400,7 @@ James Gould Cozzens ||| James Gould Cozzens
 James Heller ||| James Heller
 James Joyce ||| James Joyce
 James K. Polk ||| James K. Polk
-James Kirkwood ||| James Kirkwood, Jr.
+James Kirkwood ||| James Kirkwood Jr.
 James Madison ||| James Madison
 James Matthews ||| James Matthews 
 James Michener ||| James A. Michener
@@ -9242,6 +9413,7 @@ James Patrick Stuart ||| James Patrick Stuart
 James Prescott Joule ||| James Prescott Joule
 James Rainwater ||| James Rainwater
 James Reston ||| James Reston
+James Rothman ||| James Rothman
 James Siang'a ||| James Siang'a
 James Sie ||| James Sie
 James Sumner ||| James B. Sumner
@@ -9253,6 +9425,7 @@ Jamestown ||| Jamestown, Saint Helena
 Jamestown ||| Jamestown/Usshertown, Accra
 Jamestown, New York ||| Jamestown, New York
 Jamhuri ya Afrika ya Kati ||| Central African Republic
+Jamhuri ya Altai ||| Altai Republic
 Jamhuri ya Bou Regreg ||| Republic of Salé
 Jamhuri ya China ||| Taiwan
 Jamhuri ya Dominika ||| Dominican Republic
@@ -9263,6 +9436,7 @@ Jamhuri ya Kisovyeti ya Kijamii ya Kikazakhi ||| Kazakh Soviet Socialist Republi
 Jamhuri ya Kisovyeti ya Kijamii ya Kikirgizi ||| Kirghiz Soviet Socialist Republic
 Jamhuri ya Kisovyeti ya Kijamii ya Kimoldova ||| Moldavian Soviet Socialist Republic
 Jamhuri ya Kituruki ya Kupro ya Kaskazini ||| Northern Cyprus
+Jamhuri ya Komi ||| Komi Republic
 Jamhuri ya Kongo ||| Republic of the Congo
 Jamhuri ya Krim ||| Republic of Crimea
 Jamhuri ya Masedonia ||| Republic of Macedonia
@@ -9302,6 +9476,7 @@ January Makamba ||| January Makamba
 Japani ||| Japan
 Japhet N'Doram ||| Japhet N'Doram
 Jaramogi Oginga Odinga ||| Jaramogi Oginga Odinga
+Jaribio ||| Experiment
 Jaroslav Heyrovsky ||| Jaroslav Heyrovský
 Jaroslav Seifert ||| Jaroslav Seifert
 Jason Bateman ||| Jason Bateman
@@ -9398,7 +9573,7 @@ Jibuti ||| Djibouti
 Jibuti ||| Djibouti 
 Jicho ||| Eye
 Jieyang ||| Jieyang
-Jigawa ||| Jigawa
+Jigawa ||| Jigawa State
 Jihadi ya Kiislamu ya Misri ||| Egyptian Islamic Jihad
 Jihadi ||| Jihad
 Jiji la Kuwait ||| Kuwait City
@@ -9452,6 +9627,7 @@ Jimbo Katoliki la Lodi ||| Roman Catholic Diocese of Lodi
 Jimbo Katoliki la Lodwar ||| Roman Catholic Diocese of Lodwar
 Jimbo Katoliki la Lugazi ||| Roman Catholic Diocese of Lugazi
 Jimbo Katoliki la Machakos ||| Roman Catholic Diocese of Machakos
+Jimbo Katoliki la Malakal ||| Roman Catholic Diocese of Malakal
 Jimbo Katoliki la Malindi ||| Roman Catholic Diocese of Malindi
 Jimbo Katoliki la Maralal ||| Roman Catholic Diocese of Maralal
 Jimbo Katoliki la Marsabit ||| Roman Catholic Diocese of Marsabit
@@ -9477,13 +9653,18 @@ Jimbo Katoliki la Nyahururu ||| Roman Catholic Diocese of Nyahururu
 Jimbo Katoliki la Nyundo ||| Roman Catholic Diocese of Nyundo
 Jimbo Katoliki la Ruhengeri ||| Roman Catholic Diocese of Ruhengeri
 Jimbo Katoliki la Rulenge-Ngara ||| Roman Catholic Diocese of Rulenge-Ngara
+Jimbo Katoliki la Rumbek ||| Roman Catholic Diocese of Rumbek
 Jimbo Katoliki la Ruyigi ||| Roman Catholic Diocese of Ruyigi
 Jimbo Katoliki la Same ||| Roman Catholic Diocese of Same
 Jimbo Katoliki la Shinyanga ||| Roman Catholic Diocese of Shinyanga
 Jimbo Katoliki la Singida ||| Roman Catholic Diocese of Singida
 Jimbo Katoliki la Soroti ||| Roman Catholic Diocese of Soroti
 Jimbo Katoliki la Sumbawanga ||| Roman Catholic Diocese of Sumbawanga
+Jimbo Katoliki la Tombura-Yambio ||| Roman Catholic Diocese of Tombura-Yambio
+Jimbo Katoliki la Torit ||| Roman Catholic Diocese of Torit
 Jimbo Katoliki la Tunduru-Masasi ||| Roman Catholic Diocese of Tunduru-Masasi
+Jimbo Katoliki la Wau ||| Roman Catholic Diocese of Wau
+Jimbo Katoliki la Yei ||| Roman Catholic Diocese of Yei
 Jimbo Katoliki la Zanzibar ||| Roman Catholic Diocese of Zanzibar
 Jimbo Kuu la Arusha ||| Roman Catholic Archdiocese of Arusha
 Jimbo Kuu la Bujumbura ||| Roman Catholic Archdiocese of Bujumbura
@@ -9491,6 +9672,7 @@ Jimbo Kuu la Dar-es-Salaam ||| Roman Catholic Archdiocese of Dar-es-Salaam
 Jimbo Kuu la Dodoma ||| Roman Catholic Archdiocese of Dodoma
 Jimbo Kuu la Gitega ||| Roman Catholic Archdiocese of Gitega
 Jimbo Kuu la Gulu ||| Roman Catholic Archdiocese of Gulu
+Jimbo Kuu la Juba ||| Roman Catholic Archdiocese of Juba
 Jimbo Kuu la Kampala ||| Roman Catholic Archdiocese of Kampala
 Jimbo Kuu la Kigali ||| Roman Catholic Archdiocese of Kigali
 Jimbo Kuu la Kisumu ||| Roman Catholic Archdiocese of Kisumu
@@ -9508,19 +9690,19 @@ Jimbo kuu la Songea ||| Roman Catholic Archdiocese of Songea
 Jimbo la Adrar ||| Adrar Province
 Jimbo la Afar ||| Afar Region
 Jimbo la Amhara ||| Amhara Region
-Jimbo la Anambra ||| Anambra
+Jimbo la Anambra ||| Anambra State
 Jimbo la Basel ||| Basel-Landschaft
 Jimbo la Batna ||| Batna Province
 Jimbo la Bauchi ||| Bauchi State
-Jimbo la Bayelsa ||| Bayelsa
+Jimbo la Bayelsa ||| Bayelsa State
 Jimbo la Benishangul-Gumuz ||| Benishangul-Gumuz Region
-Jimbo la Benue ||| Benué 
+Jimbo la Benue ||| Benue State
 Jimbo la Bern ||| Canton of Bern
 Jimbo la Chlef ||| Chlef Province
-Jimbo la Cross River ||| Cross River 
-Jimbo la Ebonyi ||| Ebonyi
-Jimbo la Edo ||| Edo 
-Jimbo la Ekiti ||| Ekiti
+Jimbo la Cross River ||| Cross River State
+Jimbo la Ebonyi ||| Ebonyi State
+Jimbo la Edo ||| Edo State
+Jimbo la Ekiti ||| Ekiti State
 Jimbo la Enugu ||| Enugu State
 Jimbo la Fribourg ||| Canton of Fribourg
 Jimbo la Gambela ||| Gambela Region
@@ -9529,23 +9711,23 @@ Jimbo la Glarus ||| Canton of Glarus
 Jimbo la Gombe ||| Gombe State
 Jimbo la Harar ||| Harari Region
 Jimbo la Illizi ||| Illizi Province
-Jimbo la Imo ||| Imo 
+Jimbo la Imo ||| Imo State
 Jimbo la Jura ||| Canton of Jura
 Jimbo la Kiroma ||| Roman province
 Jimbo la Laghouat ||| Laghouat Province
 Jimbo la Lagos ||| Lagos State
 Jimbo la Lucerne ||| Canton of Lucerne
 Jimbo la Mataifa ya Kusini, Ethiopia ||| Southern Nations, Nationalities, and Peoples' Region
-Jimbo la Nasarawa ||| Nasarawa
+Jimbo la Nasarawa ||| Nasarawa State
 Jimbo la Neuchâtel ||| Canton of Neuchâtel
 Jimbo la Niger ||| Niger State
 Jimbo la Nile ya Juu, Sudan ||| Upper Nile 
-Jimbo la Ogun ||| Ogun 
+Jimbo la Ogun ||| Ogun State
 Jimbo la Ondo ||| Ondo State
 Jimbo la Oromia ||| Oromia Region
-Jimbo la Osun ||| Osun 
+Jimbo la Osun ||| Osun State
 Jimbo la Oyo ||| Oyo State
-Jimbo la Plateau ||| Plateau 
+Jimbo la Plateau ||| Plateau State
 Jimbo la Rasi ||| Cape Province
 Jimbo la Schaffhausen ||| Canton of Schaffhausen
 Jimbo la Schwyz ||| Canton of Schwyz
@@ -9554,7 +9736,7 @@ Jimbo la Solothurn ||| Canton of Solothurn
 Jimbo la Somali ||| Somali Region
 Jimbo la St. Gallen ||| Canton of St. Gallen
 Jimbo la São Paulo ||| São Paulo 
-Jimbo la Taraba ||| Taraba 
+Jimbo la Taraba ||| Taraba State
 Jimbo la Tigray ||| Tigray Region
 Jimbo la Uchaguzi la Aldai ||| Aldai Constituency
 Jimbo la Uchaguzi la Alego ||| Alego Constituency
@@ -9647,8 +9829,8 @@ Jimbo la Uchaguzi la Ugenya ||| Ugenya Constituency
 Jimbo la Uchaguzi la Webuye ||| Webuye Constituency
 Jimbo la Uchaguzi la Yatta ||| Yatta Constituency
 Jimbo la Uri ||| Canton of Uri
-Jimbo la Yobe ||| Yobe
-Jimbo la Zamfara ||| Zamfara
+Jimbo la Yobe ||| Yobe State
+Jimbo la Zamfara ||| Zamfara State
 Jimbo la Zug ||| Canton of Zug
 Jimbo la Zürich ||| Canton of Zürich
 Jimbo ya Algiers ||| Algiers Province
@@ -9700,19 +9882,20 @@ Jimmy Jam na Terry Lewis ||| Jimmy Jam and Terry Lewis
 Jimmy Needham ||| Jimmy Needham
 Jimmy Wales ||| Jimmy Wales
 Jina la kisanii ||| Stage name
+Jina takatifu la Maria ||| Holy Name of Mary
 Jinja ||| Jinja, Uganda
 Jinsi Ulaya Ilidunisha Maendeleo ya Afrika ||| How Europe Underdeveloped Africa
 Jinsi Ulaya ilivyoleta maendeleo duni ya Afrika ||| How Europe Underdeveloped Africa
 Jinsia ||| Sex
 Jiografia ya Jibuti ||| Geography of Djibouti
 Jiografia ya Palestina ||| Geography of the State of Palestine
+Jiografia ya Urusi ||| Geography of Russia
 Jiografia ||| Geography
 Jiolojia ||| Geology
 Jiometri ||| Geometry
 Jioni ||| Evening
 Jipu ||| Boil
 Jiua ||| Suicide
-Jiwe ||| Stone
 Joan Baez ||| Joan Baez
 Joan Fuster ||| Joan Fuster
 Joan Manuel Serrat ||| Joan Manuel Serrat
@@ -9771,6 +9954,8 @@ John Fisher ||| John Fisher
 John Galsworthy ||| John Galsworthy
 John Garang ||| John Garang
 John Githongo ||| John Githongo
+John Goodman ||| John Goodman
+John Gurdon ||| John Gurdon
 John Hall ||| John L. Hall
 John Henry Newman ||| John Henry Newman
 John Hersey ||| John Hersey
@@ -9779,12 +9964,13 @@ John Howard Northrop ||| John Howard Northrop
 John Jones ||| John Jones 
 John Kendrew ||| John Kendrew
 John Knox Bokwe ||| John Knox Bokwe
+John Knox ||| John Knox
 John Lennon ||| John Lennon
 John Lloyd Cruz ||| John Lloyd Cruz
 John Locke ||| John Locke
 John Lydon ||| John Lydon
 John Lyng ||| John Lyng
-John Macleod ||| John James Rickard Macleod
+John Macleod ||| John Macleod 
 John Magufuli ||| John Magufuli
 John Malecela ||| John Malecela
 John Maron ||| John Maron
@@ -9798,6 +9984,7 @@ John Mott ||| John Mott
 John Ngugi ||| John Ngugi
 John Njoroge Michuki ||| John Michuki
 John Njue ||| John Njue
+John O'Keefe ||| John O'Keefe 
 John Polanyi ||| John Polanyi
 John Pople ||| John Pople
 John Quincy Adams ||| John Quincy Adams
@@ -9809,6 +9996,7 @@ John Singer Sargent ||| John Singer Sargent
 John Steinbeck ||| John Steinbeck
 John Stephen Akhwari ||| John Stephen Akhwari
 John Sturges ||| John Sturges
+John Sulston ||| John Sulston
 John Tartaglia ||| John Tartaglia
 John Tengo Jabavu ||| John Tengo Jabavu
 John Terry ||| John Terry
@@ -9821,7 +10009,6 @@ John Wayne ||| John Wayne
 John William Colenso ||| John Colenso
 John Woo ||| John Woo
 John Zefania Chiligati ||| John Chiligati
-John de Lancie ||| John de Lancie
 John von Neumann ||| John von Neumann
 Johnny Cash ||| Johnny Cash
 Johnny Depp ||| Johnny Depp
@@ -9838,6 +10025,7 @@ Jonesboro, Arkansas ||| Jonesboro, Arkansas
 Jongo ||| Gout
 Jongoo Miguu-michache ||| Pauropoda
 Jongoo ||| Millipede
+Jopo la majaji ||| Jury
 Jordan Aviation ||| Jordan Aviation
 Jordano Ansalone ||| Giordano Ansaloni
 Jore ||| Eurystomus
@@ -9860,7 +10048,7 @@ Joseph Murray ||| Joseph Murray
 Joseph Pulitzer ||| Joseph Pulitzer
 Joseph Sinde Warioba ||| Joseph Warioba
 Joseph Smith ||| Joseph Smith
-Joseph Taylor ||| Joseph Hooton Taylor, Jr.
+Joseph Taylor ||| Joseph Hooton Taylor Jr.
 Joseph Yobo ||| Joseph Yobo
 Josephine Johnson Genzabuke ||| Josephine Johnson Genzabuke
 Josh Duhamel ||| Josh Duhamel
@@ -9902,17 +10090,20 @@ Juice ||| Juice
 Juja ||| Juja
 Julai ||| July
 Jules Bordet ||| Jules Bordet
+Jules Hoffmann ||| Jules A. Hoffmann
 Julia Gillard ||| Julia Gillard
 Julian Huxley ||| Julian Huxley
 Julian Schwinger ||| Julian Schwinger
 Juliana Kanyomozi ||| Juliana Kanyomozi
 Julianatop ||| Julianatop
 Juliette Lewis ||| Juliette Lewis
+Julita na Kwiriko ||| Quriaqos and Julietta
 Julius Axelrod ||| Julius Axelrod
 Julius Caesar ||| Julius Caesar
 Julius Nepos ||| Julius Nepos
 Julius Nyerere ||| Julius Nyerere
 Julius Wagner-Jauregg ||| Julius Wagner-Jauregg
+Julián Gil ||| Julián Gil
 Juma Abdallah Njwayo ||| Juma Abdallah Njwayo
 Juma Alifa Ngasongwa ||| Juma Ngasongwa
 Juma Athuman Kapuya ||| Juma Kapuya
@@ -9964,7 +10155,7 @@ Justin Long ||| Justin Long
 Justin Timberlake ||| Justin Timberlake
 Justin mfiadini ||| Justin Martyr
 Justiniani I ||| Justinian I
-Justino de Jacobis ||| Justin de Jacobis
+Justino de Jacobis ||| Giustino de Jacobis
 Jutland ||| Jutland
 Jász-Nagykun-Szolnok ||| Jász-Nagykun-Szolnok County
 Jämtlands län ||| Jämtland County
@@ -9990,7 +10181,7 @@ KJ ||| KJ
 KL ||| KL
 KM ||| KM
 KN ||| KN
-KNEC ||| Kenya National Examination Council
+KNEC ||| Kenya National Examinations Council
 KO ||| Ko
 KP ||| KP
 KQ ||| KQ
@@ -10054,7 +10245,7 @@ Kafue ||| Kafue River
 Kafule ||| Kafule
 Kagera ||| Kagera
 Kagoshima, Kagoshima ||| Kagoshima
-Kahama ||| Kahama Urban District
+Kahama ||| Kahama, Tanzania
 Kahawa ||| Coffee
 Kahe Mashariki ||| Kahe Mashariki
 Kahramanmaraş ||| Kahramanmaraş
@@ -10081,7 +10272,7 @@ Kaizari Ferdinand III ||| Ferdinand III
 Kaizari Francis I ||| Francis I
 Kaizari Francis II ||| Francis II
 Kaizari Galienus ||| Gallienus
-Kaizari Geta ||| Publius Septimius Geta
+Kaizari Geta ||| Geta 
 Kaizari Hadrian ||| Hadrian
 Kaizari Honorius ||| Honorius 
 Kaizari Joseph I ||| Joseph I
@@ -10104,7 +10295,7 @@ Kaizari Probus ||| Marcus Aurelius Probus
 Kaizari Quintillus ||| Quintillus
 Kaizari Rudolf II ||| Rudolf II, Holy Roman Emperor
 Kaizari Sigismund ||| Sigismund, Holy Roman Emperor
-Kaizari Tacitus ||| Marcus Claudius Tacitus
+Kaizari Tacitus ||| Tacitus 
 Kaizari Titus ||| Titus
 Kaizari Traian ||| Trajan
 Kaizari Valerian ||| Valerian 
@@ -10113,6 +10304,7 @@ Kaizer Chiefs F.C. ||| Kaizer Chiefs F.C.
 Kajaran ||| Kajaran
 Kajiado ||| Kajiado
 Kajunjumele ||| Kajunjumele
+Kaka ||| Sibling
 Kakakuona ||| Manis
 Kakamega ||| Kakamega
 Kakesio ||| Kakesio
@@ -10162,7 +10354,7 @@ Kaluga ||| Kaluga
 Kalunguyeye ||| Hedgehog
 Kamacharia ||| Kamacharia
 Kamagaya, Chiba ||| Kamagaya
-Kaman , Kırşehir ||| Kaman , Kırşehir
+Kaman , Kırşehir ||| Kaman, Kırşehir
 Kamari ||| Gambling
 Kamati ya Kimataifa ya Msalaba Mwekundu ||| International Committee of the Red Cross
 Kamba ||| Kamba
@@ -10172,6 +10364,7 @@ Kambisi II ||| Cambyses II
 Kamboja ||| Cambodia
 Kambu-ardhi ||| Ground roller
 Kamchatka Krai ||| Kamchatka Krai
+Kamchatka ||| Kamchatka Peninsula
 Kamembe ||| Cyangugu
 Kamendegere ||| Pedetes
 Kamerun ||| Cameroon
@@ -10253,9 +10446,9 @@ Kanisa Katoliki la Kigiriki la Belarus ||| Belarusian Greek Catholic Church
 Kanisa Katoliki la Kigiriki la Bulgaria ||| Bulgarian Greek Catholic Church
 Kanisa Katoliki la Kigiriki la Hungaria ||| Hungarian Greek Catholic Church
 Kanisa Katoliki la Kigiriki la Kiruteni ||| Ruthenian Catholic Church
-Kanisa Katoliki la Kigiriki la Korasya ||| Byzantine Church of Croatia, Serbia and Montenegro
+Kanisa Katoliki la Kigiriki la Korasya ||| Byzantine Catholic Church of Croatia and Serbia
 Kanisa Katoliki la Kigiriki la Masedonia ||| Macedonian Greek Catholic Church
-Kanisa Katoliki la Kigiriki la Romania ||| Romanian Church United with Rome, Greek-Catholic
+Kanisa Katoliki la Kigiriki la Romania ||| Romanian Greek-Catholic Church
 Kanisa Katoliki la Kigiriki la Russia ||| Russian Greek Catholic Church
 Kanisa Katoliki la Kigiriki la Serbia ||| Roman Catholicism in Serbia
 Kanisa Katoliki la Kigiriki la Slovakia ||| Slovak Greek Catholic Church
@@ -10277,6 +10470,8 @@ Kanisa la Kaburi na Ufufuo wa Yesu ||| Church of the Holy Sepulchre
 Kanisa la Kiinjili la Armenia ||| Armenian Evangelical Church
 Kanisa la Kiinjili la Kilutheri Tanzania ||| Evangelical Lutheran Church in Tanzania
 Kanisa la Kilatini ||| Latin Church
+Kanisa la Kiorthodoksi la Eritrea ||| Eritrean Orthodox Tewahedo Church
+Kanisa la Kiorthodoksi la Ethiopia ||| Ethiopian Orthodox Tewahedo Church
 Kanisa la Kitume la Armenia ||| Armenian Apostolic Church
 Kanisa la Magharibi ||| Western Christianity
 Kanisa la Moravian Jimbo la Jamaika ||| Jamaica Province of the Moravian Church
@@ -10285,7 +10480,7 @@ Kanisa la Mtakatifu Clotilde ||| Sainte-Clotilde, Paris
 Kanisa la Roma ||| Diocese of Rome
 Kanisa la Wakaldayo ||| Chaldean Catholic Church
 Kanisa la Wamaroni ||| Maronite Church
-Kanisa la Winners'Chapel ||| Winners' Chapel
+Kanisa la Winners'Chapel ||| Living Faith Church Worldwide
 Kanisa ||| Christian Church
 Kano ||| Kano
 Kano ||| Kano State
@@ -10305,6 +10500,7 @@ Kanuni ya Imani ||| Creed
 Kanuni ya Mt. Benedikto ||| Rule of Saint Benedict
 Kanuni ya Mwalimu ||| Rule of the Master
 Kanuni ya Pauli ||| Pauli exclusion principle
+Kanuti IV ||| Canute IV of Denmark
 Kanye West ||| Kanye West
 Kanye ||| Kanye, Botswana
 Kanyuambora ||| Kanyuambora
@@ -10319,6 +10515,7 @@ Kapenguria ||| Kapenguria
 Kapibara ||| Capybara
 Kapluk ||| Kapluk
 Kaposvár ||| Kaposvár
+Kappa ||| Kappa
 Kappeln ||| Kappeln
 Kapsabet ||| Kapsabet
 Kapsaon ||| Kapsaon
@@ -10333,7 +10530,7 @@ Karaburun ||| Karaburun
 Karabük ||| Karabük
 Karacabey ||| Karacabey
 Karacasu ||| Karacasu
-Karachaevo-Cherkessia ||| Karachay-Cherkessia
+Karachaevo-Cherkesia ||| Karachay-Cherkessia
 Karachi ||| Karachi
 Karagosi ||| Puppet
 Karagwe ||| Karagwe District
@@ -10526,6 +10723,7 @@ Kaukazi ||| Caucasus Mountains
 Kaukura ||| Kaukura
 Kaunas ||| Kaunas
 Kauxwhi ||| Kauxwhi
+Kavak ||| Kavak
 Kavaklıdere, Muğla ||| Kavaklıdere, Muğla
 Kavimba ||| Kavimba
 Kawe ||| Kawe
@@ -10550,8 +10748,8 @@ Kaş ||| Kaş
 Keansburg, New Jersey ||| Keansburg, New Jersey
 Keanu Reeves ||| Keanu Reeves
 Kearny, New Jersey ||| Kearny, New Jersey
-Keban , Elazığ ||| Keban, Elazığ
-Kebbi ||| Kebbi
+Keban , Elazığ ||| Keban
+Kebbi ||| Kebbi State
 Kebnekaise ||| Kebnekaise
 Kecskemét ||| Kecskemét
 Kedia ||| Kedia
@@ -10598,13 +10796,14 @@ Kentucky ||| Kentucky
 Kenya African National Union ||| Kenya African National Union
 Kenya African Union ||| Kenya African Union
 Kenya Airways ||| Kenya Airways
-Kenya Commercial Bank ||| Kenya Commercial Bank
-Kenya Commercial Bank ||| Kenya Commercial Bank 
+Kenya Commercial Bank ||| KCB Bank Kenya Limited
+Kenya Commercial Bank ||| KCB Bank Uganda Limited
 Kenya Data Networks ||| Kenya Data Networks
 Kenya National Congress ||| Kenya National Congress
 Kenya People's Union ||| Kenya People's Union
 Kenya Ports Authority ||| Kenya Ports Authority
 Kenya Power and Lighting Company ||| Kenya Power and Lighting Company
+Kenya Revenue Authority ||| Kenya Revenue Authority
 Kenya ||| Kenya
 Kenzaburo Oe ||| Kenzaburō Ōe
 Kepez, Antalya ||| Kepez, Antalya
@@ -10643,6 +10842,7 @@ Kgope ||| Kgope
 Khachatur Abovyan ||| Khachatur Abovian
 Khadija Salum Ally Al-Qassmy ||| Khadija Salum Ally Al-Qassmy
 Khadja Nin ||| Khadja Nin
+Khakasia ||| Khakassia
 Khalid Mohamed ||| TID 
 Khalid bin Barghash wa Zanzibar ||| Khalid bin Barghash of Zanzibar
 Khalifa Suleiman Khalifa ||| Khalifa Suleiman Khalifa
@@ -10748,6 +10948,7 @@ Kiaja ||| Aja language
 Kiajawa ||| Ajawa language
 Kiajemi ||| Persian language
 Kiajie ||| Ajië language
+Kiak ||| Ak language
 Kiaka ||| Aka language
 Kiaka ||| Aka language 
 Kiaka ||| Sillok language
@@ -10763,6 +10964,7 @@ Kiakar-Bale ||| Akar-Bale language
 Kiake ||| Ake language
 Kiakebu ||| Kebu language
 Kiakei ||| Akei language
+Kiakeu ||| Akeu language
 Kiakha ||| Akha language
 Kiakolet ||| Akolet language
 Kiakoye ||| Akoye language
@@ -10872,6 +11074,7 @@ Kiaranadan ||| Aranadan language
 Kiarandai ||| Arandai language
 Kiarapesh ya Abu' ||| Abu’ Arapesh language
 Kiarapesh ya Bumbita ||| Bumbita language
+Kiarawum ||| Arawum language
 Kiarbore ||| Arbore language
 Kiare ||| Are language
 Kiareare ||| 'Are'are language
@@ -10941,6 +11144,7 @@ Kiawing ||| Awing language
 Kiawiyaana ||| Awiyaana language
 Kiawngi ||| Awngi language
 Kiawtuw ||| Awtuw language
+Kiawu ||| Lope language
 Kiawun ||| Auwon language
 Kiawutu ||| Efutu language
 Kiawyi ||| Awyi language
@@ -10993,7 +11197,7 @@ Kibaga-Mboteni ||| Baga Pokur language
 Kibagheli ||| Bagheli language
 Kibagirmi ||| Bagirmi language
 Kibago-Kusuntu ||| Bago-Kusuntu language
-Kibagri ||| Bagri dialect
+Kibagri ||| Bagri language
 Kibagupi ||| Bagupi language
 Kibagusa ||| Bagusa language
 Kibaha ||| Kibaha
@@ -11116,6 +11320,7 @@ Kibati ||| Bati language
 Kibatu ||| Batu language
 Kibatui ||| Batui language
 Kibatuley ||| Batuley language
+Kibau ||| Bau language 
 Kibauchi ||| Bauchi language
 Kibaule ||| Baoulé language
 Kibauria ||| Bauria language
@@ -11245,6 +11450,7 @@ Kibishuo ||| Bishuo language
 Kibisi ||| Grebe
 Kibisis ||| Bisis language
 Kibissa ||| Bissa language
+Kibisu ||| Bisu language
 Kibitare ||| Bitare language
 Kibitur ||| Bitur language
 Kibiwat ||| Biwat language
@@ -11304,6 +11510,7 @@ Kibongu ||| Bongu language
 Kibonjo ||| Bonjo language
 Kibonkeng ||| Bonkeng language
 Kibonkiman ||| Bonkiman language
+Kibontok-Mashariki ||| Bontoc language
 Kibonzo ||| Comics
 Kibookan ||| Bookan language
 Kiboor ||| Boor language
@@ -11537,7 +11744,7 @@ Kidaru ||| Kidaru
 Kidass ||| Dass language
 Kidatooga ||| Datooga language
 Kidatu ||| Kidatu
-Kidavawenyo ||| Davawenyo language
+Kidavawenyo ||| Davaoeño language
 Kidawawa ||| Dawawa language
 Kidawera-Daweloor ||| Dawera-Daweloor language
 Kidawida ||| Taita language
@@ -11755,7 +11962,7 @@ Kievant ||| Evant language
 Kiewage-Notu ||| Ewage language
 Kiewe ||| Ewe language
 Kiewondo ||| Ewondo language
-Kifaduro ||| Pertussis
+Kifaduro ||| Croup
 Kifafa ||| Epilepsy
 Kifagani ||| Fagani language
 Kifagauvea ||| West Uvean language
@@ -11811,6 +12018,7 @@ Kifupi ||| Abbreviation
 Kifur ||| Fur language
 Kifuru ||| Furu language
 Kifutuna-Aniwa ||| Futuna-Aniwa language
+Kifutuna-Mashariki ||| Futunan language
 Kifuyug ||| Fuyug language
 Kifwai ||| Fwâi language
 Kifwe ||| Fwe language
@@ -11828,11 +12036,12 @@ Kigadang ||| Gadang language
 Kigaddang ||| Gaddang language
 Kigade ||| Gade language
 Kigadsup ||| Gadsup language
-Kigagu ||| Gagu language
+Kigagu ||| Gban language
 Kigahri ||| Gahri language
 Kigaikundi ||| Gaikundi language
 Kigal ||| Gal language
 Kigalambu ||| Galambu language
+Kigalela ||| Galela language
 Kigaleya ||| Galeya language
 Kigali ||| Kigali
 Kigalicia ||| Galician language
@@ -11895,6 +12104,7 @@ Kigeuzamawe ||| Turnstone
 Kighanongga ||| Ghanongga language
 Kighari ||| Ghari language
 Kighayavi ||| Ghayavi language
+Kighera ||| Ghera language
 Kighomala' ||| Ghomala' language
 Kighotuo ||| Ghotuo language
 Kigiangan ||| Bagobo language
@@ -12008,7 +12218,7 @@ Kihanunoo ||| Hanunó'o language
 Kiharar ||| Eastern Oromo language
 Kiharari ||| Harari language
 Kiharoi ||| Haroi language
-Kiharoti ||| Harauti dialect
+Kiharoti ||| Harauti language
 Kiharuai ||| Haruai language
 Kiharuku ||| Haruku language
 Kiharusi ||| Stroke
@@ -12467,6 +12677,8 @@ Kikimre ||| Kimré language
 Kikinabalian ||| Kabalian language
 Kikinalakna ||| Kinalakna language
 Kikinaray-a ||| Karay-a language
+Kikingaradi ||| Lightning rod
+Kikinnauri ||| Kinnauri language
 Kikinnauri-Pahari ||| Pahari Kinnauri language
 Kikintaq ||| Kintaq language
 Kikipsigis ||| Kipsigis language
@@ -12476,6 +12688,7 @@ Kikire ||| Kire language
 Kikiribati ||| Gilbertese language
 Kikirikiri ||| Kirikiri language
 Kikis ||| Kis language
+Kikisan ||| Kisan language
 Kikisankasa ||| Kisankasa language
 Kikisar ||| Kisar language
 Kikisi ||| Kisi language 
@@ -12502,6 +12715,7 @@ Kikofyar ||| Kofyar language
 Kikohin ||| Kohin language
 Kikohistani ya Indus ||| Maiya language
 Kikoho ||| Koho language
+Kikohozi kikuu ||| Pertussis
 Kikohumono ||| Humono language
 Kikoi ||| Koi language
 Kikoiari ya Malishoni ||| Grass Koiari language
@@ -12543,6 +12757,7 @@ Kikonni ||| Konni language
 Kikono ||| Kono language
 Kikonomala ||| Konomala language
 Kikonso ||| Konso language
+Kikonzo ||| Konjo language 
 Kikoongo ||| Kongo language
 Kikoonzime ||| Nzime language
 Kikoorete ||| Koore language
@@ -12712,6 +12927,7 @@ Kilaghuu ||| Laghuu language
 Kilagwan ||| Lagwan language
 Kilaha ||| Laha language 
 Kilahanan ||| Lahanan language
+Kilahu ||| Lahu language
 Kilaiyolo ||| Laiyolo language
 Kilaka ||| Laka language 
 Kilaka ||| Ngambay language
@@ -12809,7 +13025,6 @@ Kilimbu ||| Limbu language
 Kilimbum ||| Limbum language
 Kilimia ||| Pleiades
 Kilimo ||| Agriculture
-Kilindi ||| Kilindi District
 Kilindoni ||| Kilindoni
 Kilingili ||| Kilingili
 Kilipukaji ||| Explosive material
@@ -12880,6 +13095,7 @@ Kilunda ||| Lunda language
 Kilungga ||| Lungga language
 Kiluo ||| Luo dialect
 Kiluo ||| Luo language 
+Kiluri ||| Luri language
 Kiluvale ||| Luvale language
 Kiluwiluwi ||| Lapwing
 Kiluwiluwi ||| Vanellus
@@ -12976,6 +13192,8 @@ Kimalay ya Visiwa vya Cocos ||| Cocos Malay
 Kimalay ||| Malay language
 Kimalayalam ||| Malayalam
 Kimale ||| Maale language
+Kimale ||| Male language 
+Kimaleng ||| Maleng language
 Kimalgbe ||| Malgbe language
 Kimali ||| Mali language
 Kimalimba ||| Limba language 
@@ -13167,6 +13385,7 @@ Kimewati ||| Mewati language
 Kimeyah ||| Meax language
 Kime’en ||| Me'en language
 Kimfinu ||| Mfinu language
+Kimfumte ||| Mfumte language
 Kimian ||| Mian language
 Kimidob ||| Midob language
 Kimigaama ||| Migaama language
@@ -13202,6 +13421,7 @@ Kimlabri ||| Mlabri language
 Kimlap ||| Mlap language
 Kimlomp ||| Mlomp language
 Kimmen ||| Mmen language
+Kimnong ya Katikati ||| Mnong language
 Kimnyaki ||| Kimnyaki
 Kimo ||| Wakde language
 Kimodang ||| Modang language
@@ -13239,6 +13459,7 @@ Kimono ||| Mono-Alu language
 Kimonom ||| Monom language
 Kimonpa ya Tawang ||| Tawang language
 Kimontol ||| Montol language
+Kimonumbo ||| Monumbo language
 Kimoore ||| Mossi language
 Kimor ||| Mor language 
 Kimoraid ||| Moraid language
@@ -13458,6 +13679,7 @@ King Sunny Adé ||| King Sunny Adé
 King Tubby ||| King Tubby
 King William's Town ||| King William's Town
 King'ori ||| King'ori
+King's African Rifles ||| King's African Rifles
 Kinga wa Hungaria ||| Kinga of Poland
 Kinga ||| Immunity 
 Kingad'a ||| Ngadha language
@@ -13613,6 +13835,7 @@ Kinzakara ||| Nzakara language
 Kinzanyi ||| Nzanyi language
 Kinzema ||| Nzema language
 Kio'chi'chi' ||| O’chi’chi’ language
+Kio'du ||| O’du language
 Kiobanliku ||| Banliku language
 Kioblo ||| Oblo language
 Kiobokuitai ||| Obokuitai language
@@ -13678,7 +13901,7 @@ Kiosatu ||| Osatu language
 Kiosing ||| Osing dialect
 Kiososo ||| Ososo language
 Kiot-Danum ||| Ot Danum language
-Kiotank ||| Otank language
+Kiotank ||| Otank
 Kiotoro ||| Otoro language
 Kiotuho ||| Lotuko language
 Kiouma ||| Ouma language
@@ -13702,6 +13925,7 @@ Kipahi ||| Pahi language
 Kipaici ||| Paicî language
 Kipaimara ||| Confirmation
 Kipaiwan ||| Paiwan language
+Kipaji ||| Aptitude
 Kipak-Tong ||| Pak-Tong language
 Kipaku ||| Paku language 
 Kipal ||| Pal language
@@ -13740,6 +13964,7 @@ Kipanya Mnono ||| Steatomys
 Kipanya ||| Computer mouse
 Kipanya ||| Mouse
 Kipanya-miti ||| Dendromurinae
+Kipao ||| Pao language 
 Kipapapana ||| Papapana language
 Kipapar ||| Papar language
 Kipapasena ||| Papasena language
@@ -13788,6 +14013,7 @@ Kipeve ||| Peve language
 Kiphake ||| Tai Phake language
 Kiphudagi ||| Phudagi language
 Kiphuie ||| Puguli language
+Kiphula ||| Phukha language
 Kiphuong ||| Phuong language
 Kipiamatsina ||| Piamatsina language
 Kipiame ||| Piame language
@@ -14164,6 +14390,7 @@ Kisikaiana ||| Sikaiana language
 Kisikaritai ||| Sikaritai language
 Kisikkim ||| Sikkimese language
 Kisikule ||| Sikule language
+Kisila ||| Sila language 
 Kisileibi ||| Sileibi language
 Kisilesia ||| Silesian language
 Kisilimo ||| Silimo language
@@ -14278,9 +14505,9 @@ Kisur ||| Sur language
 Kisurbakhal ||| Surbakhal language
 Kisuri ||| Suri language
 Kisurigaonon ||| Surigaonon language
-Kisurjapuri ||| Surajpuri language
+Kisurjapuri ||| Surjapuri language
 Kisursurunga ||| Sursurunga language
-Kisurubu ||| Surubu language
+Kisurubu ||| Vori language
 Kisusu ||| Susu language
 Kisusuami ||| Susuami language
 Kisutu ||| Kisutu, Dar Es Salaam
@@ -14342,6 +14569,12 @@ Kitagbu ||| Tagbo language
 Kitagoi ||| Tagoi language
 Kitahiti ||| Tahitian language
 Kitai ||| Tai language 
+Kitai-Dam ||| Tai Dam language
+Kitai-Dón ||| Tai Dón language
+Kitai-Nüa ||| Tai Nüa language
+Kitai-Pao ||| Tai Pao language
+Kitai-Thanh ||| Tai Thanh language
+Kitai-Yo ||| Tai Yo language
 Kitaiap ||| Taiap language
 Kitaikat ||| Taikat language
 Kitainae ||| Tainae language
@@ -14358,6 +14591,7 @@ Kital ||| Tal language
 Kitala ||| Tala language
 Kitalaud ||| Talaud language
 Kitale ||| Kitale
+Kitaliabu ||| Taliabo language
 Kitalinga-Bwisi ||| Talinga language
 Kitalise ||| Talise language
 Kitalodi ||| Talodi language
@@ -14552,7 +14786,7 @@ Kitsuvadi ||| Vadi language
 Kitsuvan ||| Tsuvan language
 Kitswana ||| Tswana language
 Kituamotu ||| Tuamotuan language
-Kitubio ||| Confession 
+Kitubio ||| Sacrament of Penance
 Kitugen ||| Tugen language
 Kitui ||| Kitui
 Kituki ||| Ki language
@@ -14923,6 +15157,7 @@ Kizanaki ||| Zanaki language
 Kizande ||| Zande language
 Kizangskari ||| Zangskari dialect
 Kizangwal ||| Zangwal language
+Kizaramo ||| Zaramo language
 Kizari ||| Zari language
 Kizarma ||| Zarma language
 Kizay ||| Zay language
@@ -14934,6 +15169,10 @@ Kizazi ||| Generation
 Kizeem ||| Zeem language
 Kizemba ||| Zemba language
 Kizhire ||| Zhire language
+Kizhuang-Dai ||| Dai Zhuang language
+Kizhuang-Yang ||| Yang Zhuang language
+Kizhuang-Yongnan ||| Yongnan languages
+Kizhuang-Zuojiang ||| Zuojiang Zhuang languages
 Kizia ||| Zia language
 Kizigula ||| Zigula language
 Kizima moto ||| Fire extinguisher
@@ -14974,6 +15213,7 @@ Klelia Barbieri ||| Clelia Barbieri
 Klemens wa Aleksandria ||| Clement of Alexandria
 Kleopatra ||| Cleopatra
 Kleri ||| Clergy
+Klod ||| Clodoald
 Km/h ||| Kilometres per hour
 Knoxville, Tennessee ||| Knoxville, Tennessee
 Knut Hamsun ||| Knut Hamsun
@@ -14990,6 +15230,7 @@ Kocasinan ||| Kocasinan
 Kochi ||| Kochi 
 Kochi, Kochi ||| Kōchi, Kōchi
 Kodata ||| Chordate
+Kodi ya IATA ||| International Air Transport Association airport code
 Kodi ya ICAO ||| International Civil Aviation Organization airport code
 Kodi ||| Tax
 Kodibeleng ||| Kodibeleng
@@ -14997,7 +15238,7 @@ Koffi Olomide ||| Koffi Olomide
 Kofi Annan ||| Kofi Annan
 Kofu, Yamanashi ||| Kōfu
 Kofçaz ||| Kofçaz
-Kogi ||| Kogi
+Kogi ||| Kogi State
 Koho ||| Osprey
 Koichi Tanaka ||| Koichi Tanaka
 Koigi Wamwere ||| Koigi wa Wamwere
@@ -15030,21 +15271,20 @@ Komba ||| Galago
 Kombe la Dunia la FIFA ||| FIFA World Cup
 Kombe la Mataifa ya Afrika ||| Africa Cup of Nations
 Komei ||| Emperor Kōmei
-Komi Jamhuri ||| Komi Republic
 Komo Department ||| Komo Department
 Komo-Mondah Department ||| Komo-Mondah Department
 Komori ||| Comoros
 Komsomolsk-na-Amure ||| Komsomolsk-on-Amur
 Komárom-Esztergom ||| Komárom-Esztergom County
+Konak ||| Konak, Izmir
 Konde ||| Konde
-Kondoa Mjini ||| Kondoa Mjini
 Kondoa ||| Kondoa
+Kondoa ||| Kondoa Mjini
 Kondomu ya kike ||| Female condom
 Kondomu ||| Condom
 Kondoo-kaya ||| Sheep
 Konfusio ||| Confucius
 Kongo ya Kibelgiji ||| Belgian Congo
-Kongo ||| Congo
 Kongo ||| Congo River
 Kongoni ||| Alcelaphus
 Kongwa ||| Kongwa 
@@ -15101,7 +15341,7 @@ Kostroma Oblast ||| Kostroma Oblast
 Kostroma ||| Kostroma
 Kotido ||| Kotido
 Kotolaname ||| Kotolaname
-Kourou ||| Kourou, French Guiana
+Kourou ||| Kourou
 Kovancılar ||| Kovancılar
 Koypu ||| Coypu
 Koyulhisar ||| Koyulhisar
@@ -15124,6 +15364,7 @@ Kriketi ||| Cricket
 Krim ||| Crimea
 Krioli ||| Creole language
 Kriptoni ||| Krypton
+Kris Kross ||| Kris Kross
 Krismasi ||| Christmas
 Krispino wa Viterbo ||| Crispin of Viterbo
 Kristanna Loken ||| Kristanna Loken
@@ -15134,11 +15375,13 @@ Kristie Lu Stout ||| Kristie Lu Stout
 Kristine Hermosa ||| Kristine Hermosa
 Kristine Sutherland ||| Kristine Sutherland
 Kristinehamn ||| Kristinehamn
+Kristo Mfalme ||| Christ the King
 Kristoforo Kolumbus ||| Christopher Columbus
 Kristolojia ||| Christology
 Kroatia ||| Croatia
 Kronberg im Taunus ||| Kronberg im Taunus
 Kronobergs län ||| Kronoberg County
+Krugersdorp ||| Krugersdorp
 Kua ||| Coua
 Kuala Lumpur ||| Kuala Lumpur
 Kuba ||| Cuba
@@ -15220,13 +15463,16 @@ Kupenyeza kwa ubongo ||| Brain herniation
 Kupima Ubikira ||| Virginity test
 Kupooza kwa ubongo ||| Cerebral palsy
 Kupro ||| Cyprus
+Kura ya maoni ya uhuru wa Sudan Kusini, 2011 ||| South Sudanese independence referendum, 2011
 Kura ya maoni ||| Referendum
+Kura ||| Ballot
 Kurap ||| Rapping
 Kurasini ||| Kurasini
 Kurea ||| Tree kingfisher
 Kurene ||| Cyrene, Libya
 Kurgan Oblast ||| Kurgan Oblast
 Kurgan, Kurgan Oblast ||| Kurgan, Kurgan Oblast
+Kurili ||| Kuril Islands
 Kuro ||| Kobus 
 Kurow ||| Kurow
 Kursk Oblast ||| Kursk Oblast
@@ -15245,9 +15491,9 @@ Kusini Darfur ||| South Darfur
 Kusini Eneo la ziwa Nyekundu, Eritrea ||| Southern Red Sea Region
 Kusini Kurdufan ||| South Kordofan
 Kusini ||| South
+Kutabaruku ||| Dedication
 Kutapika ||| Vomiting
 Kutoka ||| Book of Exodus
-Kutuliza migogoro ||| Conflict management
 Kuvu Kiuawadudu ||| Entomopathogenic fungus
 Kuvu ||| Fungus
 Kuvuja damu baada ya kuzaa ||| Postpartum bleeding
@@ -15270,7 +15516,7 @@ Kwanza ||| Angolan kwanza
 Kwanza ||| Cuanza River
 Kwanzaa ||| Kwanzaa
 Kwapa ||| Axilla
-Kwara ||| Kwara
+Kwara ||| Kwara State
 Kwarara ||| Ibis
 Kwaresima kuu ||| Great Lent
 Kwaresima ||| Lent
@@ -15288,6 +15534,7 @@ Kyimo ||| Kyimo
 Kylie Minogue ||| Kylie Minogue
 Kyoto ||| Kyoto
 Kyushu ||| Kyushu
+Kyzyl ||| Kyzyl
 Kävlinge ||| Kävlinge
 Kåre Willoch ||| Kåre Willoch
 Köln ||| Cologne
@@ -15318,6 +15565,7 @@ Kızıltepe ||| Kızıltepe
 Kızılören ||| Kızılören
 Kızılırmak, Çankırı ||| Kızılırmak, Çankırı
 L ||| L
+L'Aquila ||| L'Aquila
 L'Haÿ-les-Roses ||| L'Haÿ-les-Roses
 LA Weekly ||| LA Weekly
 LA Youth ||| LA Youth
@@ -15374,6 +15622,7 @@ La Rochelle ||| La Rochelle
 La Serena ||| La Serena, Chile
 La Seyne-sur-Mer ||| La Seyne-sur-Mer
 La Teste-de-Buch ||| La Teste-de-Buch
+La Valette-du-Var ||| La Valette-du-Var
 La Verne, California ||| La Verne, California
 LaShawn Merritt ||| LaShawn Merritt
 Ladies and Gentlemen ||| Ladies and Gentlemen 
@@ -15410,11 +15659,14 @@ Lakewood, Colorado ||| Lakewood, Colorado
 Lakewood, Ohio ||| Lakewood, Ohio
 Laki ||| Lakh
 Lakota ||| Lakota
+Lakshadweep ||| Lakshadweep
 Lalapaşa ||| Lalapaşa
+Lalibela, Ethiopia ||| Lalibela
 Lalta ||| Lalta
 Lama ||| Lama
 Lama ||| Llama
 Lamaiti ||| Lamati
+Lambda ||| Lambda
 Lambersart ||| Lambersart
 Lambo la Aswan ||| Aswan Dam
 Lambo la Magenge Matatu ||| Three Gorges Dam
@@ -15463,7 +15715,8 @@ Laurent Kabila ||| Laurent-Désiré Kabila
 Laurenti Mfiadini ||| Lawrence of Rome
 Laurenti wa Brindisi ||| Lawrence of Brindisi
 Lauryn Hill ||| Lauryn Hill
-Lava ||| Lava
+Laus Omar Mhina ||| Laus Omar Mhina
+Lava ||| Larva
 Laval, Mayenne ||| Laval, Mayenne
 Laval, Québec ||| Laval, Quebec
 Lawi ||| Levi
@@ -15518,6 +15771,7 @@ Leipzig ||| Leipzig
 Leishmaniasis ||| Leishmaniasis
 Lejwana ||| Lejwana, Botswana
 Lekoni-Lekori Department ||| Lekoni-Lekori Department
+Leland Hartwell ||| Leland H. Hartwell
 Leleti Khumalo ||| Leleti Khumalo
 Lelystad ||| Lelystad
 Lemara ||| Lemara
@@ -15530,6 +15784,7 @@ Lemuri-panya ||| Mouse lemur
 Lemuri-spoti ||| Sportive lemur
 Lemuri-sufu ||| Woolly lemur
 Lemuri-ukosi ||| Ruffed lemur
+Lena ||| Lena River
 Leningrad Oblast ||| Leningrad Oblast
 Lens, Pas-de-Calais ||| Lens, Pas-de-Calais
 Lentsweletau ||| Lentsweletau
@@ -15570,7 +15825,9 @@ Les Wanyika ||| Les Wanyika
 Leshibitse ||| Leshibitse
 Leslie Hope ||| Leslie Hope
 Lesoma ||| Lesoma
+Lesosibirsk ||| Lesosibirsk
 Lesotho ||| Lesotho
+Lester Pearson ||| Lester B. Pearson
 Let's Talk About Love ||| Let's Talk About Love
 Lethbridge, Alberta ||| Lethbridge
 Letlhakane ||| Letlhakane
@@ -15613,6 +15870,7 @@ Liemba ||| MV Liemba
 Lier ||| Lier, Belgium
 Life Goes On ||| Life Goes On 
 Lifford ||| Lifford
+Lifti ||| Lift
 Ligi Kuu ya Jibuti ||| Djibouti Premier League
 Liguria ||| Liguria
 Likoni ||| Likoni
@@ -15638,6 +15896,7 @@ Lincoln ||| Lincoln
 Lincoln, Massachusetts ||| Lincoln, Massachusetts
 Lincoln, Nebraska ||| Lincoln, Nebraska
 Lincolnshire Echo ||| Lincolnshire Echo
+Linda Buck ||| Linda B. Buck
 Linden, New Jersey ||| Linden, New Jersey
 Lindesberg ||| Lindesberg
 Lindi Mjini ||| Lindi District
@@ -15709,6 +15968,7 @@ Lobamba ||| Lobamba
 Locust Valley, New York ||| Locust Valley, New York
 Lodi, New Jersey ||| Lodi, New Jersey
 Lodwar ||| Lodwar
+Logi ||| Logarithm
 Loir-et-Cher ||| Loir-et-Cher
 Loire ||| Loire 
 Loire-Atlantique ||| Loire-Atlantique
@@ -15770,12 +16030,14 @@ Lot-et-Garonne ||| Lot-et-Garonne
 Lou Bega ||| Lou Bega
 Louis Althusser ||| Louis Althusser
 Louis Armstrong ||| Louis Armstrong
+Louis Ignarro ||| Louis Ignarro
 Louis Leipoldt ||| C. Louis Leipoldt
 Louis Lombardi ||| Louis Lombardi
 Louis Neel ||| Louis Néel
 Louis Pasteur ||| Louis Pasteur
 Louis Renault ||| Louis Renault 
 Louis XIV wa Ufaransa ||| Louis XIV of France
+Louis-Victor Broglie ||| Louis de Broglie
 Louisiana ||| Louisiana
 Louisville, Kentucky ||| Louisville, Kentucky
 Lounatic ||| Lounatic
@@ -15790,6 +16052,7 @@ Lower Hutt ||| Lower Hutt
 Loyal to the Game ||| Loyal to the Game
 Lozère ||| Lozère
 Lu Xun ||| Lu Xun
+Lualaba ||| Lualaba River
 Luanda ||| Luanda
 Luanda ||| Luanda Province
 Luanda, Kenya ||| Luanda, Kenya
@@ -15798,6 +16061,7 @@ Luangwa ||| Luangwa, Zambia
 Lubanda ||| Lubanda
 Lubbock, Texas ||| Lubbock, Texas
 Lubumbashi ||| Lubumbashi
+Luc Montagnier ||| Luc Montagnier
 Lucas Cranach Mzee ||| Lucas Cranach the Elder
 Lucas Onyango ||| Lucas Onyango
 Lucas Radebe ||| Lucas Radebe
@@ -15858,6 +16122,7 @@ Lugha za Kislavoni ||| Slavic languages
 Lugha za Kisonghai ||| Songhay languages
 Lugha za Kitai-Kadai ||| Tai-Kadai languages
 Lugha za Kitor-Kwerba ||| Tor-Kwerba languages
+Lugha za Kitorricelli ||| Torricelli languages
 Lugha za Kiturki ||| Turkic languages
 Lugha za Kivuka-Guinea Mpya ||| Trans-New Guinea languages
 Lugha ||| Language
@@ -15881,8 +16146,8 @@ Lunda Kusini ||| Lunda Sul Province
 Lunel ||| Lunel
 Luniz ||| Luniz
 Luo ||| Luo
-Lupa Tingatinga ||| Lupa Tingatinga
 Lupata ||| Lupata
+Lupatingatinga ||| Lupa Tingatinga
 Lupembe ||| Lupembe
 Luponde ||| Luponde
 Lusaka ||| Lusaka
@@ -15921,6 +16186,7 @@ Lüneburg ||| Lüneburg
 Lünen ||| Lünen
 M ||| M
 M'banza-Kongo ||| M'banza-Kongo
+M-pesa ||| M-Pesa
 M/s ||| Metre per second
 MA ||| MA
 MB ||| MB
@@ -15960,6 +16226,7 @@ Maadili ||| Ethics
 Maafa asilia ||| Natural disaster
 Maajabu ya dunia ||| Seven Wonders of the Ancient World
 Maambukizo ||| Infection
+Maana tofauti za Uhuru ||| Uhuru
 Maana ya maisha ||| Meaning of life
 Maandishi ||| Writing system
 Maanga ||| Maanga
@@ -16027,9 +16294,10 @@ Madonda matakatifu ||| Stigmata
 Madonna ||| Madonna
 Madrid ||| Madrid
 Mads Mikkelsen ||| Mads Mikkelsen
+Maduka ya Army & Navy ||| Army & Navy Stores 
+Maduka ya Gee Bee ||| Gee Bee 
 Maduka ya United Cigar Stores ||| United Cigar Stores
 Maduka ya United Drapery Stores ||| United Drapery Stores
-Madukani ||| Madukani
 Madunga ||| Madunga
 Madura ||| Madura Island
 Mae Jemison ||| Mae Jemison
@@ -16048,10 +16316,12 @@ Mafuta ya ini ||| Fatty liver
 Mafuta ya petroli ||| Petroleum
 Mafyeko ||| Mafyeko
 Magadan Oblast ||| Magadan Oblast
+Magadan ||| Magadan
 Magadi Soda Company ||| Magadi Soda Company
 Magadi, Kenya ||| Magadi, Kenya
 Magamaga ||| Prinia
 Magara ||| Magara 
+Magas ||| Magas
 Magdalena wa Canossa ||| Magdalene of Canossa
 Magdalena wa Nagasaki ||| Magdalene of Nagasaki
 Magdeburg ||| Magdeburg
@@ -16073,6 +16343,8 @@ Magnitogorsk ||| Magnitogorsk
 Magnus Mwalunyungu ||| Magnus Mwalunyungu
 Magomeni ||| Magomeni
 Magonjwa ya Kuku ||| Poultry disease
+Magonjwa ya macho ||| Eye disease
+Magu Mjini ||| Magu, Tanzania
 Magu ||| Magu District
 Magugu ||| Magugu
 Magulilwa ||| Magulilwa
@@ -16080,6 +16352,7 @@ Mahabharata ||| Mahabharata
 Mahachkala ||| Makhachkala
 Mahajanga ||| Mahajanga
 Mahakama Kuu ya Kimataifa ||| International Court of Justice
+Mahakama ya Kimataifa ya Jinai ya Rwanda ||| International Criminal Tribunal for Rwanda
 Mahakama ya Kimataifa ya Jinai ||| International Criminal Court
 Mahakama ||| Judiciary
 Mahalapye ||| Mahalapye
@@ -16119,6 +16392,7 @@ Majengo ||| Majengo
 Majengo ||| Majengo 
 Maji kujaa na kupwa ||| Tide
 Maji matamu ||| Fresh water
+Maji salama ||| Drinking water
 Maji ya Chai ||| Maji ya Chai
 Maji ya chumvi ||| Saline water
 Maji ya matunda ||| Juice
@@ -16150,6 +16424,7 @@ Majwanaadipitse ||| Majwanaadipitse
 Makaa mawe ||| Coal
 Makaa ||| Charcoal
 Makabila ya Gabon ||| Ethnic groups in Gabon
+Makabila ya Israeli ||| Twelve Tribes of Israel
 Makaburu ||| Boer
 Makalamabedi ||| Makalamabedi
 Makamba ||| Makamba, Burundi
@@ -16178,7 +16453,7 @@ Makiba ||| Makiba
 Makka ||| Mecca
 Makole ||| Makole 
 Makoma ||| Makoma
-Makongorosi ||| Makongorosi
+Makongolosi ||| Makongorosi
 Makopong ||| Makopong
 Makorongo ||| Makorongo
 Makorongoni ||| Makorongoni
@@ -16326,7 +16601,7 @@ Manikongo ||| Manikongo
 Manila ||| Manila
 Manipur ||| Manipur
 Manisa ||| Manisa
-Manisipaa ||| Municipality
+Manispaa ||| Municipality
 Manitoba ||| Manitoba
 Mannheim ||| Mannheim
 Manorhaven, New York ||| Manorhaven, New York
@@ -16350,6 +16625,8 @@ Maonyesho ya mavazi ||| Fashion show
 Mapadri wa Betharram ||| Congregation of the Sacred Heart of Jesus of Betharram
 Mapafu ||| Lung
 Mapambano kati ya Israeli na Palestina ||| Arab-Israeli conflict
+Mapatano juu ya matumizi ya maji ya mto Nile ya 1929 ||| Water politics in the Nile Basin
+Mapatano ya Laterano ||| Lateran Treaty
 Mapatano ya Warshawa ||| Warsaw Pact
 Mapendo ya kiuchumba ||| Courtship
 Mapigano ya Adowa ||| Battle of Adwa
@@ -16406,6 +16683,7 @@ Marekani ||| United States
 Margaret Clitherow ||| Margaret Clitherow
 Margaret Okayo ||| Margaret Okayo
 Margaret Thatcher ||| Margaret Thatcher
+Margaret Ward ||| Margaret Ward
 Margareta Maria Alacoque ||| Margaret Mary Alacoque
 Margareta Mtakatifu wa Uskoti ||| Saint Margaret of Scotland
 Margerita wa Cortona ||| Margaret of Cortona
@@ -16428,6 +16706,7 @@ Maria Magdalena ||| Mary Magdalene
 Maria Yosefa Rossello ||| Maria Giuseppa Rossello
 Maria kupalizwa mbinguni ||| Assumption of Mary
 Maria wa Bethania ||| Mary of Bethany
+Maria wa Kleopa ||| Mary of Clopas
 Mariah Carey ||| Mariah Carey
 Mariah Carey ||| Mariah Carey 
 Mariakani ||| Mariakani
@@ -16453,6 +16732,7 @@ Marino shemasi ||| Saint Marinus
 Mario Balotelli ||| Mario Balotelli
 Mario Been ||| Mario Been
 Mario Brega ||| Mario Brega
+Mario Capecchi ||| Mario Capecchi
 Mario Das Neves ||| Mario das Neves
 Mario Molina ||| Mario J. Molina
 Mario Vargas Llosa ||| Mario Vargas Llosa
@@ -16491,6 +16771,7 @@ Maroni ||| Maron
 Maroroni ||| Maroroni
 Marsabit ||| Marsabit
 Marseille ||| Marseille
+Marselino na Petro ||| Marcellinus and Peter
 Marshall Nirenberg ||| Marshall Warren Nirenberg
 Marsupialia ||| Marsupial
 Martha Karua ||| Martha Karua
@@ -16499,10 +16780,13 @@ Martha wa Bethania ||| Martha
 Martha's Vineyard ||| Martha's Vineyard
 Martigues ||| Martigues
 Martin Chalfie ||| Martin Chalfie
+Martin Evans ||| Martin Evans
+Martin Karplus ||| Martin Karplus
 Martin Landau ||| Martin Landau
-Martin Luther King, Jr. ||| Martin Luther King, Jr.
+Martin Luther King, Jr. ||| Martin Luther King Jr.
 Martin Luther ||| Martin Luther
 Martin Perl ||| Martin Lewis Perl
+Martin Rodbell ||| Martin Rodbell
 Martin Ryle ||| Martin Ryle
 Martin Van Buren ||| Martin Van Buren
 Martin Weinek ||| Martin Weinek
@@ -16559,9 +16843,11 @@ Mashirika ya ombaomba ||| Mendicant orders
 Masi ||| Mass
 Masifu ya asubuhi ||| Lauds
 Masifu ya jioni ||| Vespers
+Masimo wa Torino ||| Maximus of Turin
 Masinde Muliro ||| Masinde Muliro
 Masindi ||| Masindi
 Masis ||| Masis, Armenia
+Masista Waminimi wa Bikira Maria wa Mateso ||| Little Sisters of the Mother of Sorrows
 Masiya ||| Messiah
 Maskarena ||| Mascarene Islands
 Maskat ||| Muscat Governorate
@@ -16579,7 +16865,7 @@ Mata ogania ||| Organic matter
 Mata ||| Matter
 Matabeleland North ||| Matabeleland North Province
 Mataifa Yanayostawi ya G20 ||| G20 developing nations
-Mataifa ya G20 ya viwanda ||| G-20 major economies
+Mataifa ya G20 ya viwanda ||| G20
 Mataifa ya ushirikiano ||| Allies of World War II
 Mataiva ||| Mataiva
 Matajiri wakuu duniani ||| The World's Billionaires 2011
@@ -16622,7 +16908,9 @@ Matsuo Bashō ||| Matsuo Bashō
 Matsuyama, Ehime ||| Matsuyama, Ehime
 Matt Dallas ||| Matt Dallas
 Matt Damon ||| Matt Damon
+Matt K. Miller ||| Matt K. Miller
 Matt Parkman ||| Matt Parkman
+Matthias Joseph Isuja ||| Matthias Joseph Isuja
 Matumizi ya ardhi ||| Land use
 Matungu ||| Matungu
 Matwiga ||| Matwiga
@@ -16633,6 +16921,7 @@ Mauaji ya kimbari ||| Genocide
 Mauaji ya maalbino ||| Persecution of people with albinism
 Maubelo ||| Maubelo
 Maubeuge ||| Maubeuge
+Maudhui ||| Content
 Maugo ||| Maugo
 Mauja ya Mazingira ||| List of environmental health hazards
 Maulana Ron Karenga ||| Maulana Karenga
@@ -16671,10 +16960,12 @@ Maximilian Kolbe ||| Maximilian Kolbe
 Maximinus Thrax ||| Maximinus Thrax
 Maxixe ||| Maxixe 
 May Ayim ||| May Ayim
+May-Britt Moser ||| May-Britt Moser
 Maya Herrera ||| Maya Herrera
 Maya ||| Maya civilization
 Mayen ||| Mayen
 Mayenne ||| Mayenne
+Maykop ||| Maykop
 Maynard ||| Maynard
 Maynard, Massachusetts ||| Maynard, Massachusetts
 Mayotte ||| Mayotte
@@ -16688,6 +16979,7 @@ Mazae ||| Mazae
 Mazgirt ||| Mazgirt
 Mazinde ||| Mazinde
 Mazingira ya Yesu ||| Historical background of the New Testament
+Mazingira ||| Environment
 Mazishi ||| Funeral
 Mazisi Kunene ||| Mazisi Kunene
 Maziwa makubwa ya Amerika Kaskazini ||| Great Lakes
@@ -16736,6 +17028,7 @@ Mbili ||| 2
 Mbilimbi ||| Averrhoa bilimbi
 Mbingu ||| Heaven
 Mbinu wa rediokaboni ||| Radiocarbon dating
+Mbinu ||| Method
 Mbio ya Marathon ||| Marathon
 Mbiringani ||| Eggplant
 Mbita Point ||| Mbita Point
@@ -16748,11 +17041,13 @@ Mbono ||| Jatropha curcas
 Mboo ||| Penis
 Mbozi ||| Mbozi District
 Mbu ||| Nematocera
+Mbuga baridi ||| Steppe
 Mbuga wa safari ||| Safari park
 Mbuga ||| Mbuga
 Mbugani ||| Mbugani
 Mbuguni ||| Mbuguni
 Mbulelo Mzamane ||| Mbulelo Mzamane
+Mbulu mjini ||| Mbulu
 Mbulumbulu ||| Mbulumbulu
 Mbungo ||| Saba 
 Mbuni ||| Coffea
@@ -16797,6 +17092,9 @@ Mdanzi ||| Bitter orange
 Mdengu ||| Lentil
 Mdomo ||| Lip
 Mdororo Mkuu ||| Great Depression
+Mdudu Mabawa-makubwa ||| Megaloptera
+Mdudu Mabawa-marefu ||| Mecoptera
+Mdudu Mabawa-vena ||| Neuroptera
 Mdudu Mdomo-ndani ||| Entognatha
 Mdudu Mikia-mitatu ||| Thysanura
 Mdudu Mikia-miwili ||| Diplura
@@ -16819,6 +17117,7 @@ Medford, Massachusetts ||| Medford, Massachusetts
 Medici ||| House of Medici
 Medicine Hat, Alberta ||| Medicine Hat
 Medinaceli ||| Medinaceli
+Megatani ||| Megaton
 Meghalaya ||| Meghalaya
 Meghri ||| Meghri
 Mehmed II ||| Mehmed the Conqueror
@@ -16834,6 +17133,7 @@ Mel Blanc ||| Mel Blanc
 Mel Gibson ||| Mel Gibson
 Melaky ||| Melaky
 Melanesia ||| Melanesia
+Melanini ||| Melanin
 Melbourne ||| Melbourne
 Melekeok ||| Melekeok 
 Meles Zenawi ||| Meles Zenawi
@@ -16856,14 +17156,18 @@ Memphis Grizzlies ||| Memphis Grizzlies
 Memphis, Tennessee ||| Memphis, Tennessee
 Menabe ||| Menabe
 Mende ||| Blattodea
+Mende-kibyongo ||| Beetle
+Menderes ||| Menderes, İzmir
 Menelik II. ||| Menelik II
 Menen ||| Menen
+Mengen, Turkey ||| Mengen, Bolu
 Mengistu Haile Mariam ||| Mengistu Haile Mariam
 Meningitis ||| Meningitis
 Meno ||| Tooth
 Menton ||| Menton
 Meram ||| Meram
 Mercy Myra ||| Mercy Myra
+Mere Lava ||| Merelava
 Meriba ||| Meribah
 Meridian, Mississippi ||| Meridian, Mississippi
 Meriç, Edirne ||| Meriç, Edirne
@@ -16900,6 +17204,7 @@ Methani ||| Methane
 Method Man ||| Method Man
 Methuen, Massachusetts ||| Methuen, Massachusetts
 Metkei ||| Metkei
+Metodi wa Olimpo ||| Methodius of Olympus
 Metorolojia ||| Meteorology
 Metsamor ||| Metsamor
 Metsimotlhabe ||| Metsimotlhabe
@@ -16928,16 +17233,17 @@ Mfereji wa Panama ||| Panama Canal
 Mfereji wa Suez ||| Suez Canal
 Mfereji ||| Canal
 Mfiadini ||| Martyr
+Mfiwi mafuta ||| Lablab
+Mfiwi ||| Phaseolus lunatus
 Mfonio ||| Digitaria exilis
 Mforosadi ||| Morus 
 Mfululizo safu wa kikemia katika mfumo radidia ||| Chemical series
-Mfululizo wa Filamu za Sabata ||| The Sabata Trilogy
 Mfumo majira ||| Coordinate system
 Mfumo radidia ||| Periodic table
 Mfumo wa chama kimoja ||| One-party state
 Mfumo wa hatimiliki wa Torrens ||| Torrens title
 Mfumo wa homoni ||| Endocrine system
-Mfumo wa jua na sayari zake ||| Solar System
+Mfumo wa jua ||| Solar System
 Mfumo wa kingamaradhi ||| Immune system
 Mfumo wa mmeng'enyo wa chakula ||| Human digestive system
 Mfumo wa mzunguko wa damu ||| Circulatory system
@@ -16963,10 +17269,181 @@ Mguu ||| Leg
 Mhanga Mkubwa ||| Giant anteater
 Mhanga ||| Aardvark
 Mhanganungu ||| Echidna
+Mharagwe-pana ||| Vicia faba
 Mhobiti ||| Hobbit
 Mhozo ||| Wheatear
 Mhunzi ||| Blacksmith
 Mia Kirshner ||| Mia Kirshner
+Mia mbili arubaini na mbili ||| 242 
+Mia mbili arubaini na moja ||| 241 
+Mia mbili arubaini na nane ||| 248 
+Mia mbili arubaini na nne ||| 244 
+Mia mbili arubaini na saba ||| 247 
+Mia mbili arubaini na sita ||| 246 
+Mia mbili arubaini na tano ||| 245 
+Mia mbili arubaini na tatu ||| 243 
+Mia mbili arubaini na tisa ||| 249 
+Mia mbili hamsini na mbili ||| 252 
+Mia mbili hamsini na moja ||| 251 
+Mia mbili hamsini na nane ||| 258 
+Mia mbili hamsini na nne ||| 254 
+Mia mbili hamsini na saba ||| 257 
+Mia mbili hamsini na sita ||| 256 
+Mia mbili hamsini na tano ||| 255 
+Mia mbili hamsini na tatu ||| 253 
+Mia mbili hamsini na tisa ||| 259 
+Mia mbili ishirini na mbili ||| 222 
+Mia mbili ishirini na moja ||| 221 
+Mia mbili ishirini na nane ||| 228 
+Mia mbili ishirini na nne ||| 224 
+Mia mbili ishirini na saba ||| 227 
+Mia mbili ishirini na sita ||| 226 
+Mia mbili ishirini na tano ||| 225 
+Mia mbili ishirini na tatu ||| 223 
+Mia mbili ishirini na tisa ||| 229 
+Mia mbili kumi na mbili ||| 212 
+Mia mbili kumi na moja ||| 211 
+Mia mbili kumi na nane ||| 218 
+Mia mbili kumi na nne ||| 214 
+Mia mbili kumi na saba ||| 217 
+Mia mbili kumi na sita ||| 216 
+Mia mbili kumi na tano ||| 215 
+Mia mbili kumi na tatu ||| 213 
+Mia mbili kumi na tisa ||| 219 
+Mia mbili na arubaini ||| 240 
+Mia mbili na hamsini ||| 250 
+Mia mbili na ishirini ||| 220 
+Mia mbili na kumi ||| 210 
+Mia mbili na mbili ||| 202 
+Mia mbili na moja ||| 201 
+Mia mbili na nane ||| 208 
+Mia mbili na nne ||| 204 
+Mia mbili na saba ||| 207 
+Mia mbili na sabini na saba ||| 277 
+Mia mbili na sabini na sita ||| 276 
+Mia mbili na sabini na tatu ||| 273 
+Mia mbili na sabini ||| 270 
+Mia mbili na sita ||| 206 
+Mia mbili na sitini ||| 260 
+Mia mbili na tano ||| 205 
+Mia mbili na tatu ||| 203 
+Mia mbili na thelathini ||| 230 
+Mia mbili na themanini na nne ||| 284 
+Mia mbili na themanini ||| 280 
+Mia mbili na tisa ||| 209 
+Mia mbili na tisini ||| 290 
+Mia mbili sitini na tatu ||| 263 
+Mia mbili sitini na tisa ||| 269 
+Mia mbili thelathini na mbili ||| 232 
+Mia mbili thelathini na moja ||| 231 
+Mia mbili thelathini na nane ||| 238 
+Mia mbili thelathini na nne ||| 234 
+Mia mbili thelathini na saba ||| 237 
+Mia mbili thelathini na sita ||| 236 
+Mia mbili thelathini na tano ||| 235 
+Mia mbili thelathini na tatu ||| 233 
+Mia mbili thelathini na tisa ||| 239 
+Mia mbili ||| 200 
+Mia moja arobaini na mbili ||| 142 
+Mia moja arobaini na moja ||| 141 
+Mia moja arobaini na nane ||| 148 
+Mia moja arobaini na nne ||| 144 
+Mia moja arobaini na saba ||| 147 
+Mia moja arobaini na sita ||| 146 
+Mia moja arobaini na tano ||| 145 
+Mia moja arobaini na tatu ||| 143 
+Mia moja arobaini na tisa ||| 149 
+Mia moja hamsini na moja ||| 151 
+Mia moja hamsini na nne ||| 154 
+Mia moja hamsini na tatu ||| 153 
+Mia moja na hamsini na mbili ||| 152 
+Mia moja na hamsini na nane ||| 158 
+Mia moja na hamsini na saba ||| 157 
+Mia moja na hamsini na sita ||| 156 
+Mia moja na hamsini na tano ||| 155 
+Mia moja na hamsini na tisa ||| 159 
+Mia moja na hamsini ||| 150 
+Mia moja na ishirini na mbili ||| 122 
+Mia moja na ishirini na moja ||| 121 
+Mia moja na ishirini na nane ||| 128 
+Mia moja na ishirini na nne ||| 124 
+Mia moja na ishirini na saba ||| 127 
+Mia moja na ishirini na sita ||| 126 
+Mia moja na ishirini na tano ||| 125 
+Mia moja na ishirini na tatu ||| 123 
+Mia moja na ishirini na tisa ||| 129 
+Mia moja na ishirini ||| 120 
+Mia moja na kumi na mbili ||| 112 
+Mia moja na kumi na moja ||| 111 
+Mia moja na kumi na nane ||| 118 
+Mia moja na kumi na nne ||| 114 
+Mia moja na kumi na saba ||| 117 
+Mia moja na kumi na sita ||| 116 
+Mia moja na kumi na tano ||| 115 
+Mia moja na kumi na tatu ||| 113 
+Mia moja na kumi na tisa ||| 119 
+Mia moja na kumi ||| 110 
+Mia moja na mbili ||| 102 
+Mia moja na moja ||| 101 
+Mia moja na nane ||| 108 
+Mia moja na nne ||| 104 
+Mia moja na saba ||| 107 
+Mia moja na sabini ||| 170 
+Mia moja na sita ||| 106 
+Mia moja na sitini ||| 160 
+Mia moja na tano ||| 105 
+Mia moja na tatu ||| 103 
+Mia moja na thelathini na mbili ||| 132 
+Mia moja na thelathini na moja ||| 131 
+Mia moja na thelathini na nane ||| 138 
+Mia moja na thelathini na nne ||| 134 
+Mia moja na thelathini na saba ||| 137 
+Mia moja na thelathini na sita ||| 136 
+Mia moja na thelathini na tano ||| 135 
+Mia moja na thelathini na tatu ||| 133 
+Mia moja na thelathini na tisa ||| 139 
+Mia moja na themanini na tano ||| 185 
+Mia moja na themanini na tisa ||| 189 
+Mia moja na themanini ||| 180 
+Mia moja na tisa ||| 109 
+Mia moja na tisini ||| 190 
+Mia moja sabini na mbili ||| 172 
+Mia moja sabini na moja ||| 171 
+Mia moja sabini na nane ||| 178 
+Mia moja sabini na nne ||| 174 
+Mia moja sabini na saba ||| 177 
+Mia moja sabini na sita ||| 176 
+Mia moja sabini na tano ||| 175 
+Mia moja sabini na tatu ||| 173 
+Mia moja sabini na tisa ||| 179 
+Mia moja sabini ||| 170 
+Mia moja sitini na mbili ||| 162 
+Mia moja sitini na moja ||| 161 
+Mia moja sitini na nane ||| 168 
+Mia moja sitini na nne ||| 164 
+Mia moja sitini na saba ||| 167 
+Mia moja sitini na sita ||| 166 
+Mia moja sitini na tano ||| 165 
+Mia moja sitini na tatu ||| 163 
+Mia moja sitini na tisa ||| 169 
+Mia moja thelathini ||| 130 
+Mia moja themanini na mbili ||| 182 
+Mia moja themanini na moja ||| 181 
+Mia moja themanini na nane ||| 188 
+Mia moja themanini na nne ||| 184 
+Mia moja themanini na saba ||| 187 
+Mia moja themanini na sita ||| 186 
+Mia moja themanini na tatu ||| 183 
+Mia moja tisini na mbili ||| 192 
+Mia moja tisini na moja ||| 191 
+Mia moja tisini na nane ||| 198 
+Mia moja tisini na nne ||| 194 
+Mia moja tisini na saba ||| 197 
+Mia moja tisini na sita ||| 196 
+Mia moja tisini na tano ||| 195 
+Mia moja tisini na tatu ||| 193 
+Mia moja tisini na tisa ||| 199 
+Mia na arobaini ||| 140 
 Mia ||| 100 
 Miaka ya 0 KK ||| 0s BC
 Miaka ya 0 ||| 0s
@@ -17128,6 +17605,7 @@ Miaka ya 1690 KK ||| 1690s BC
 Miaka ya 1690 ||| 1690s
 Miaka ya 170 KK ||| 170s BC
 Miaka ya 170 ||| 170s
+Miaka ya 1700 KK ||| 1700s BC 
 Miaka ya 1700 ||| 1700s 
 Miaka ya 1710 KK ||| 1710s BC
 Miaka ya 1710 ||| 1710s
@@ -17178,6 +17656,14 @@ Miaka ya 200 KK ||| 200s BC
 Miaka ya 200 ||| 200s 
 Miaka ya 2000 ||| 2000s 
 Miaka ya 2010 ||| 2010s
+Miaka ya 2020 ||| 2020s
+Miaka ya 2030 ||| 2030s
+Miaka ya 2040 ||| 2040s
+Miaka ya 2050 ||| 2050s
+Miaka ya 2060 ||| 2060s
+Miaka ya 2070 ||| 2070s
+Miaka ya 2080 ||| 2080s
+Miaka ya 2090 ||| 2090s
 Miaka ya 210 KK ||| 210s BC
 Miaka ya 210 ||| 210s
 Miaka ya 220 KK ||| 220s BC
@@ -17324,6 +17810,7 @@ Miaka ya 860 KK ||| 860s BC
 Miaka ya 860 ||| 860s
 Miaka ya 870 KK ||| 870s BC
 Miaka ya 870 ||| 870s
+Miaka ya 880 KK ||| 880s BC
 Miaka ya 880 ||| 880s
 Miaka ya 890 KK ||| 890s BC
 Miaka ya 890 ||| 890s
@@ -17364,6 +17851,7 @@ Michael Douglas ||| Michael Douglas
 Michael Dudikoff ||| Michael Dudikoff
 Michael Faraday ||| Michael Faraday
 Michael Jackson ||| Michael Jackson
+Michael Levitt ||| Michael Levitt
 Michael Pupin ||| Mihajlo Pupin
 Michael Radford ||| Michael Radford
 Michael Ranneberger ||| Michael Ranneberger
@@ -17386,6 +17874,7 @@ Michezo ||| Sport
 Michigan ||| Michigan
 Michoacán ||| Michoacán
 Michoro ya Kondoa ||| Kondoa Irangi Rock Paintings
+Michoro ya miambani ||| Rock art
 Mick Wingert ||| Mick Wingert
 Mickey Mouse ||| Mickey Mouse
 Microsoft ||| Microsoft
@@ -17428,6 +17917,7 @@ Mikoa ya Chile ||| Regions of Chile
 Mikoa ya Cote d'Ivoire ||| Regions of Ivory Coast
 Mikoa ya Gabon ||| Provinces of Gabon
 Mikoa ya Indonesia ||| Provinces of Indonesia
+Mikoa ya Italia ||| Regions of Italy
 Mikoa ya Jamhuri ya Kidemokrasia ya Kongo ||| Provinces of the Democratic Republic of the Congo
 Mikoa ya Kazakhstan ||| Regions of Kazakhstan
 Mikoa ya Kenya ||| Provinces of Kenya
@@ -17474,6 +17964,7 @@ Milima ya Lebanoni ndogo ||| Anti-Lebanon Mountains
 Milima ya Lebanoni ||| Mount Lebanon
 Milima ya Mahale ||| Mahale Mountains National Park
 Milima ya Mwezi ||| Mountains of the Moon 
+Milima ya Ngong ||| Ngong Hills
 Milima ya Udzungwa ||| Udzungwa Mountains
 Milima ya Ural ||| Ural Mountains
 Milima ya Usambara ||| Usambara Mountains
@@ -17566,6 +18057,7 @@ Mito, Ibaraki ||| Mito, Ibaraki
 Mitsubishi Fuso Canter ||| Mitsubishi Fuso Canter
 Mitsubishi Fuso Fighter ||| Mitsubishi Fuso Fighter
 Mitsubishi pajero Mini ||| Mitsubishi Pajero Mini
+Mitume Petro na Paulo ||| Feast of Saints Peter and Paul
 Mitume na Manabii katika Uislamu ||| Prophets and messengers in Islam
 Mitume wa Yesu ||| Apostle 
 Mitunduruni ||| Mitunduruni
@@ -17578,6 +18070,7 @@ Miwani ||| Glasses
 Miyazaki ||| Miyazaki
 Miyazaki, Miyazaki ||| Miyazaki, Miyazaki
 Miyuji ||| Miyuji
+Mizani ||| Weighing scale
 Mizengo Kayanza Peter Pinda ||| Mizengo Pinda
 Mizimu ||| Soul
 Mizizi ya dhambi ||| Seven deadly sins
@@ -17597,6 +18090,8 @@ Mji wa Ho Chi Minh ||| Ho Chi Minh City
 Mji wa Kale ||| Mombasa Old Town
 Mji wa Mto Rouge, Michigan ||| River Rouge, Michigan
 Mji ||| Town
+Mjoho kaki ||| Diospyros kaki
+Mjoho ||| Diospyros
 Mjunju ||| Balanites aegyptiaca
 Mjölby ||| Mjölby
 Mkaapweke ||| Hermit
@@ -17612,7 +18107,6 @@ Mkesha ||| Thrush
 Mkesha-maji ||| Dipper
 Mkeshamsitu ||| Alethe
 Mkimbizi ||| Refugee
-Mkinga ||| Mkinga
 Mkoa Huru wa Hanty-Mansi ||| Khanty-Mansi Autonomous Okrug
 Mkoa Huru wa Yamalo-Nenets ||| Yamalo-Nenets Autonomous Okrug
 Mkoa wa 6 Oktoba ||| 6th of October Governorate
@@ -17782,12 +18276,12 @@ Mkoa wa Karaman ||| Karaman Province
 Mkoa wa Karas ||| ǁKaras Region
 Mkoa wa Kars ||| Kars Province
 Mkoa wa Karuzi ||| Karuzi Province
-Mkoa wa Kasai Mashariki ||| Kasai-Oriental
+Mkoa wa Kasai Mashariki ||| Kasai-Oriental 
 Mkoa wa Kaskazini ||| Northern Province, Zambia
 Mkoa wa Kaskazini-Magharibi ||| North-Western Province, Zambia
 Mkoa wa Kaskazini-Mashariki ||| North Eastern Province 
 Mkoa wa Kastamonu ||| Kastamonu Province
-Mkoa wa Katanga Juu ||| Haut-Katanga Province 
+Mkoa wa Katanga Juu ||| Haut-Katanga Province
 Mkoa wa Katavi ||| Katavi Region
 Mkoa wa Kati ||| Central Province 
 Mkoa wa Kati ||| Central Province, Zambia
@@ -17826,11 +18320,11 @@ Mkoa wa Lai Châu ||| Lai Châu Province
 Mkoa wa Las Palmas ||| Province of Las Palmas
 Mkoa wa León ||| Province of León
 Mkoa wa Lindi ||| Lindi Region
-Mkoa wa Lomami Juu ||| Haut-Lomami District
+Mkoa wa Lomami Juu ||| Haut-Lomami
 Mkoa wa Long An ||| Long An Province
 Mkoa wa Los Lagos ||| Los Lagos Region
 Mkoa wa Los Ríos ||| Los Ríos Region
-Mkoa wa Lualaba ||| Lualaba Province 
+Mkoa wa Lualaba ||| Lualaba Province
 Mkoa wa Luapula ||| Luapula Province
 Mkoa wa Lugo ||| Province of Lugo
 Mkoa wa Lulua ||| Lulua District
@@ -17865,7 +18359,7 @@ Mkoa wa Minya ||| Minya Governorate
 Mkoa wa Misiones ||| Misiones Province
 Mkoa wa Miyagi ||| Miyagi Prefecture
 Mkoa wa Miyazaki ||| Miyazaki Prefecture
-Mkoa wa Mongala ||| Mongala District
+Mkoa wa Mongala ||| Mongala
 Mkoa wa Montagnes ||| Dix-Huit Montagnes
 Mkoa wa Monufia ||| Monufia Governorate
 Mkoa wa Morogoro ||| Morogoro Region
@@ -17946,7 +18440,7 @@ Mkoa wa Salta ||| Salta Province
 Mkoa wa Samsun ||| Samsun Province
 Mkoa wa San Juan ||| San Juan Province, Argentina
 Mkoa wa San Luis ||| San Luis Province
-Mkoa wa Sankuru ||| Sankuru District
+Mkoa wa Sankuru ||| Sankuru
 Mkoa wa Santa Cruz de Tenerife ||| Province of Santa Cruz de Tenerife
 Mkoa wa Santa Cruz, Argentina ||| Santa Cruz Province, Argentina
 Mkoa wa Santa Cruz, Bolivia ||| Santa Cruz Department 
@@ -17978,7 +18472,7 @@ Mkoa wa Sóc Trăng ||| Sóc Trăng Province
 Mkoa wa Sơn La ||| Sơn La Province
 Mkoa wa Tabora ||| Tabora Region
 Mkoa wa Tanga ||| Tanga Region
-Mkoa wa Tanganyika ||| Tanganyika District
+Mkoa wa Tanganyika ||| Tanganyika Province
 Mkoa wa Tarapacá ||| Tarapacá Region
 Mkoa wa Tarija ||| Tarija Department
 Mkoa wa Tarragona ||| Province of Tarragona
@@ -17998,8 +18492,8 @@ Mkoa wa Tottori ||| Tottori Prefecture
 Mkoa wa Toyama ||| Toyama Prefecture
 Mkoa wa Trabzon ||| Trabzon Province
 Mkoa wa Trà Vinh ||| Trà Vinh Province
-Mkoa wa Tshopo ||| Tshopo District
-Mkoa wa Tshuapa ||| Tshuapa District
+Mkoa wa Tshopo ||| Tshopo
+Mkoa wa Tshuapa ||| Tshuapa
 Mkoa wa Tucumán ||| Tucumán Province
 Mkoa wa Tunceli ||| Tunceli Province
 Mkoa wa Tuyên Quang ||| Tuyên Quang Province
@@ -18018,8 +18512,8 @@ Mkoa wa Vizcaya ||| Biscay
 Mkoa wa Vĩnh Long ||| Vĩnh Long Province
 Mkoa wa Vĩnh Phúc ||| Vĩnh Phúc Province
 Mkoa wa Wakayama ||| Wakayama Prefecture
-Mkoa wa Wele Chini ||| Bas-Uele District
-Mkoa wa Wele Juu ||| Haut-Uele District
+Mkoa wa Wele Chini ||| Bas-Uele
+Mkoa wa Wele Juu ||| Haut-Uele
 Mkoa wa Woleu-Ntem ||| Woleu-Ntem Province
 Mkoa wa Worodougou ||| Worodougou
 Mkoa wa Yalova ||| Yalova Province
@@ -18037,7 +18531,7 @@ Mkoa wa Ávila ||| Province of Ávila
 Mkoa wa Çanakkale ||| Çanakkale Province
 Mkoa wa Çankırı ||| Çankırı Province
 Mkoa wa Çorum ||| Çorum Province
-Mkoa wa Équateur ||| Équateur
+Mkoa wa Équateur ||| Équateur 
 Mkoa wa Điện Biên ||| Điện Biên Province
 Mkoa wa Đắk Lắk ||| Đắk Lắk Province
 Mkoa wa Đắk Nông ||| Đắk Nông Province
@@ -18064,7 +18558,6 @@ Mkufu ||| Necklace
 Mkuki ||| Spear
 Mkundu ||| Anus
 Mkungu ||| Terminalia catappa
-Mkuranga ||| Mkuranga
 Mkurugenzi ||| Chief executive officer
 Mkusanyo wa Sheria za Kanisa ||| Canon law 
 Mkutano huria ||| Unconference
@@ -18131,7 +18624,9 @@ Mmopane ||| Mmopane
 Mmoyomoyo ||| Sapindus
 Mmutlana ||| Mmutlane
 Mnana ||| Ploceus
+Mnanasi ||| Ananas
 Mnandi ||| Cormorant
+Mnandi-pwani ||| Frigatebird
 Mnara wa Babeli ||| Tower of Babel
 Mnara wa Eiffel ||| Eiffel Tower
 Mnara wa taa ||| Lighthouse
@@ -18141,6 +18636,8 @@ Mnavunavu ||| Physalis peruviana
 Mnazi ||| Coconut
 Mndimu Mtamu ||| Citrus limetta
 Mnenia ||| Mnenia
+Mnjegere mkubwa ||| Garbanzo bean
+Mnjegere wa kizungu ||| Pea
 Mnjugu ||| Peanut
 Mnjugu-mawe ||| Vigna subterranea
 Mnururisho sumakuumeme ||| Electromagnetic radiation
@@ -18151,6 +18648,7 @@ Mnyama ||| Animal
 Mnyama-upupu ||| Cnidaria
 Mnyanya ||| Tomato
 Mnyoo ||| Ascaris lumbricoides
+Mnyoo-bapa ||| Flatworm
 Mo Yan ||| Mo Yan
 Moabu ||| Moab
 Moatize ||| Moatize
@@ -18176,7 +18674,7 @@ Mogoditshane ||| Mogoditshane
 Mogome ||| Mogome
 Mogonono ||| Mogonono
 Mogorosi ||| Mogorosi
-Mohamed Abdelaziz ||| Mohamed Abdelaziz
+Mohamed Abdelaziz ||| Mohamed Abdelaziz 
 Mohamed Ali Alabbar ||| Mohamed Alabbar
 Mohamed Amin ||| Mohamed Amin
 Mohamed Boudiaf ||| Mohamed Boudiaf
@@ -18208,8 +18706,10 @@ Molière ||| Molière
 Molly Shannon ||| Molly Shannon
 Molo, Kenya ||| Molo, Kenya
 Moluska ||| Mollusca
+Mombasa Island ||| Mombasa Island
 Mombasa Roots ||| Mombasa Roots
 Mombasa ||| Mombasa
+Mombo ||| Mombo, Tanzania
 Momozono ||| Emperor Momozono
 Mona Lisa ||| Mona Lisa
 Monaghan ||| Monaghan
@@ -18312,6 +18812,7 @@ Morsang-sur-Orge ||| Morsang-sur-Orge
 Moruroa ||| Moruroa
 Morwa ||| Morwa
 Mos Def ||| Mos Def
+Moscow City ||| Moscow International Business Center
 Moscow Oblast ||| Moscow Oblast
 Moscow Times ||| The Moscow Times
 Moscow ||| Moscow
@@ -18378,7 +18879,7 @@ Mpira wa kikapu ||| Basketball
 Mpira wa miguu ||| Association football
 Mpira ||| Ball
 Mpira ||| Hevea brasiliensis
-Mplamu ||| Prunus
+Mplamu ||| Plum
 Mpombo ||| Mpombo
 Mpopi ||| Papaver somniferum
 Mpopoo ||| Areca catechu
@@ -18387,6 +18888,7 @@ Mpumalanga ||| Mpumalanga
 Mpunga ||| Oryza
 Mpunguzi ||| Mpunguzi
 Mpwapwa Mjini ||| Mpwapwa Mjini
+Mpwapwa ||| Mpwapwa
 Mpwayungu ||| Mpwayungu
 Mr. & Mrs. Smith ||| Mr. & Mrs. Smith 
 Mr. Smith ||| Mr. Smith 
@@ -18424,6 +18926,8 @@ Mshumaa wa Pasaka ||| Paschal candle
 Mshumaa ||| Candle
 Msia ||| Msia 
 Msichana ||| Girl
+Msikiti wa Nurul Islam ||| Nurul Islam Mosque
+Msikiti wa Omar Ibn al-Khattab ||| Mosque of Omar Ibn Al-Khattab
 Msikiti wa Sultan Ahmed ||| Sultan Ahmed Mosque
 Msikiti wa Taifa wa Abuja ||| Abuja National Mosque
 Msikiti wa Umawiya ||| Umayyad Mosque
@@ -18450,6 +18954,7 @@ Msumbiji ||| Mozambique
 Mswaki ||| Miswak
 Mswaki ||| Salvadora persica
 Mswati III wa Uswazi ||| Mswati III
+Mtaalamu ||| Specialist
 Mtaguso Mkuu ||| Ecumenical council
 Mtaguso wa Efeso ||| Council of Ephesus
 Mtaguso wa Firenze ||| Council of Florence
@@ -18496,6 +19001,7 @@ Mti wa uzima ||| Tree of life
 Mti ||| Tree
 Mtimbi ||| Imperata cylindrica
 Mtindo wa Kiroma ||| Romanesque architecture
+Mtindohuru ||| Freestyle rap
 Mtini ||| Common fig
 Mtinko ||| Mtinko
 Mtipa ||| Mtipa
@@ -18626,6 +19132,7 @@ Mudurnu ||| Mudurnu
 Mueda ||| Mueda
 Mughanga ||| Mughanga
 Mugirango Kaskazini ||| North Mugirango Constituency
+Mugumu mjini ||| Mugumu
 Muhamad VI ||| Mohammed VI of Morocco
 Muhammad Ahmad ibn Abd Allah Al-Mahdi ||| Muhammad Ahmad
 Muhammad Ali ||| Muhammad Ali
@@ -18641,6 +19148,7 @@ Muhintiri ||| Muhintiri
 Muhogo ||| Cassava
 Muhoroni ||| Muhoroni
 Mukaa ||| Mukaa
+Mukhisa Kituyi ||| Mukhisa Kituyi
 Mukono ||| Mukono Town
 Mukurwe-ini ||| Mukurwe-ini
 Mukuuri ||| Mukuuri
@@ -18681,7 +19189,6 @@ Murray Gell-Mann ||| Murray Gell-Mann
 Murrieta, California ||| Murrieta, California
 Musa Otieno ||| Musa Otieno
 Musa ||| Moses
-Musa ||| Musa 
 Musabeyli ||| Musabeyli
 Musalia Mudavadi ||| Musalia Mudavadi
 Musandam ||| Musandam Governorate
@@ -18691,6 +19198,7 @@ Music of the Sun ||| Music of the Sun
 Musikari Kombo ||| Musikari Kombo
 Muskat ||| Muscat, Oman
 Musoma ||| Musoma
+Mussa ||| Musa 
 Mustafa Mkulo ||| Mustafa Mkulo
 Mustafakemalpaşa ||| Mustafakemalpaşa
 Mustelidae ||| Mustelidae
@@ -18713,7 +19221,7 @@ Muungano wa mabenki ya Equity ||| Equity Group Holdings Limited
 Muungano ||| Muungano
 Muungo metali ||| Metallic bonding
 Muwa ||| Saccharum
-Muwati ||| Acacia
+Muwati ||| Acacia 
 Muyinga ||| Muyinga
 Muza ||| Muse
 Muziki kwenye miaka ya 1990 ||| 1990s in music
@@ -18757,6 +19265,7 @@ Mwana wa Daudi ||| Davidic line
 Mwana wa Mungu ||| Son of God
 Mwanaanga ||| Astronaut
 Mwanafalsafa ||| Philosopher
+Mwanahisabati ||| Mathematician
 Mwanajimbo ||| Secular clergy
 Mwanakondoo wa Mungu ||| Lamb of God
 Mwanamichezo ||| Athlete
@@ -18764,6 +19273,8 @@ Mwanamitindo ||| Model
 Mwanamke ||| Woman
 Mwanamuziki ||| Musician
 Mwananyamala ||| Mwananyamala
+Mwanasayansi ||| Scientist
+Mwanasheria Mkuu ||| Advocate General
 Mwanaume ||| Man
 Mwandeti ||| Mwandeti
 Mwandiko wa Kichina ||| Chinese characters
@@ -18940,13 +19451,16 @@ Nakapiripirit ||| Nakapiripirit
 Nakaseke ||| Nakaseke
 Nakasongola ||| Nakasongola
 Nakheel ||| Nakheel Properties
+Nakshi ||| Ornament 
 Nakumatt ||| Nakumatt
 Nakuru ||| Nakuru
 Nala ||| Nala 
 Nalchik ||| Nalchik
 Nallıhan ||| Nallıhan
 Namanga ||| Namanga 
+Namba asilia ||| Natural number
 Namba atomia ||| Atomic number
+Namba hasi ||| Negative number
 Namba kivunge ||| Composite number
 Namba tasa ||| Prime number
 Namba za Kiroma ||| Roman numerals
@@ -18998,6 +19512,7 @@ Narlidere ||| Narlıdere
 Narman ||| Narman
 Naro Moru ||| Naro Moru
 Narok ||| Narok
+Naryan-Mar ||| Naryan-Mar
 Nas ||| Nas
 Nasaba ya Chou ||| Zhou dynasty
 Nasaba ya Flavia ||| Flavian dynasty
@@ -19045,6 +19560,7 @@ Natiri ||| Sodium
 Natoli ||| Natoli
 Natural Born Killaz ||| Natural Born Killaz
 Nature of a Sista ||| Nature of a Sista
+Nature ||| Nature 
 Nature's Valley ||| Nature's Valley
 Naucalpan ||| Naucalpan
 Naughty Girl ||| Naughty Girl 
@@ -19059,6 +19575,7 @@ Nazi ||| Nazi
 Nazilli ||| Nazilli
 Nazimiye ||| Nazımiye
 Nazir Mustafa Karamagi ||| Nazir Karamagi
+Nazran ||| Nazran
 Ncaang ||| Ncaang
 Ncha ya kaskazini ||| North Pole
 Ncha ya kusini ||| South Pole
@@ -19067,7 +19584,6 @@ Nchi isiyo na dini ||| Secular state
 Nchi kavu ||| Land
 Nchi lindwa ||| Protectorate
 Nchi takatifu ||| Holy Land
-Nchi ya kimabara ||| List of transcontinental countries
 Nchi za Kibalti ||| Baltic states
 Nchi za Maziwa Makuu ||| African Great Lakes
 Nchi za visiwa ||| Island country
@@ -19087,7 +19603,7 @@ Ndezi ||| Cane rat
 Ndimu ||| Lime 
 Ndizi ||| Banana
 Ndoa ||| Marriage
-Ndoa ||| Marriage 
+Ndoa ||| Marriage in the Catholic Church
 Ndoero ||| Crab-plover
 Ndola ||| Ndola
 Ndoto ya chumba chekundu ||| Dream of the Red Chamber
@@ -19125,6 +19641,7 @@ Nembo ya Slovenia ||| Coat of arms of Slovenia
 Nembo ya Tanzania ||| Coat of arms of Tanzania
 Nembo ya Uganda ||| Coat of arms of Uganda
 Nembo za Afrika ||| Coats of arms and emblems of Africa
+Nembo ||| Logo
 Nenagh ||| Nenagh
 Nengonengo ||| Nengonengo
 Neno ||| Word
@@ -19231,8 +19748,8 @@ Ngong, Kenya ||| Ngong, Kenya
 Ngonga ||| Ngonga
 Ngono zembe ||| Safe sex
 Ngorongoro ||| Ngorongoro 
-Ngorongoro ||| Ngorongoro Conservation Area
 Ngozi ||| Lake Ngozi
+Ngozi ||| Ngozi
 Ngozi ||| Ngozi, Burundi
 Ngozi ||| Skin
 Nguchiro ||| Mongoose
@@ -19264,6 +19781,7 @@ Nick Nolte ||| Nick Nolte
 Nicky Byrne ||| Nicky Byrne
 Nicolaas Bloembergen ||| Nicolaas Bloembergen
 Nicolaas Louw ||| N. P. van Wyk Louw
+Nicolae Dică ||| Nicolae Dică
 Nicolas Anelka ||| Nicolas Anelka
 Nicolas Appert ||| Nicolas Appert
 Nicolas Sarkozy ||| Nicolas Sarkozy
@@ -19333,6 +19851,7 @@ Nishati ||| Energy
 Nissan X-Trail ||| Nissan X-Trail
 Nitrojeni ||| Nitrogen
 Niue ||| Niue
+Nizhnevartovsk ||| Nizhnevartovsk
 Nizhniy Novgorod Oblast ||| Nizhny Novgorod Oblast
 Nizhniy Novgorod ||| Nizhny Novgorod
 Nizhniy Tagil ||| Nizhny Tagil
@@ -19341,7 +19860,6 @@ Nièvre ||| Nièvre
 Niğde ||| Niğde
 Njaa ||| Famine
 Njabulo Ndebele ||| Njabulo Ndebele
-Njegere ||| Pea
 Njenga Karume ||| Njenga Karume
 Njia nyeupe ||| Milky Way
 Njia ya Msalaba ||| Stations of the Cross
@@ -19349,6 +19867,7 @@ Njia ya Pwani ya Welisi ||| Wales Coast Path
 Njia ya reli ||| Track 
 Njiwa ||| Columba 
 Njoge ||| Njoge
+Njombe ||| Njombe
 Njombe ||| Njombe Mjini
 Njoro ||| Njoro
 Njozi ||| Beatific vision
@@ -19382,6 +19901,7 @@ Nomino za jumla ||| Collective noun
 Nomino za pekee ||| Proper noun
 Nomino za wingi ||| Mass noun
 Nomino ||| Noun
+Nona ||| Nonna of Nazianzus
 Nonde ||| Nonde
 Nondo ||| Moth
 Nondwa ||| Nondwa
@@ -19400,7 +19920,7 @@ Norfolk ||| Norfolk
 Norfolk, Virginia ||| Norfolk, Virginia
 Norman Angell ||| Norman Angell
 Norman Haworth ||| Norman Haworth
-Norman Ramsey ||| Norman Foster Ramsey, Jr.
+Norman Ramsey ||| Norman Foster Ramsey Jr.
 Norplant ||| Levonorgestrel implant
 Norrbottens län ||| Norrbotten County
 Norrköping ||| Norrköping
@@ -19448,10 +19968,13 @@ Nouméa ||| Nouméa
 Nova Scotia ||| Nova Scotia
 Novak Djokovich ||| Novak Djokovic
 Novara ||| Novara
+Novaya Zemlya ||| Novaya Zemlya
 Novemba ||| November
 Novgorod Oblast ||| Novgorod Oblast
 Novi, Michigan ||| Novi, Michigan
+Noviy Urengoy ||| Novy Urengoy
 Novokuznetsk ||| Novokuznetsk
+Novorossiysk ||| Novorossiysk
 Novosibirsk Oblast ||| Novosibirsk Oblast
 Novosibirsk ||| Novosibirsk
 Noya Department ||| Noya Department
@@ -19468,7 +19991,8 @@ Nubia ||| Nubia
 Nueva Esparta ||| Nueva Esparta
 Nuevo León ||| Nuevo León
 Nuhu ||| Noah
-Nuksi ||| Misfortune
+Nuksi ||| Misfortune 
+Nukta ||| Point 
 Nuktambili ||| Colon 
 Nuku'alofa ||| Nukuʻalofa
 Nukutavake ||| Nukutavake
@@ -19593,6 +20117,7 @@ Oakville, Ontario ||| Oakville, Ontario
 Oasisi ||| Oasis
 Oaxaca ||| Oaxaca
 Oaxaca, Oaxaca ||| Oaxaca City
+Ob ||| Ob River
 Ober-Ramstadt ||| Ober-Ramstadt
 Oberhausen ||| Oberhausen
 Obertshausen ||| Obertshausen
@@ -19617,6 +20142,7 @@ Odvar Nordli ||| Odvar Nordli
 Odysseas Elytis ||| Odysseas Elytis
 Oeiras e São Julião da Barra ||| Oeiras e São Julião da Barra
 Of , Trabzon ||| Of, Turkey
+Off the Wall ||| Off the Wall
 Off the Wall ||| Off the Wall 
 Offenbach am Main ||| Offenbach am Main
 Offenburg ||| Offenburg
@@ -19632,6 +20158,7 @@ Ohio ||| Ohio River
 Oholiabu ||| Oholiab
 Oise ||| Oise
 Ojai, California ||| Ojai, California
+Oka ||| Oka River
 Okapi ||| Okapi
 Okavango ||| Okavango River
 Okayama ||| Okayama 
@@ -19642,10 +20169,11 @@ Oklahoma City, Oklahoma ||| Oklahoma City
 Oklahoma ||| Oklahoma
 Okoani Kibosho ||| Okaoni
 Okonkwo ||| Okonkwo
+Okrug Huru wa Nenets ||| Nenets Autonomous Okrug
 Okrug huru ya Chukotka ||| Chukotka Autonomous Okrug
 Oksijeni ||| Oxygen
 Oktoba ||| October
-Okwawu United ||| Okwawu United
+Okwawu United ||| Okwawu United F.C.
 Ol Doinyo Lengai ||| Ol Doinyo Lengai
 Ol Donyo Sabuk ||| Ol Donyo Sabuk
 Ol Kalou ||| Ol Kalou
@@ -19669,6 +20197,7 @@ Olive Branch, Mississippi ||| Olive Branch, Mississippi
 Oliver Mtukudzi ||| Oliver Mtukudzi
 Oliver N'Goma ||| Oliver N'Goma
 Oliver Queen ||| Justice League 
+Oliver Smithies ||| Oliver Smithies
 Oliver Tambo ||| Oliver Tambo
 Olivet, Loiret ||| Olivet, Loiret
 Oljoro ||| Oljoro
@@ -19685,6 +20214,7 @@ Olympia, Washington ||| Olympia, Washington
 Omaha, Nebraska ||| Omaha, Nebraska
 Omani ||| Oman
 Omar Bongo ||| Omar Bongo
+Omar Brown ||| Omar Brown 
 Omar Gooding ||| Omar Gooding
 Omar Khayyam ||| Omar Khayyam
 Omar al-Bashir ||| Omar al-Bashir
@@ -19707,6 +20237,7 @@ One Day in Your Life ||| One Day in Your Life
 One Giant Leap ||| One Giant Leap
 One Hundred and One Dalmatians ||| One Hundred and One Dalmatians
 One Sweet Day ||| One Sweet Day
+Onesiforo ||| Onesiphorus
 Onesimo ||| Onesimus
 Onjo wa Baekje ||| Onjo of Baekje
 Ono ||| Passion 
@@ -19723,6 +20254,7 @@ Opera ||| Opera
 Oposumu ||| Opossum
 Oppland ||| Oppland
 Optatam Totius ||| Optatam Totius
+Optatus wa Milevi ||| Optatus
 Opus Dei ||| Opus Dei
 Opuwo ||| Opuwo
 Oradell, New Jersey ||| Oradell, New Jersey
@@ -19765,11 +20297,10 @@ Orodha ya Hifadhi za Taifa nchini Cote d'Ivoire ||| List of national parks of Iv
 Orodha ya Hifadhi za Taifa nchini Kenya ||| List of national parks of Kenya
 Orodha ya Machansela wa Austria ||| List of Chancellors of Austria
 Orodha ya Magavana Wakuu wa Tanganyika ||| List of governors of Tanganyika
-Orodha ya Makabila nchini Kenya ||| List of ethnic groups in Kenya
 Orodha ya Makaizari wa Byzantini ||| List of Byzantine emperors
 Orodha ya Makaizari wa Roma ||| List of Roman emperors
 Orodha ya Makaizari wa Ujerumani ||| List of German monarchs
-Orodha ya Makamu wa Rais Tanzania ||| Vice President of Tanzania
+Orodha ya Makamu wa Rais Tanzania ||| Vice-President of Tanzania
 Orodha ya Makardinali ||| List of living cardinals
 Orodha ya Marais wa Algeria ||| List of heads of state of Algeria
 Orodha ya Marais wa Angola ||| List of heads of state of Angola
@@ -19848,6 +20379,7 @@ Orodha ya lugha za Niger ||| Languages of Niger
 Orodha ya lugha za Nigeria ||| Languages of Nigeria
 Orodha ya lugha za Pakistan ||| Languages of Pakistan
 Orodha ya lugha za Togo ||| Languages of Togo
+Orodha ya lugha za Uganda ||| Languages of Uganda
 Orodha ya mabenki barani Afrika ||| List of banks in Africa
 Orodha ya magazeti nchini Pakistan ||| List of newspapers in Pakistan
 Orodha ya mahospitali nchini Afrika Kusini ||| List of hospitals in South Africa
@@ -19866,11 +20398,12 @@ Orodha ya masoko ya hisa barani Afrika ||| List of African stock exchanges
 Orodha ya maziwa ya Kenya ||| List of lakes of Kenya
 Orodha ya maziwa ya Tanzania ||| List of lakes of Tanzania
 Orodha ya maziwa ya Uganda ||| List of lakes of Uganda
+Orodha ya maziwa ya Urusi ||| List of lakes of Russia
 Orodha ya migogoro barani Afrika ||| List of conflicts in Africa
 Orodha ya miji mikuu ya majimbo ya Marekani ||| List of capitals in the United States
 Orodha ya miji ya Afrika Kusini ||| List of populated places in South Africa
 Orodha ya miji ya Alabama ||| List of cities and towns in Alabama
-Orodha ya miji ya Alaska ||| List of census-designated places in Alaska
+Orodha ya miji ya Alaska ||| List of cities in Alaska
 Orodha ya miji ya Albania ||| List of cities in Albania
 Orodha ya miji ya Andorra ||| List of cities in Andorra
 Orodha ya miji ya Arizona ||| List of cities and towns in Arizona
@@ -19884,7 +20417,7 @@ Orodha ya miji ya Denmark ||| List of cities in Denmark by population
 Orodha ya miji ya Dubai ||| List of communities in Dubai
 Orodha ya miji ya Ethiopia ||| List of cities and towns in Ethiopia
 Orodha ya miji ya Hispania ||| List of municipalities of Spain
-Orodha ya miji ya Hungaria ||| List of cities and towns in Hungary
+Orodha ya miji ya Hungaria ||| List of cities and towns of Hungary
 Orodha ya miji ya Illinois ||| List of cities in Illinois
 Orodha ya miji ya Indonesia ||| List of cities in Indonesia
 Orodha ya miji ya Italia ||| List of cities in Italy
@@ -19936,12 +20469,13 @@ Orodha ya mikoa ya Hispania ||| Provinces of Spain
 Orodha ya mikoa ya Tanzania kwa eneo ||| List of Tanzanian regions by area
 Orodha ya milima ||| List of mountains
 Orodha ya mitambo ya utafutaji ||| List of search engines
+Orodha ya mito ya Urusi ||| List of rivers of Russia
 Orodha ya nasaba za Kichina ||| Dynasties in Chinese history
 Orodha ya nchi kufuatana na wakazi ||| List of countries and dependencies by population
-Orodha ya nchi za Afrika kulingana na idadi ya watu ||| List of African countries by population density
 Orodha ya nchi za Afrika ||| List of sovereign states and dependent territories in Africa
 Orodha ya nyimbo zilizotayarishwa na Jimmy Jam na Terry Lewis ||| Jimmy Jam and Terry Lewis production discography
 Orodha ya viongozi ||| Lists of office-holders
+Orodha ya visiwa vya Urusi ||| List of islands of Russia
 Orodha ya vita ||| Lists of wars
 Orodha ya vitabu vya Biblia ||| Books of the Bible
 Orodha ya vituo vya redio nchini Nigeria ||| List of radio stations in Nigeria
@@ -19956,12 +20490,14 @@ Orodha ya vyuo vikuu nchini Uhindi ||| List of universities in India
 Orodha ya waandishi wa Afrika Kusini ||| List of South African writers
 Orodha ya wachezaji wa klabu ya Soka ya Manchester United ||| List of Manchester United F.C. players
 Orodha ya wafalme wa Lesotho ||| List of Kings of Lesotho
-Orodha ya wakuu wa nchi wa Guinea ||| List of heads of state of Guinea
-Orodha ya wakuu wa nchi ya Gabon ||| List of heads of state of Gabon
+Orodha ya wakuu wa nchi wa Guinea ||| List of Presidents of Guinea
+Orodha ya wakuu wa nchi ya Gabon ||| List of Presidents of Gabon
 Orodha ya wanamuziki wa Soukous ||| List of Soukous musicians
+Orodha ya wanamuziki wa hip hop ||| List of hip hop musicians
 Orodha ya wapiga gitaa wa Afrika ||| List of African guitarists
 Orodha ya watawala wa Ghana ||| Lists of rulers of Ghana
 Oromo ||| Oromo people
+Orsk ||| Orsk
 Orson Welles ||| Orson Welles
 Orta ||| Orta
 Ortaca ||| Ortaca
@@ -20008,6 +20544,7 @@ Otto Stern ||| Otto Stern
 Otto Wallach ||| Otto Wallach
 Otto Warburg ||| Otto Heinrich Warburg
 Otto von Bismarck ||| Otto von Bismarck
+Ouangolodougou ||| Ouangolodougou
 Oudtshoorn ||| Oudtshoorn
 Oullins ||| Oullins
 Out of Time ||| Out of Time 
@@ -20078,6 +20615,7 @@ Pachuca, Hidalgo ||| Pachuca
 Pader ||| Pader, Uganda
 Paderborn ||| Paderborn
 Padova ||| Padua
+Pafnusi wa Tebe ||| Paphnutius of Thebes
 Pahi ||| Pahi 
 Paja ||| Thigh
 Paje ||| Paje, Botswana
@@ -20122,6 +20660,7 @@ Palu , Elazığ ||| Palu, Elazığ
 Pamanzi ||| Pamanzi
 Pamba ||| Cotton
 Pambazuko ||| Sunrise
+Pambo ||| Decorative arts
 Pamela Jelimo ||| Pamela Jelimo
 Pampu ||| Pump
 Pamukkale ||| Pamukkale
@@ -20413,6 +20952,7 @@ Papa Yohane XXIII ||| Pope John XXIII
 Papa Zakarya ||| Pope Zachary
 Papa Zephyrinus ||| Pope Zephyrinus
 Papa Zosimus ||| Pope Zosimus
+Papa mteule Stefano ||| Pope-elect Stephen
 Papa ||| Pope
 Papa ||| Shark
 Papa'z Song ||| Papa'z Song
@@ -20504,6 +21044,7 @@ Paul Dirac ||| Paul Dirac
 Paul Ehrlich ||| Paul Ehrlich
 Paul Ereng ||| Paul Ereng
 Paul Flory ||| Paul Flory
+Paul Greengard ||| Paul Greengard
 Paul Hermann Müller ||| Paul Hermann Müller
 Paul Heyse ||| Paul Heyse
 Paul Horgan ||| Paul Horgan
@@ -20512,9 +21053,12 @@ Paul Karrer ||| Paul Karrer
 Paul Kellerman ||| Paul Kellerman
 Paul Kipsiele Koech ||| Paul Kipsiele Koech
 Paul L. Smith ||| Paul L. Smith
+Paul Lauterbur ||| Paul Lauterbur
 Paul McCartney ||| Paul McCartney
+Paul Modrich ||| Paul L. Modrich
 Paul Newman ||| Paul Newman
 Paul Ngei ||| Paul Ngei
+Paul Nurse ||| Paul Nurse
 Paul Sabatier ||| Paul Sabatier 
 Paul Schulze ||| Paul Schulze
 Paul Simon ||| Paul Simon
@@ -20524,6 +21068,7 @@ Paul Éluard ||| Paul Éluard
 Paula Abdul ||| Paula Abdul
 Paulino wa Nola ||| Paulinus of Nola
 Paulo Ahyi ||| Paul Ahyi
+Paulo Burali ||| Paolo Burali d'Arezzo
 Paulo Diakono ||| Paul the Deacon
 Paulo Miki ||| Paulo Miki
 Paulo wa Msalaba ||| Paul of the Cross
@@ -20579,6 +21124,7 @@ Peoria, Arizona ||| Peoria, Arizona
 Pepe Kallé ||| Pépé Kallé
 Pepperell, Massachusetts ||| Pepperell, Massachusetts
 Per Borten ||| Per Borten
+Pera ||| Pera
 Pera ||| Psidium
 Percy Bridgman ||| Percy Williams Bridgman
 Perfectae Caritatis ||| Perfectae Caritatis
@@ -20610,6 +21156,7 @@ Peter Crouch ||| Peter Crouch
 Peter Damian ||| Peter Damian
 Peter Debye ||| Peter Debye
 Peter Dinklage ||| Peter Dinklage
+Peter Doherty ||| Peter C. Doherty
 Peter Eriksson ||| Peter Eriksson 
 Peter Grünberg ||| Peter Grünberg
 Peter Higgs ||| Peter Higgs
@@ -20617,6 +21164,7 @@ Peter I wa Urusi ||| Peter the Great
 Peter Jackson ||| Peter Jackson
 Peter Kenneth ||| Peter Kenneth
 Peter MacNicol ||| Peter MacNicol
+Peter Mansfield ||| Peter Mansfield
 Peter Medawar ||| Peter Medawar
 Peter Mitchell ||| Peter D. Mitchell
 Peter O'Toole ||| Peter O'Toole
@@ -20636,6 +21184,7 @@ Petro wa Alkantara ||| Peter of Alcantara
 Petro wa Betancur ||| Peter of Saint Joseph de Betancur
 Petroli ||| Gasoline
 Petronius Maximus ||| Petronius Maximus
+Petropavlovsk-Kamchatskiy ||| Petropavlovsk-Kamchatsky
 Petrozavodsk ||| Petrozavodsk
 Peyton Rous ||| Francis Peyton Rous
 Pforzheim ||| Pforzheim
@@ -20653,9 +21202,11 @@ Philemon Ndesamburo ||| Philemon Ndesamburo
 Philip Anderson ||| Philip Warren Anderson
 Philip Emeagwali ||| Philip Emeagwali
 Philip Hench ||| Philip Showalter Hench
+Philip Noel-Baker ||| Philip Noel-Baker
 Philipp Lenard ||| Philipp Lenard
 Philippe Van Parijs ||| Philippe Van Parijs
 Philippus Mwarabu ||| Philip the Arab
+Phillip Sharp ||| Phillip Allen Sharp
 Philly Lutaaya ||| Philly Lutaaya
 Phiona Mutesi ||| Phiona Mutesi
 Phnom Penh ||| Phnom Penh
@@ -20683,6 +21234,7 @@ Pier Gerlofs Donia ||| Pier Gerlofs Donia
 Pierce Brosnan ||| Pierce Brosnan
 Pierre Brazza ||| Pierre Savorgnan de Brazza
 Pierre Curie ||| Pierre Curie
+Pierre Mauroy ||| Pierre Mauroy
 Pierre de Fermat ||| Pierre de Fermat
 Pierre, South Dakota ||| Pierre, South Dakota
 Pierre-Gilles de Gennes ||| Pierre-Gilles de Gennes
@@ -20691,6 +21243,7 @@ Pieter Brueghel Mzee ||| Pieter Bruegel the Elder
 Pieter Zeeman ||| Pieter Zeeman
 Pietermaritzburg ||| Pietermaritzburg
 Pigazzano ||| Pigazzano
+Pigmenti ||| Pigment
 Pijini ||| Pidgin
 Pikipiki ||| Motorcycle
 Pilane Station ||| Pilane 
@@ -20707,7 +21260,7 @@ Pinokyo ||| Pinocchio
 Pinole, California ||| Pinole, California
 Pinyinyi ||| Pinyinyi
 Pio Gama Pinto ||| Pio Gama Pinto
-Pio wa Pietrelcina ||| Pio of Pietrelcina
+Pio wa Pietrelcina ||| Padre Pio
 Piramidi za Giza ||| Giza pyramid complex
 Piramidi ||| Pyramid
 Piraziz ||| Piraziz
@@ -20832,6 +21385,7 @@ Portsmouth, New Hampshire ||| Manchester, New Hampshire
 Poseidoni ||| Poseidon
 Posferi ||| Phosphorus
 Posof ||| Posof
+Potenza ||| Potenza
 Potinus wa Lyon ||| Saint Pothinus
 Poto ||| Perodicticinae
 Potsdam ||| Potsdam
@@ -20863,6 +21417,7 @@ Prison Break ||| Prison Break
 Professor Jay ||| Professor Jay
 Professor X ||| Professor X
 Propaganda ||| Propaganda
+Prospa wa Akwitania ||| Prosper of Aquitaine
 Prospect Heights, Illinois ||| Prospect Heights, Illinois
 Protini ||| Protein
 Protista ||| Protist
@@ -20873,6 +21428,7 @@ Proviso East High School ||| Proviso East High School
 Prussia Mashariki ||| East Prussia
 Prussia ||| Prussia
 Pskov Oblast ||| Pskov Oblast
+Pskov ||| Pskov
 Pua ||| Nose
 Public Enemy ||| Public Enemy 
 Puducherry ||| Puducherry
@@ -21030,9 +21586,11 @@ Radviliškis ||| Radviliškis
 Raekwon ||| Raekwon
 Rafadha ||| Propeller
 Rafael Correa ||| Rafael Correa
+Raga ||| Rugby football
 Ragnar Granit ||| Ragnar Granit
 Rahabu ||| Rahab
 Raheli ||| Rachel
+Rahul Bose ||| Rahul Bose
 Rahway, New Jersey ||| Rahway, New Jersey
 Raila Odinga ||| Raila Odinga
 Railway ||| Railway 
@@ -21055,6 +21613,7 @@ Raleigh, North Carolina ||| Raleigh, North Carolina
 Ralf Krewinkel ||| Ralf Krewinkel
 Ralph Barton Perry ||| Ralph Barton Perry
 Ralph Bunche ||| Ralph Bunche
+Ralph Steinman ||| Ralph M. Steinman
 Rama Yade ||| Rama Yade
 Ramadan ||| Ramadan
 Ramallah ||| Ramallah
@@ -21077,6 +21636,7 @@ Randal Cremer ||| Randal Cremer
 Randall Duk Kim ||| Randall Duk Kim
 Randolph, Massachusetts ||| Randolph, Massachusetts
 Randy Jackson ||| Randy Jackson 
+Randy Schekman ||| Randy Schekman
 Randy Travis ||| Randy Travis
 Rangi ya waridi ||| Pink
 Rangi za Umoja wa Afrika ||| Pan-African colours
@@ -21084,6 +21644,7 @@ Rangi ||| Color
 Rangi ||| Web colors
 Rangiroa ||| Rangiroa
 Rania Al Abdullah ||| Queen Rania of Jordan
+Ranieri wa Pisa ||| Rainerius
 Ranko Matasović ||| Ranko Matasović
 Rap opera ||| Rap opera
 Rapa Iti ||| Rapa Iti
@@ -21127,7 +21688,7 @@ Ray C. ||| Ray C
 Ray Steadman-Allen ||| Ray Steadman-Allen
 Ray William Johnson ||| Ray William Johnson
 Raymond Aaron ||| Raymond Aron
-Raymond Davis ||| Raymond Davis, Jr.
+Raymond Davis ||| Raymond Davis Jr.
 Raymond Mwanyika ||| Raymond Mwanyika
 Rea Vipingo ||| Rea Vipingo
 Reach Records ||| Reach Records
@@ -21222,15 +21783,18 @@ Riadha ||| Sport of athletics
 Riali ya Zanzibar ||| Zanzibari ryal
 Riccardo Giacconi ||| Riccardo Giacconi
 Richa Adhia ||| Richa Adhia
+Richard Axel ||| Richard Axel
 Richard Ernst ||| Richard R. Ernst
 Richard Feynman ||| Richard Feynman
 Richard Griffiths ||| Richard Griffiths
+Richard Heck ||| Richard F. Heck
 Richard Hofstadter ||| Richard Hofstadter
 Richard Kiel ||| Richard Kiel
 Richard Kuhn ||| Richard Kuhn
 Richard Limo ||| Richard Limo
 Richard M. Johnson ||| Richard Mentor Johnson
 Richard Nixon ||| Richard Nixon
+Richard Roberts ||| Richard J. Roberts
 Richard Roxburgh ||| Richard Roxburgh
 Richard Schiff ||| Richard Schiff
 Richard Schrock ||| Richard R. Schrock
@@ -21302,13 +21866,18 @@ Robert Christgau ||| Robert Christgau
 Robert Curl ||| Robert Curl
 Robert De Niro ||| Robert De Niro
 Robert Downey, Jr. ||| Robert Downey Jr.
+Robert Furchgott ||| Robert F. Furchgott
+Robert G. Edwards ||| Robert Edwards 
 Robert Grubbs ||| Robert H. Grubbs
 Robert Hofstadter ||| Robert Hofstadter
 Robert Holley ||| Robert W. Holley
+Robert Horvitz ||| H. Robert Horvitz
 Robert Huber ||| Robert Huber
+Robert Huth ||| Robert Huth
 Robert James Waller ||| Robert James Waller
 Robert Koch ||| Robert Koch
 Robert Laughlin ||| Robert B. Laughlin
+Robert Lefkowitz ||| Robert Lefkowitz
 Robert Mambo ||| Robert Mambo Mumba
 Robert Merrifield ||| Robert Bruce Merrifield
 Robert Millikan ||| Robert Andrews Millikan
@@ -21328,6 +21897,7 @@ Robert Woodrow Wilson ||| Robert Woodrow Wilson
 Robert Woodward ||| Robert Burns Woodward
 Roberto Bellarmino ||| Robert Bellarmine
 Robertson, Rasi ya Magharibi ||| Robertson, Western Cape
+Robin Warren ||| Robin Warren
 Robin Williams ||| Robin Williams
 Roboti ||| Robot
 Rocawear ||| Rocawear
@@ -21379,6 +21949,7 @@ Roho ||| Spirit
 Roissy-en-Brie ||| Roissy-en-Brie
 Rokiškis ||| Rokiškis
 Roland Emmerich ||| Roland Emmerich
+Rolf Zinkernagel ||| Rolf M. Zinkernagel
 Rolfes Dhlomo ||| Rolfes Robert Reginald Dhlomo
 Roll Call ||| Roll Call
 Rolling Hills Estates, California ||| Rolling Hills Estates, California
@@ -21482,7 +22053,6 @@ Rufiji ||| Rufiji River
 Rufiryo ||| Rufiryo
 Rufus Wainwright ||| Rufus Wainwright
 Rugaruga ||| Ruga-Ruga
-Rugby ||| Rugby football
 Ruhollah Khomeini ||| Ruhollah Khomeini
 Ruiru ||| Ruiru
 Ruiwa ||| Ruiwa
@@ -21568,6 +22138,15 @@ Saba ||| Saba
 Sabah ||| Sabah
 Sabata ||| Sabata 
 Sabato ||| Shabbat
+Sabini na mbili ||| 72 
+Sabini na nane ||| 78 
+Sabini na nne ||| 74 
+Sabini na saba ||| 77 
+Sabini na sita ||| 76 
+Sabini na tano ||| 75 
+Sabini na tatu ||| 73 
+Sabini na tisa ||| 79 
+Sabini ||| 70 
 Sacho ||| Sacho
 Sachsen-Weimar ||| Saxe-Weimar
 Sacramento Kings ||| Sacramento Kings
@@ -21592,10 +22171,13 @@ Saga, Saga ||| Saga, Saga
 Sagana ||| Sagana
 Sagara ||| Sagara 
 Saguenay, Quebec ||| Saguenay, Quebec
+Sahalin Oblast ||| Sakhalin Oblast
+Sahalin ||| Sakhalin
 Sahara ya Magharibi ||| Western Sahara
 Sahara ||| Sahara
 Sahle Dengel ||| Sahle Dengel
 Said Amour Arfi ||| Said Amour Arfi
+Said bin Sultani ||| Said bin Sultan, Sultan of Muscat and Oman
 Saida Karoli ||| Saida Karoli
 Saidi Ntibazonkiza ||| Saidi Ntibazonkiza
 Saikoanalisia ||| Psychoanalysis
@@ -21662,8 +22244,8 @@ Saitama ||| Saitama
 Saitama, Saitama ||| Saitama, Saitama
 Saja ||| Saja, Tanzania
 Sakarya ||| Sakarya
-Sakhalin Oblast ||| Sakhalin Oblast
 Sakitu ||| Frost
+Sakramentari ||| Sacramentary
 Sakramenti ||| Sacrament
 Saksonia Chini ||| Lower Saxony
 Saksonia ||| Saxony
@@ -21683,6 +22265,7 @@ Salamu Maria ||| Hail Mary
 Saldanha Bay ||| Saldanha Bay Local Municipality
 Sale ||| Sale 
 Sale ||| Salé
+Salehard ||| Salekhard
 Salem ||| Salem
 Salem, Massachusetts ||| Salem, Massachusetts
 Salem, Oregon ||| Salem, Oregon
@@ -21695,6 +22278,7 @@ Salim Ahmed Salim ||| Salim Ahmed Salim
 Salim Hemed Khamis ||| Salim Hemed Khamis
 Salisbury, Nassau County, New York ||| Salisbury, Nassau County, New York
 Sally McLellan ||| Sally Pearson
+Salome ||| Salome 
 Salomon Kalou ||| Salomon Kalou
 Salon-de-Provence ||| Salon-de-Provence
 Salt Lake City, Utah ||| Salt Lake City
@@ -21721,6 +22305,7 @@ Samaria ||| Samaria
 Samba ||| Samba
 Sambava ||| Sambava
 Samburu ||| Samburu people
+Same Mjini ||| Same, Tanzania
 Samia Suluhu ||| Samia Suluhu
 Samir Nasri ||| Samir Nasri
 Samoa ya Marekani ||| American Samoa
@@ -21884,6 +22469,7 @@ Sason ||| Sason
 Sassari ||| Sassari
 Sataranji ||| Chess
 Satau ||| Satau
+Satoshi Omura ||| Satoshi Ōmura
 Saturnus ||| Saturn 
 Satyagraha ||| Satyagraha
 Satyajit Ray ||| Satyajit Ray
@@ -21910,11 +22496,13 @@ Say You'll Be There ||| Say You'll Be There
 Sayansi ya Jamii ||| Social science
 Sayansi za dunia ||| Earth science
 Sayansi ||| Science
+Sayari Tisa ||| Planet Nine
 Sayari kibete ||| Dwarf planet
 Sayari ||| Planet
 Sayreville, New Jersey ||| Sayreville, New Jersey
 Sayyid ||| Sayyid
 Saône-et-Loire ||| Saône-et-Loire
+Scarborough ||| Scarborough
 Scarborough ||| Scarborough, North Yorkshire
 Scarlet Ortiz ||| Scarlet Ortiz
 Schaumburg, Illinois ||| Schaumburg, Illinois
@@ -21967,6 +22555,7 @@ Secunderabad ||| Secunderabad
 Sedekia ||| Zedekiah
 Sedibeng ||| Sedibeng District Municipality
 Seeheim-Jugenheim ||| Seeheim-Jugenheim
+Seela Sing'isi ||| Singisi
 Sefania ||| Zephaniah
 Seferihisar ||| Seferihisar
 Sefophe ||| Sefophe
@@ -22076,6 +22665,7 @@ Seven Minutes to Midnight ||| Seven Minutes to Midnight
 Severo Ochoa ||| Severo Ochoa
 Sevilla ||| Seville
 Sevran ||| Sevran
+Sewa Haji Paroo ||| Sewa Haji Paroo
 Sexy Love ||| Sexy Love
 Seydiler ||| Seydiler
 Seydişehir ||| Seydişehir
@@ -22104,6 +22694,7 @@ Shakira ||| Shakira
 Shakivale ||| Buteo
 Shakwe ||| Gull
 Shakwe-mporaji ||| Skua
+Shamba ||| Farm
 Shambulio la 11 Septemba 2001 ||| September 11 attacks
 Shambulio la mfululizo la kifafa ||| Status epilepticus
 Shamsi Vuai Nahodha ||| Shamsi Vuai Nahodha
@@ -22114,6 +22705,7 @@ Shane Dawson ||| Shane Dawson
 Shane Filan ||| Shane Filan
 Shangani ||| Shangani
 Shanghai ||| Shanghai
+Shania Twain ||| Shania Twain
 Shantou ||| Shantou
 Shanwei ||| Shanwei
 Shanxi ||| Shanxi
@@ -22146,8 +22738,10 @@ Sherborn, Massachusetts ||| Sherborn, Massachusetts
 Sherbrooke, Quebec ||| Sherbrooke
 Sherehe kuu ||| Great Feasts of the Orthodox Church
 Sherehe ya Utamaduni ya Wamaragoli ||| Maragoli Cultural Festival
+Sherehe ||| Solemnity
 Sheri-Ann Brooks ||| Sheri-Ann Brooks
 Sheria ya Familia ||| Family law
+Sheria ya kimataifa ||| International law
 Sheria za Kanisa ||| Canon law
 Sheria ||| Law
 Sherine Tadros ||| Sherine Tadros
@@ -22172,10 +22766,11 @@ Shimotsuke, Tochigi ||| Shimotsuke, Tochigi
 Shina ||| Root 
 Shingo ya nchi ya Panama ||| Isthmus of Panama
 Shingo ||| Neck
-Shinichiro Tomonaga ||| Sin-Itiro Tomonaga
+Shinichiro Tomonaga ||| Sin'ichirō Tomonaga
 Shinikizo la juu la damu ||| Hypertension
 Shinikizo la ndani ya fuvu ||| Intracranial pressure
 Shinto ||| Shinto
+Shinya Yamanaka ||| Shinya Yamanaka
 Shinyanga ||| Shinyanga
 Shire ||| Shire River
 Shirika La Utangazaji La Kenya ||| Kenya Broadcasting Corporation
@@ -22187,6 +22782,7 @@ Shirika la Biashara Duniani ||| World Trade Organization
 Shirika la Bidhaa Pepe Huru ||| Free Software Foundation
 Shirika la Chakula na Kilimo la Umoja wa Mataifa ||| Food and Agriculture Organization
 Shirika la Huduma kwa Wanyama Pori ya Kenya ||| Kenya Wildlife Service
+Shirika la Kimataifa la Hidrografia ||| International Hydrographic Organization
 Shirika la Kimataifa la Nishati ya Nyuklia ||| International Atomic Energy Agency
 Shirika la Kimataifa la Usafiri wa Anga ||| International Air Transport Association
 Shirika la Kimataifa la Usanifishaji ||| International Organization for Standardization
@@ -22239,6 +22835,7 @@ Shrewsbury, New Jersey ||| Shrewsbury, New Jersey
 Shtuko la moyo ||| Myocardial infarction
 Shubiri ||| Span 
 Shughuli ||| Action 
+Shujaa wa Kesho ||| Legends of Tomorrow
 Shuji Nakamura ||| Shuji Nakamura
 Shukuru Kawambwa ||| Shukuru Kawambwa
 Shule ya Brookhouse ||| Brookhouse School
@@ -22290,6 +22887,7 @@ Sikkim ||| Sikkim
 Siklopsi ||| Cyclops
 Sikonge ||| Sikonge
 Siku tatu kuu za Pasaka ||| Paschal Triduum
+Siku ya Bwana ||| Lord's Day
 Siku ya Kimataifa ya Lugha ya Mama ||| International Mother Language Day
 Siku ya Pi ||| Pi Day
 Siku ya Ukimwi duniani ||| World AIDS Day
@@ -22301,6 +22899,7 @@ Sikusare ||| Equinox
 Sikwane ||| Sikwane
 Sila ||| Silas
 Silabi ||| Syllable
+Silaha za moto ||| Firearm
 Silaha ||| Weapon
 Sile-maua ||| Jacana
 Sili ||| Earless seal
@@ -22321,7 +22920,7 @@ Silvia Navarro ||| Silvia Navarro
 Sima Qian ||| Sima Qian
 Simanjiro ||| Simanjiro District
 Simav ||| Simav
-Simba S.C. ||| Ashanti United S.C.
+Simba S.C. ||| Simba S.C.
 Simba Wanyika ||| Simba Wanyika
 Simba wa Yuda ||| Lion of Judah
 Simba ||| Lion
@@ -22331,6 +22930,7 @@ Simeon Mulama ||| Simeon Mulama
 Simeon Nyachae ||| Simeon Nyachae
 Simeoni Mweusi ||| Simeon Niger
 Simeoni ||| Simeon
+Simferopol ||| Simferopol
 Simfoni ||| Symphony
 Simi Valley, California ||| Simi Valley, California
 Simiyu ||| Simiyu River
@@ -22361,10 +22961,8 @@ Sinema ya nyumbani ||| Home cinema
 Singapuri ||| Singapore
 Singe ||| Singe 
 Singen ||| Singen
-Singida Vijijini ||| Ikungi District
 Singida ||| Singida
 Singida ||| Singida 
-Singisi ||| Singisi
 Single Ladies ||| Single Ladies 
 Single ||| Single 
 Sinkopu ||| Syncope 
@@ -22393,6 +22991,15 @@ Sista ||| Nun
 Sita ||| 6 
 Sitaha ||| Deck 
 Siti Binti Saad ||| Siti binti Saad
+Sitini na mbili ||| 62 
+Sitini na moja ||| 61 
+Sitini na nane ||| 68 
+Sitini na nne ||| 64 
+Sitini na saba ||| 67 
+Sitini na sita ||| 66 
+Sitini na tano ||| 65 
+Sitini na tatu ||| 63 
+Sitini na tisa ||| 69 
 Sitini ||| 60 
 Sittard-Geleen ||| Sittard-Geleen
 Siuyu ||| Siuyu
@@ -22411,6 +23018,7 @@ Skellefteå ||| Skellefteå
 Skin Diamond ||| Skin Diamond
 Skizofrenia ||| Schizophrenia
 Sklerosisi ya kimiotrofia ya pembezoni ||| Amyotrophic lateral sclerosis
+Sklerosisi ya sehemu nyingi ||| Multiple sclerosis
 Skokie, Illinois ||| Skokie, Illinois
 Skolastika wa Nursia ||| Scholastica
 Skopje ||| Skopje
@@ -22419,7 +23027,7 @@ Skövde ||| Skövde
 Slant Magazine ||| Slant Magazine
 Slavonski Brod ||| Slavonski Brod
 Sleji ||| Sled
-SliTaz ||| SliTaz GNU/Linux
+SliTaz ||| SliTaz
 Slidell, Louisiana ||| Slidell, Louisiana
 Sligo ||| Sligo
 Slobodan Milosevic ||| Slobodan Milošević
@@ -22461,8 +23069,8 @@ Soko la Hisa la Nairobi ||| Nairobi Securities Exchange
 Soko la Hisa la Nigeria ||| Nigerian Stock Exchange
 Soko la Hisa la Uganda ||| Uganda Securities Exchange
 Soko la Hisa ||| Stock exchange
-Sokoni I ||| Sokoni I
-Sokoni II ||| Sokoni II
+Sokon II ||| Sokoni II
+Sokon Moja ||| Sokoni I
 Sokotra ||| Socotra
 Sokrates ||| Socrates
 Sokwe Mtu wa Kawaida ||| Common chimpanzee
@@ -22495,6 +23103,7 @@ Somogy ||| Somogy County
 Songea Mjini ||| Songea District
 Songea Vijijini ||| Songea Rural District
 Songea ||| Songea
+Songo Mnara ||| Songo Mnara
 Songoro ||| Songoro
 Sonora ||| Sonora
 Sooyoung ||| Choi Soo-young
@@ -22529,6 +23138,7 @@ South Valley Stream, New York ||| South Valley Stream, New York
 Southampton, New York ||| Southampton, New York
 Southaven, Mississippi ||| Southaven, Mississippi
 Southbridge, Massachusetts ||| Southbridge, Massachusetts
+Southern African Development Community ||| Southern African Development Community
 Southfield, Michigan ||| Southfield, Michigan
 Southgate, Michigan ||| Southgate, Michigan
 Southold, New York ||| Southold , New York
@@ -22583,9 +23193,10 @@ Stani ||| Tin
 Stanley Clarke ||| Stanley Clarke
 Stanley Cohen ||| Stanley Cohen 
 Stanley Kubrick ||| Stanley Kubrick
+Stanley Prusiner ||| Stanley B. Prusiner
 Stanton, California ||| Stanton, California
 Star Tribune ||| Star Tribune
-StarCraft ||| StarCraft
+StarCraft ||| StarCraft 
 Starkville, Mississippi ||| Starkville, Mississippi
 Stashahada ||| Diploma
 Staten Island ||| Staten Island
@@ -22595,6 +23206,7 @@ Stavropol ||| Stavropol
 Stay ||| Stay 
 Steal ||| Steal 
 Steers ||| Steers
+Stefan Hell ||| Stefan Hell
 Stefano wa Hungaria ||| Stephen I of Hungary
 Stefano ||| Saint Stephen
 Steiermark ||| Styria
@@ -22607,6 +23219,7 @@ Stephen Gray ||| Stephen Gray
 Stephen Jones Galinoma ||| Stephen Jones Galinoma
 Stephen Wasira ||| Stephen Wasira
 Stephen Watson ||| Stephen Watson 
+Sterlitamak ||| Sterlitamak
 Steve Biko ||| Steve Biko
 Steve Buscemi ||| Steve Buscemi
 Steve Jobs ||| Steve Jobs
@@ -22654,6 +23267,7 @@ Sudan Kusini ||| South Sudan
 Sudan ||| Sudan
 Sudbury ||| Sudbury
 Sudbury, Massachusetts ||| Sudbury, Massachusetts
+Suez ||| Suez
 Sufi ||| Bombax
 Sugar Land, Texas ||| Sugar Land, Texas
 Sui iuris ||| Sui iuris
@@ -22730,6 +23344,7 @@ Svante Arrhenius ||| Svante Arrhenius
 Sven Constantin Voelpel ||| Sven Voelpel
 Sven Stolpe ||| Sven Stolpe
 Sverdlovsk Oblast ||| Sverdlovsk Oblast
+Svetlana Alexievich ||| Svetlana Alexievich
 Swakopmund ||| Swakopmund
 Swala pala ||| Impala
 Swala ||| Gazelle
@@ -22737,8 +23352,10 @@ Swali ||| Question
 Swampscott, Massachusetts ||| Swampscott, Massachusetts
 Swear It Again ||| Swear It Again
 Swellendam ||| Swellendam
+Sydney Brenner ||| Sydney Brenner
 Sydney Bristow ||| Sydney Bristow
 Sydney ||| Sydney
+Syktyvkar ||| Syktyvkar
 Sylvester Stallone ||| Sylvester Stallone
 Sylvia Bahame ||| Miss World 2003
 Syosset, New York ||| Syosset, New York
@@ -22824,6 +23441,7 @@ Taiaro ||| Taiaro
 Taifa Stars ||| Tanzania national football team
 Taifa la Mungu ||| People of God
 Taifa ||| Nation
+Taiga ||| Taiga
 Taipei ||| Taipei
 Taiwo Atieno ||| Taiwo Atieno
 Taizé ||| Taizé Community
@@ -22904,6 +23522,7 @@ Tapachula, Chiapas ||| Tapachula
 Tarafa za Angola ||| Communes of Angola
 Tarakilishi ||| Computer
 Tarakilishikuu ||| Supercomputer
+Tarakimu ||| Numerical digit
 Taraklı ||| Taraklı
 Taranto ||| Taranto
 Tarbes ||| Tarbes
@@ -22944,6 +23563,7 @@ Taverny ||| Taverny
 Taveta ||| Taveta, Kenya
 Tavşanlı ||| Tavşanlı
 Tawakel Karman ||| Tawakkol Karman
+Tawimto ||| Tributary
 Tay Zonday ||| Tay Zonday
 Taya ||| Jaw
 Taya ||| Oribi
@@ -22955,13 +23575,16 @@ Taylor, Michigan ||| Taylor, Michigan
 Taşkent ||| Taşkent
 Taşköprü ||| Taşköprü
 Taşlıçay ||| Taşlıçay
+Taşoluk ||| Taşoluk
 Taşova ||| Taşova
 Tbilisi ||| Tbilisi
 Teaneck, New Jersey ||| Teaneck, New Jersey
 Tedd Josiah ||| Tedd Josiah
 Teddy Louise Kasela-Bantu ||| Teddy Louise Kasella-Bantu
+Teddy Riley ||| Teddy Riley
 Tefenni ||| Tefenni
 Tegan Moss ||| Tegan Moss
+Tegu ||| Cestoda
 Tegucigalpa ||| Tegucigalpa
 Tehran ||| Tehran
 Tehuacán, Puebla ||| Tehuacán
@@ -22979,6 +23602,7 @@ Teknolojia ||| Technology
 Teko Modise ||| Teko Modise
 Tekokota ||| Tekokota
 Tel Aviv ||| Tel Aviv
+Telangana ||| Telangana
 Teleka ||| Swift
 Teleka-mkiasindano ||| Needletail
 Teletubbies ||| Teletubbies
@@ -22999,6 +23623,7 @@ Temptations ||| Temptations
 Tenafly, New Jersey ||| Tenafly, New Jersey
 Tendo la ndoa ||| Sexual intercourse
 Tenerife ||| Tenerife
+Tengamaji ||| Drainage divide
 Tennessee ||| Tennessee
 Tennis ||| Tennis
 Tenno ||| Emperor of Japan
@@ -23084,7 +23709,7 @@ The Hits ||| The Hits
 The Italian Job ||| The Italian Job 
 The Jackson 5 ||| The Jackson 5
 The Joplin Globe ||| The Joplin Globe
-The Karaoke Collection ||| The Karaoke Collection
+The Karaoke Collection ||| The Karaoke Collection 
 The Kindness of Strangers ||| The Kindness of Strangers 
 The Kung-Fu Master Jackie Chan ||| The Kung-Fu Master Jackie Chan
 The Line ||| The Line 
@@ -23142,6 +23767,16 @@ Thelathini ||| 30
 Thelonious Monk ||| Thelonious Monk
 Theluji ||| Snow
 Them Mushrooms ||| Them Mushrooms
+Themanini na mbili ||| 82 
+Themanini na moja ||| 81 
+Themanini na nane ||| 88 
+Themanini na nne ||| 84 
+Themanini na saba ||| 87 
+Themanini na sita ||| 86 
+Themanini na tano ||| 85 
+Themanini na tatu ||| 83 
+Themanini na tisa ||| 89 
+Themanini ||| 80 
 Themi ||| Themi
 Thenashara ||| Dozen
 Theo Jörgensmann ||| Theo Jörgensmann
@@ -23182,6 +23817,7 @@ Thomas Mapfumo ||| Thomas Mapfumo
 Thomas More ||| Thomas More
 Thomas Sankara ||| Thomas Sankara
 Thomas Steitz ||| Thomas A. Steitz
+Thomas Südhof ||| Thomas C. Südhof
 Thomas Ulimwengu ||| Thomas Ulimwengu
 Thomas Vermaelen ||| Thomas Vermaelen
 Thomas Weller ||| Thomas Huckle Weller
@@ -23228,6 +23864,7 @@ Timor ya Mashariki ||| East Timor
 Timor ||| Timor
 Timotheo ||| Saint Timothy
 Timothy Dalton ||| Timothy Dalton
+Timothy Hunt ||| Tim Hunt
 Timu ya Taifa ya Kandanda ya Afrika Kusini ||| South Africa national football team
 Timu ya Taifa ya Kandanda ya Jibuti ||| Djibouti national football team
 Timu ya Taifa ya Kandanda ya Kenya ||| Kenya national football team
@@ -23241,6 +23878,17 @@ Tire, Turkey ||| Tire, İzmir
 Tirebolu ||| Tirebolu
 Tiripsi ||| Thrips
 Tiro ||| Tyre, Lebanon
+Tishu ||| Tissue 
+Tisini na mbili ||| 92 
+Tisini na moja ||| 91 
+Tisini na nane ||| 98 
+Tisini na nne ||| 94 
+Tisini na saba ||| 97 
+Tisini na sita ||| 96 
+Tisini na tano ||| 95 
+Tisini na tatu ||| 93 
+Tisini na tisa ||| 99 
+Tisini ||| 90 
 Titan ||| Titan 
 Titani ||| Titanium
 Titanic ||| RMS Titanic
@@ -23291,7 +23939,9 @@ Tom Lennox ||| Tom Lennox
 Tom Mboya ||| Tom Mboya
 Tom na Jerry ||| Tom and Jerry
 Tomarza ||| Tomarza
+Tomas Lindahl ||| Tomas Lindahl
 Tomas Tranströmer ||| Tomas Tranströmer
+Tomaso wa Villanova ||| Thomas of Villanova
 Tombo ||| Quail
 Tomisato, Chiba ||| Tomisato
 Tommy Boy Records ||| Tommy Boy Records
@@ -23392,9 +24042,12 @@ Trier ||| Trier
 Trieste ||| Trieste
 Trigonometria ||| Trigonometry
 Trilogy ||| Trilogy
+Trilojia ya Dollars ||| Dollars Trilogy
+Trilojia ya filamu za Sabata ||| The Sabata Trilogy
 Trim ||| Trim, County Meath
 Trimurti ||| Trimurti
 Trinidad na Tobago ||| Trinidad and Tobago
+Trinitrotoluene ||| Trinitrotoluene
 Tripoli ||| Tripoli
 Tripoli ||| Tripoli 
 Tripura ||| Tripura
@@ -23428,6 +24081,7 @@ Tsu, Mie ||| Tsu, Mie
 Tsunami ||| Tsunami
 Tsung-Dao Lee ||| Tsung-Dao Lee
 Tu Fu ||| Du Fu
+Tu Youyou ||| Tu Youyou
 Tuamotu ||| Tuamotus
 Tuanake ||| Tuanake
 Tubu ||| Tubu, Botswana
@@ -23596,7 +24250,7 @@ Ubeberu ||| Imperialism
 Ubelgiji ||| Belgium
 Ubepari ||| Capitalism
 Ubertino wa Casale ||| Ubertino of Casale
-Ubingwa wa WWE ||| WWE World Heavyweight Championship
+Ubingwa wa WWE ||| WWE World Championship
 Ubongo ||| Brain
 Ubuddha wa kitibeti ||| Tibetan Buddhism
 Ubuddha ||| Buddhism
@@ -23626,7 +24280,7 @@ Uchumi Maduka Makubwa ||| Uchumi
 Uchumi wa Kenya ||| Economy of Kenya
 Uchumi ||| Economy
 Uddevalla ||| Uddevalla
-Udhibiti wa saratani ||| Management of cancer
+Udhibiti wa saratani ||| Treatment of cancer
 Udhibiti wa uzazi ||| Birth control
 Udikteta ||| Dictatorship
 Udmurtia ||| Udmurtia
@@ -23635,9 +24289,11 @@ Ueleaji ||| Lift
 Uetersen ||| Uetersen
 Ufa ||| Ufa
 Ufahamu wa uwezo wa kushika mimba ||| Fertility awareness
+Ufahamu ||| Understanding
 Ufalme wa Aksum ||| Kingdom of Aksum
 Ufalme wa Buyeo ||| Buyeo
 Ufalme wa Byzanti ||| Byzantine Empire
+Ufalme wa Italia ||| Kingdom of Italy
 Ufalme wa Kasanje ||| Kasanje Kingdom
 Ufalme wa Kazembe ||| Kazembe
 Ufalme wa Kongo ||| Kingdom of Kongo
@@ -23653,7 +24309,7 @@ Ufeministi ||| Feminism
 Ufilipino ||| Philippines
 Ufini ||| Finland
 Ufinyanzi ||| Pottery
-Ufizi wa meno ||| Gingiva
+Ufizi wa meno ||| Gums
 Ufuaji metali ||| Metallurgy
 Ufufuko wa Yesu ||| Resurrection of Jesus
 Ufufuko ||| Resurrection
@@ -23692,6 +24348,7 @@ Uhakiki wa Pitot ||| Pitot theorem
 Uhakiki wa Ptolemaio ||| Ptolemy's theorem
 Uhakiki wa Pythagoras ||| Pythagorean theorem
 Uhakiki wa de Gua ||| De Gua's theorem
+Uhakiki ||| Critic
 Uhalisia ||| Reality
 Uhamiaji ||| Migration
 Uhamisho wa Babeli ||| Babylonian captivity
@@ -23725,22 +24382,59 @@ Uislamu barani Asia ||| Islam in Asia
 Uislamu barani Ulaya ||| Islam in Europe
 Uislamu huko Oceania ||| Islam in Oceania
 Uislamu katika Guinea ya Ikweta ||| Islam in Equatorial Guinea
-Uislamu katika Jamhuri ya Kongo ||| Islam in the Democratic Republic of the Congo
+Uislamu katika Jamhuri ya Demokrasia ya Kongo ||| Islam in the Democratic Republic of the Congo
+Uislamu katika Jamhuri ya Kongo ||| Islam in the Republic of the Congo
+Uislamu katika Sahara Magharibi ||| Islam in Western Sahara
 Uislamu kwa nchi ||| Islam by country
 Uislamu mjini Zanzibar ||| Islam in Zanzibar
+Uislamu nchini Afrika Kusini ||| Islam in South Africa
 Uislamu nchini Algeria ||| Islam in Algeria
 Uislamu nchini Angola ||| Islam in Angola
 Uislamu nchini Botswana ||| Islam in Botswana
 Uislamu nchini Burkina Faso ||| Islam in Burkina Faso
 Uislamu nchini Burundi ||| Islam in Burundi
+Uislamu nchini Cameroon ||| Islam in Cameroon
 Uislamu nchini Cape Verde ||| Islam in Cape Verde
 Uislamu nchini Chad ||| Islam in Chad
+Uislamu nchini Djibouti ||| Islam in Djibouti
 Uislamu nchini Ethiopia ||| Islam in Ethiopia
+Uislamu nchini Gabon ||| Islam in Gabon
+Uislamu nchini Gambia ||| Islam in the Gambia
+Uislamu nchini Ghana ||| Islam in Ghana
+Uislamu nchini Guinea ||| Islam in Guinea
+Uislamu nchini Guinea-Bissau ||| Islam in Guinea-Bissau
 Uislamu nchini Ivory Coast ||| Islam in Ivory Coast
 Uislamu nchini Jamhuri ya Afrika ya Kati ||| Islam in the Central African Republic
+Uislamu nchini Kenya ||| Islam in Kenya
 Uislamu nchini Komori ||| Islam in the Comoros
+Uislamu nchini Lesotho ||| Islam in Lesotho
+Uislamu nchini Liberia ||| Islam in Liberia
+Uislamu nchini Libya ||| Islam in Libya
+Uislamu nchini Madagascar ||| Islam in Madagascar
+Uislamu nchini Malawi ||| Islam in Malawi
+Uislamu nchini Mali ||| Islam in Mali
+Uislamu nchini Mauritania ||| Islam in Mauritania
+Uislamu nchini Mauritius ||| Islam in Mauritius
 Uislamu nchini Misri ||| Islam in Egypt
+Uislamu nchini Moroko ||| Islam in Morocco
+Uislamu nchini Mozambique ||| Islam in Mozambique
+Uislamu nchini Namibia ||| Islam in Namibia
+Uislamu nchini Niger ||| Islam in Niger
+Uislamu nchini Nigeria ||| Islam in Nigeria
+Uislamu nchini Rwanda ||| Islam in Rwanda
+Uislamu nchini Seychelles ||| Islam in Seychelles
+Uislamu nchini Sierra Leone ||| Islam in Sierra Leone
+Uislamu nchini Somalia ||| Islam in Somalia
+Uislamu nchini Sudan Kusini ||| Islam in South Sudan
+Uislamu nchini Sudan ||| Islam in Sudan
+Uislamu nchini Swaziland ||| Islam in Swaziland
+Uislamu nchini São Tomé na Príncipe ||| Islam in São Tomé and Príncipe
 Uislamu nchini Tanzania ||| Islam in Tanzania
+Uislamu nchini Togo ||| Islam in Togo
+Uislamu nchini Tunisia ||| Islam in Tunisia
+Uislamu nchini Uganda ||| Islam in Uganda
+Uislamu nchini Zambia ||| Islam in Zambia
+Uislamu nchini Zimbabwe ||| Islam in Zimbabwe
 Uislamu ||| Islam
 Uitenhage ||| Uitenhage
 Ujain ||| Jainism
@@ -23764,7 +24458,7 @@ Ukanoni ||| Canons Regular
 Ukarabati ||| Rehabilitation
 Ukeketaji ||| Female genital mutilation
 Ukhalifa wa Cordoba ||| Caliphate of Córdoba
-Ukiki ||| Yellowbill
+Ukiki ||| Blue malkoha
 Ukimwi ||| HIV/AIDS
 Ukingo wa Magharibi wa Yordani ||| West Bank
 Ukmergė ||| Ukmergė
@@ -23892,7 +24586,7 @@ Union City, California ||| Union City, California
 Union City, New Jersey ||| Union City, New Jersey
 Union Township, Union County, New Jersey ||| Union Township, Union County, New Jersey
 Uniondale, New York ||| Uniondale, New York
-Unitatis Redintegratio ||| Unitatis Redintegratio
+Unitatis Redintegratio ||| Unitatis redintegratio
 United Biscuits ||| United Biscuits
 Universidade Federal de Minas Gerais ||| Federal University of Minas Gerais
 Universidade Federal do Recôncavo da Bahia ||| Federal University of Recôncavo da Bahia
@@ -23951,6 +24645,7 @@ Upumuo ||| Breathing
 Upungufu wa steroidi za bongo unaohusiana na ugonjwa mahututi ||| Critical illness-related corticosteroid insufficiency
 Uqba ibn Nafi ||| Uqba ibn Nafi
 Ur ||| Ur
+Uraia ||| Citizenship
 Uraibu ||| Addiction
 Urais wa Barack Obama ||| Presidency of Barack Obama
 Ural ||| Ural
@@ -24036,6 +24731,7 @@ Utakaso wa kikabila ||| Ethnic cleansing
 Utalii nchini Kenya ||| Tourism in Kenya
 Utalii nchini Morisi ||| Tourism in Mauritius
 Utalii ||| Tourism
+Utamaduni wa Kitanzania ||| Culture of Tanzania
 Utamaduni wa Nigeria ||| Culture of Nigeria
 Utamaduni ||| Culture
 Utandawazi ||| Globalization
@@ -24048,7 +24744,6 @@ Utawa wa Tatu wa Mt. Fransisko ||| Third Order of Saint Francis
 Utawa wa Tatu ||| Third order
 Utawala huria ||| Anarchism
 Utegemezi wa dawa za kulevya ||| Drug addiction
-Utegili ||| Plasma
 Utegili ||| Plasma 
 Utemini ||| Utemini
 Utena ||| Utena
@@ -24082,6 +24777,7 @@ Utume ||| Apostolates
 Utumiaji mbaya wa Pombe ||| Alcohol abuse
 Utumizi Mzuri wa Dawa ||| Compliance 
 Utumwa ||| Slavery
+Utungisho katika Wanyama ||| Fertilisation
 Utunziwa Mtoto ||| Child care
 Uturuki ||| Turkey
 Uumbaji ||| Creation myth
@@ -24222,7 +24918,7 @@ Vanadi ||| Vanadium
 Vanavana ||| Vanavana
 Vancouver ||| Vancouver
 Vandœuvre-lès-Nancy ||| Vandœuvre-lès-Nancy
-Vanessa L. Williams ||| Vanessa L. Williams
+Vanessa L. Williams ||| Vanessa Williams
 Vanga ||| Vanga
 Vannes ||| Vannes
 Vanuatu ||| Vanuatu
@@ -24244,6 +24940,7 @@ Vaulx-en-Velin ||| Vaulx-en-Velin
 Vejle ||| Vejle
 Velbert ||| Velbert
 Velika Gorica ||| Velika Gorica
+Velikiy Novgorod ||| Veliky Novgorod
 Vellinge ||| Vellinge
 Vellmar ||| Vellmar
 Velocity ||| Velocity 
@@ -24268,7 +24965,7 @@ Vernon, Eure ||| Vernon, Eure
 Verona ||| Verona
 Verona, New Jersey ||| Verona, New Jersey
 Veronika Giuliani ||| Veronica Giuliani
-Versailles ||| Versailles 
+Versailles ||| Versailles, Yvelines
 Vertebrata ||| Vertebrate
 Vertou ||| Vertou
 Verviers ||| Verviers
@@ -24293,6 +24990,7 @@ Victor Hipolito Martínez ||| Víctor Hipólito Martínez
 Victor Hugo ||| Victor Hugo
 Victor Kilasile Mwambalaswa ||| Victor Mwambalaswa
 Victor Obinna ||| Victor Obinna
+Victor Wanyama ||| Victor Wanyama
 Victoria Beckham ||| Victoria Beckham
 Victoria Falls ||| Victoria Falls
 Victoria Falls ||| Victoria Falls, Zimbabwe
@@ -24330,7 +25028,6 @@ Viktor Kozin ||| Viktor Kozin
 Viktoria wa Uingereza ||| Queen Victoria
 Vilabu Vya Wahudumu ||| Host and hostess clubs
 Vilanculo ||| Vilankulo
-Vilima vya ngong ||| Ngong Hills
 Vilkaviškis ||| Vilkaviškis
 Villa Park, California ||| Villa Park, California
 Villach ||| Villach
@@ -24388,6 +25085,9 @@ Visensya Gerosa ||| Vincenza Gerosa
 Vision of Love ||| Vision of Love
 Visiwa vidogo vya Venezuela ||| Federal Dependencies of Venezuela
 Visiwa vya Aland ||| Åland Islands
+Visiwa vya Andaman na Nicobar ||| Andaman and Nicobar Islands
+Visiwa vya Andaman ||| Andaman Islands
+Visiwa vya Baleari ||| Balearic Islands
 Visiwa vya Cocos ||| Cocos Islands
 Visiwa vya Cook ||| Cook Islands
 Visiwa vya Desventuradas ||| Desventuradas Islands
@@ -24421,7 +25121,7 @@ Vita baridi ||| Cold War
 Vita kati ya Irak na Uajemi ||| Iran-Iraq War
 Vita vya Schmalkald ||| Schmalkaldic War
 Vita vya wenyewe kwa wenyewe vya Marekani ||| American Civil War
-Vita ya Abushiri ||| Abushiri Revolt
+Vita ya Abushiri ||| Abushiri revolt
 Vita ya Japani na Urusi ya 1905 ||| Russo-Japanese War
 Vita ya Korea ||| Korean War
 Vita ya Maji Maji ||| Maji Maji Rebellion
@@ -24465,7 +25165,7 @@ Vladimir Oblast ||| Vladimir Oblast
 Vladimir Prelog ||| Vladimir Prelog
 Vladimir Putin ||| Vladimir Putin
 Vladimir Vysotsky ||| Vladimir Vysotsky
-Vladimir ||| Vladimir
+Vladimir ||| Vladimir, Russia
 Vladivostok ||| Vladivostok
 Vodacom ||| Vodacom
 Voi ||| Voi
@@ -24495,7 +25195,6 @@ Voyager 1 ||| Voyager 1
 Vrahovice ||| Vrahovice
 Vuai Abdalla Khamis ||| Vuai Abdallah Khamis
 Vukovar ||| Vukovar
-Vulgarisi ya chunusi ||| Acne vulgaris
 Vulgata ||| Vulgate
 Vumatiti ||| Bittern
 Vung Tau ||| Vũng Tàu
@@ -24540,7 +25239,7 @@ WR ||| WR
 WS ||| WS
 WT ||| WT
 WU ||| WU
-WV ||| Wv 
+WV ||| WV 
 WW ||| WW
 WX ||| WX
 WY ||| WY
@@ -24597,7 +25296,7 @@ Wafiadini wa Uganda ||| Uganda Martyrs
 Wafiadini wa Vietnam ||| Vietnamese Martyrs
 Wafilisti ||| Philistines
 Wafipa ||| Fipa people
-Wafransisko ||| Franciscan
+Wafransisko ||| Order of Friars Minor
 Wagadugu ||| Ouagadougou
 Wagermanik ||| Germanic peoples
 Wagikuyu ||| Kikuyu people
@@ -24656,10 +25355,10 @@ Wakisii ||| Kisii people
 Wakiso ||| Wakiso Town
 Waklara Wakapuchini ||| Capuchin Poor Clares
 Waklara ||| Poor Clares
-Wakoloni wakuu wa Kenya ||| List of colonial governors of Kenya
+Wakoloni wakuu wa Kenya ||| List of colonial governors and administrators of Kenya
 Wakonongo ||| Konongo people
 Wakonsesyoni ||| Conceptionists
-Wakonventuali ||| Conventual Franciscans
+Wakonventuali ||| Order of Friars Minor Conventual
 Wakopti ||| Copts
 Wakristadelfiani ||| Christadelphians
 Wakuria ||| Kuria people
@@ -24676,6 +25375,7 @@ Waldwick, New Jersey ||| Waldwick, New Jersey
 Wales ||| Wales 
 Walferdange ||| Walferdange
 Wali ||| Rice
+Walinzi wa amani wa UM ||| United Nations peacekeeping
 Walking with a Panther ||| Walking with a Panther
 Wall Township, New Jersey ||| Wall Township, New Jersey
 Wallace Stegner ||| Wallace Stegner
@@ -24760,6 +25460,7 @@ Wannabe ||| Wannabe
 Wantagh, New York ||| Wantagh, New York
 Wanted Dead or Alive ||| Wanted Dead or Alive 
 Wanyakyusa ||| Nyakyusa people
+Wanyamapori ||| Wildlife
 Wanyambo ||| Nyambo language
 Wanyamwanga ||| Mwanga people
 Wanyamwezi ||| Nyamwezi people
@@ -24835,6 +25536,8 @@ Wasichana wa Bond ||| Bond girl
 Wasilvesta ||| Sylvestrines
 Wasiosadiki Utatu ||| Nontrinitarianism
 Wasizaki ||| Sizaki people
+Wasomali ||| Somalis
+Wastigmatini ||| Stigmatines
 Wasuba ||| Suba people 
 Wasukuma ||| Sukuma people
 Wasumbwa ||| Sumbwa people
@@ -25056,9 +25759,11 @@ Wilaya ya Apac ||| Apac District
 Wilaya ya Arua ||| Arua District
 Wilaya ya Arumeru ||| Arumeru District
 Wilaya ya Arusha Mjini ||| Arusha District
+Wilaya ya Arusha Vijijini ||| Arusha Rural District
 Wilaya ya Aïn Defla ||| Aïn Defla Province
 Wilaya ya Babati ||| Babati District
 Wilaya ya Bagamoyo ||| Bagamoyo District
+Wilaya ya Bahi ||| Bahi District
 Wilaya ya Balama ||| Balama District
 Wilaya ya Bangolo ||| Bangolo Department
 Wilaya ya Bariadi ||| Bariadi
@@ -25080,6 +25785,7 @@ Wilaya ya Boundiali ||| Boundiali Department
 Wilaya ya Budaka ||| Budaka District
 Wilaya ya Bududa ||| Bududa District
 Wilaya ya Bugiri ||| Bugiri District
+Wilaya ya Buhigwe ||| Buhigwe District
 Wilaya ya Bukedea ||| Bukedea District
 Wilaya ya Bukombe ||| Bukombe District
 Wilaya ya Bukwa ||| Bukwo District
@@ -25094,6 +25800,7 @@ Wilaya ya Busia, Kenya ||| Busia County
 Wilaya ya Busia, Uganda ||| Busia District
 Wilaya ya Butaleja ||| Butaleja District
 Wilaya ya Butere/Mumias ||| Butere/Mumias District
+Wilaya ya Butiama ||| Butiama District
 Wilaya ya Béoumi ||| Béoumi Department
 Wilaya ya Carlow ||| County Carlow
 Wilaya ya Cavan ||| County Cavan
@@ -25125,6 +25832,7 @@ Wilaya ya Galway ||| County Galway
 Wilaya ya Garissa ||| Garissa County
 Wilaya ya Geita ||| Geita District
 Wilaya ya Grand-Bassam ||| Grand-Bassam Department
+Wilaya ya Grand-Lahou ||| Grand-Lahou Department
 Wilaya ya Gucha ||| Gucha District
 Wilaya ya Guiglo ||| Guiglo Department
 Wilaya ya Guitry ||| Guitry Department
@@ -25134,7 +25842,6 @@ Wilaya ya Hadhramaut ||| Hadhramaut Governorate
 Wilaya ya Hai ||| Hai District
 Wilaya ya Hajjah ||| Hajjah Governorate
 Wilaya ya Hanang ||| Hanang District
-Wilaya ya Handeni Mjini ||| Handeni
 Wilaya ya Handeni Vijijini ||| Handeni District
 Wilaya ya Handeni ||| Handeni District
 Wilaya ya Hoima ||| Hoima District
@@ -25145,26 +25852,32 @@ Wilaya ya Ibo ||| Ibo District
 Wilaya ya Iganga ||| Iganga District
 Wilaya ya Igunga ||| Igunga District
 Wilaya ya Ijara ||| Ijara District
+Wilaya ya Ikungi ||| Ikungi District
 Wilaya ya Ilala ||| Ilala District
 Wilaya ya Ilemela ||| Ilemela District
 Wilaya ya Isingiro ||| Isingiro District
 Wilaya ya Isiolo ||| Isiolo County
 Wilaya ya Issia ||| Issia Department
+Wilaya ya Itilima ||| Itilima District
 Wilaya ya Jacqueville ||| Jacqueville Department
 Wilaya ya Jinja ||| Jinja District
 Wilaya ya Kaabong ||| Kaabong District
 Wilaya ya Kabale ||| Kabale District
 Wilaya ya Kabarole ||| Kabarole District
 Wilaya ya Kaberamaido ||| Kaberamaido District
+Wilaya ya Kahama Vijijini ||| Kahama Rural District
 Wilaya ya Kahama ||| Kahama
 Wilaya ya Kajiado ||| Kajiado County
 Wilaya ya Kakamega ||| Kakamega County
+Wilaya ya Kakonko ||| Kakonko District
 Wilaya ya Kalambo ||| Kalambo District
 Wilaya ya Kalangala ||| Kalangala District
 Wilaya ya Kaliro ||| Kaliro District
+Wilaya ya Kaliua ||| Kaliua District
 Wilaya ya Kampala ||| Kampala District
 Wilaya ya Kamuli ||| Kamuli District
 Wilaya ya Kamwenge ||| Kamwenge District
+Wilaya ya Kani ||| Kani Department
 Wilaya ya Kanungu ||| Kanungu District
 Wilaya ya Kapchorwa ||| Kapchorwa District
 Wilaya ya Karagwe ||| Karagwe
@@ -25181,11 +25894,12 @@ Wilaya ya Kericho ||| Kericho County
 Wilaya ya Kerry ||| County Kerry
 Wilaya ya Kiambu ||| Kiambu County
 Wilaya ya Kibaale ||| Kibaale District
-Wilaya ya Kibaha ||| Kibaha District
+Wilaya ya Kibaha Vijijini ||| Kibaha District
 Wilaya ya Kiboga ||| Kiboga District
 Wilaya ya Kibondo ||| Kibondo District
 Wilaya ya Kildare ||| County Kildare
 Wilaya ya Kilifi ||| Kilifi County
+Wilaya ya Kilindi ||| Kilindi District
 Wilaya ya Kilkenny ||| County Kilkenny
 Wilaya ya Kilolo ||| Kilolo District
 Wilaya ya Kilombero ||| Kilombero District
@@ -25221,6 +25935,7 @@ Wilaya ya Kwale ||| Kwale County
 Wilaya ya Kwimba ||| Kwimba District
 Wilaya ya Kyela ||| Kyela District
 Wilaya ya Kyenjojo ||| Kyenjojo District
+Wilaya ya Kyerwa ||| Kyerwa District
 Wilaya ya Lahij ||| Lahij Governorate
 Wilaya ya Laikipia ||| Laikipia County
 Wilaya ya Lakota ||| Lakota Department
@@ -25230,12 +25945,15 @@ Wilaya ya Leitrim ||| County Leitrim
 Wilaya ya Limerick ||| County Limerick
 Wilaya ya Lira ||| Lira District
 Wilaya ya Longford ||| County Longford
+Wilaya ya Longido ||| Longido District
 Wilaya ya Louth ||| County Louth
 Wilaya ya Ludewa ||| Ludewa District
 Wilaya ya Lugari ||| Lugari District
 Wilaya ya Lushoto ||| Lushoto District
 Wilaya ya Luweero ||| Luweero District
 Wilaya ya Lyantonde ||| Lyantonde District
+Wilaya ya M'Bahiakro ||| M'Bahiakro Department
+Wilaya ya M'Batto ||| M'Batto Department
 Wilaya ya Machakos ||| Machakos County
 Wilaya ya Macomia ||| Macomia District
 Wilaya ya Madinani ||| Madinani Department
@@ -25264,6 +25982,7 @@ Wilaya ya Mbale ||| Mbale District
 Wilaya ya Mbarara ||| Mbarara District
 Wilaya ya Mbeere ||| Mbeere District
 Wilaya ya Mbinga ||| Mbinga District
+Wilaya ya Mbogwe ||| Mbogwe District
 Wilaya ya Mbulu ||| Mbulu District
 Wilaya ya Meath ||| County Meath
 Wilaya ya Meatu ||| Meatu District
@@ -25272,10 +25991,13 @@ Wilaya ya Meluco ||| Meluco District
 Wilaya ya Meru Kaskazini ||| Meru North District
 Wilaya ya Meru Kati ||| Meru Central District
 Wilaya ya Meru Kusini ||| Meru South District
+Wilaya ya Micheweni ||| Micheweni District
 Wilaya ya Migori ||| Migori County
 Wilaya ya Minignan ||| Minignan Department
+Wilaya ya Missenyi ||| Missenyi District
 Wilaya ya Misungwi ||| Misungwi
 Wilaya ya Mityana ||| Mityana District
+Wilaya ya Mkalama ||| Mkalama District
 Wilaya ya Mkinga ||| Mkinga District
 Wilaya ya Mkuranga ||| Mkuranga District
 Wilaya ya Mlele ||| Mlele District
@@ -25289,7 +26011,7 @@ Wilaya ya Moroto ||| Moroto District
 Wilaya ya Moyale ||| Moyale District
 Wilaya ya Moyo ||| Moyo District
 Wilaya ya Mpigi ||| Mpigi District
-Wilaya ya Mpwapwa ||| Mpwapwa
+Wilaya ya Mpwapwa ||| Mpwapwa District
 Wilaya ya Mto Tana ||| Tana River County
 Wilaya ya Mubende ||| Mubende District
 Wilaya ya Mueda ||| Mueda District
@@ -25311,10 +26033,12 @@ Wilaya ya Namuno ||| Namuno District
 Wilaya ya Namutumba ||| Namutumba District
 Wilaya ya Nandi ||| Nandi County
 Wilaya ya Nangade ||| Nangade District
+Wilaya ya Nanyumbu ||| Nanyumbu District
 Wilaya ya Narok ||| Narok County
 Wilaya ya Nassian ||| Nassian Department
 Wilaya ya Nebbi ||| Nebbi District
 Wilaya ya Ngorongoro ||| Ngorongoro District
+Wilaya ya Niakaramadougou ||| Niakaramandougou Department
 Wilaya ya Njombe ||| Njombe
 Wilaya ya Nkasi ||| Nkasi District
 Wilaya ya Ntungamo ||| Ntungamo District
@@ -25322,7 +26046,9 @@ Wilaya ya Nyamagana ||| Nyamagana District
 Wilaya ya Nyamira ||| Nyamira County
 Wilaya ya Nyandarua ||| Nyandarua County
 Wilaya ya Nyando ||| Nyando District
+Wilaya ya Nyang'hwale ||| Nyang'hwale District
 Wilaya ya Nyeri ||| Nyeri County
+Wilaya ya Nzega ||| Nzega District
 Wilaya ya Odienné ||| Odienné Department
 Wilaya ya Offaly ||| County Offaly
 Wilaya ya Ouangolodougou ||| Ouangolodougou Department
@@ -25346,9 +26072,12 @@ Wilaya ya Rufiji ||| Rufiji District
 Wilaya ya Rukungiri ||| Rukungiri District
 Wilaya ya Sadah ||| Saada Governorate
 Wilaya ya Sakassou ||| Sakassou Department
+Wilaya ya Samatiguila ||| Samatiguila Department
 Wilaya ya Samburu ||| Samburu County
 Wilaya ya Same ||| Same District
+Wilaya ya San-Pédro ||| San-Pédro Department
 Wilaya ya Sana'a ||| Sana'a Governorate
+Wilaya ya Sandégué ||| Sandégué Department
 Wilaya ya Sassandra ||| Sassandra Department
 Wilaya ya Sembabule ||| Sembabule District
 Wilaya ya Sengerema ||| Sengerema District
@@ -25357,6 +26086,7 @@ Wilaya ya Shabwah ||| Shabwah Governorate
 Wilaya ya Shinyanga Mjini ||| Shinyanga District
 Wilaya ya Shinyanga Vijijini ||| Shinyanga Rural
 Wilaya ya Siaya ||| Siaya County
+Wilaya ya Siha ||| Siha District
 Wilaya ya Sikensi ||| Sikensi Department
 Wilaya ya Sikonge ||| Sikonge District
 Wilaya ya Sinfra ||| Sinfra Department
@@ -25393,6 +26123,7 @@ Wilaya ya Toulepleu ||| Toulépleu Department
 Wilaya ya Toumodi ||| Toumodi Department
 Wilaya ya Trans Mara ||| Trans Mara District
 Wilaya ya Trans-Nzoia ||| Trans-Nzoia County
+Wilaya ya Transua ||| Transua Department
 Wilaya ya Tunduru ||| Tunduru
 Wilaya ya Turkana ||| Turkana County
 Wilaya ya Tébessa ||| Tébessa Province
@@ -25450,6 +26181,7 @@ William Berger ||| William Berger
 William Booth ||| William Booth
 William Bragg ||| William Henry Bragg
 William Butler Yeats ||| W. B. Yeats
+William Campbell ||| William C. Campbell 
 William Carlos Williams ||| William Carlos Williams
 William Devane ||| William Devane
 William Edward Burghardt Du Bois ||| W. E. B. Du Bois
@@ -25469,6 +26201,7 @@ William Lipscomb ||| William Lipscomb
 William Lukuvi ||| William Lukuvi
 William McKinley ||| William McKinley
 William Modisane ||| William Modisane
+William Moerner ||| William E. Moerner
 William Murdock ||| William Murdock
 William Murphy ||| William P. Murphy
 William Ngeleja ||| William Ngeleja
@@ -25649,6 +26382,7 @@ Yakobo Mdogo ||| James, son of Alphaeus
 Yakobo Mkubwa ||| James, son of Zebedee
 Yakobo wa Marka ||| James of the Marches
 Yakutia ||| Sakha Republic
+Yakutsk ||| Yakutsk
 Yala ||| Yala, Kenya
 Yalova ||| Yalova
 Yalvaç ||| Yalvaç
@@ -25673,6 +26407,7 @@ Yaroslavl ||| Yaroslavl
 Yasuhiro Yamashita ||| Yasuhiro Yamashita
 Yasunari Kawabata ||| Yasunari Kawabata
 Yatağan District ||| Yatağan, Muğla
+Yatima ||| Orphan
 Yaunde ||| Yaoundé
 Yavuzeli ||| Yavuzeli
 Yaya Touré ||| Yaya Touré
@@ -25699,7 +26434,8 @@ Yenifakılı ||| Yenifakılı
 Yenimahalle, Ankara ||| Yenimahalle, Ankara
 Yenipazar ||| Yenipazar, Aydın
 Yenipazar, Bilecik ||| Yenipazar, Bilecik
-Yenisei ||| Yenisei River
+Yenisey ||| Yenisei River
+Yeniseysk ||| Yeniseysk
 Yeniçağa ||| Yeniçağa
 Yenişarbademli ||| Yenişarbademli
 Yenişehir ||| Yenişehir, Bursa
@@ -25714,7 +26450,7 @@ Yerres ||| Yerres
 Yerusalemu ya Mashariki ||| East Jerusalem
 Yerusalemu ||| Jerusalem
 Yes ||| Yes 
-Yesu Kristo. ||| Christ
+Yesu Kristo. ||| Christ 
 Yesu kadiri ya historia ||| Historicity of Jesus
 Yesu katika sanaa ||| Depiction of Jesus
 Yesu kuzaliwa na Bikira ||| Virgin birth of Jesus
@@ -25727,7 +26463,7 @@ Yeşilova ||| Yeşilova
 Yeşilyurt, Malatya ||| Yeşilyurt, Malatya
 Yeşilyurt, Tokat ||| Yeşilyurt, Tokat
 Yo! Bum Rush the Show ||| Yo! Bum Rush the Show
-Yoana Antida Thouret ||| Joan Antidea Thouret
+Yoana Antida Thouret ||| Jeanne-Antide Thouret
 Yoana Fransiska wa Chantal ||| Jane Frances de Chantal
 Yobes Ondieki ||| Yobes Ondieki
 Yochanan Vollach ||| Yochanan Vollach
@@ -25738,6 +26474,8 @@ Yohana 3:16 ||| John 3:16
 Yohane Baptista de La Salle ||| Jean-Baptiste de La Salle
 Yohane Climacus ||| John Climacus
 Yohane Duns Scotus ||| Duns Scotus
+Yohane Eudes ||| John Eudes
+Yohane Gualberto ||| John Gualbert
 Yohane Hus ||| Jan Hus
 Yohane IV ||| Yohannes IV
 Yohane Kasiano ||| John Cassian
@@ -25775,6 +26513,7 @@ Yorktown, New York ||| Yorktown, New York
 Yosafat wa Polotsk ||| Josaphat Kuntsevych
 Yosefina Bakhita ||| Josephine Bakhita
 Yosefu Benedikto Cottolengo ||| Giuseppe Benedetto Cottolengo
+Yosefu Cafasso ||| Joseph Cafasso
 Yosefu Mukasa Balikuddembe ||| Joseph Mukasa Balikuddembe
 Yosefu Oriol ||| Joseph Oriol
 Yosefu wa Arimataya ||| Joseph of Arimathea
@@ -25784,6 +26523,7 @@ Yosefu ||| Joseph
 Yosefu ||| Saint Joseph
 Yoshihito ||| Emperor Taishō
 Yoshikatsu Kawaguchi ||| Yoshikatsu Kawaguchi
+Yoshkar-Ola ||| Yoshkar-Ola
 Yoshua ||| Joshua
 Yosia ||| Josiah
 Yotsukaidō, Chiba ||| Yotsukaidō
@@ -25793,6 +26533,7 @@ You Can't Win ||| You Can't Win
 You Raise Me Up ||| You Raise Me Up
 You Rock My World ||| You Rock My World
 You'll Rock ||| You'll Rock
+You're Still the One ||| You're Still the One
 YouTube ||| YouTube
 Yoweri Kaguta Museveni ||| Yoweri Museveni
 Yozgat ||| Yozgat
@@ -25821,6 +26562,7 @@ Yuri Gagarin ||| Yuri Gagarin
 Yuri wa Goguryeo ||| Yuri of Goguryeo
 Yusufeli ||| Yusufeli
 Yusufu ||| Yusuf
+Yuzhno-Sahalinsk ||| Yuzhno-Sakhalinsk
 Yvelines ||| Yvelines
 Yves Chauvin ||| Yves Chauvin
 Yves Leterme ||| Yves Leterme
@@ -25843,6 +26585,7 @@ Zachary Onyonka ||| Zachary Onyonka
 Zachary Taylor ||| Zachary Taylor
 Zadar ||| Zadar
 Zagreb ||| Zagreb
+Zaha ||| Lava
 Zain Verjee ||| Zain Verjee
 Zainab Amir Gama ||| Zainab Amir Gama
 Zaire ||| Zaire 
@@ -25872,6 +26615,7 @@ Zap Mama ||| Zap Mama
 Zara ||| Zara, Turkey
 Zauditu wa Ethiopia ||| Zewditu
 Zebaki ||| Mercury 
+Zebedayo ||| Zebedee
 Zebuluni ||| Zebulun
 Zeeland ||| Zeeland
 Zege ||| Concrete
@@ -25879,6 +26623,7 @@ Zeitgeist ||| Zeitgeist
 Zelda Williams ||| Zelda Williams
 Zen ||| Zen
 Zeno wa Verona ||| Zeno of Verona
+Zeruzeru ||| Albinism
 Zeu ||| Zeus
 Zeytinburnu ||| Zeytinburnu
 Zhanjiang ||| Zhanjiang
@@ -25910,6 +26655,7 @@ Ziwa Elementaita ||| Lake Elmenteita
 Ziwa Eyre ||| Lake Eyre
 Ziwa Huron ||| Lake Huron
 Ziwa Kyoga ||| Lake Kyoga
+Ziwa Ladoga ||| Lake Ladoga
 Ziwa Magadi ||| Lake Magadi
 Ziwa Maggiore ||| Lake Maggiore
 Ziwa Michigan ||| Lake Michigan
@@ -25936,6 +26682,7 @@ Zonguldak ||| Zonguldak
 Zoolojia ||| Zoology
 Zoroasta ||| Zoroaster
 Zoroga ||| Zoroga
+Zubain Muhaji Mhita ||| Zabein Mhita
 Zubeir Ali Maulid ||| Zubeir Ali Maulid
 Zuhura ||| Venus
 Zuid-Holland ||| South Holland
@@ -25956,6 +26703,7 @@ Zürich ||| Zürich
 Çaldıran , Van ||| Çaldıran, Van
 Çamardı ||| Çamardı
 Çamaş ||| Çamaş
+Çameli ||| Çameli
 Çamlıdere, Ankara ||| Çamlıdere, Ankara
 Çamlıhemşin ||| Çamlıhemşin
 Çamlıyayla ||| Çamlıyayla

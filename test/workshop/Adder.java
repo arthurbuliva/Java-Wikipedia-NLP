@@ -6,6 +6,7 @@
 package workshop;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,10 +19,8 @@ public class Adder
 
     public static void main(String[] args)
     {
-        Map<String, ArrayList> hashMap = new HashMap<>();
-       
-        hashMap.put("name", new ArrayList<>());
+        String[] test = {"Hello", "World"};
         
-        System.out.println(hashMap);
+        System.out.println(Arrays.toString(test));
     }
 }
