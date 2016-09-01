@@ -158,12 +158,16 @@ public class MongoTranslator
         //
         // mongorestore --db corpus --noIndexRestore --drop __db/dump/corpus/
         //
+        // Search without index
+        // ++++++++++++++++++++
+        // DBQuery.shellBatchSize = 300
+        // db.wikipedia.find({"sw":  /Adelaide wa Italia/}).pretty();
+        //
+        // Search with index
+        // ++++++++++++++++++++
         // db.wikipedia.find({$text: {$search: "Msimu wa mvua"}}).pretty();
-        //
         // db.wikipedia.find({$text: {$search: "\"Jamhuri ya Kenya\""}}).pretty();
-        //
-        // db.wikipedia.find({}, {sw: "\"Neno la kumi laweza kurejea mambo tofauti\""}).pretty();
-        //
+        
         FindIterable<Document> iterable = db.getCollection("wikipedia")
                 .find(
                         new Document("$text", new Document("$search", exactMatch ? String.format("\"%s\"", original) : original)

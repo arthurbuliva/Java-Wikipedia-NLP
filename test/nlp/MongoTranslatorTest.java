@@ -14,7 +14,7 @@ public class MongoTranslatorTest
 
     public static void main(String[] args) throws Exception
     {
-        String sentence = "State Leaders";
+        String sentence = "Paper is a thin material";
         
         MongoTranslator mongo = new MongoTranslator();
 //        System.out.println(mongo.translate("Candle"));
