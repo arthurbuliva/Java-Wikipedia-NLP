@@ -150,6 +150,10 @@ public class MongoTranslator
         //
         // db.wikipedia.createIndex({ "en" : "text", "sw" : "text" })
         //
+        // This is how we dump data from MongoDB:
+        //
+        // mongodump --collection wikipedia --db corpus --out __db/dump
+        //
         // This is how we restore from the dump:
         //
         // mongorestore --db corpus --noIndexRestore --drop __db/dump/corpus/
