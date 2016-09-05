@@ -33,7 +33,8 @@ import org.bson.Document;
  * "Nakumatt ni kampuni ya Kenya inayomilikiwa na familia na Atul Shah Hotnet
  * Ltd.[2] [3]")); This is how we created an index for the text:
  *
- * db.wikipedia.createIndex({ "en" : "text", "sw" : "text" })
+ * db.wikipedia.createIndex({ "en" : "text", "sw" : "text" },
+ * { default_language: "english" })
  *
  * This is how we dump data from MongoDB:
  *
@@ -63,7 +64,7 @@ public class MongoTranslator
     {
         relationship = new HashMap<>();
         exactMatch = true;
-        
+
 // Stop Words
 //
 //Stop words are the irrelevant words that should be filtered out from a text. For example: a, an, the, is, at, which, etc.
@@ -73,7 +74,6 @@ public class MongoTranslator
 //Scoring
 //
 //A relative ranking to measure which of the search results is most relevant.  
-
     }
 
     public static final String[] PREPOSITIONS =
@@ -173,16 +173,21 @@ public class MongoTranslator
         mongoClient = new MongoClient();
         db = mongoClient.getDatabase("corpus");
 
-//         db.wikipedia.find({$text: {$search: "Paper is a thin material"}}, {score: {$meta: "textScore"}}).sort({score:{$meta:"textScore"}}).pretty().limit(1);
+        // db.wikipedia.find({$text: {$search: "Paper is a thin material"}}, {score: {$meta: "textScore"}}).sort({score:{$meta:"textScore"}}).pretty().limit(1);
+        // TODO: Full-Text Search in MongoDB
+        // http://code.tutsplus.com/tutorials/full-text-search-in-mongodb--cms-24835
 
-//TODO: Full-Text Search in MongoDB
-//http://code.tutsplus.com/tutorials/full-text-search-in-mongodb--cms-24835
-        
+        // Find the highest scoring match
+        Document projection = new Document("score", new Document("$meta", "textScore"));
+
         FindIterable<Document> iterable = db.getCollection("wikipedia")
                 .find(
                         new Document("$text", new Document("$search", exactMatch ? String.format("\"%s\"", original) : original)
                         )
-                ).limit(0);
+                )
+                .projection(projection)
+                .sort(projection)
+                .limit(10);
 
         StringBuilder englishWords = new StringBuilder();
         StringBuilder swahiliWords = new StringBuilder();
