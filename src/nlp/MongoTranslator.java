@@ -14,28 +14,66 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import org.apache.commons.lang3.ArrayUtils;
 
 import org.bson.Document;
 
 /**
+ * MongoDB Quick Guide
  *
  * @author arthur
+ *
+ * This is how we insert a record into the db:
+ *
+ * db.getCollection("test").insertOne( new Document() .append("en",
+ * "\"Nakumatt\" is an abbreviation for Nakuru Mattress.[1]") .append("sw",
+ * "Nakumatt ni mnyororo wa maduka nchini Kenya.\n" + "Ina maduka 18 kote nchini
+ * Kenya [1] na inaajiri watu 3,200.\n" + "Ni mipango ya kupanua maduka yake
+ * mpaka nchini Uganda, Rwanda na nchi nyingine za Afrika Mashariki.\n" +
+ * "Nakumatt ni kampuni ya Kenya inayomilikiwa na familia na Atul Shah Hotnet
+ * Ltd.[2] [3]")); This is how we created an index for the text:
+ *
+ * db.wikipedia.createIndex({ "en" : "text", "sw" : "text" })
+ *
+ * This is how we dump data from MongoDB:
+ *
+ * mongodump --collection wikipedia --db corpus --out __db/dump
+ *
+ * This is how we restore from the dump:
+ *
+ * mongorestore --db corpus --noIndexRestore --drop __db/dump/corpus/
+ *
+ * Search without index ++++++++++++++++++++ DBQuery.shellBatchSize = 300
+ * db.wikipedia.find({"sw": /Adelaide wa Italia/}).pretty();
+ *
+ * Search with index ++++++++++++++++++++ db.wikipedia.find({$text: {$search:
+ * "Msimu wa mvua"}}).pretty(); db.wikipedia.find({$text: {$search: "\"Jamhuri
+ * ya Kenya\""}}).pretty();
  */
 public class MongoTranslator
 {
 
-    private final MongoClient mongoClient;
-    private final MongoDatabase db;
+    private MongoClient mongoClient;
+    private MongoDatabase db;
     private final HashMap<String, String> relationship;
     private boolean exactMatch;
     int counter = 1;
 
     public MongoTranslator()
     {
-        mongoClient = new MongoClient();
-        db = mongoClient.getDatabase("corpus");
         relationship = new HashMap<>();
         exactMatch = true;
+        
+// Stop Words
+//
+//Stop words are the irrelevant words that should be filtered out from a text. For example: a, an, the, is, at, which, etc.
+//Stemming
+//
+//Stemming is the process of reducing the words to their stem. For example: words like standing, stands, stood, etc. have a common base stand.
+//Scoring
+//
+//A relative ranking to measure which of the search results is most relevant.  
+
     }
 
     public static final String[] PREPOSITIONS =
@@ -58,10 +96,9 @@ public class MongoTranslator
     Map<String, String> test = new HashMap<String, String>()
     {
         {
-            for (int i = 0; i < PREPOSITIONS.length; i++)
+            for (String PREPOSITION : PREPOSITIONS)
             {
                 //put("kabla ya", "before");
-
             }
 
             put("baada ya", "after");
@@ -95,84 +132,57 @@ public class MongoTranslator
 
     public String translate(String original)
     {
-
+        // If it is a preposition, return its language equivalent
         if (Arrays.asList(PREPOSITIONS).contains(original)
                 || Arrays.asList(PREPOSITIONS).contains(original))
         {
             return original;
         }
 
-        // If this item is a proper noun, obtained from EntityFinder, return it as is
+        // If this item is a proper noun (eg name of a place)
+        // as obtained from EntityFinder, return it as is
         EntityFinder entityFinder = new EntityFinder();
         HashMap entities = entityFinder.getEntities(original);
 
         Iterator it = entities.entrySet().iterator();
-        
+
         while (it.hasNext())
         {
             Map.Entry pair = (Map.Entry) it.next();
-            
-//            System.out.println(pair.getKey() + " = " + pair.getValue());
-            
             ArrayList value = (ArrayList) pair.getValue();
-            
-            System.out.println(value);
-            
-            if(value.contains(original))
+
+            // TODO: This code is not correct!
+            if (value.contains(original))
             {
-                
                 return original;
             }
-            
+
             it.remove(); // avoids a ConcurrentModificationException
         }
 
         String translation = "";
 
-        TitleMatcher translator = new TitleMatcher();
+        // Sometimes the original word is just a title in Wikipedia
+        TitleMatcher titleMatcher = new TitleMatcher();
 
-        if ((translator.translate(original.trim()).replaceAll("\\[", "").replaceAll("\\]", "").length() > 0))
+        if ((titleMatcher.translate(original.trim()).replaceAll("\\[", "").replaceAll("\\]", "").length() > 0))
         {
-            //TODO: There is a bug here
-//            return (translator.translate(original.trim()));
-            System.out.println(translator.translate(original.trim()));
+            return (titleMatcher.translate(original.trim()));
         }
 
-        // This is how we insert a record into the db:
-        //db.getCollection("test").insertOne(
-        //        new Document()
-        //        .append("en", "\"Nakumatt\" is an abbreviation for Nakuru Mattress.[1]")
-        //        .append("sw", "Nakumatt ni mnyororo wa maduka nchini Kenya.\n"
-        //                + "Ina maduka 18 kote nchini Kenya [1] na inaajiri watu 3,200.\n"
-        //                + "Ni mipango ya kupanua maduka yake mpaka nchini Uganda, Rwanda na nchi nyingine za Afrika Mashariki.\n"
-        //                + "Nakumatt ni kampuni ya Kenya inayomilikiwa na familia na Atul Shah Hotnet Ltd.[2] [3]"));
-        // This is how we created an index for the text:
-        //
-        // db.wikipedia.createIndex({ "en" : "text", "sw" : "text" })
-        //
-        // This is how we dump data from MongoDB:
-        //
-        // mongodump --collection wikipedia --db corpus --out __db/dump
-        //
-        // This is how we restore from the dump:
-        //
-        // mongorestore --db corpus --noIndexRestore --drop __db/dump/corpus/
-        //
-        // Search without index
-        // ++++++++++++++++++++
-        // DBQuery.shellBatchSize = 300
-        // db.wikipedia.find({"sw":  /Adelaide wa Italia/}).pretty();
-        //
-        // Search with index
-        // ++++++++++++++++++++
-        // db.wikipedia.find({$text: {$search: "Msimu wa mvua"}}).pretty();
-        // db.wikipedia.find({$text: {$search: "\"Jamhuri ya Kenya\""}}).pretty();
+        mongoClient = new MongoClient();
+        db = mongoClient.getDatabase("corpus");
+
+//         db.wikipedia.find({$text: {$search: "Paper is a thin material"}}, {score: {$meta: "textScore"}}).sort({score:{$meta:"textScore"}}).pretty().limit(1);
+
+//TODO: Full-Text Search in MongoDB
+//http://code.tutsplus.com/tutorials/full-text-search-in-mongodb--cms-24835
         
         FindIterable<Document> iterable = db.getCollection("wikipedia")
                 .find(
                         new Document("$text", new Document("$search", exactMatch ? String.format("\"%s\"", original) : original)
                         )
-                ).limit(10);
+                ).limit(0);
 
         StringBuilder englishWords = new StringBuilder();
         StringBuilder swahiliWords = new StringBuilder();
@@ -195,6 +205,53 @@ public class MongoTranslator
 
         try
         {
+
+            // Split it into sentences. 
+            // If part of the original is in the split array, then
+            // there is no need to chunk it further
+            ArrayList<String> sentences = new ArrayList<>(
+                    Arrays.asList(
+                            SentenceDetector.detectSentences(englishWords.toString()
+                            )
+                    )
+            );
+
+            ArrayList<String> sentensi = new ArrayList<>(
+                    Arrays.asList(
+                            SentenceDetector.detectSentences(swahiliWords.toString()
+                            )
+                    )
+            );
+
+            for (String sentence : sentences)
+            {
+
+                if (sentence.contains(original)
+                        || sentensi.contains(original))
+                {
+
+                    if (sentence.contains(original))
+                    {
+                        // Get the index of this string in the array
+                        int indexInArray = sentences.indexOf(sentence);
+
+//                        System.out.println(Chunker.chunk(sentensi.get(indexInArray)));
+                        return (sentensi.get(indexInArray));
+                    }
+                    else
+                    {
+                        // Get the index of this string in the array
+
+                        // Get the index of this string in the array
+                        int indexInArray = sentensi.indexOf(sentence);
+
+//                        System.out.println(Chunker.chunk(sentences.get(indexInArray)));
+                        return (sentences.get(indexInArray));
+                    }
+
+                }
+            }
+
             Map enFreq = ChunkFrequency.getFrequencies(englishWords.toString());
             Map swFreq = ChunkFrequency.getFrequencies(swahiliWords.toString());
 
@@ -223,8 +280,8 @@ public class MongoTranslator
                 System.out.println("Translating  \"" + original + "\" in chunks: ");
 
                 ArrayList chunks = Chunker.chunk(original);
-                
-                
+
+                System.out.println(chunks);
 
                 for (Object chunk : chunks)
                 {

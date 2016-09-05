@@ -29,6 +29,7 @@ public class TitleMatcher
     {
         try
         {
+            // TODO: Include titles in MongoDb in order to eliminate the need of reading from the files
             File file = new File(DATABASE);
 
             FileReader fileReader = new FileReader(file);
@@ -81,13 +82,5 @@ public class TitleMatcher
 
         return translation;
 
-    }
-
-    public static void main(String[] args)
-    {
-        String word = "candle";
-        
-        TitleMatcher translator = new TitleMatcher();
-        System.out.println(translator.translate(word));
     }
 }

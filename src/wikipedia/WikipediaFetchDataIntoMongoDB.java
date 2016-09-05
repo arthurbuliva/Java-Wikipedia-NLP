@@ -5,8 +5,6 @@
  */
 package wikipedia;
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 import java.io.BufferedReader;
@@ -40,7 +38,7 @@ public class WikipediaFetchDataIntoMongoDB
     private WikipediaDataFetcher wikiFetcher;
     private long numberOfLines;
     private long currentLine = 0;
-    private MongoClient mongoClient = new MongoClient();
+    private final MongoClient mongoClient = new MongoClient();
     private final MongoDatabase db = mongoClient.getDatabase("corpus");
 
     /**
@@ -100,7 +98,9 @@ public class WikipediaFetchDataIntoMongoDB
                         db.getCollection("wikipedia")
                                 .insertOne(
                                         new Document()
+                                        .append("title", englishTitle)
                                         .append("en", wikiTextEnglish)
+                                        .append("kichwa", swahiliTitle)
                                         .append("sw", wikiTextSwahili)
                                 //                                        .append("en", englishArray)
                                 //                                        .append("sw", swahiliArray)

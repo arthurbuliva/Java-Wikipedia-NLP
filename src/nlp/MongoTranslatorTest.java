@@ -5,6 +5,8 @@
  */
 package nlp;
 
+import nlp.MongoTranslator;
+
 /**
  *
  * @author arthur
@@ -14,8 +16,12 @@ public class MongoTranslatorTest
 
     public static void main(String[] args) throws Exception
     {
-        String sentence = "Paper is a thin material";
-        
+//        String sentence = "Sewing machine is light weight";
+        String sentence = "Chicago Heights";
+//        String sentence = "Paper is a thin material";
+//        String sentence = "Tsavo East National Park";
+//        String sentence = "He works for the US government";
+
         MongoTranslator mongo = new MongoTranslator();
 //        System.out.println(mongo.translate("Candle"));
         System.out.println(mongo.translate(sentence));
