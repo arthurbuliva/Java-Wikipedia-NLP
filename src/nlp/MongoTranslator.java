@@ -33,8 +33,7 @@ import org.bson.Document;
  * "Nakumatt ni kampuni ya Kenya inayomilikiwa na familia na Atul Shah Hotnet
  * Ltd.[2] [3]")); This is how we created an index for the text:
  *
- * db.wikipedia.createIndex({ "en" : "text", "sw" : "text" },
- * { default_language: "english" })
+ * db.wikipedia.createIndex({ "en" : "text", "sw" : "text" }, { default_language: "english" });
  *
  * This is how we dump data from MongoDB:
  *
@@ -44,8 +43,10 @@ import org.bson.Document;
  *
  * mongorestore --db corpus --noIndexRestore --drop __db/dump/corpus/
  *
- * Search without index ++++++++++++++++++++ DBQuery.shellBatchSize = 300
+ * Search without index ++++++++++++++++++++ 
+ * DBQuery.shellBatchSize = 300
  * db.wikipedia.find({"sw": /Adelaide wa Italia/}).pretty();
+ * db.wikipedia.find().sort({_id:-1}).pretty().limit(1);
  *
  * Search with index ++++++++++++++++++++ db.wikipedia.find({$text: {$search:
  * "Msimu wa mvua"}}).pretty(); db.wikipedia.find({$text: {$search: "\"Jamhuri
@@ -187,7 +188,9 @@ public class MongoTranslator
                 )
                 .projection(projection)
                 .sort(projection)
-                .limit(10);
+                .limit(100);
+        
+        
 
         StringBuilder englishWords = new StringBuilder();
         StringBuilder swahiliWords = new StringBuilder();

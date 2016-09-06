@@ -5,8 +5,6 @@
  */
 package nlp;
 
-import nlp.MongoTranslator;
-
 /**
  *
  * @author arthur
@@ -16,7 +14,10 @@ public class MongoTranslatorTest
 
     public static void main(String[] args) throws Exception
     {
-        String sentence = "Sewing machine is light weight";
+//        String sentence = "Sewing machine is light weight";
+//        String sentence = "I am pretty sure this is a Glenfiddich.";
+//        String sentence = "Kwa hakika haswa hii si nishati endelezi";
+        String sentence = "Pope John Paul II";
 //        String sentence = "Chicago Heights";
 //        String sentence = "Paper is a thin material";
 //        String sentence = "Tsavo East National Park";
