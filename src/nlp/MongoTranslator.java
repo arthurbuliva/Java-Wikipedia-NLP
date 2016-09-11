@@ -48,7 +48,8 @@ import org.bson.Document;
  * db.wikipedia.find({"sw": /Adelaide wa Italia/}).pretty();
  * db.wikipedia.find().sort({_id:-1}).pretty().limit(1);
  *
- * Search with index ++++++++++++++++++++ db.wikipedia.find({$text: {$search:
+ * Search with index ++++++++++++++++++++ 
+ * db.wikipedia.find({$text: {$search:
  * "Msimu wa mvua"}}).pretty(); db.wikipedia.find({$text: {$search: "\"Jamhuri
  * ya Kenya\""}}).pretty();
  */
