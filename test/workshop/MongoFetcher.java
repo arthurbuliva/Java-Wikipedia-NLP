@@ -17,10 +17,11 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import nlp.SentenceDetector;
+import nlp.TranslatorLogger;
 
 import org.bson.Document;
 
-public class MongoFetcher
+public class MongoFetcher extends TranslatorLogger
 {
 
     private final MongoClient MONGO_CLIENT;
@@ -33,8 +34,6 @@ public class MongoFetcher
 
     private FileWriter SWAHILI_STREAM;
     private BufferedWriter SWAHILI_WRITER;
-
-    private static final Logger LOGGER = Logger.getLogger(MongoFetcher.class.getName());
 
     public MongoFetcher()
     {
@@ -109,7 +108,7 @@ public class MongoFetcher
                     }
                     catch (IOException ex)
                     {
-                        LOGGER.log(Level.SEVERE, ex.toString(), ex);
+                        log(ex.getMessage(), Level.SEVERE);
                     }
 
                 }

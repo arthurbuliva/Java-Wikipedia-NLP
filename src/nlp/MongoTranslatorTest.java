@@ -17,9 +17,8 @@ public class MongoTranslatorTest
 //        String sentence = "Sewing machine is light weight";
 //        String sentence = "I am pretty sure this is a Glenfiddich.";
 //        String sentence = "Kwa hakika haswa hii si nishati endelezi";
-        String sentence = "Pope John Paul II";
 //        String sentence = "Chicago Heights";
-//        String sentence = "Paper is a thin material";
+        String sentence = "A piece of paper is light in weight";
 //        String sentence = "Tsavo East National Park";
 //        String sentence = "He works for the US government";
 

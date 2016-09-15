@@ -9,12 +9,14 @@ import com.mongodb.Block;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import org.apache.commons.lang3.ArrayUtils;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import org.bson.Document;
 
@@ -33,7 +35,8 @@ import org.bson.Document;
  * "Nakumatt ni kampuni ya Kenya inayomilikiwa na familia na Atul Shah Hotnet
  * Ltd.[2] [3]")); This is how we created an index for the text:
  *
- * db.wikipedia.createIndex({ "en" : "text", "sw" : "text" }, { default_language: "english" });
+ * db.wikipedia.createIndex({ "en" : "text", "sw" : "text" }, {
+ * default_language: "english" });
  *
  * This is how we dump data from MongoDB:
  *
@@ -43,29 +46,29 @@ import org.bson.Document;
  *
  * mongorestore --db corpus --noIndexRestore --drop __db/dump/corpus/
  *
- * Search without index ++++++++++++++++++++ 
- * DBQuery.shellBatchSize = 300
+ * Search without index ++++++++++++++++++++ DBQuery.shellBatchSize = 300
  * db.wikipedia.find({"sw": /Adelaide wa Italia/}).pretty();
  * db.wikipedia.find().sort({_id:-1}).pretty().limit(1);
  *
- * Search with index ++++++++++++++++++++ 
- * db.wikipedia.find({$text: {$search:
+ * Search with index ++++++++++++++++++++ db.wikipedia.find({$text: {$search:
  * "Msimu wa mvua"}}).pretty(); db.wikipedia.find({$text: {$search: "\"Jamhuri
  * ya Kenya\""}}).pretty();
  */
-public class MongoTranslator
+public class MongoTranslator extends  TranslatorLogger
 {
 
-    private MongoClient mongoClient;
-    private MongoDatabase db;
+    private final MongoClient mongoClient;
+    private final MongoDatabase db;
     private final HashMap<String, String> relationship;
     private boolean exactMatch;
     int counter = 1;
-
+    
     public MongoTranslator()
     {
         relationship = new HashMap<>();
         exactMatch = true;
+        mongoClient = new MongoClient();
+        db = mongoClient.getDatabase("corpus");
 
 // Stop Words
 //
@@ -172,13 +175,11 @@ public class MongoTranslator
             return (titleMatcher.translate(original.trim()));
         }
 
-        mongoClient = new MongoClient();
-        db = mongoClient.getDatabase("corpus");
+        
 
         // db.wikipedia.find({$text: {$search: "Paper is a thin material"}}, {score: {$meta: "textScore"}}).sort({score:{$meta:"textScore"}}).pretty().limit(1);
         // TODO: Full-Text Search in MongoDB
         // http://code.tutsplus.com/tutorials/full-text-search-in-mongodb--cms-24835
-
         // Find the highest scoring match
         Document projection = new Document("score", new Document("$meta", "textScore"));
 
@@ -190,8 +191,6 @@ public class MongoTranslator
                 .projection(projection)
                 .sort(projection)
                 .limit(100);
-        
-        
 
         StringBuilder englishWords = new StringBuilder();
         StringBuilder swahiliWords = new StringBuilder();
@@ -212,105 +211,95 @@ public class MongoTranslator
             }
         });
 
-        try
+        ArrayList<String> sentences = new ArrayList<>(
+                Arrays.asList(
+                        SentenceDetector.detectSentences(englishWords.toString()
+                        )
+                )
+        );
+        ArrayList<String> sentensi = new ArrayList<>(
+                Arrays.asList(
+                        SentenceDetector.detectSentences(swahiliWords.toString()
+                        )
+                )
+        );
+        for (String sentence : sentences)
         {
 
-            // Split it into sentences. 
-            // If part of the original is in the split array, then
-            // there is no need to chunk it further
-            ArrayList<String> sentences = new ArrayList<>(
-                    Arrays.asList(
-                            SentenceDetector.detectSentences(englishWords.toString()
-                            )
-                    )
-            );
-
-            ArrayList<String> sentensi = new ArrayList<>(
-                    Arrays.asList(
-                            SentenceDetector.detectSentences(swahiliWords.toString()
-                            )
-                    )
-            );
-
-            for (String sentence : sentences)
+            if (sentence.contains(original)
+                    || sentensi.contains(original))
             {
 
-                if (sentence.contains(original)
-                        || sentensi.contains(original))
+                if (sentence.contains(original))
                 {
-
-                    if (sentence.contains(original))
-                    {
-                        // Get the index of this string in the array
-                        int indexInArray = sentences.indexOf(sentence);
+                    // Get the index of this string in the array
+                    int indexInArray = sentences.indexOf(sentence);
 
 //                        System.out.println(Chunker.chunk(sentensi.get(indexInArray)));
-                        return (sentensi.get(indexInArray));
-                    }
-                    else
-                    {
-                        // Get the index of this string in the array
+                    return (sentensi.get(indexInArray));
+                }
+                else
+                {
+                    // Get the index of this string in the array
 
-                        // Get the index of this string in the array
-                        int indexInArray = sentensi.indexOf(sentence);
+                    // Get the index of this string in the array
+                    int indexInArray = sentensi.indexOf(sentence);
 
 //                        System.out.println(Chunker.chunk(sentences.get(indexInArray)));
-                        return (sentences.get(indexInArray));
-                    }
-
+                    return (sentences.get(indexInArray));
                 }
+
+            }
+        }
+
+        Map enFreq = ChunkFrequency.getFrequencies(englishWords.toString());
+        Map swFreq = ChunkFrequency.getFrequencies(swahiliWords.toString());
+
+        if (!enFreq.isEmpty() || !swFreq.isEmpty())
+        {
+            for (String preposition : PREPOSITIONS)
+            {
+                enFreq.remove(preposition);
             }
 
-            Map enFreq = ChunkFrequency.getFrequencies(englishWords.toString());
-            Map swFreq = ChunkFrequency.getFrequencies(swahiliWords.toString());
-
-            if (!enFreq.isEmpty() || !swFreq.isEmpty())
+            for (String kihusishi : VIHUSISHI)
             {
-                for (String preposition : PREPOSITIONS)
-                {
-                    enFreq.remove(preposition);
-                }
+                swFreq.remove(kihusishi);
+            }
 
-                for (String kihusishi : VIHUSISHI)
-                {
-                    swFreq.remove(kihusishi);
-                }
-
-                translation += enFreq + "\n\n";
-                translation += "+++++++++++++++++++++++++++++++++++++++++++++++++++\n";
-                translation += swFreq + "\n";
+            translation += enFreq + "\n\n";
+            translation += "+++++++++++++++++++++++++++++++++++++++++++++++++++\n";
+            translation += swFreq + "\n";
 
 //                System.out.println(enFreq + "\n"
 //                        + "+++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
 //                System.out.println(swFreq);
-            }
-            else
-            {
-                System.out.println("Translating  \"" + original + "\" in chunks: ");
-
-                ArrayList chunks = Chunker.chunk(original);
-
-                System.out.println(chunks);
-
-                for (Object chunk : chunks)
-                {
-                    System.out.println(chunk);
-                    exactMatch = false;
-                    System.out.println(translate(((String) chunk).trim()));
-                    exactMatch = true;
-                    System.out.println("_______________________________________________");
-                }
-
-            }
         }
-        catch (Exception ex)
+        else
         {
-            ex.printStackTrace();
-        }
-        finally
-        {
-            // TODO: Close the connections
-//            mongoClient.close();
+            System.out.println("Translating  \"" + original + "\" in chunks: ");
+
+//            Map
+//            
+//            for (Map.Entry<String, String> entry : spanTypes.entrySet())
+//        {
+//            String key = entry.getKey();
+//            Object value = entry.getValue();
+//            
+//            System.out.print(key);
+//            System.out.print("  =>  ");
+//            System.out.println(value);
+//            
+//        }
+//
+//            for (int i = 0; i < chunks.size(); i++)
+//            {
+//                System.out.println(chunks.get(i));
+//
+//                System.out.println(translateInContext(chunks.get(i),
+//                        spanTypes.get(i)));
+//
+//            }
         }
 
         return translation;

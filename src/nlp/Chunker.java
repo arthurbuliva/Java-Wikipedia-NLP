@@ -10,6 +10,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.logging.Level;
 import opennlp.tools.chunker.ChunkerME;
 import opennlp.tools.chunker.ChunkerModel;
 import opennlp.tools.postag.POSModel;
@@ -21,32 +24,46 @@ import opennlp.tools.util.Span;
  *
  * @author Arthur
  */
-public class Chunker
+public class Chunker extends TranslatorLogger
 {
 
-    public static ArrayList<String> getSpanTypesFromChunks(String sentence) throws FileNotFoundException, IOException
+    public static Map<String, String> getSpanTypes(String sentence)
     {
-        ArrayList<String> spanTypes = new ArrayList<>();
+        Map<String, String> spanTypes = new HashMap<>();
 
-        // Load the model that we want to use
-        InputStream posModelStream = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-pos-maxent.bin");
-        InputStream chunkerStream = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-chunker.bin");
-
-        // Run the model against the data
-        POSModel model = new POSModel(posModelStream);
-        POSTaggerME tagger = new POSTaggerME(model);
-
-        String sentenceTokens[] = WhitespaceTokenizer.INSTANCE.tokenize(sentence);
-        String[] tags = tagger.tag(sentenceTokens);
-
-        ChunkerModel chunkerModel = new ChunkerModel(chunkerStream);
-        ChunkerME chunkerME = new ChunkerME(chunkerModel);
-
-        Span[] spans = chunkerME.chunkAsSpans(sentenceTokens, tags);
-
-        for (Span span : spans)
+        try
         {
-            spanTypes.add(span.getType());
+            // Load the model that we want to use
+            InputStream posModelStream = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-pos-maxent.bin");
+            InputStream chunkerStream = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-chunker.bin");
+
+            // Run the model against the data
+            POSModel model = new POSModel(posModelStream);
+            POSTaggerME tagger = new POSTaggerME(model);
+
+            String sentenceTokens[] = WhitespaceTokenizer.INSTANCE.tokenize(sentence);
+            String[] tags = tagger.tag(sentenceTokens);
+
+            ChunkerModel chunkerModel = new ChunkerModel(chunkerStream);
+            ChunkerME chunkerME = new ChunkerME(chunkerModel);
+
+            Span[] spans = chunkerME.chunkAsSpans(sentenceTokens, tags);
+
+            for (Span span : spans)
+            {
+                String subChunk = "";
+
+                for (int j = span.getStart(); j < span.getEnd(); j++)
+                {
+                    subChunk += (sentenceTokens[j] + " ");
+                }
+
+                spanTypes.put(subChunk, span.getType());
+            }
+        }
+        catch (Exception ex)
+        {
+            log(Level.SEVERE, ex.toString());
         }
 
         return spanTypes;
@@ -108,7 +125,7 @@ public class Chunker
         }
         catch (FileNotFoundException ex)
         {
-            ex.printStackTrace();
+            log(Level.SEVERE, ex.getMessage());
         }
         finally
         {

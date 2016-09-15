@@ -6,7 +6,7 @@
 package corpus;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.Map;
 import nlp.Chunker;
 
 /**
@@ -19,19 +19,21 @@ public class TestChunker
     {
         String sentence = "My name is Rogers and I am an old man. My light is shining. My load is light.";
         
-        ArrayList<String> chunks = Chunker.chunk(sentence);
-        ArrayList<String> spanTypes = Chunker.getSpanTypesFromChunks(sentence);
+        Map<String, String> spanTypes = Chunker.getSpanTypes(sentence);
         
 //        System.out.println(Chunker.chunk(sentence));
 //        System.out.println(Chunker.getSpanTypesFromChunks(sentence));
         
-        int length = chunks.size();
+        int length = spanTypes.size();
         
-        for (int i = 0; i < length; i++)
+        for (Map.Entry<String, String> entry : spanTypes.entrySet())
         {
-            System.out.print(chunks.get(i));
+            String key = entry.getKey();
+            Object value = entry.getValue();
+            
+            System.out.print(key);
             System.out.print("  =>  ");
-            System.out.println(spanTypes.get(i));
+            System.out.println(value);
             
         }
     }
