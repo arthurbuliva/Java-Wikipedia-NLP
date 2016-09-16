@@ -9,14 +9,11 @@ import com.mongodb.Block;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoDatabase;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import org.bson.Document;
 
@@ -46,7 +43,8 @@ import org.bson.Document;
  *
  * mongorestore --db corpus --noIndexRestore --drop __db/dump/corpus/
  *
- * Search without index ++++++++++++++++++++ DBQuery.shellBatchSize = 300
+ * Search without index ++++++++++++++++++++ 
+ * DBQuery.shellBatchSize = 300
  * db.wikipedia.find({"sw": /Adelaide wa Italia/}).pretty();
  * db.wikipedia.find().sort({_id:-1}).pretty().limit(1);
  *
@@ -54,7 +52,7 @@ import org.bson.Document;
  * "Msimu wa mvua"}}).pretty(); db.wikipedia.find({$text: {$search: "\"Jamhuri
  * ya Kenya\""}}).pretty();
  */
-public class MongoTranslator extends  TranslatorLogger
+public class MongoTranslator extends TranslatorLogger
 {
 
     private final MongoClient mongoClient;
@@ -62,7 +60,7 @@ public class MongoTranslator extends  TranslatorLogger
     private final HashMap<String, String> relationship;
     private boolean exactMatch;
     int counter = 1;
-    
+
     public MongoTranslator()
     {
         relationship = new HashMap<>();
@@ -175,9 +173,7 @@ public class MongoTranslator extends  TranslatorLogger
             return (titleMatcher.translate(original.trim()));
         }
 
-        
-
-        // db.wikipedia.find({$text: {$search: "Paper is a thin material"}}, {score: {$meta: "textScore"}}).sort({score:{$meta:"textScore"}}).pretty().limit(1);
+        // db.wikipedia.find({$text: {$search: "Please give me a glass of Water", $language: "en", $caseSensitive: true}}, {score: {$meta: "textScore"}}).sort({score:{$meta:"textScore"}}).pretty().limit(0);
         // TODO: Full-Text Search in MongoDB
         // http://code.tutsplus.com/tutorials/full-text-search-in-mongodb--cms-24835
         // Find the highest scoring match
@@ -185,7 +181,12 @@ public class MongoTranslator extends  TranslatorLogger
 
         FindIterable<Document> iterable = db.getCollection("wikipedia")
                 .find(
-                        new Document("$text", new Document("$search", exactMatch ? String.format("\"%s\"", original) : original)
+                        new Document(
+                                "$text", 
+                                new Document(
+                                        "$search", exactMatch ? String.format("\"%s\"", original) : original
+                                )
+                                .append("$language", "en")
                         )
                 )
                 .projection(projection)
