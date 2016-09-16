@@ -12,13 +12,11 @@ import java.io.File;
 import java.io.FileReader;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
+import java.util.logging.Level;
 import java.util.stream.Stream;
-import nlp.SentenceDetector;
+import nlp.TranslatorLogger;
 import org.bson.Document;
 
 /**
@@ -29,7 +27,7 @@ import org.bson.Document;
  *
  * @author arthur
  */
-public class WikipediaFetchDataIntoMongoDB
+public class WikipediaFetchDataIntoMongoDB extends TranslatorLogger
 {
 
     private String wikiTextEnglish;
@@ -44,7 +42,6 @@ public class WikipediaFetchDataIntoMongoDB
     /**
      * Fetch the Wikipedia titles from the dumped text file
      *
-     * @throws Exception
      */
     public void fetchWikis()
     {
@@ -57,20 +54,19 @@ public class WikipediaFetchDataIntoMongoDB
 
             Map<String, String> titlesMap = new LinkedHashMap<>();
 
-            FileReader fileReader = new FileReader(file);
-
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-
-            String line;
-
-            while ((line = bufferedReader.readLine()) != null)
+            try (FileReader fileReader = new FileReader(file))
             {
-                String[] titlesArray = line.split("\\|\\|\\|");
-
-                titlesMap.put(titlesArray[1].trim(), titlesArray[0].trim());
+                BufferedReader bufferedReader = new BufferedReader(fileReader);
+                
+                String line;
+                
+                while ((line = bufferedReader.readLine()) != null)
+                {
+                    String[] titlesArray = line.split("\\|\\|\\|");
+                    
+                    titlesMap.put(titlesArray[1].trim(), titlesArray[0].trim());
+                }
             }
-
-            fileReader.close();
 
             try (Stream<String> lines = Files.lines(file.toPath(), Charset.defaultCharset()))
             {
@@ -89,12 +85,6 @@ public class WikipediaFetchDataIntoMongoDB
                         wikiTextEnglish = wikiFetcher.fetchData("en", englishTitle);
                         wikiTextSwahili = wikiFetcher.fetchData("sw", swahiliTitle);
 
-                        List englishArray = new ArrayList<>();
-                        List swahiliArray = new ArrayList<>();
-
-                        englishArray.addAll(Arrays.asList(SentenceDetector.detectSentences(wikiTextEnglish)));
-                        swahiliArray.addAll(Arrays.asList(SentenceDetector.detectSentences(wikiTextSwahili)));
-
                         db.getCollection("wikipedia")
                                 .insertOne(
                                         new Document()
@@ -102,15 +92,13 @@ public class WikipediaFetchDataIntoMongoDB
                                         .append("en", wikiTextEnglish)
                                         .append("kichwa", swahiliTitle)
                                         .append("sw", wikiTextSwahili)
-                                //                                        .append("en", englishArray)
-                                //                                        .append("sw", swahiliArray)
                                 );
             });
 
         }
         catch (Exception ex)
         {
-            ex.printStackTrace();
+            log(Level.SEVERE, ex.getMessage());
         }
         finally
         {

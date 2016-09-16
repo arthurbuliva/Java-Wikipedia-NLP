@@ -5,19 +5,19 @@
  */
 package nlp;
 
+import com.ibm.watson.developer_cloud.alchemy.v1.AlchemyLanguage;
+import com.ibm.watson.developer_cloud.alchemy.v1.model.Keyword;
 import com.mongodb.Block;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
-import opennlp.tools.tokenize.WhitespaceTokenizer;
 import org.apache.commons.collections4.CollectionUtils;
 
 import org.bson.Document;
@@ -40,9 +40,13 @@ public class AlphaMongoTranslator extends TranslatorLogger
 
     public static void main(String[] args)
     {
-        String english = "I don’t think we’ve met before. My name is Mr. Obama.";
-
+        String english = "The candle is bright";
+        
         AlphaMongoTranslator t = new AlphaMongoTranslator();
+
+        System.out.println(t.translate(english));
+        
+        System.exit(0);
 
         Map<String, String> chunks = Chunker.getSpanTypes(english);
         System.out.println(chunks);
@@ -58,9 +62,72 @@ public class AlphaMongoTranslator extends TranslatorLogger
 
     }
 
+    public String translate(String original)
+    {
+        log(Level.INFO, String.format("Translating \"%s\"", new Object[]
+        {
+            original
+        }));
+
+        StringBuilder translation = new StringBuilder();
+
+        // Sometimes the original word is just a title in Wikipedia
+        TitleMatcher titleMatcher = new TitleMatcher();
+
+        if ((titleMatcher.translate(original.trim()).replaceAll("\\[", "").replaceAll("\\]", "").length() > 0))
+        {
+            return (titleMatcher.translate(original.trim()));
+        }
+
+        Document projection = new Document("score", new Document("$meta", "textScore"));
+
+        // Get the key words
+        
+        AlchemyLanguage service = new AlchemyLanguage();
+        service.setApiKey("e24397903a386ad615e7922ed5907557e76bb336");
+
+        Map<String, Object> params = new HashMap<>();
+        params.put(AlchemyLanguage.TEXT, original);
+        
+        List<Keyword> keyWords = service.getKeywords(params).execute().getKeywords();
+        
+        for (Keyword keyWord: keyWords)
+        {
+            original = "\"" + keyWord.getText() + "\" " + original;
+        }
+
+        System.out.println(original);
+        
+        try (
+                MongoCursor<Document> cursor = db.getCollection("wikipedia")
+                .find(new Document("$text",
+                        new Document("$search", String.format("%s", original))
+                        .append("$language", "en")))
+                .projection(projection)
+                .sort(projection)
+                .limit(0)
+                .iterator())
+        {
+            while (cursor.hasNext())
+            {
+                Document document = cursor.next();
+
+                String swahili = document.getString("sw");
+                
+                translation.append(swahili);
+                translation.append("\n\n");
+            }
+        }
+
+        return translation.toString();
+    }
+
     public String translate(String original, String partOfSpeech)
     {
-        log(Level.INFO, String.format("Translating %s as %s", new Object[]{original, partOfSpeech}));
+        log(Level.INFO, String.format("Translating %s as %s", new Object[]
+        {
+            original, partOfSpeech
+        }));
 
         String translation = "";
 
@@ -74,10 +141,14 @@ public class AlphaMongoTranslator extends TranslatorLogger
 
         Document projection = new Document("score", new Document("$meta", "textScore"));
 
+        // db.wikipedia.find({$text: {$search: "Please give me a glass of Water", 
+        // $language: "en", $caseSensitive: true}}, {score: {$meta: "textScore"}})
+        // .sort({score:{$meta:"textScore"}}).pretty().limit(0);
         FindIterable<Document> iterable = db.getCollection("wikipedia")
                 .find(
                         new Document("$text", new Document("$search", String.format("%s", original))
                         )
+                //                        .append("language", "en")
                 )
                 .projection(projection)
                 .sort(projection)

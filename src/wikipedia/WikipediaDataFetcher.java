@@ -5,44 +5,75 @@
  */
 package wikipedia;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Iterator;
+import java.util.logging.Level;
+import nlp.TranslatorLogger;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.JSONTokener;
 
 /**
  * Fetches data from a Wikipedia page
  *
  * @author arthu
  */
-public class WikipediaDataFetcher
+public class WikipediaDataFetcher extends TranslatorLogger
 {
 
     public final String fetchData(String locale, String title)
     {
+        String data = "";
+
         try
         {
             Object[] parameters =
             {
-                locale, title.replaceAll(" ", "_")
+                locale, title
             };
 
-            String link = String.format("http://%s.wikipedia.org/wiki/%s", parameters);
-            
+            String link = String.format("https://%s.wikipedia.org/w/api.php?format=json"
+                    + "&action=query&prop=extracts&exlimit=max&explaintext&exintro"
+                    + "&titles=%s", parameters);
+
             System.out.println(link);
-            
-            Document doc = Jsoup.connect(link).timeout(5000).get();
 
-            Elements paragraphs = doc.select(".mw-content-ltr p, .mw-content-ltr li");
+            URI uri = new URI(link);
 
-            Element firstParagraph = paragraphs.first();
+            JSONTokener tokener = new JSONTokener(uri.toURL().openStream());
+            JSONObject root = new JSONObject(tokener);
+            JSONObject query = (JSONObject) (root.get("query"));
+            JSONObject pages = (JSONObject) (query.get("pages"));
 
-            return firstParagraph.text(); //Print out just the first paragraph
+            Iterator<?> keys = pages.keys();
+
+            while (keys.hasNext())
+            {
+                String key = (String) keys.next();
+
+                if (pages.get(key) instanceof JSONObject)
+                {
+                    JSONObject article = (JSONObject) (pages.get(key));
+
+                    String articleTitle = (String) (article.get("title"));
+                    String articleBody = (String) (article.get("extract"));
+
+                    System.out.println(article.get("extract"));
+
+                    data = articleBody;
+                }
+            }
+
         }
-        catch (Exception ex)
+        catch (URISyntaxException | IOException | JSONException ex)
         {
-            return ex.toString();
+            data = "";
+            log(Level.SEVERE, ex.getMessage());
         }
+
+        return data;
 
     }
 }
