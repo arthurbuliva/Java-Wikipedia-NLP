@@ -22,13 +22,16 @@ public class JWikiExample
 
     public static void main(String[] args) throws Throwable
     {
-        String link = "https://sw.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exlimit=max&explaintext&exintro&titles=1403";
+        String link = "https://sw.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exlimit=max&explaintext&exintro&titles=Chunya";
         URI uri = new URI(link);
         JSONTokener tokener = new JSONTokener(uri.toURL().openStream());
 
         JSONObject root = new JSONObject(tokener);
         JSONObject query = (JSONObject) (root.get("query"));
         JSONObject pages = (JSONObject) (query.get("pages"));
+        
+        System.out.println(query);
+        System.out.println(pages);
 
         Iterator<?> keys = pages.keys();
 
