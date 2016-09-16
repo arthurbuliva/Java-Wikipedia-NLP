@@ -8,6 +8,7 @@ package wikipedia;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URLEncoder;
 import java.util.Iterator;
 import java.util.logging.Level;
 import nlp.TranslatorLogger;
@@ -31,14 +32,12 @@ public class WikipediaDataFetcher extends TranslatorLogger
         {
             Object[] parameters =
             {
-                locale, title
+                locale, URLEncoder.encode(title, "UTF-8")
             };
 
             String link = String.format("https://%s.wikipedia.org/w/api.php?format=json"
                     + "&action=query&prop=extracts&exlimit=max&explaintext&exintro"
                     + "&titles=%s", parameters);
-
-            System.out.println(link);
 
             URI uri = new URI(link);
 
@@ -59,9 +58,6 @@ public class WikipediaDataFetcher extends TranslatorLogger
 
                     String articleTitle = (String) (article.get("title"));
                     String articleBody = (String) (article.get("extract"));
-
-                    System.out.println(article.get("extract"));
-
                     data = articleBody;
                 }
             }
