@@ -13,9 +13,12 @@ import com.mongodb.client.MongoDatabase;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.logging.Level;
 import opennlp.tools.tokenize.SimpleTokenizer;
@@ -41,8 +44,8 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
 
     public static void main(String[] args)
     {
-        String english = "I have a headache";
-//        String english = "I have a headache";
+//        String english = "I feel sick";
+        String english = "the dog is dead";
 
         AlphaMongoTranslator t = new AlphaMongoTranslator();
 
@@ -120,6 +123,8 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
 
         Map<String, Integer> probabilities = new HashMap<>();
 
+        Lemmatizer lemmatizer = new Lemmatizer();
+
         // Go through the tokens one by one
         for (Map.Entry<String, String> entry : tokens.entrySet())
         {
@@ -128,20 +133,13 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
 
             System.out.println("=================" + key + "=================");
 
-            // Remove stop words from the key
-            ArrayList<String> stopWords = Chunker.chunk(key);
-
-            SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
-            String[] keyTokens = tokenizer.tokenize(key);
-            
-            
-
-            System.exit(0);
-
             // Loop through the documents
             for (String sentence : translation)
             {
-                if (sentence.toLowerCase().contains(key.toLowerCase()))
+//                System.out.println(key + " type " + value);
+
+//                System.out.println(lemmatizer.lemmatize(key, value));
+                if (sentence.toLowerCase().contains(removeStopWords(key).toLowerCase()))
                 {
                     Map<String, Integer> newProbabilities = (ChunkFrequency.getFrequencies(sentence));
 
@@ -164,7 +162,6 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
                         {
                             for (Object intersectingObject : intersection)
                             {
-
                                 int newValue = (probabilities.get(intersectingObject));
                                 newValue += (newProbabilities.get(intersectingObject));
 
@@ -180,7 +177,46 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
             }
 
         }
+//
+        Set<Entry<String, Integer>> set = probabilities.entrySet();
+        List<Entry<String, Integer>> topTen = new ArrayList<>(set);
+        Collections.sort(topTen, new Comparator<Map.Entry<String, Integer>>()
+        {
+            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2)
+            {
+                return (o2.getValue()).compareTo(o1.getValue());
+            }
+        });
+//        for (Map.Entry<String, Integer> entry : topTen)
+//        {
+//            System.out.println(entry.getKey() + " ==== " + entry.getValue());
+//        }
 
         return probabilities.toString();
+        
+        //TODO: Go through the phrases in sw and see if the en equivalkents have the phrase we need
+    }
+
+    private String removeStopWords(String sentence)
+    {
+        SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
+        String[] wordTokens = tokenizer.tokenize(sentence);
+
+        StringBuilder clean = new StringBuilder();
+
+        for (String token : wordTokens)
+        {
+            if (Arrays.asList(stopWords).contains(token))
+            {
+//                    System.out.println("Keyword found: "+ token);
+            }
+            else
+            {
+                clean.append(token).append(" ");
+            }
+        }
+
+//            System.out.printf("%s cleaned to %s\n", sentence, clean.toString().trim());
+        return clean.toString().trim();
     }
 }
