@@ -22,35 +22,6 @@ import org.bson.Document;
  *
  * @author arthur
  *
- * This is how we insert a record into the db:
- *
- * db.getCollection("test").insertOne( new Document() .append("en",
- * "\"Nakumatt\" is an abbreviation for Nakuru Mattress.[1]") .append("sw",
- * "Nakumatt ni mnyororo wa maduka nchini Kenya.\n" + "Ina maduka 18 kote nchini
- * Kenya [1] na inaajiri watu 3,200.\n" + "Ni mipango ya kupanua maduka yake
- * mpaka nchini Uganda, Rwanda na nchi nyingine za Afrika Mashariki.\n" +
- * "Nakumatt ni kampuni ya Kenya inayomilikiwa na familia na Atul Shah Hotnet
- * Ltd.[2] [3]")); This is how we created an index for the text:
- *
- * db.wikipedia.createIndex({ "en" : "text", "sw" : "text" }, {
- * default_language: "english" });
- *
- * This is how we dump data from MongoDB:
- *
- * mongodump --collection wikipedia --db corpus --out __db/dump
- *
- * This is how we restore from the dump:
- *
- * mongorestore --db corpus --noIndexRestore --drop __db/dump/corpus/
- *
- * Search without index ++++++++++++++++++++ 
- * DBQuery.shellBatchSize = 300
- * db.wikipedia.find({"sw": /Adelaide wa Italia/}).pretty();
- * db.wikipedia.find().sort({_id:-1}).pretty().limit(1);
- *
- * Search with index ++++++++++++++++++++ db.wikipedia.find({$text: {$search:
- * "Msimu wa mvua"}}).pretty(); db.wikipedia.find({$text: {$search: "\"Jamhuri
- * ya Kenya\""}}).pretty();
  */
 public class MongoTranslator extends TranslatorLogger
 {

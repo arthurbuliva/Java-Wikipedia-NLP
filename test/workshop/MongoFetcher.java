@@ -80,44 +80,31 @@ public class MongoFetcher extends TranslatorLogger
                 String english = document.getString("en");
                 String swahili = document.getString("sw");
 
-                if (
-                        english.equals("v")
-                        || english.startsWith("org.jsoup.HttpStatusException")
-                        || swahili.equals("v")
-                        || swahili.startsWith("org.jsoup.HttpStatusException")
-                        || english.isEmpty()
-                        || swahili.isEmpty()
-                        || swahili.startsWith("Lango la Historia | Lango la Biografia | Karibuni | Orodha ya Miaka"))
+//                System.out.println(
+//                        english
+//                        //                            SentenceDetector.detectSentences(english)[0]
+//                        + " => "
+//                        + swahili);
+////                            + SentenceDetector.detectSentences(swahili)[0]);
+                try
                 {
-                    //Do Nothing
-                }
-                else
-                {
-                    System.out.println(
-                            english
-                            //                            SentenceDetector.detectSentences(english)[0]
-                            + " => "
-                            + swahili);
-//                            + SentenceDetector.detectSentences(swahili)[0]);
-
-                    try
+                    if (swahili.trim().length() == 0 || english.trim().length() == 0)
                     {
+                        throw new IOException("Blank value Exception");
+                    }
 
-                        ENGLISH_WRITER.write(english);
+                    ENGLISH_WRITER.write(english);
 //                        ENGLISH_WRITER.write(SentenceDetector.detectSentences(english)[0]);
-                        ENGLISH_WRITER.newLine();
+                    ENGLISH_WRITER.newLine();
 
 //                        SWAHILI_WRITER.write(SentenceDetector.detectSentences(swahili)[0]);
-                        SWAHILI_WRITER.write(swahili);
-                        SWAHILI_WRITER.newLine();
-                    }
-                    catch (IOException ex)
-                    {
-                        log(ex.getMessage(), Level.SEVERE);
-                    }
-
+                    SWAHILI_WRITER.write(swahili);
+                    SWAHILI_WRITER.newLine();
                 }
-
+                catch (IOException ex)
+                {
+                    log(ex.getMessage(), Level.SEVERE);
+                }
             }
         });
 

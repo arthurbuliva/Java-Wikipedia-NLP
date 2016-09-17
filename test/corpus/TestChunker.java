@@ -17,7 +17,7 @@ public class TestChunker
 {
     public static void main(String[] args) throws IOException
     {
-        String sentence = "My name is Rogers and I am an old man. My light is shining. My load is light.";
+        String sentence = "A Dog";
         
         Map<String, String> spanTypes = Chunker.getSpanTypes(sentence);
         

@@ -7,22 +7,23 @@ package nlp;
 
 import com.ibm.watson.developer_cloud.alchemy.v1.AlchemyLanguage;
 import com.ibm.watson.developer_cloud.alchemy.v1.model.Keyword;
-import com.mongodb.Block;
 import com.mongodb.MongoClient;
-import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.logging.Level;
+import opennlp.tools.tokenize.SimpleTokenizer;
 import org.apache.commons.collections4.CollectionUtils;
 
 import org.bson.Document;
 
-public class AlphaMongoTranslator extends TranslatorLogger
+public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
 {
 
     private final MongoClient mongoClient;
@@ -40,26 +41,12 @@ public class AlphaMongoTranslator extends TranslatorLogger
 
     public static void main(String[] args)
     {
-        String english = "The candle is bright";
-        
+        String english = "I have a headache";
+//        String english = "I have a headache";
+
         AlphaMongoTranslator t = new AlphaMongoTranslator();
 
         System.out.println(t.translate(english));
-        
-        System.exit(0);
-
-        Map<String, String> chunks = Chunker.getSpanTypes(english);
-        System.out.println(chunks);
-
-        for (Map.Entry<String, String> entry : chunks.entrySet())
-        {
-            String key = entry.getKey().toLowerCase().trim();
-            String value = entry.getValue();
-
-            log(Level.INFO, key);
-            System.out.println(t.translate(key, value));
-        }
-
     }
 
     public String translate(String original)
@@ -69,7 +56,7 @@ public class AlphaMongoTranslator extends TranslatorLogger
             original
         }));
 
-        StringBuilder translation = new StringBuilder();
+        ArrayList<String> translation = new ArrayList<>();
 
         // Sometimes the original word is just a title in Wikipedia
         TitleMatcher titleMatcher = new TitleMatcher();
@@ -79,25 +66,38 @@ public class AlphaMongoTranslator extends TranslatorLogger
             return (titleMatcher.translate(original.trim()));
         }
 
-        Document projection = new Document("score", new Document("$meta", "textScore"));
-
         // Get the key words
-        
         AlchemyLanguage service = new AlchemyLanguage();
         service.setApiKey("e24397903a386ad615e7922ed5907557e76bb336");
 
         Map<String, Object> params = new HashMap<>();
         params.put(AlchemyLanguage.TEXT, original);
-        
+
         List<Keyword> keyWords = service.getKeywords(params).execute().getKeywords();
-        
-        for (Keyword keyWord: keyWords)
+
+        System.out.println("Key words: " + keyWords);
+
+        Map<String, String> tokens = Chunker.getSpanTypes(original);
+
+        System.out.println("Tokens: " + tokens);
+
+//        // Go through the tokens one by one
+//        for (Map.Entry<String, String> entry : tokens.entrySet())
+//        {
+//            String key = entry.getKey().trim();
+////            String value = entry.getValue();
+//
+//            original += " \"" + key.trim() + "\" ";
+//        }
+        for (Keyword keyWord : keyWords)
         {
-            original = "\"" + keyWord.getText() + "\" " + original;
+            original += " \"" + keyWord.getText().trim() + "\"";
         }
 
-        System.out.println(original);
-        
+        System.out.println("Searching MongoDB: " + original);
+
+        Document projection = new Document("score", new Document("$meta", "textScore"));
+
         try (
                 MongoCursor<Document> cursor = db.getCollection("wikipedia")
                 .find(new Document("$text",
@@ -113,144 +113,74 @@ public class AlphaMongoTranslator extends TranslatorLogger
                 Document document = cursor.next();
 
                 String swahili = document.getString("sw");
-                
-                translation.append(swahili);
-                translation.append("\n\n");
+
+                translation.add(swahili);
             }
         }
 
-        return translation.toString();
-    }
+        Map<String, Integer> probabilities = new HashMap<>();
 
-    public String translate(String original, String partOfSpeech)
-    {
-        log(Level.INFO, String.format("Translating %s as %s", new Object[]
+        // Go through the tokens one by one
+        for (Map.Entry<String, String> entry : tokens.entrySet())
         {
-            original, partOfSpeech
-        }));
+            String key = entry.getKey().trim();
+            String value = entry.getValue();
 
-        String translation = "";
+            System.out.println("=================" + key + "=================");
 
-        // Sometimes the original word is just a title in Wikipedia
-        TitleMatcher titleMatcher = new TitleMatcher();
+            // Remove stop words from the key
+            ArrayList<String> stopWords = Chunker.chunk(key);
 
-        if ((titleMatcher.translate(original.trim()).replaceAll("\\[", "").replaceAll("\\]", "").length() > 0))
-        {
-            return (titleMatcher.translate(original.trim()));
-        }
+            SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
+            String[] keyTokens = tokenizer.tokenize(key);
+            
+            
 
-        Document projection = new Document("score", new Document("$meta", "textScore"));
+            System.exit(0);
 
-        // db.wikipedia.find({$text: {$search: "Please give me a glass of Water", 
-        // $language: "en", $caseSensitive: true}}, {score: {$meta: "textScore"}})
-        // .sort({score:{$meta:"textScore"}}).pretty().limit(0);
-        FindIterable<Document> iterable = db.getCollection("wikipedia")
-                .find(
-                        new Document("$text", new Document("$search", String.format("%s", original))
-                        )
-                //                        .append("language", "en")
-                )
-                .projection(projection)
-                .sort(projection)
-                .limit(0);
-
-        StringBuilder englishWords = new StringBuilder();
-        StringBuilder swahiliWords = new StringBuilder();
-
-        List originalAsArray = Arrays.asList(original.toLowerCase().trim());
-
-        log(Level.INFO, "Original as array: " + originalAsArray.toString());
-
-        iterable.forEach(new Block<Document>()
-        {
-            @Override
-            public void apply(final Document document)
+            // Loop through the documents
+            for (String sentence : translation)
             {
-
-                String english = document.getString("en");
-                String swahili = document.getString("sw");
-
-                Map<String, String> chunks = (Chunker.getSpanTypes(english));
-
-                for (Map.Entry<String, String> entry : chunks.entrySet())
+                if (sentence.toLowerCase().contains(key.toLowerCase()))
                 {
-                    String key = entry.getKey().toLowerCase().trim();
-                    Object value = entry.getValue();
+                    Map<String, Integer> newProbabilities = (ChunkFrequency.getFrequencies(sentence));
 
-                    //If any of the words in the original as an array
-                    //are contained in the key as an array
-                    List keyAsArray = Arrays.asList(key);
-
-                    if (CollectionUtils.containsAny(originalAsArray, keyAsArray))
+                    if (probabilities.isEmpty())
                     {
-//                        System.out.println(original + "****" + key);
-
-                        englishWords.append(english);
-                        swahiliWords.append(swahili);
-
-                        if (!swahili.isEmpty())
-                        {
-                            System.out.println(Chunker.getSpanTypes(english));
-                            System.out.println(swahili);
-                        }
-
-                        relationship.put(swahili, english);
-
+                        probabilities = newProbabilities;
                     }
                     else
                     {
-//                        System.out.print("*");
+                        Set<String> oldKeySet = probabilities.keySet();
+                        Set<String> newKeySet = newProbabilities.keySet();
+
+                        Collection intersection
+                                = CollectionUtils.intersection(oldKeySet, newKeySet);
+
+                        if (intersection.isEmpty())
+                        {
+                        }
+                        else
+                        {
+                            for (Object intersectingObject : intersection)
+                            {
+
+                                int newValue = (probabilities.get(intersectingObject));
+                                newValue += (newProbabilities.get(intersectingObject));
+
+                                probabilities.put((String) intersectingObject, newValue);
+
+                                newProbabilities.remove(intersectingObject);
+                            }
+
+                            probabilities.putAll(newProbabilities);
+                        }
                     }
                 }
-
             }
-        });
 
-        ArrayList<String> sentences = new ArrayList<>(
-                Arrays.asList(
-                        SentenceDetector.detectSentences(englishWords.toString()
-                        )
-                )
-        );
-        ArrayList<String> sentensi = new ArrayList<>(
-                Arrays.asList(
-                        SentenceDetector.detectSentences(swahiliWords.toString()
-                        )
-                )
-        );
-        for (String sentence : sentences)
-        {
-
-            if (sentence.contains(original)
-                    || sentensi.contains(original))
-            {
-
-                if (sentence.contains(original))
-                {
-                    // Get the index of this string in the array
-                    int indexInArray = sentences.indexOf(sentence);
-
-//                        System.out.println(Chunker.chunk(sentensi.get(indexInArray)));
-                    return (sentensi.get(indexInArray));
-                }
-                else
-                {
-                    // Get the index of this string in the array
-
-                    // Get the index of this string in the array
-                    int indexInArray = sentensi.indexOf(sentence);
-
-//                        System.out.println(Chunker.chunk(sentences.get(indexInArray)));
-                    return (sentences.get(indexInArray));
-                }
-
-            }
         }
 
-        Map enFreq = ChunkFrequency.getFrequencies(englishWords.toString());
-        Map swFreq = ChunkFrequency.getFrequencies(swahiliWords.toString());
-
-        return translation;
+        return probabilities.toString();
     }
-
 }
