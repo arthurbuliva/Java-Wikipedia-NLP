@@ -45,7 +45,7 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
     public static void main(String[] args)
     {
 //        String english = "I feel sick";
-        String english = "the dog is dead";
+        String english = "How much is a laptop?";
 
         AlphaMongoTranslator t = new AlphaMongoTranslator();
 
@@ -174,27 +174,38 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
                         }
                     }
                 }
+
+                Set<Entry<String, Integer>> set = probabilities.entrySet();
+                List<Entry<String, Integer>> topTen = new ArrayList<>(set);
+                Collections.sort(topTen, new Comparator<Map.Entry<String, Integer>>()
+                {
+                    public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2)
+                    {
+                        return (o2.getValue()).compareTo(o1.getValue());
+                    }
+                });
+                
+                int counter = 0;
+                
+                for (Map.Entry<String, Integer> topEntry : topTen)
+                {
+                    System.out.println(topEntry.getKey() + " ==== " + topEntry.getValue());
+                    
+                    if(counter == 5)
+                    {
+                        break;
+                    }
+                    
+                    counter++;
+                }
             }
 
         }
 //
-        Set<Entry<String, Integer>> set = probabilities.entrySet();
-        List<Entry<String, Integer>> topTen = new ArrayList<>(set);
-        Collections.sort(topTen, new Comparator<Map.Entry<String, Integer>>()
-        {
-            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2)
-            {
-                return (o2.getValue()).compareTo(o1.getValue());
-            }
-        });
-//        for (Map.Entry<String, Integer> entry : topTen)
-//        {
-//            System.out.println(entry.getKey() + " ==== " + entry.getValue());
-//        }
 
         return probabilities.toString();
-        
-        //TODO: Go through the phrases in sw and see if the en equivalkents have the phrase we need
+
+        //TODO: Go through the phrases in sw and see if the en equivalents have the phrase we need
     }
 
     private String removeStopWords(String sentence)
