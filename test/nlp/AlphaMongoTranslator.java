@@ -14,19 +14,20 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
+import static java.util.Collections.list;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.logging.Level;
+import java.util.stream.Collectors;
 import opennlp.tools.tokenize.SimpleTokenizer;
 import org.apache.commons.collections4.CollectionUtils;
 
 import org.bson.Document;
 
-public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
+public class AlphaMongoTranslator extends TranslatorLogger implements EnglishStopWords, SwahiliStopWords
 {
 
     private final MongoClient mongoClient;
@@ -45,12 +46,59 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
 
     public static void main(String[] args)
     {
-//        String english = "I feel sick";
-        String english = "It is Christmas today";
+        String english = "I want to sleep";
+
+        StringBuilder finalTranslation = new StringBuilder();
 
         AlphaMongoTranslator t = new AlphaMongoTranslator();
 
-        System.out.println(t.translate(english));
+        // Step 1: Search entire string in MongoDB
+        
+        english=(t.removeEnglishStopWords(english));
+        String wholeTranslation = t.translateWhole(english);
+
+        if (wholeTranslation.isEmpty() || wholeTranslation.equalsIgnoreCase("[]"))
+        {
+            // If step 1 does not find the whole string, then chunk it
+            Map<String, String> tokens = Chunker.getSpanTypes(english);
+
+            for (Map.Entry<String, String> entry : tokens.entrySet())
+            {
+                String key = entry.getKey().trim();
+                String value = entry.getValue();
+
+                String keyTranslation = t.translateWhole(english);
+
+                if (keyTranslation.isEmpty() || keyTranslation.equalsIgnoreCase("[]"))
+                {
+                    finalTranslation.append(t.translate(key)).append(" ");
+                }
+                else
+                {
+                    finalTranslation.append(keyTranslation);
+                }
+
+            }
+
+//            System.out.println(finalTranslation);
+//            System.out.println(t.translate(english));
+        }
+        else
+        {
+            finalTranslation.append(wholeTranslation);
+//            System.out.println(wholeTranslation);
+        }
+
+        System.out.println("===============================");
+        System.out.println(english);
+        System.out.println(finalTranslation.toString());
+        System.out.println("===============================");
+
+    }
+    
+    public String reverseTranslate()
+    {
+        return null;
     }
 
     public String translate(String original)
@@ -59,7 +107,7 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
         {
             original
         }));
-        
+
         this.original = original;
 
         ArrayList<String> translation = new ArrayList<>();
@@ -114,7 +162,8 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
                     return swahiliTitle;
                 }
 
-                translation.add(swahili);
+                translation.add(removeSwahiliStopWords(swahili));
+//                translation.add(swahili);
             }
         }
 
@@ -127,14 +176,14 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
         {
             String key = entry.getKey().trim();
             String value = entry.getValue();
-
-            System.out.println("=================" + key + "=================");
+            
+            log(Level.INFO, "Token: " + key);
 
             // Loop through the documents
             for (String sentence : translation)
             {
 //                System.out.println(lemmatizer.lemmatize(key, value));
-                if (sentence.toLowerCase().contains(removeStopWords(key).toLowerCase()))
+                if (sentence.toLowerCase().contains(removeEnglishStopWords(key).toLowerCase()))
                 {
                     Map<String, Integer> newProbabilities = (ChunkFrequency.getFrequencies(sentence));
 
@@ -172,15 +221,84 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
             }
         }
 
-        String topWords = getTopWords(probabilities);
-
-        return topWords;
+        return getTopWords(probabilities).toString();
 //        return probabilities.toString();
 
         //TODO: Go through the phrases in sw and see if the en equivalents have the phrase we need
     }
 
-    public String getTopWords(Map<String, Integer> hashMap)
+    public String translateWhole(String original)
+    {
+        log(Level.INFO, String.format("Translating \"%s\"", new Object[]
+        {
+            original
+        }));
+
+        ArrayList<String> translation = new ArrayList<>();
+
+        Map<String, Integer> frequencies = new HashMap<>();
+
+        Document projection = new Document("score", new Document("$meta", "textScore"));
+
+        try (
+                MongoCursor<Document> cursor = db.getCollection("wikipedia")
+                .find(new Document("$text",
+                        new Document("$search", String.format("\"%s\"", original))
+                        .append("$language", "en")))
+                .projection(projection)
+                .sort(projection)
+                .limit(0)
+                .iterator())
+        {
+            while (cursor.hasNext())
+            {
+                Document document = cursor.next();
+
+                String swahiliTitle = document.getString("kichwa");
+                String swahili = document.getString("sw");
+
+                String englishTitle = document.getString("title");
+                String english = document.getString("en");
+
+                // Sometimes the original word is just a title in Wikipedia
+                if (original.trim().equalsIgnoreCase(englishTitle))
+                {
+                    return swahiliTitle;
+                }
+
+//                ============
+                SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
+                String[] wordTokens = tokenizer.tokenize(removeSwahiliStopWords(swahili));
+
+                StringBuilder clean = new StringBuilder();
+
+                for (String token : wordTokens)
+                {
+                    if (frequencies.containsKey(token))
+                    {
+                        int currentValue = frequencies.get(token);
+
+                        frequencies.put(token, currentValue + 1);
+                    }
+                    else
+                    {
+                        frequencies.put(token, 1);
+                    }
+
+                }
+//                        ====================
+
+//                System.out.println(frequencies);
+                translation.add(swahili);
+            }
+        }
+
+//        return translation.toString();
+//        return frequencies.toString();
+        return getTopWords(frequencies).toString();
+    }
+
+    public List getTopWords(Map<String, Integer> hashMap)
     {
         Set<Entry<String, Integer>> set = hashMap.entrySet();
         List<Entry<String, Integer>> topTen = new ArrayList<>(set);
@@ -196,9 +314,6 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
 
         for (Map.Entry<String, Integer> topEntry : topTen)
         {
-//                    
-//                    System.out.print(topEntry.getKey() + " : " + topEntry.getValue() + "\t");
-
             if (loopCounter == 5)
             {
                 break;
@@ -207,10 +322,10 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
             loopCounter++;
         }
 
-        return topTen.toString();
+        return topTen;
     }
 
-    private String removeStopWords(String sentence)
+    private String removeEnglishStopWords(String sentence)
     {
         SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
         String[] wordTokens = tokenizer.tokenize(sentence);
@@ -219,9 +334,9 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
 
         for (String token : wordTokens)
         {
-            if (Arrays.asList(stopWords).contains(token))
+            if (Arrays.asList(englishStopWords).contains(token.toLowerCase()))
             {
-//                    System.out.println("Keyword found: "+ token);
+//                System.out.println("Keyword found: " + token);
             }
             else
             {
@@ -229,7 +344,30 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
             }
         }
 
-//            System.out.printf("%s cleaned to %s\n", sentence, clean.toString().trim());
+//        System.out.printf("%s cleaned to %s\n", sentence, clean.toString().trim());
+        return clean.toString().trim();
+    }
+
+    private String removeSwahiliStopWords(String sentence)
+    {
+        SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
+        String[] wordTokens = tokenizer.tokenize(sentence);
+
+        StringBuilder clean = new StringBuilder();
+
+        for (String token : wordTokens)
+        {
+            if (Arrays.asList(swahiliStopWords).contains(token))
+            {
+//                System.out.println("Keyword found: " + token);
+            }
+            else
+            {
+                clean.append(token).append(" ");
+            }
+        }
+
+//        System.out.printf("%s cleaned to %s\n", sentence, clean.toString().trim());
         return clean.toString().trim();
     }
 }
