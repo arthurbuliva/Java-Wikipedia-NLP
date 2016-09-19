@@ -14,14 +14,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
-import static java.util.Collections.list;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.logging.Level;
-import java.util.stream.Collectors;
 import opennlp.tools.tokenize.SimpleTokenizer;
 import org.apache.commons.collections4.CollectionUtils;
 
@@ -46,15 +44,13 @@ public class AlphaMongoTranslator extends TranslatorLogger implements EnglishSto
 
     public static void main(String[] args)
     {
-        String english = "I want to sleep";
+        String english = "I am going for lunch";
 
         StringBuilder finalTranslation = new StringBuilder();
 
         AlphaMongoTranslator t = new AlphaMongoTranslator();
 
         // Step 1: Search entire string in MongoDB
-        
-        english=(t.removeEnglishStopWords(english));
         String wholeTranslation = t.translateWhole(english);
 
         if (wholeTranslation.isEmpty() || wholeTranslation.equalsIgnoreCase("[]"))
@@ -67,16 +63,22 @@ public class AlphaMongoTranslator extends TranslatorLogger implements EnglishSto
                 String key = entry.getKey().trim();
                 String value = entry.getValue();
 
-                String keyTranslation = t.translateWhole(english);
+                System.out.println(key);
+                
+                String keyTranslation = t.translateWhole(key);
 
                 if (keyTranslation.isEmpty() || keyTranslation.equalsIgnoreCase("[]"))
                 {
+                    log(Level.INFO, "No exact match for: " + key);
                     finalTranslation.append(t.translate(key)).append(" ");
                 }
                 else
                 {
-                    finalTranslation.append(keyTranslation);
+                    log(Level.INFO, "No data for: " + key);
+                    finalTranslation.append(t.translate(t.removeEnglishStopWords(key)));
                 }
+                
+//                System.out.println(" = " + keyTranslation);
 
             }
 
@@ -109,6 +111,27 @@ public class AlphaMongoTranslator extends TranslatorLogger implements EnglishSto
         }));
 
         this.original = original;
+        
+        if(original.equalsIgnoreCase("is") || original.equalsIgnoreCase("am"))
+        {
+            return " ni ";
+        }
+        if(original.equalsIgnoreCase("a"))
+        {
+            return " ";
+        }
+        if(original.equalsIgnoreCase("this"))
+        {
+            return " hii ";
+        }
+        if(original.equalsIgnoreCase("I"))
+        {
+            return " mimi ";
+        }
+        if(original.equalsIgnoreCase("have"))
+        {
+            return " nina ";
+        }
 
         ArrayList<String> translation = new ArrayList<>();
 
@@ -325,6 +348,7 @@ public class AlphaMongoTranslator extends TranslatorLogger implements EnglishSto
         return topTen;
     }
 
+    @Deprecated
     private String removeEnglishStopWords(String sentence)
     {
         SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
