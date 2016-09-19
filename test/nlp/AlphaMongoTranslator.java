@@ -44,7 +44,7 @@ public class AlphaMongoTranslator extends TranslatorLogger implements EnglishSto
 
     public static void main(String[] args)
     {
-        String english = "I am going for lunch";
+        String english = "He has left for home";
 
         StringBuilder finalTranslation = new StringBuilder();
 
@@ -142,7 +142,16 @@ public class AlphaMongoTranslator extends TranslatorLogger implements EnglishSto
         Map<String, Object> params = new HashMap<>();
         params.put(AlchemyLanguage.TEXT, original);
 
-        List<Keyword> keyWords = service.getKeywords(params).execute().getKeywords();
+        List<Keyword> keyWords = null;
+        
+        try
+        {
+        keyWords = service.getKeywords(params).execute().getKeywords();
+        }
+        catch (Exception ex)
+        {
+            log(Level.SEVERE, "Fetching from Alchemy: " + params);
+        }
 
         System.out.println("Key words: " + keyWords);
 
