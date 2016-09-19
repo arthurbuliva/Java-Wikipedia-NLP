@@ -32,6 +32,7 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
     private final MongoClient mongoClient;
     private final MongoDatabase db;
     private final HashMap<String, String> relationship;
+    private String original;
     int counter = 1;
 
     public AlphaMongoTranslator()
@@ -39,13 +40,13 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
         relationship = new HashMap<>();
         mongoClient = new MongoClient();
         db = mongoClient.getDatabase("corpus");
-
+        original = "";
     }
 
     public static void main(String[] args)
     {
 //        String english = "I feel sick";
-        String english = "How much is a laptop?";
+        String english = "It is Christmas today";
 
         AlphaMongoTranslator t = new AlphaMongoTranslator();
 
@@ -58,16 +59,10 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
         {
             original
         }));
+        
+        this.original = original;
 
         ArrayList<String> translation = new ArrayList<>();
-
-        // Sometimes the original word is just a title in Wikipedia
-        TitleMatcher titleMatcher = new TitleMatcher();
-
-        if ((titleMatcher.translate(original.trim()).replaceAll("\\[", "").replaceAll("\\]", "").length() > 0))
-        {
-            return (titleMatcher.translate(original.trim()));
-        }
 
         // Get the key words
         AlchemyLanguage service = new AlchemyLanguage();
@@ -84,14 +79,6 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
 
         System.out.println("Tokens: " + tokens);
 
-//        // Go through the tokens one by one
-//        for (Map.Entry<String, String> entry : tokens.entrySet())
-//        {
-//            String key = entry.getKey().trim();
-////            String value = entry.getValue();
-//
-//            original += " \"" + key.trim() + "\" ";
-//        }
         for (Keyword keyWord : keyWords)
         {
             original += " \"" + keyWord.getText().trim() + "\"";
@@ -115,7 +102,17 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
             {
                 Document document = cursor.next();
 
+                String swahiliTitle = document.getString("kichwa");
                 String swahili = document.getString("sw");
+
+                String englishTitle = document.getString("title");
+                String english = document.getString("en");
+
+                // Sometimes the original word is just a title in Wikipedia
+                if (this.original.trim().equalsIgnoreCase(englishTitle))
+                {
+                    return swahiliTitle;
+                }
 
                 translation.add(swahili);
             }
@@ -136,8 +133,6 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
             // Loop through the documents
             for (String sentence : translation)
             {
-//                System.out.println(key + " type " + value);
-
 //                System.out.println(lemmatizer.lemmatize(key, value));
                 if (sentence.toLowerCase().contains(removeStopWords(key).toLowerCase()))
                 {
@@ -174,38 +169,45 @@ public class AlphaMongoTranslator extends TranslatorLogger implements StopWords
                         }
                     }
                 }
-
-                Set<Entry<String, Integer>> set = probabilities.entrySet();
-                List<Entry<String, Integer>> topTen = new ArrayList<>(set);
-                Collections.sort(topTen, new Comparator<Map.Entry<String, Integer>>()
-                {
-                    public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2)
-                    {
-                        return (o2.getValue()).compareTo(o1.getValue());
-                    }
-                });
-                
-                int counter = 0;
-                
-                for (Map.Entry<String, Integer> topEntry : topTen)
-                {
-                    System.out.println(topEntry.getKey() + " ==== " + topEntry.getValue());
-                    
-                    if(counter == 5)
-                    {
-                        break;
-                    }
-                    
-                    counter++;
-                }
             }
-
         }
-//
 
-        return probabilities.toString();
+        String topWords = getTopWords(probabilities);
+
+        return topWords;
+//        return probabilities.toString();
 
         //TODO: Go through the phrases in sw and see if the en equivalents have the phrase we need
+    }
+
+    public String getTopWords(Map<String, Integer> hashMap)
+    {
+        Set<Entry<String, Integer>> set = hashMap.entrySet();
+        List<Entry<String, Integer>> topTen = new ArrayList<>(set);
+
+        Collections.sort(
+                topTen,
+                (Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2)
+                -> (o2.getValue())
+                .compareTo(o1.getValue())
+        );
+
+        int loopCounter = 0;
+
+        for (Map.Entry<String, Integer> topEntry : topTen)
+        {
+//                    
+//                    System.out.print(topEntry.getKey() + " : " + topEntry.getValue() + "\t");
+
+            if (loopCounter == 5)
+            {
+                break;
+            }
+
+            loopCounter++;
+        }
+
+        return topTen.toString();
     }
 
     private String removeStopWords(String sentence)
