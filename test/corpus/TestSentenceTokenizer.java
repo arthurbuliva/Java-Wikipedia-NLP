@@ -20,7 +20,7 @@ public class TestSentenceTokenizer
        String sentence = ("An input sample sentence from Mr. Otieno, preferably with commas, isn't it?");
 
         System.out.println(Chunker.chunk(sentence));
-        System.out.println(Chunker.getSpanTypesFromChunks(sentence));
+        System.out.println(Chunker.getSpanTypes(sentence));
         System.out.println(POSDetector.detectPOS(sentence));
     }
 }

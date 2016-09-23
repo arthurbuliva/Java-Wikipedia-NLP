@@ -21,7 +21,7 @@ import org.bson.Document;
  * MongoDB Quick Guide
  *
  * @author arthur
- *
+ * @deprecated Avoid this class
  */
 public class MongoTranslator extends TranslatorLogger
 {
