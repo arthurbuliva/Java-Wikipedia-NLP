@@ -39,7 +39,9 @@ public class BetaMongoTranslator extends TranslatorLogger implements EnglishStop
     public static void main(String[] args)
     {
 //        String english = "The red elephant had a headache at 12 o'clock";
-        String english = "The red elephant had a headache at noon";
+        String english = "Winter is cold";
+//        String english = "How do I get to the train station";
+//        String english = "The red elephant had a headache at noon";
 
         BetaMongoTranslator t = new BetaMongoTranslator();
 
