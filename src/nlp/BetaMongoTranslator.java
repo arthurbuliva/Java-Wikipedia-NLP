@@ -16,16 +16,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
-import nlp.Chunker;
-import nlp.Lemmatizer;
-import nlp.StopWords;
-import nlp.TitleMatcher;
-import nlp.TranslatorLogger;
 import opennlp.tools.tokenize.SimpleTokenizer;
 
 import org.bson.Document;
 
-public class BetaMongoTranslator extends TranslatorLogger implements StopWords
+public class BetaMongoTranslator extends TranslatorLogger implements EnglishStopWords, SwahiliStopWords
 {
 
     private final MongoClient mongoClient;
@@ -199,7 +194,7 @@ public class BetaMongoTranslator extends TranslatorLogger implements StopWords
 
         for (String token : wordTokens)
         {
-            if (Arrays.asList(stopWords).contains(token.toLowerCase()))
+            if (Arrays.asList(englishStopWords).contains(token.toLowerCase()))
             {
 //                    System.out.println("Keyword found: "+ token);
             }

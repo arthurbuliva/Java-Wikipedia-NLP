@@ -9,11 +9,11 @@ package nlp;
  *
  * @author arthur
  */
-public interface StopWords
+public interface EnglishStopWords
 {
     // Source of stopwords- http://norm.al/2009/04/14/list-of-english-stop-words/
 
-    String[] stopWords =
+    String[] englishStopWords =
     {
         "a", "about", "above", "above", "across", "after",
         "afterwards", "again", "against", "all", "almost", "alone", "along",
@@ -51,4 +51,6 @@ public interface StopWords
         "whole", "whom", "whose", "why", "will", "with", "within", "without", "would", "yet",
         "you", "your", "yours", "yourself", "yourselves", "the"
     };
+    
+    
 }
