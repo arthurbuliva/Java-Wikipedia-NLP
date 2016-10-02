@@ -55,10 +55,10 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 //        String english = "The Bible is a collection of sacred texts in Judaism and Christianity";
 
 //        String english = "Paper is a thin material";
-//        String english = "The United Nations Security Council is an organ of The United Nations";
+//        String english = "United Nations Security Council is an organ of The United Nations";
 //        String english = "A benediction is a short prayer";
 //        String english = "An avalanche is a rapid flow of snow down the slope of a hill";
-//        String english = "An ocean is a large body of water";
+        String english = "Ocean is a large body of water";
 //        String english = "Jomo kenyatta was the founder of the Republic of Kenya and its first president";
 //        String english = "An arthropod is an invertebrate animal having an exoskeleton";
 //        String english = "Antoine Hey (born 19 September 1970) is a German football coach and former professional player who played in the Bundesliga";
@@ -73,7 +73,7 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 //        String english = "Culture are habits acquired by man as a member of society";
 //        String english = "A toilet collects human waste";
 //        String english = "Czechoslovakia was a sovereign state in Central Europe ";
-        String english = "Barack Obama went to Kenyatta National Hospital";
+//        String english = "Barack Obama went to Kenyatta National Hospital";
 
         MongoTranslatorRC1 t = new MongoTranslatorRC1();
 
