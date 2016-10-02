@@ -51,6 +51,9 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 //        String english = "Tomorrow is a Wednesday";
 //        String english = "A gospel is an account describing the life, death, and resurrection of Jesus of Nazareth";
 //        String english = "The Bible is a collection of sacred texts in Judaism and Christianity";
+        
+        
+        
 //        String english = "Paper is a thin material";
 //        String english = "The United Nations Security Council (UNSC) is one of the six principal organs of the United Nations";
 //        String english = "A benediction is a short invocation for divine help";
@@ -69,8 +72,8 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 //        String english = "The Islamic State of Iraq and the Levant";
 //        String english = "Culture are habits acquired by man as a member of society";
 //        String english = "A pit latrine or pit toilet is a type of toilet that collects human feces in a hole in the ground.";
-        String english = "Czechoslovakia was a sovereign state in Central Europe ";
-//        String english = "The teacher will not come today";
+//        String english = "Czechoslovakia was a sovereign state in Central Europe ";
+        String english = "Kenyatta National Hospital";
 
         MongoTranslatorRC1 t = new MongoTranslatorRC1();
 
@@ -119,14 +122,14 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
         if (mongoData.isEmpty())
         {
             ArrayList<String> whole = new BetaStringBreaker().breakString(original);
-
-            System.out.println("Segmented: " + whole);
+//
+//            System.out.println("Segmented: " + whole);
 
             for (String segment : whole)
             {
 
 //                System.out.println(segment);
-                System.out.println("Empty segment. Translating -> " + (segment));
+                log(Level.INFO, "Empty segment. Translating -> " + (segment));
                 System.gc();
                 translation.add(translate(segment));
             }
@@ -148,8 +151,8 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
                 String[] englishSentences = SentenceDetector.detectSentences(entry.getKey());
                 String[] swahiliSentences = SentenceDetector.detectSentences(entry.getValue());
 
-                System.out.println(englishSentences.length);
-                System.out.println(swahiliSentences.length);
+//                System.out.println(englishSentences.length);
+//                System.out.println(swahiliSentences.length);
 
                 if (englishSentences[0].toLowerCase().trim().contains(original.toLowerCase().trim()))
                 {
@@ -158,11 +161,11 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 
                 for (String sentence : englishSentences)
                 {
-                    System.out.println(sentence);
+//                    System.out.println(sentence);
                 }
                 for (String sentensi : swahiliSentences)
                 {
-                    System.out.println(sentensi);
+//                    System.out.println(sentensi);
                 }
 
 //                System.out.println(Arrays.toString(SentenceDetector.detectSentences(entry.getKey())));
