@@ -47,12 +47,33 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 //        String english = "The horn of Africa";
 //        String english = "Kenya is a country";
 //        String english = "Machakos is a town in Kenya";
-        String english = "That is a pretty girl";
+//        String english = "That is a pretty girl";
+//        String english = "Tomorrow is a Wednesday";
+//        String english = "A gospel is an account describing the life, death, and resurrection of Jesus of Nazareth";
+//        String english = "The Bible is a collection of sacred texts in Judaism and Christianity";
+//        String english = "Paper is a thin material";
+//        String english = "The United Nations Security Council (UNSC) is one of the six principal organs of the United Nations";
+//        String english = "A benediction is a short invocation for divine help";
+//        String english = "An avalanche is a rapid flow of snow down a sloping surface";
+//        String english = "A sea is a large body of salt water";
+//        String english = "Augustus was the founder of the Roman Empire and its first Emperor";
+//        String english = "An arthropod is an invertebrate animal having an exoskeleton";
+//        String english = "Antoine Hey (born 19 September 1970) is a German football coach and former professional player who played in the Bundesliga";
+//        String english = "The Universal Declaration of Human Rights";
+//        String english = "Archaeology is the study of human activity through the recovery and analysis of material culture";
+//        String english = "Part of speech";
+//        String english = "Virtue is moral excellence";
+//        String english = "\"Don't Forget About Us\" is a song by American singer and songwriter Mariah Carey";
+//        String english = "The United States dollar";
+//        String english = "Sin is the act of violating God's will by transgressing his commandments";
+//        String english = "The Islamic State of Iraq and the Levant";
+//        String english = "Culture are habits acquired by man as a member of society";
+//        String english = "A pit latrine or pit toilet is a type of toilet that collects human feces in a hole in the ground.";
+        String english = "Czechoslovakia was a sovereign state in Central Europe ";
 //        String english = "The teacher will not come today";
 
         MongoTranslatorRC1 t = new MongoTranslatorRC1();
 
-        
         System.out.println(t.translate(english.toLowerCase()));
 
     }
@@ -63,8 +84,6 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
         {
             original
         }));
-        
-        
 
         // Sometimes the original word is just a title in Wikipedia
         TitleMatcher titleMatcher = new TitleMatcher();
@@ -114,107 +133,63 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
         }
         else
         {
-            SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
-                        String[] wordTokens = tokenizer.tokenize(removeStopWords(original));
+//            SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
+//                        String[] wordTokens = tokenizer.tokenize(removeStopWords(original));
+//
+//            for (String entry : wordTokens)
+//            {
+//                System.out.println(entry);
+//            }
 
-            for (String entry : wordTokens)
+            for (Map.Entry<String, String> entry : mongoData.entrySet())
             {
-                System.out.println(entry);
+//                System.out.println(entry.getKey() + " => " + entry.getValue());
+
+                String[] englishSentences = SentenceDetector.detectSentences(entry.getKey());
+                String[] swahiliSentences = SentenceDetector.detectSentences(entry.getValue());
+
+                System.out.println(englishSentences.length);
+                System.out.println(swahiliSentences.length);
+
+                if (englishSentences[0].toLowerCase().trim().contains(original.toLowerCase().trim()))
+                {
+                    return swahiliSentences[0];
+                }
+
+                for (String sentence : englishSentences)
+                {
+                    System.out.println(sentence);
+                }
+                for (String sentensi : swahiliSentences)
+                {
+                    System.out.println(sentensi);
+                }
+
+//                System.out.println(Arrays.toString(SentenceDetector.detectSentences(entry.getKey())));
+            }
+
+        }
+
+        HashMap<String, Integer> occurranceCount = new HashMap<>();
+
+        for (String s : translation)
+        {
+            if (occurranceCount.keySet().contains(s))
+            {
+                int initialValue = occurranceCount.get(s);
+                occurranceCount.put(s, initialValue + 1);
+            }
+            else
+            {
+                occurranceCount.put(s, 1);
             }
         }
         
-        return translation.toString();
-//        System.exit(0);
-/**
-        Map<String, Integer> probabilities = new HashMap<>();
-        StringBuilder tx = new StringBuilder();
+//        System.out.println(ChunkFrequency.sortByValue(occurranceCount));
 
-        SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
-//        String[] wordTokens = tokenizer.tokenize(removeStopWords(original));
-        String[] wordTokens = tokenizer.tokenize(original);
+//        return translation.toString();
 
-        // Go through the tokens one by one
-//        for (Map.Entry<String, String> entry : tokens.entrySet())
-//        for (Keyword keyWord : keyWords)
-        for (String entry : wordTokens)
-        {
-//            String key = entry.getKey().trim();
-//            String key = keyWord.getText().trim();
-
-            String key = entry;
-
-            if (removeStopWords(key).isEmpty())
-            {
-                continue;
-            }
-
-            Lemmatizer lemmatizer = new Lemmatizer();
-//            System.out.println(lemmatizer.lemmatize(key, tokens.get(entry)));
-
-            System.out.println("=================" + key + "=================");
-
-            for (Map.Entry<String, String> data : mongoData.entrySet())
-            {
-                if (data.getKey().toLowerCase().equalsIgnoreCase(key))
-                {
-//                    System.out.print("\nExact match: ");
-//                    System.out.println(data.getValue());
-//                    return data.getValue();
-
-//                    probabilities.put(data.getValue(), 100);
-                    tx.append(data.getValue());
-                    tx.append(" ");
-                }
-
-//                String str = "today is tuesday";
-//return str.matches(".*?\\bt\\b.*?"); // returns "false"
-//
-//String str = "today is t uesday";
-//return str.matches(".*?\\bt\\b.*?"); // returns "true"
-//              else if (data.getKey().toLowerCase().contains(original.toLowerCase()))
-                else if (data.getKey().toLowerCase().matches(".*?\\b" + original.toLowerCase() + "\\b.*?"))
-                {
-//                    System.out.println("Probable match!");
-//                    System.out.println(data.getValue());
-//                    System.out.print("*");
-                    tx.append("______");
-                    tx.append(" ");
-                }
-//                else if (data.getKey().toLowerCase().contains(key.toLowerCase()))
-                else if (data.getKey().toLowerCase().matches(".*?\\b" + key.toLowerCase() + "\\b.*?"))
-                {
-//                    System.out.println("Probable match!");
-//                    System.out.println(data.getValue());
-//                    System.out.print("|");
-//                    tx.append("*");
-//                    tx.append(" ");
-                }
-            }
-        }
-
-        if (tx.toString().isEmpty())
-        {
-            for (String token : wordTokens)
-            {
-                if (retries >= 5)
-                {
-                    tx.append("______");
-                    tx.append(" ");
-                }
-                else
-                {
-                    System.out.println(token);
-                    tx.append(translate(token));
-                    tx.append(" ");
-                    retries++;
-//                    System.out.println("***************************RETRIES: " + retries);
-                }
-            }
-        }
-
-        return tx.toString();
-        * 
-        * **/
+return ChunkFrequency.sortByValue(occurranceCount).toString();
     }
 
     private String removeStopWords(String sentence)

@@ -73,7 +73,7 @@ public class ChunkFrequency
      * @param unsortMap
      * @return 
      */
-    private static Map<String, Integer> sortByValue(Map<String, Integer> unsortMap)
+    public static Map<String, Integer> sortByValue(Map<String, Integer> unsortMap)
     {
 
         // 1. Convert Map to List of Map
