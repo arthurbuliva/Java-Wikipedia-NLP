@@ -5,12 +5,16 @@
  */
 package nlp;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
+import com.mongodb.MongoClient;
+import com.mongodb.client.MongoCursor;
+import com.mongodb.client.MongoDatabase;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
+import java.util.logging.Level;
+import static nlp.TranslatorLogger.log;
+import org.bson.Document;
 
 /**
  *
@@ -19,68 +23,49 @@ import java.util.Map;
 public class TitleMatcher
 {
 
-    private final String DATABASE = "lib/wikipedia-parallel-titles-master/Titles.txt";
-    private String translation = "";
-    ArrayList<String> translations = new ArrayList<>();
+    private final MongoClient mongoClient;
+    private final MongoDatabase db;
+    private final HashMap<String, String> relationship;
 
-    Map<String, String> corpus = new HashMap<>();
+    public TitleMatcher()
+    {
+        relationship = new HashMap<>();
+        mongoClient = new MongoClient();
+        db = mongoClient.getDatabase("corpus");
+    }
 
     public String translate(String word)
     {
-        try
+        log(Level.INFO, String.format("Searching for title: \"%s\"", new Object[]
         {
-            // TODO: Include titles in MongoDb in order to eliminate the need of reading from the files
-            File file = new File(DATABASE);
+            word
+        }));
+        
+        ArrayList< String> data = new ArrayList<>();
 
-            FileReader fileReader = new FileReader(file);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
-
-            String line;
-
-            while ((line = bufferedReader.readLine()) != null)
-            {
-                if (line.trim().toLowerCase().contains(word.trim().toLowerCase()))
-                {
-                    translations.add(line);
-                }
-            }
-
-            translation = translations.toString();
-
-            for (int i = 0; i < translations.size(); i++)
-            {
-//                System.out.println(translations.get(i));
-
-                String rawString = translations.get(i);
-                String[] components = rawString.split("\\|\\|\\|");
-
-                corpus.put(components[0].trim(), components[1].trim());
-            }
-
-            for (Map.Entry<String, String> entry : corpus.entrySet())
-            {
-                String key = entry.getKey();
-                String value = entry.getValue();
-
-                if(key.equalsIgnoreCase(word))
-                {
-                    translation = value;
-                }
-                else if(value.equalsIgnoreCase(word))
-                {
-                    translation = key;
-                }
-            }
-            
-        }
-        catch (Exception ex)
+        try (
+                MongoCursor<Document> cursor = db.getCollection("wikipedia")
+                .find(
+                        new Document("title",
+                                new Document("$regex", String.format(".*\\b%s\\b.*", word))
+                                .append("$options", "i")
+                        )
+                )
+                .iterator())
         {
-            ex.printStackTrace();
+            while (cursor.hasNext())
+            {
+                Document document = cursor.next();
 
-            translation = ex.getMessage();
+                String title = document.getString("title");
+                String kichwa = document.getString("kichwa");
+
+//                data.put(title, kichwa);
+                data.add(kichwa);
+            }
         }
 
-        return translation;
+        return data.toString();
 
     }
 }

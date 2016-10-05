@@ -32,7 +32,7 @@ public class MongoDB
     public HashMap<String, String> fetchFromMongoDB(String original)
     {
         Document projection = new Document("score", new Document("$meta", "textScore"));
-
+     
         HashMap<String, String> data = new HashMap<>();
 
         try (
@@ -52,15 +52,15 @@ public class MongoDB
             while (cursor.hasNext())
             {
                 Document document = cursor.next();
-
-//                System.out.println(Chunker.getSpanTypes(document.getString("en")));
+                
                 String english = document.getString("en");
                 String swahili = document.getString("sw");
                 String title = document.getString("title");
                 String kichwa = document.getString("kichwa");
 
-                data.put(title, kichwa);
+//                data.put(title, kichwa);
                 data.put(english, swahili);
+                
             }
         }
         
