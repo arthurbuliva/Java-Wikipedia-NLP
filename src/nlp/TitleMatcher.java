@@ -5,8 +5,6 @@
  */
 package nlp;
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
@@ -40,14 +38,14 @@ public class TitleMatcher
         {
             word
         }));
-        
+
         ArrayList< String> data = new ArrayList<>();
 
         try (
                 MongoCursor<Document> cursor = db.getCollection("wikipedia")
                 .find(
                         new Document("title",
-                                new Document("$regex", String.format(".*\\b%s\\b.*", word))
+                                new Document("$regex", String.format("\\b%s\\b", word))
                                 .append("$options", "i")
                         )
                 )
@@ -56,16 +54,17 @@ public class TitleMatcher
             while (cursor.hasNext())
             {
                 Document document = cursor.next();
-
+                
                 String title = document.getString("title");
                 String kichwa = document.getString("kichwa");
-
-//                data.put(title, kichwa);
-                data.add(kichwa);
+                
+                if(title.trim().equalsIgnoreCase(word.trim()))
+                {
+                    data.add(kichwa);
+                }
             }
         }
 
         return data.toString();
-
     }
 }

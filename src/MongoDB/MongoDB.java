@@ -53,8 +53,8 @@ public class MongoDB
             {
                 Document document = cursor.next();
                 
-                String english = document.getString("en");
-                String swahili = document.getString("sw");
+                String english = document.getString("en").replaceAll("\\(.*?\\) ?", "");
+                String swahili = document.getString("sw").replaceAll("\\(.*?\\) ?", "");
                 String title = document.getString("title");
                 String kichwa = document.getString("kichwa");
 

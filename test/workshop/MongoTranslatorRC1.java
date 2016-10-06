@@ -6,15 +6,12 @@
 package workshop;
 
 import MongoDB.MongoDB;
-import com.ibm.watson.developer_cloud.alchemy.v1.AlchemyLanguage;
-import com.ibm.watson.developer_cloud.alchemy.v1.model.Keyword;
 import nlp.*;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import opennlp.tools.tokenize.SimpleTokenizer;
@@ -27,6 +24,7 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
     private final MongoDB connection;
     private final HashMap<String, String> relationship;
     int retries = 1;
+
     private ArrayList<String> translation = new ArrayList<>();
 
     public MongoTranslatorRC1()
@@ -39,10 +37,7 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 
     public static void main(String[] args)
     {
-
-//        String english = "Sin is disobeying God's will by not following commandments";
-//        String english = "Barack Obama is Kenyatta National Hospital";
-        String english = "The Skeleton";
+        String english = "Wikipedia is an";
 
         MongoTranslatorRC1 t = new MongoTranslatorRC1();
 
@@ -56,8 +51,8 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
         {
             original
         }));
-        
-        if(original.trim().isEmpty())
+
+        if (original.trim().isEmpty())
         {
             return translation.toString();
         }
@@ -75,9 +70,9 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
             translation.add("ya ");
             return translate(original.toLowerCase().replaceFirst("of", "").trim().toLowerCase());
         }
-        else if (original.toLowerCase().trim().startsWith("is ") 
+        else if (original.toLowerCase().trim().startsWith("is ")
                 || original.equalsIgnoreCase("is")
-                || original.toLowerCase().trim().startsWith("is") )
+                || original.toLowerCase().trim().startsWith("is"))
         {
             translation.add("ni ");
             System.out.println(original.replaceFirst("is", "").trim());
@@ -100,6 +95,8 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 
         log(Level.INFO, "Searching MongoDB: " + original);
 
+        System.out.println("Searching MongoDB: " + original);
+
         HashMap<String, String> mongoData = connection.fetchFromMongoDB(String.format("\"%s\"", new Object[]
         {
             original
@@ -107,50 +104,78 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 
         if (mongoData.isEmpty()) // Whole phrase not in Wikipedia. We break it down
         {
+            log(Level.INFO, "Whole phrase not in Wikipedia. Breaking phrase into segments");
 
-            for (String segment : Chunker.chunk(original))
+            ArrayList<String> segments = Chunker.chunk(original);
+
+            System.out.println(segments.get(0));
+
+            if (segments.get(0).trim().equalsIgnoreCase(original.trim()))
             {
-                String subTranslation = translate(segment.trim());
+                SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
+                String[] wordTokens = tokenizer.tokenize(original.trim());
 
-                log(Level.INFO, "Empty segment. Translating -> " + (segment));
-
-                if (subTranslation.isEmpty())
+                log(Level.INFO, "Tokenized to " + Arrays.toString(wordTokens));
+                
+                for (String token : wordTokens)
                 {
-                    System.out.println(removeStopWords(segment));
+                    translation.add(translate(token));
+                }
+            }
+            else
+            {
+                for (String segment : segments)
+                {
+                    String subTranslation = translate(segment.trim());
 
-                    String segmentTranslation = translate(removeStopWords(segment));
+                    log(Level.INFO, "Empty segment. Translating -> " + (segment));
 
-                    if (!segmentTranslation.contains("|"))
+                    if (subTranslation.isEmpty())
                     {
-                        translation.add(segmentTranslation);
+                        String segmentTranslation = translate(removeStopWords(segment));
+
+                        if (!segmentTranslation.contains("|"))
+                        {
+                            translation.add(segmentTranslation);
+                        }
+                    }
+                    else
+                    {
+                        String segmentTranslation = translate(segment.trim());
+
+                        if (!segmentTranslation.contains("|"))
+                        {
+                            translation.add(segmentTranslation);
+                        }
                     }
 
+                    System.gc();
                 }
-                else
-                {
-                    System.out.println(segment);
-
-                    String segmentTranslation = translate(segment);
-
-                    if (!segmentTranslation.contains("|"))
-                    {
-                        translation.add(segmentTranslation);
-                    }
-                }
-
-                System.gc();
             }
         }
         else // Whole phrase exists in Wikipedia
         {
             for (Map.Entry<String, String> entry : mongoData.entrySet())
             {
+                if (entry.getKey().trim().isEmpty() || entry.getKey().trim().isEmpty())
+                {
+                    return "";
+                }
+
                 String[] englishSentences = SentenceDetector.detectSentences(entry.getKey().replaceAll("\\(.*?\\) ?", ""));
                 String[] swahiliSentences = SentenceDetector.detectSentences(entry.getValue().replaceAll("\\(.*?\\) ?", ""));
 
                 if (englishSentences[0].toLowerCase().trim().contains(original.toLowerCase().trim()))
                 {
-                    return swahiliSentences[0];
+
+                    try
+                    {
+                        return (swahiliSentences[0]);
+                    }
+                    catch (ArrayIndexOutOfBoundsException ex)
+                    {
+                        translation.add("");
+                    }
                 }
                 else
                 {
@@ -177,9 +202,9 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
             }
         }
 
-//        System.out.println(ChunkFrequency.sortByValue(occurranceCount));
-//        return translation.toString();
-        return translation.toString() + ChunkFrequency.sortByValue(occurranceCount).toString();
+        return (occurranceCount.toString());
+//        return (translation.toString());
+
     }
 
     private String removeStopWords(String sentence)

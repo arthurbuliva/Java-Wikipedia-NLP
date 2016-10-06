@@ -1,3 +1,6 @@
+GENERAL RANDOM SENTENCES
+========================
+
 The red elephant had a headache at 12 o'clock
 The city of Nairobi
 They went to the zoo
@@ -13,6 +16,8 @@ Tomorrow is a Wednesday
 A gospel is an account describing the life, death, and resurrection of Jesus of Nazareth
 The Bible is a collection of sacred texts in Judaism and Christianity
 
+SENTENCES THAT EXIST IN WIKIPEDIA
+=================================
 Paper is a thin material
 United Nations Security Council is an organ of The United Nations
 A benediction is a short prayer
@@ -53,3 +58,5 @@ Barack Obama went to Kenyatta National Hospital
 //        String english = "Lava is the molten rock expelled by a volcano during an eruption";
 //        String english = "Electromagnetic waves are waves that contain an electric field and a magnetic field and carry energy";
 //        String english = "Wikipedia is an Internet encyclopedia project in many languages";
+
+chemical element
