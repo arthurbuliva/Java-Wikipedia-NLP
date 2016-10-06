@@ -5,6 +5,7 @@
  */
 package nlp;
 
+import MongoDB.TitleTranslator;
 import com.mongodb.Block;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
@@ -137,7 +138,7 @@ public class MongoTranslator extends TranslatorLogger
         String translation = "";
 
         // Sometimes the original word is just a title in Wikipedia
-        TitleMatcher titleMatcher = new TitleMatcher();
+        TitleTranslator titleMatcher = new TitleTranslator();
 
         if ((titleMatcher.translate(original.trim()).replaceAll("\\[", "").replaceAll("\\]", "").length() > 0))
         {

@@ -5,6 +5,7 @@
  */
 package workshop;
 
+import MongoDB.TitleTranslator;
 import MongoDB.MongoDB;
 import nlp.*;
 import com.mongodb.MongoClient;
@@ -85,7 +86,7 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
         else
         {
             // Sometimes the original word is just a title in Wikipedia
-            TitleMatcher titleMatcher = new TitleMatcher();
+            TitleTranslator titleMatcher = new TitleTranslator();
 
             if ((titleMatcher.translate(original.trim()).replaceAll("\\[", "").replaceAll("\\]", "").length() > 0))
             {

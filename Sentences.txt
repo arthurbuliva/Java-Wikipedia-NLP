@@ -39,24 +39,23 @@ A toilet collects human waste
 Czechoslovakia was a sovereign state in Central Europe 
 Barack Obama went to Kenyatta National Hospital
 
-
-//        String english = "A chemical compound is an entity consisting of two or more atoms, at least two from different elements, which associate via chemical bonds";
-//        String english = "A tissue is an ensemble of similar cells from the same origin that together carry out a specific function";
-//        String english = "A bone is a rigid organ that constitutes part of the vertebral skeleton";
-//        String english = "Cancer is a group of diseases involving abnormal cell growth with the potential to invade or spread to other parts of the body";
-//        String english = "Vertebrates comprise all species of animals  with backbones";
-//        String english = "Jupiter is the fifth planet from the Sun and the largest in the Solar System";
-//        String english = "In Chemistry, pH is a numeric scale used to specify the acidity or basicity of an aqueous solution";
-//        String english = "A glacier is a persistent body of dense ice that is constantly moving under its own weight";
-//        String english = "Iron is a chemical element with symbol Fe (from Latin: ferrum) and atomic number 26";
-//        String english = "The periodic table is a tabular arrangement of the chemical elements, ordered by their atomic number";
-//        String english = "In physics, a force is any interaction that, when unopposed, will change the motion of an object";
-//        String english = "The nucleus is the small, dense region consisting of protons and neutrons at the center of an atom";
-        String english = "Solid is one of the four fundamental states of matter ";
-//        String english = "The newton (symbol: N) is the SI unit of force";
-//        String english = "A volcanic crater is a roughly circular depression in the ground caused by volcanic activity";
-//        String english = "Lava is the molten rock expelled by a volcano during an eruption";
-//        String english = "Electromagnetic waves are waves that contain an electric field and a magnetic field and carry energy";
-//        String english = "Wikipedia is an Internet encyclopedia project in many languages";
-
-chemical element
+SENTENCES THAT EXIST IN WIKIPEDIA FOCUSING ON ACADEMIC MATTERS
+==============================================================
+A chemical compound is an entity consisting of two or more atoms, at least two from different elements, which associate via chemical bonds
+A tissue is an ensemble of similar cells from the same origin that together carry out a specific function
+A bone is a rigid organ that constitutes part of the vertebral skeleton
+Cancer is a group of diseases involving abnormal cell growth with the potential to invade or spread to other parts of the body
+Vertebrates comprise all species of animals  with backbones
+Jupiter is the fifth planet from the Sun and the largest in the Solar System
+In Chemistry, pH is a numeric scale used to specify the acidity or basicity of an aqueous solution
+A glacier is a persistent body of dense ice that is constantly moving under its own weight
+Iron is a chemical element with symbol Fe (from Latin: ferrum) and atomic number 26
+The periodic table is a tabular arrangement of the chemical elements, ordered by their atomic number
+In physics, a force is any interaction that, when unopposed, will change the motion of an object
+The nucleus is the small, dense region consisting of protons and neutrons at the center of an atom
+Solid is one of the four fundamental states of matter 
+The newton (symbol: N) is the SI unit of force
+A volcanic crater is a roughly circular depression in the ground caused by volcanic activity
+Lava is the molten rock expelled by a volcano during an eruption
+Electromagnetic waves are waves that contain an electric field and a magnetic field and carry energy
+Wikipedia is an Internet encyclopedia project in many languages

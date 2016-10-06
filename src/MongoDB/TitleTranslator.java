@@ -1,9 +1,11 @@
+package MongoDB;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package nlp;
+
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCursor;
@@ -13,19 +15,20 @@ import java.util.HashMap;
 import java.util.logging.Level;
 import static nlp.TranslatorLogger.log;
 import org.bson.Document;
+import static nlp.TranslatorLogger.log;
 
 /**
  *
  * @author arthur
  */
-public class TitleMatcher
+public class TitleTranslator
 {
 
     private final MongoClient mongoClient;
     private final MongoDatabase db;
     private final HashMap<String, String> relationship;
 
-    public TitleMatcher()
+    public TitleTranslator()
     {
         relationship = new HashMap<>();
         mongoClient = new MongoClient();

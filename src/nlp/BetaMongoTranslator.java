@@ -5,6 +5,7 @@
  */
 package nlp;
 
+import MongoDB.TitleTranslator;
 import com.ibm.watson.developer_cloud.alchemy.v1.AlchemyLanguage;
 import com.ibm.watson.developer_cloud.alchemy.v1.model.Keyword;
 import com.mongodb.MongoClient;
@@ -74,7 +75,7 @@ String english = "That is a pretty girl";
         }));
 
         // Sometimes the original word is just a title in Wikipedia
-        TitleMatcher titleMatcher = new TitleMatcher();
+        TitleTranslator titleMatcher = new TitleTranslator();
 
         if ((titleMatcher.translate(original.trim()).replaceAll("\\[", "").replaceAll("\\]", "").length() > 0))
         {
