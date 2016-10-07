@@ -38,7 +38,7 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 
     public static void main(String[] args)
     {
-        String english = "Wikipedia is an";
+        String english = "volcano";
 
         MongoTranslatorRC1 t = new MongoTranslatorRC1();
 
@@ -58,30 +58,42 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
             return translation.toString();
         }
 
-        if (original.toLowerCase().startsWith("an "))
+        if (original.toLowerCase().startsWith("an ") || original.equalsIgnoreCase("an"))
         {
             return translate(original.toLowerCase().replaceFirst("an", "").trim().toLowerCase());
         }
-        else if (original.toLowerCase().startsWith("a "))
+        else if (original.toLowerCase().startsWith("a ") || original.equalsIgnoreCase("a"))
         {
             return translate(original.toLowerCase().replaceFirst("a", "").trim().toLowerCase());
         }
-        else if (original.toLowerCase().startsWith("of"))
+        else if (original.toLowerCase().startsWith("of ") || original.equalsIgnoreCase("of"))
         {
             translation.add("ya ");
             return translate(original.toLowerCase().replaceFirst("of", "").trim().toLowerCase());
         }
-        else if (original.toLowerCase().trim().startsWith("is ")
-                || original.equalsIgnoreCase("is")
-                || original.toLowerCase().trim().startsWith("is"))
+        else if (original.toLowerCase().startsWith("is ") || original.equalsIgnoreCase("is"))
         {
             translation.add("ni ");
-            System.out.println(original.replaceFirst("is", "").trim());
             return translate(original.replaceFirst("is", "").trim());
         }
-        else if (original.toLowerCase().startsWith("the"))
+        else if (original.toLowerCase().startsWith("the ") || original.equalsIgnoreCase("the"))
         {
             return translate(original.toLowerCase().replaceFirst("the", "").trim().toLowerCase());
+        }
+        else if (original.toLowerCase().startsWith("had ") || original.equalsIgnoreCase("had"))
+        {
+            translation.add("na ");
+            return translate(original.toLowerCase().replaceFirst("had", "").trim().toLowerCase());
+        }
+        else if (original.toLowerCase().startsWith("has ") || original.equalsIgnoreCase("has"))
+        {
+            translation.add("na ");
+            return translate(original.toLowerCase().replaceFirst("has", "").trim().toLowerCase());
+        }
+        else if (original.toLowerCase().startsWith("and ") || original.equalsIgnoreCase("and"))
+        {
+            translation.add("na ");
+            return translate(original.toLowerCase().replaceFirst("and", "").trim().toLowerCase());
         }
         else
         {
@@ -109,15 +121,15 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 
             ArrayList<String> segments = Chunker.chunk(original);
 
-            System.out.println(segments.get(0));
+            System.out.println("Segments: " + segments);
 
-            if (segments.get(0).trim().equalsIgnoreCase(original.trim()))
+            if (segments.isEmpty() || segments.get(0).trim().equalsIgnoreCase(original.trim()))
             {
                 SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
                 String[] wordTokens = tokenizer.tokenize(original.trim());
 
                 log(Level.INFO, "Tokenized to " + Arrays.toString(wordTokens));
-                
+
                 for (String token : wordTokens)
                 {
                     translation.add(translate(token));

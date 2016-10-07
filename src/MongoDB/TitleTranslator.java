@@ -13,7 +13,6 @@ import com.mongodb.client.MongoDatabase;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.logging.Level;
-import static nlp.TranslatorLogger.log;
 import org.bson.Document;
 import static nlp.TranslatorLogger.log;
 
