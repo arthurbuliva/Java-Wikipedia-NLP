@@ -59,3 +59,8 @@ A volcanic crater is a roughly circular depression in the ground caused by volca
 Lava is the molten rock expelled by a volcano during an eruption
 Electromagnetic waves are waves that contain an electric field and a magnetic field and carry energy
 Wikipedia is an Internet encyclopedia project in many languages
+
+
+String english = "Laboratory rat of Kenyatta National Hospital has cancer and a headache";
+String english = "Headache from a cancer of the head";
+String english = "Kenya is a country in East Africa";

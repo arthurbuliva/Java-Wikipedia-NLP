@@ -38,7 +38,8 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 
     public static void main(String[] args)
     {
-        String english = "The Great Rift Valley of East Africa in Kenya";
+//        String english = "Laboratory rat of Kenyatta National Hospital has cancer and a headache";
+        String english = "Headache from a cancer of the head";
 //        String english = "Kenya is a country in East Africa";
 
         MongoTranslatorRC1 t = new MongoTranslatorRC1();
