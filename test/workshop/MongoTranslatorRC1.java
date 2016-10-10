@@ -38,7 +38,7 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 
     public static void main(String[] args)
     {
-        String english = "volcano";
+        String english = "Sexually transmitted disease";
 
         MongoTranslatorRC1 t = new MongoTranslatorRC1();
 
@@ -89,6 +89,11 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
         {
             translation.add("na ");
             return translate(original.toLowerCase().replaceFirst("has", "").trim().toLowerCase());
+        }
+        else if (original.toLowerCase().startsWith("from ") || original.equalsIgnoreCase("from"))
+        {
+            translation.add("kutoka ");
+            return translate(original.toLowerCase().replaceFirst("from", "").trim().toLowerCase());
         }
         else if (original.toLowerCase().startsWith("and ") || original.equalsIgnoreCase("and"))
         {
