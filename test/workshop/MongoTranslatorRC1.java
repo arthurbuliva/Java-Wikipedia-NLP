@@ -38,7 +38,8 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 
     public static void main(String[] args)
     {
-        String english = "Sexually transmitted disease";
+        String english = "The Great Rift Valley of East Africa in Kenya";
+//        String english = "Kenya is a country in East Africa";
 
         MongoTranslatorRC1 t = new MongoTranslatorRC1();
 
@@ -95,10 +96,20 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
             translation.add("kutoka ");
             return translate(original.toLowerCase().replaceFirst("from", "").trim().toLowerCase());
         }
+        else if (original.toLowerCase().startsWith("have ") || original.equalsIgnoreCase("have"))
+        {
+            translation.add("nina ");
+            return translate(original.toLowerCase().replaceFirst("have", "").trim().toLowerCase());
+        }
         else if (original.toLowerCase().startsWith("and ") || original.equalsIgnoreCase("and"))
         {
             translation.add("na ");
             return translate(original.toLowerCase().replaceFirst("and", "").trim().toLowerCase());
+        }
+        else if (original.toLowerCase().startsWith("i ") || original.equalsIgnoreCase("i"))
+        {
+            translation.add("mimi ");
+            return translate(original.toLowerCase().replaceFirst("i", "").trim().toLowerCase());
         }
         else
         {
