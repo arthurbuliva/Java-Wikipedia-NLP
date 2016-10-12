@@ -64,3 +64,37 @@ Wikipedia is an Internet encyclopedia project in many languages
 String english = "Laboratory rat of Kenyatta National Hospital has cancer and a headache";
 String english = "Headache from a cancer of the head";
 String english = "Kenya is a country in East Africa";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What have you been up to lately?
+I’m fine, thanks. How about you?
+I should have called you and told you I’d be late
+Do you have a stomachache?
+How do you say chekechea in English?
+Don’t worry about it.
+I don’t think we’ve met before. My name is Leah
+I’d like to introduce you to Prof. Mutanu
+It’s getting late, I have to leave.
+Thanks for calling.
+I’m calling to find out when the bar closes.
+My lawyer friend.
+I’m sorry for your loss.
+Are you free on Saturday night?
+Tell me the difference between A and B
+Can I borrow a pen?
+Get together in groups of four
+I have a question for you
+Would you mind repeating that?
+Are you with me?

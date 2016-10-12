@@ -7,7 +7,6 @@ package workshop;
 
 import MongoDB.TitleTranslator;
 import MongoDB.MongoDB;
-import nlp.*;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
 import java.util.ArrayList;
@@ -15,6 +14,11 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
+import nlp.Chunker;
+import nlp.EnglishStopWords;
+import nlp.SentenceDetector;
+import nlp.SwahiliStopWords;
+import nlp.TranslatorLogger;
 import opennlp.tools.tokenize.SimpleTokenizer;
 
 public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopWords, SwahiliStopWords
@@ -38,14 +42,23 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 
     public static void main(String[] args)
     {
-//        String english = "Laboratory rat of Kenyatta National Hospital has cancer and a headache";
-        String english = "Headache from a cancer of the head";
-//        String english = "Kenya is a country in East Africa";
+        String english = "Calcium from the bone";
 
         MongoTranslatorRC1 t = new MongoTranslatorRC1();
 
-        System.out.println(t.translate(english));
+        String translation = t.translate(english);
 
+        System.out.println(translation);
+    }
+
+    public String removeDoubleSpaces(String spacedOut)
+    {
+        while (spacedOut.contains("  "))
+        {
+            spacedOut = spacedOut.replaceAll("  ", " ");
+        }
+
+        return spacedOut;
     }
 
     public String translate(String original)
@@ -91,6 +104,11 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
         {
             translation.add("na ");
             return translate(original.toLowerCase().replaceFirst("has", "").trim().toLowerCase());
+        }
+        else if (original.toLowerCase().startsWith("for ") || original.equalsIgnoreCase("for"))
+        {
+            translation.add("ya ");
+            return translate(original.toLowerCase().replaceFirst("for", "").trim().toLowerCase());
         }
         else if (original.toLowerCase().startsWith("from ") || original.equalsIgnoreCase("from"))
         {
@@ -232,9 +250,63 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
             }
         }
 
-        return (occurranceCount.toString());
-//        return (translation.toString());
+//        return (occurranceCount.toString());
+        String result = translation.toString();
 
+        result = removeDoubleSpaces(result.replaceAll("\\p{Punct}", ""));
+
+        ArrayList<String> words = new ArrayList<>();
+        ArrayList<String> cleanedwords = new ArrayList<>();
+
+        System.out.println(result);
+
+        SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
+        String[] wordTokens = tokenizer.tokenize(result.trim());
+
+        try
+        {
+            for (int i = 0; i < wordTokens.length; i++)
+            {
+                String segment = wordTokens[i] + " " + wordTokens[i + 1];
+                if (!words.contains(segment)
+                        && !wordTokens[i].trim().equalsIgnoreCase(wordTokens[i + 1].trim()))
+                {
+                    words.add(segment);
+                }
+            }
+        }
+        catch (ArrayIndexOutOfBoundsException ex)
+        {
+
+        }
+
+        String[] tokens = tokenizer.tokenize(words.toString().replaceAll("\\p{Punct}", ""));
+
+        for (String token : tokens)
+        {
+            if (cleanedwords.size() > 0)
+            {
+                if (!cleanedwords.get(cleanedwords.size() - 1).equalsIgnoreCase(token))
+                {
+                    cleanedwords.add(token);
+                }
+            }
+            else
+            {
+                cleanedwords.add(token);
+            }
+        }
+
+        String cleanedString = cleanedwords.toString().replaceAll("\\p{Punct}", "");
+
+        System.out.println(cleanedString);
+
+        String[] nextSegmentArray = tokenizer.tokenize(cleanedString);
+        String nextSegment = nextSegmentArray[0] + " " + nextSegmentArray[1];
+
+        String clean = removeDoubleSpaces(nextSegment + cleanedString.replaceAll(nextSegment, ""));
+
+        return clean;
     }
 
     private String removeStopWords(String sentence)

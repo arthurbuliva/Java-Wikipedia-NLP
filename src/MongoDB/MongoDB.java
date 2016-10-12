@@ -58,6 +58,8 @@ public class MongoDB
                 String title = document.getString("title");
                 String kichwa = document.getString("kichwa");
 
+                
+                
 //                data.put(title, kichwa);
                 data.put(english, swahili);
                 
