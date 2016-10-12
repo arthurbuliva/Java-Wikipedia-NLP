@@ -42,7 +42,11 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 
     public static void main(String[] args)
     {
-        String english = "Calcium from the bone";
+//        String english = "That is a red glacier";
+//        String english = "An elephant from a comet with a headache";
+//        String english = "The sick elephant";
+        String english = "The computer keyboard is red in color";
+//        String english = "A bone from the human skeleton";
 
         MongoTranslatorRC1 t = new MongoTranslatorRC1();
 
@@ -86,6 +90,11 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
             translation.add("ya ");
             return translate(original.toLowerCase().replaceFirst("of", "").trim().toLowerCase());
         }
+        else if (original.toLowerCase().startsWith("in ") || original.equalsIgnoreCase("in"))
+        {
+            translation.add("kwa ");
+            return translate(original.replaceFirst("in", "").trim());
+        }
         else if (original.toLowerCase().startsWith("is ") || original.equalsIgnoreCase("is"))
         {
             translation.add("ni ");
@@ -105,6 +114,11 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
             translation.add("na ");
             return translate(original.toLowerCase().replaceFirst("has", "").trim().toLowerCase());
         }
+        else if (original.toLowerCase().startsWith("that ") || original.equalsIgnoreCase("that"))
+        {
+            translation.add("ambayo ");
+            return translate(original.toLowerCase().replaceFirst("that", "").trim().toLowerCase());
+        }
         else if (original.toLowerCase().startsWith("for ") || original.equalsIgnoreCase("for"))
         {
             translation.add("ya ");
@@ -119,6 +133,11 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
         {
             translation.add("nina ");
             return translate(original.toLowerCase().replaceFirst("have", "").trim().toLowerCase());
+        }
+        else if (original.toLowerCase().startsWith("with ") || original.equalsIgnoreCase("with"))
+        {
+            translation.add("na ");
+            return translate(original.toLowerCase().replaceFirst("with", "").trim().toLowerCase());
         }
         else if (original.toLowerCase().startsWith("and ") || original.equalsIgnoreCase("and"))
         {
