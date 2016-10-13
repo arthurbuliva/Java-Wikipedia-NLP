@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package workshop;
+package nlp;
 
 import MongoDB.TitleTranslator;
 import MongoDB.MongoDB;
@@ -21,7 +21,7 @@ import nlp.SwahiliStopWords;
 import nlp.TranslatorLogger;
 import opennlp.tools.tokenize.SimpleTokenizer;
 
-public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopWords, SwahiliStopWords
+public class TranslatorRC2 extends TranslatorLogger implements EnglishStopWords, SwahiliStopWords
 {
 
     private final MongoClient mongoClient;
@@ -32,27 +32,12 @@ public class MongoTranslatorRC1 extends TranslatorLogger implements EnglishStopW
 
     private ArrayList<String> translation = new ArrayList<>();
 
-    public MongoTranslatorRC1()
+    public TranslatorRC2()
     {
         connection = new MongoDB();
         relationship = new HashMap<>();
         mongoClient = new MongoClient();
         db = mongoClient.getDatabase("corpus");
-    }
-
-    public static void main(String[] args)
-    {
-//        String english = "That is a red glacier";
-//        String english = "An elephant from a comet with a headache";
-//        String english = "The sick elephant";
-        String english = "The computer keyboard is red in color";
-//        String english = "A bone from the human skeleton";
-
-        MongoTranslatorRC1 t = new MongoTranslatorRC1();
-
-        String translation = t.translate(english);
-
-        System.out.println(translation);
     }
 
     public String removeDoubleSpaces(String spacedOut)
