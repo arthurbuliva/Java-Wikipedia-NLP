@@ -31,17 +31,12 @@ public class MainWindow extends JFrame
     private JButton translateButton;
     private JTextArea swahiliOutput;
     private final TranslatorRC2 translator;
-    private String english;
-    private String translation;
 
     public MainWindow()
     {
         super("Wikipedia Translator");
 
         translator = new TranslatorRC2();
-
-        english = "";
-        translation = "";
 
         initComponents();
 
@@ -51,11 +46,12 @@ public class MainWindow extends JFrame
     {
         setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
 
-        english = englishField.getText().trim();
-        translation = translator.translate(english);
-
+        String translation = translator.translate(englishField.getText().trim());
+        
         swahiliOutput.setText(translation);
 
+        System.out.println(englishField.getText().trim() + " => " + translation);
+        
         setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
     }
 
@@ -113,8 +109,7 @@ public class MainWindow extends JFrame
                 }
                 else
                 {
-                    translation = null;
-                    swahiliOutput.setText(translation);
+                    swahiliOutput.setText(null);
                 }
             }
         });
