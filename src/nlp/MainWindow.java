@@ -30,22 +30,19 @@ public class MainWindow extends JFrame
     private JTextField englishField;
     private JButton translateButton;
     private JTextArea swahiliOutput;
-    private final TranslatorRC2 translator;
 
     public MainWindow()
     {
         super("Wikipedia Translator");
-
-        translator = new TranslatorRC2();
-
         initComponents();
-
     }
 
     private void translate()
     {
         setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
 
+//        Rabies is an infectious disease from a cat and a dog
+        TranslatorRC2 translator = new TranslatorRC2();
         String translation = translator.translate(englishField.getText().trim());
         
         swahiliOutput.setText(translation);
