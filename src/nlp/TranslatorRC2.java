@@ -335,4 +335,19 @@ public class TranslatorRC2 extends TranslatorLogger implements EnglishStopWords,
 //            System.out.printf("%s cleaned to %s\n", sentence, clean.toString().trim());
         return clean.toString().trim();
     }
+    
+    public static void main(String[] args)
+    {
+        TranslatorRC2 t = new TranslatorRC2();
+        
+        String sentence = "Question";
+        
+        sentence = t.removeStopWords(sentence);
+        
+        System.out.println(sentence);
+        
+        sentence = t.translate(sentence);
+        
+        System.out.println(sentence);
+    }
 }

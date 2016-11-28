@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="https://en.wikipedia.org/w/api.php?format=json&amp;action=query&amp;prop=extracts&amp;exlimit=max&amp;explaintext&amp;exintro&amp;titles=Cattle" uri="xml-resources/web-service-references/api/wsdl/en.wikipedia.org/w/api.php.format_json_action_query_prop_extracts_exlimit_max_explaintext_exintro_titles_cattle"/>
+</catalog>
