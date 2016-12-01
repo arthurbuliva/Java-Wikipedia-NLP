@@ -272,6 +272,7 @@ public class TranslatorRC2 extends TranslatorLogger implements EnglishStopWords,
             for (int i = 0; i < wordTokens.length; i++)
             {
                 String segment = wordTokens[i] + " " + wordTokens[i + 1];
+                
                 if (!words.contains(segment)
                         && !wordTokens[i].trim().equalsIgnoreCase(wordTokens[i + 1].trim()))
                 {
@@ -283,14 +284,14 @@ public class TranslatorRC2 extends TranslatorLogger implements EnglishStopWords,
         {
 
         }
-
+        
         String[] tokens = tokenizer.tokenize(words.toString().replaceAll("\\p{Punct}", ""));
-
+        
         for (String token : tokens)
         {
             if (cleanedwords.size() > 0)
             {
-                if (!cleanedwords.get(cleanedwords.size() - 1).equalsIgnoreCase(token))
+                if ((!cleanedwords.get(cleanedwords.size() - 1).equalsIgnoreCase(token)) && !cleanedwords.contains(token))
                 {
                     cleanedwords.add(token);
                 }
