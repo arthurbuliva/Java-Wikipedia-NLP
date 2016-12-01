@@ -43,7 +43,12 @@ public class MainWindow extends JFrame
 
 //        Rabies is an infectious disease from a cat and a dog
         TranslatorRC2 translator = new TranslatorRC2();
-        String translation = translator.translate(englishField.getText().trim());
+        
+        String original = englishField.getText().trim();
+        original = translator.removeDoubleSpaces(original);
+//        original = translator.removeStopWords(original);
+        
+        String translation = translator.translate(original.replaceAll("\\p{P}", ""));
         
         swahiliOutput.setText(translation);
 

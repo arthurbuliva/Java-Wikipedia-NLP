@@ -313,7 +313,7 @@ public class TranslatorRC2 extends TranslatorLogger implements EnglishStopWords,
         return clean;
     }
 
-    private String removeStopWords(String sentence)
+    public String removeStopWords(String sentence)
     {
         SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
         String[] wordTokens = tokenizer.tokenize(sentence);
