@@ -310,6 +310,9 @@ public class TranslatorRC2 extends TranslatorLogger implements EnglishStopWords,
         String nextSegment = nextSegmentArray[0] + " " + nextSegmentArray[1];
 
         String clean = removeDoubleSpaces(nextSegment + cleanedString.replaceAll(nextSegment, ""));
+        
+        System.out.println("Original number of words: ");
+        System.out.println("Translated number of words: ");
 
         return clean;
     }
