@@ -10,6 +10,8 @@ import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -18,6 +20,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
+import opennlp.tools.tokenize.Tokenizer;
+import opennlp.tools.tokenize.TokenizerME;
+import opennlp.tools.tokenize.TokenizerModel;
 
 /**
  *
@@ -43,18 +48,30 @@ public class MainWindow extends JFrame
 
 //        Rabies is an infectious disease from a cat and a dog
         TranslatorRC2 translator = new TranslatorRC2();
-        
+
         String original = englishField.getText().trim();
         original = translator.removeDoubleSpaces(original);
 //        original = translator.removeStopWords(original);
-        
+
         String translation = translator.translate(original.replaceAll("\\p{P}", ""));
-        
-        swahiliOutput.setText(translation);
 
         System.out.println(englishField.getText().trim() + " => " + translation);
-        
+
+        // Count the number of original words and number of words in the result
+        int originalCount = translator.countWords(englishField.getText().trim());
+        int destinationCount = translator.countWords(translation);
+
+        System.out.println("Original number of words: " + originalCount);
+        System.out.println("Translated number of words: " + destinationCount);
+
+        if (originalCount > 2 && destinationCount > 1.2 * originalCount)
+        {
+            translation = translator.kamusiTranslate(original);
+        }
+
         setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
+
+        swahiliOutput.setText(translation);
     }
 
     public static void main(String[] args) throws Exception
@@ -95,9 +112,9 @@ public class MainWindow extends JFrame
         add(scroller, BorderLayout.CENTER);
 
         translateButton.addActionListener((ActionEvent e)
-                -> 
-                {
-                    translate();
+                ->
+        {
+            translate();
         });
 
         englishField.addKeyListener(new KeyAdapter()

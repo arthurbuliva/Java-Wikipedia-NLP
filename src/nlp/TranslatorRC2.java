@@ -9,17 +9,18 @@ import MongoDB.TitleTranslator;
 import MongoDB.MongoDB;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
-import nlp.Chunker;
-import nlp.EnglishStopWords;
-import nlp.SentenceDetector;
-import nlp.SwahiliStopWords;
-import nlp.TranslatorLogger;
 import opennlp.tools.tokenize.SimpleTokenizer;
+import opennlp.tools.tokenize.Tokenizer;
+import opennlp.tools.tokenize.TokenizerME;
+import opennlp.tools.tokenize.TokenizerModel;
 
 public class TranslatorRC2 extends TranslatorLogger implements EnglishStopWords, SwahiliStopWords
 {
@@ -272,7 +273,7 @@ public class TranslatorRC2 extends TranslatorLogger implements EnglishStopWords,
             for (int i = 0; i < wordTokens.length; i++)
             {
                 String segment = wordTokens[i] + " " + wordTokens[i + 1];
-                
+
                 if (!words.contains(segment)
                         && !wordTokens[i].trim().equalsIgnoreCase(wordTokens[i + 1].trim()))
                 {
@@ -284,9 +285,9 @@ public class TranslatorRC2 extends TranslatorLogger implements EnglishStopWords,
         {
 
         }
-        
+
         String[] tokens = tokenizer.tokenize(words.toString().replaceAll("\\p{Punct}", ""));
-        
+
         for (String token : tokens)
         {
             if (cleanedwords.size() > 0)
@@ -310,11 +311,32 @@ public class TranslatorRC2 extends TranslatorLogger implements EnglishStopWords,
         String nextSegment = nextSegmentArray[0] + " " + nextSegmentArray[1];
 
         String clean = removeDoubleSpaces(nextSegment + cleanedString.replaceAll(nextSegment, ""));
-        
-        System.out.println("Original number of words: ");
-        System.out.println("Translated number of words: ");
 
         return clean;
+    }
+
+    public int countWords(String sentence)
+    {
+        int wordCount = 0;
+
+        // Load the model that we want to use
+        try
+        {
+            InputStream modelIn = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-token.bin");
+            TokenizerModel model = new TokenizerModel(modelIn);
+            Tokenizer tokenizer = new TokenizerME(model);
+
+            String[] tokens = tokenizer.tokenize(sentence);
+
+            wordCount = tokens.length;
+
+        }
+        catch (IOException ex)
+        {
+            wordCount = -1;
+        }
+
+        return wordCount;
     }
 
     public String removeStopWords(String sentence)
@@ -339,19 +361,61 @@ public class TranslatorRC2 extends TranslatorLogger implements EnglishStopWords,
 //            System.out.printf("%s cleaned to %s\n", sentence, clean.toString().trim());
         return clean.toString().trim();
     }
-    
+
     public static void main(String[] args)
     {
         TranslatorRC2 t = new TranslatorRC2();
-        
+
         String sentence = "Question";
-        
+
         sentence = t.removeStopWords(sentence);
-        
+
         System.out.println(sentence);
-        
+
         sentence = t.translate(sentence);
-        
+
         System.out.println(sentence);
+    }
+
+    public String kamusiTranslate(String sentence)
+    {
+        // A computer is a device that performs logical operations automatically
+        HashMap<String, String> mongoData = new HashMap<>();
+
+        StringBuilder output = new StringBuilder();
+
+        // Load the model that we want to use
+        try
+        {
+            InputStream modelIn = new FileInputStream("lib/apache-opennlp-1.6.0/models/en-token.bin");
+            TokenizerModel model = new TokenizerModel(modelIn);
+            Tokenizer tokenizer = new TokenizerME(model);
+
+            String[] tokens = tokenizer.tokenize(sentence);
+
+            System.out.println(Arrays.toString(tokens));
+
+            for (String token : tokens)
+            {
+                log(Level.INFO, "Searching Kamusi MongoDB: " + token);
+
+                System.out.println("Searching Kamusi MongoDB: " + token);
+
+                mongoData = connection.fetchFromKamusiMongoDB(String.format("%s", new Object[]
+                {
+                    token
+                }));
+
+                output.append(mongoData.get(token)).append(" ");
+            }
+
+        }
+        catch (IOException ex)
+        {
+            ex.printStackTrace();
+        }
+
+//        return mongoData.toString();
+        return output.toString().replaceAll("null", "");
     }
 }

@@ -32,41 +32,63 @@ public class MongoDB
     public HashMap<String, String> fetchFromMongoDB(String original)
     {
         Document projection = new Document("score", new Document("$meta", "textScore"));
-     
+
         HashMap<String, String> data = new HashMap<>();
 
         try (
                 MongoCursor<Document> cursor = db.getCollection("wikipedia")
-                .find(
-                        new Document("$text",
-                                new Document("$search", String.format("%s", original))
-                                .append("$language", "en")
-                                .append("$caseSensitive", false)
+                        .find(
+                                new Document("$text",
+                                        new Document("$search", String.format("%s", original))
+                                                .append("$language", "en")
+                                                .append("$caseSensitive", false)
+                                )
                         )
-                )
-                .projection(projection)
-                .sort(projection)
-                .limit(0)
+                        .projection(projection)
+                        .sort(projection)
+                        .limit(0)
+                        .iterator())
+        {
+            while (cursor.hasNext())
+            {
+                Document document = cursor.next();
+
+                String english = document.getString("en").replaceAll("\\(.*?\\) ?", "");
+                String swahili = document.getString("sw").replaceAll("\\(.*?\\) ?", "");
+                String title = document.getString("title");
+                String kichwa = document.getString("kichwa");
+//                data.put(title, kichwa);
+                data.put(english, swahili);
+
+            }
+                }
+
+//        mongoClient.close();
+                return data;
+    }
+
+    public HashMap<String, String> fetchFromKamusiMongoDB(String original)
+    {
+        HashMap<String, String> data = new HashMap<>();
+        
+        try (MongoCursor<Document> cursor = db.getCollection("kamusi")
+                .find(new Document("EnglishWord", original))
+                .limit(1)
                 .iterator())
         {
             while (cursor.hasNext())
             {
                 Document document = cursor.next();
-                
-                String english = document.getString("en").replaceAll("\\(.*?\\) ?", "");
-                String swahili = document.getString("sw").replaceAll("\\(.*?\\) ?", "");
-                String title = document.getString("title");
-                String kichwa = document.getString("kichwa");
 
-                
-                
-//                data.put(title, kichwa);
+                String english = document.getString("EnglishWord").replaceAll("\\(.*?\\) ?", "");
+                String swahili = document.getString("SwahiliWord").replaceAll("\\(.*?\\) ?", "");
+                String EnglishExample = document.getString("EnglishExample");
+                String SwahiliExample = document.getString("SwahiliExample");
+
                 data.put(english, swahili);
-                
+
             }
         }
-        
-//        mongoClient.close();
 
         return data;
     }

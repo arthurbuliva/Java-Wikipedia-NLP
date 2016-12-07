@@ -26,8 +26,6 @@ public class KamusiDataIntoMongoDB extends TranslatorLogger
 {
 
     private final String DATABASE = "jdbc:sqlite:kamusiproject.db";
-    private final String USERNAME = System.getProperty("database_username");
-    private final String PASSWORD = System.getProperty("database_password");
 
     private Connection connection;
     private PreparedStatement statement;
@@ -47,12 +45,14 @@ public class KamusiDataIntoMongoDB extends TranslatorLogger
         {
             Class.forName("org.sqlite.JDBC").newInstance();
 
+//            String query = "SELECT DISTINCT di.*, wg.GroupNum, wg.InGroupPos FROM dict AS di LEFT JOIN word_grouping AS wg WHERE wg.WordId = di.Id ORDER BY di.EnglishWord ASC";
             String query = "SELECT * FROM dict";
-            connection = DriverManager.getConnection(DATABASE, USERNAME, PASSWORD);
+            
+            connection = DriverManager.getConnection(DATABASE);
             statement = connection.prepareStatement(query);
 
             resultSet = statement.executeQuery();
-
+            
             while (resultSet.next())
             {
                 System.out.println(resultSet.getString("SwahiliWord"));
