@@ -165,14 +165,21 @@ public class TranslatorRC2 extends TranslatorLogger implements EnglishStopWords,
 
             if (segments.isEmpty() || segments.get(0).trim().equalsIgnoreCase(original.trim()))
             {
-                SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
-                String[] wordTokens = tokenizer.tokenize(original.trim());
-
-                log(Level.INFO, "Tokenized to " + Arrays.toString(wordTokens));
-
-                for (String token : wordTokens)
+                if (kamusiTranslate(original).trim().length() > 0)
                 {
-                    translation.add(translate(token));
+                    translation.add(kamusiTranslate(original));
+                }
+                else
+                {
+                    SimpleTokenizer tokenizer = SimpleTokenizer.INSTANCE;
+                    String[] wordTokens = tokenizer.tokenize(original.trim());
+
+                    log(Level.INFO, "Tokenized to " + Arrays.toString(wordTokens));
+
+                    for (String token : wordTokens)
+                    {
+                        translation.add(translate(token));
+                    }
                 }
             }
             else

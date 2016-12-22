@@ -64,7 +64,7 @@ public class MainWindow extends JFrame
         System.out.println("Original number of words: " + originalCount);
         System.out.println("Translated number of words: " + destinationCount);
 
-        if (originalCount > 2 && destinationCount > 1.2 * originalCount)
+        if (originalCount >= 2 && destinationCount > 1.2 * originalCount)
         {
             translation = translator.kamusiTranslate(original);
         }
